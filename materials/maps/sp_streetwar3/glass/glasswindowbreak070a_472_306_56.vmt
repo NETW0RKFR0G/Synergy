@@ -1,0 +1,9 @@
+"patch"
+{
+	"include"		"materials/GLASS/GLASSWINDOWBREAK070A.vmt"
+	"replace"
+	{
+		"$envmap"		"maps/sp_streetwar3/c472_306_56"
+		"$crackmaterial"		"maps/sp_streetwar3/glass/glasswindowbreak070b_472_306_56"
+	}
+}

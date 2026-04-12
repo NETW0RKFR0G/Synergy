@@ -1,0 +1,8 @@
+"patch"
+{
+	"include"		"materials/METAL/METALWALL070H.vmt"
+	"replace"
+	{
+		"$envmap"		"maps/sp_streetwar2/c650_-108_587"
+	}
+}

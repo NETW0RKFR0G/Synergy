@@ -1,0 +1,8 @@
+"patch"
+{
+	"include"		"materials/WOOD/WOODFLOOR007A.vmt"
+	"replace"
+	{
+		"$envmap"		"maps/sp_postsquare/c-224_2056_498"
+	}
+}

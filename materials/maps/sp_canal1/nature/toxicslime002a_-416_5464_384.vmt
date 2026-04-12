@@ -1,0 +1,20 @@
+"patch"
+{
+	"include"		"materials/NATURE/TOXICSLIME002A.vmt"
+	"replace"
+	{
+		"$envmap"		"maps/sp_canal1/c-416_5464_384"
+		">=DX90"
+		{
+			"Proxies"
+			{
+			}
+		}
+		"<DX90"
+		{
+			"Proxies"
+			{
+			}
+		}
+	}
+}

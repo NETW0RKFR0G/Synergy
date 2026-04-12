@@ -1,0 +1,8 @@
+"patch"
+{
+	"include"		"materials/CITIZEN2/CI_BUI5.vmt"
+	"replace"
+	{
+		"$envmap"		"maps/sp_canal1/c9801_-5357_-3456"
+	}
+}

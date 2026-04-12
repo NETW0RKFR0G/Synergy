@@ -1,0 +1,11 @@
+"patch"
+{
+	"include"		"materials/CITIZEN2/CI_LEAVESFLOOR2.vmt"
+	"replace"
+	{
+		"lightmappedgeneric_dx9"
+		{
+			"$envmap"		"maps/sp_square/c75_-1852_59"
+		}
+	}
+}

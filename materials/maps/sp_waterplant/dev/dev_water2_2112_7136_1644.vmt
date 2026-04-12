@@ -1,0 +1,11 @@
+"patch"
+{
+	"include"		"materials/DEV/DEV_WATER2.vmt"
+	"replace"
+	{
+		"$envmap"		"maps/sp_waterplant/c2112_7136_1644"
+		"Proxies"
+		{
+		}
+	}
+}

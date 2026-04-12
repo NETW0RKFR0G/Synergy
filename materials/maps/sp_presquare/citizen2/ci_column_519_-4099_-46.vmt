@@ -1,0 +1,8 @@
+"patch"
+{
+	"include"		"materials/CITIZEN2/CI_COLUMN.vmt"
+	"replace"
+	{
+		"$envmap"		"maps/sp_presquare/c519_-4099_-46"
+	}
+}

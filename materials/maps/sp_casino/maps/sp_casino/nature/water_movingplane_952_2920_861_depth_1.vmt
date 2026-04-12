@@ -1,0 +1,8 @@
+"patch"
+{
+	"include"		"materials/maps/sp_casino/nature/water_movingplane_952_2920_861.vmt"
+	"insert"
+	{
+		"$waterdepth"		"1"
+	}
+}

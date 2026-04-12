@@ -1,0 +1,8 @@
+"patch"
+{
+	"include"		"materials/maps/sp_casino/dev/dev_water2_1448_2501_560.vmt"
+	"insert"
+	{
+		"$waterdepth"		"13"
+	}
+}

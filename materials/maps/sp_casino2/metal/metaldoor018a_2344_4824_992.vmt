@@ -1,0 +1,8 @@
+"patch"
+{
+	"include"		"materials/METAL/METALDOOR018A.vmt"
+	"replace"
+	{
+		"$envmap"		"maps/sp_casino2/c2344_4824_992"
+	}
+}

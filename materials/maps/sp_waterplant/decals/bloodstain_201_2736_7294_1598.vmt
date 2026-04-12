@@ -1,0 +1,8 @@
+"patch"
+{
+	"include"		"materials/DECALS/BLOODSTAIN_201.vmt"
+	"replace"
+	{
+		"$envmap"		"maps/sp_waterplant/c2736_7294_1598"
+	}
+}

@@ -1,0 +1,8 @@
+"patch"
+{
+	"include"		"materials/CITIZEN2/CI_BREEN2.vmt"
+	"replace"
+	{
+		"$envmap"		"maps/sp_canyon/c-1594_3326_192"
+	}
+}

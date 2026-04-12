@@ -1,0 +1,8 @@
+"patch"
+{
+	"include"		"materials/maps/sp_waterplant/nature/water_movingplane_1806_8266_1734.vmt"
+	"insert"
+	{
+		"$waterdepth"		"1"
+	}
+}

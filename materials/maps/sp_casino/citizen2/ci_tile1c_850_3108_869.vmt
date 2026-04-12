@@ -1,0 +1,8 @@
+"patch"
+{
+	"include"		"materials/CITIZEN2/CI_TILE1C.vmt"
+	"replace"
+	{
+		"$envmap"		"maps/sp_casino/c850_3108_869"
+	}
+}

@@ -1,0 +1,8 @@
+"patch"
+{
+	"include"		"materials/CITIZEN2/CI_FURNITURE4.vmt"
+	"replace"
+	{
+		"$envmap"		"maps/sp_precasino/c-2126_433_-206"
+	}
+}

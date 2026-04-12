@@ -1,9 +1,9 @@
 "GameInfo"
 {
-	"title"		" Tu suce Kenny mange ma Marde"
+	"title"		" synergy"
 	"game"		"Synergy"
 	"type"		"multiplayer_only"
-	"developer"		"Mr Simon Dupuis"
+	"developer"		"Synergy Mod Team"
 	"developer_url"		"http://synergymod.net"
 	"manual"		"http://synergymod.net/Documents"
 	"icon"		"materials/synergy"

@@ -1,0 +1,8 @@
+"patch"
+{
+	"include"		"materials/VEHICLE/METALTRAIN001B.vmt"
+	"replace"
+	{
+		"$envmap"		"maps/sp_streetwar/c-1012_-12_-48"
+	}
+}

@@ -1,0 +1,8 @@
+"patch"
+{
+	"include"		"materials/METAL/METALPIPE010A.vmt"
+	"replace"
+	{
+		"$envmap"		"maps/sp_waterplant/c2048_7520_1644"
+	}
+}

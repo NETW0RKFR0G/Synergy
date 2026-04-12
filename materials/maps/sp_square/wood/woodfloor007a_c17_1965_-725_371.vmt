@@ -1,0 +1,11 @@
+"patch"
+{
+	"include"		"materials/WOOD/WOODFLOOR007A_C17.vmt"
+	"replace"
+	{
+		"lightmappedgeneric_dx9"
+		{
+			"$envmap"		"maps/sp_square/c1965_-725_371"
+		}
+	}
+}

@@ -1,0 +1,8 @@
+"patch"
+{
+	"include"		"materials/TILE/TILEWALL006C.vmt"
+	"replace"
+	{
+		"$envmap"		"maps/sp_base/c14124_10316_-228"
+	}
+}

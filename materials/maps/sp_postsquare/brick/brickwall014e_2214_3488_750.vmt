@@ -1,0 +1,8 @@
+"patch"
+{
+	"include"		"materials/BRICK/BRICKWALL014E.vmt"
+	"replace"
+	{
+		"$envmap"		"maps/sp_postsquare/c2214_3488_750"
+	}
+}

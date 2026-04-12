@@ -1,0 +1,8 @@
+"patch"
+{
+	"include"		"materials/CITIZEN2/CI_PLAQUE2.vmt"
+	"replace"
+	{
+		"$envmap"		"maps/sp_precasino/c-2880_1472_-400"
+	}
+}

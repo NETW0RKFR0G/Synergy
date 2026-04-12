@@ -1,0 +1,11 @@
+"patch"
+{
+	"include"		"materials/CITIZEN2/CI_SLIMEFALL.vmt"
+	"replace"
+	{
+		"$envmap"		"maps/sp_canal1/c440_2616_640"
+		"Proxies"
+		{
+		}
+	}
+}

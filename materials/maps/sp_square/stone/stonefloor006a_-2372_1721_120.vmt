@@ -1,0 +1,8 @@
+"patch"
+{
+	"include"		"materials/STONE/STONEFLOOR006A.vmt"
+	"replace"
+	{
+		"$envmap"		"maps/sp_square/c-2372_1721_120"
+	}
+}

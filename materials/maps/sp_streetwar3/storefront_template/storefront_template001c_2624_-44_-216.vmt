@@ -1,0 +1,8 @@
+"patch"
+{
+	"include"		"materials/STOREFRONT_TEMPLATE/STOREFRONT_TEMPLATE001C.vmt"
+	"replace"
+	{
+		"$envmap"		"maps/sp_streetwar3/c2624_-44_-216"
+	}
+}

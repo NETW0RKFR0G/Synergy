@@ -1,0 +1,8 @@
+"patch"
+{
+	"include"		"materials/CITIZEN/WKITCHENB.vmt"
+	"replace"
+	{
+		"$envmap"		"maps/sp_precasino/c-2984_336_64"
+	}
+}

@@ -1,0 +1,15 @@
+"patch"
+{
+	"include"		"materials/CONCRETE/CONCRETEFLOOR028C_C17.vmt"
+	"replace"
+	{
+		"LightmappedGeneric_DX9"
+		{
+			"$envmap"		"maps/sp_presquare/c1062_-3831_-54"
+		}
+		"Lightmappedgeneric_HDR_dx9"
+		{
+			"$envmap"		"maps/sp_presquare/c1062_-3831_-54"
+		}
+	}
+}

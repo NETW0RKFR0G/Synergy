@@ -1,0 +1,11 @@
+"patch"
+{
+	"include"		"materials/CITIZEN/SCROLLWATER2.vmt"
+	"replace"
+	{
+		"$envmap"		"maps/sp_casino/c1048_1519_632"
+		"Proxies"
+		{
+		}
+	}
+}

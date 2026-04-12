@@ -1,0 +1,8 @@
+"patch"
+{
+	"include"		"materials/TILE/TILEROOF004A.vmt"
+	"replace"
+	{
+		"$envmap"		"maps/sp_streetwar3/c2663_-720_-192"
+	}
+}

@@ -1,0 +1,11 @@
+"patch"
+{
+	"include"		"materials/DEV/DEV_WATER2.vmt"
+	"replace"
+	{
+		"$envmap"		"maps/sp_canyon/c-3863_-8500_34"
+		"Proxies"
+		{
+		}
+	}
+}

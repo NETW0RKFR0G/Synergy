@@ -1,0 +1,8 @@
+"patch"
+{
+	"include"		"materials/VEHICLE/RUBBERTRAINFLOOR001A.vmt"
+	"replace"
+	{
+		"$envmap"		"maps/sp_intro/c-313_-3364_-1952"
+	}
+}

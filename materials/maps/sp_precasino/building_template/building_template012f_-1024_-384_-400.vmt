@@ -1,0 +1,8 @@
+"patch"
+{
+	"include"		"materials/BUILDING_TEMPLATE/BUILDING_TEMPLATE012F.vmt"
+	"replace"
+	{
+		"$envmap"		"maps/sp_precasino/c-1024_-384_-400"
+	}
+}

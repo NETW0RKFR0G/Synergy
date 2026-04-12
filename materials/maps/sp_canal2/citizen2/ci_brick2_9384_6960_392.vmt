@@ -1,0 +1,8 @@
+"patch"
+{
+	"include"		"materials/CITIZEN2/CI_BRICK2.vmt"
+	"replace"
+	{
+		"$envmap"		"maps/sp_canal2/c9384_6960_392"
+	}
+}

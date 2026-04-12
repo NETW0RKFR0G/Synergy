@@ -1,0 +1,11 @@
+"patch"
+{
+	"include"		"materials/METAL/METALROOF008A_C17.vmt"
+	"replace"
+	{
+		"LightmappedGeneric_DX9"
+		{
+			"$envmap"		"maps/sp_postsquare/c-3424_856_464"
+		}
+	}
+}

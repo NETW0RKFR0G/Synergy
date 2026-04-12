@@ -1,0 +1,11 @@
+"patch"
+{
+	"include"		"materials/glass/glasswindowbreak070b.vmt"
+	"replace"
+	{
+		"$envmap"		"maps/sp_streetwar3/c32_-72_-80"
+		"Proxies"
+		{
+		}
+	}
+}

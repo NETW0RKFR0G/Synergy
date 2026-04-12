@@ -1,0 +1,8 @@
+"patch"
+{
+	"include"		"materials/PLASTER/PLASTERWALL029F.vmt"
+	"replace"
+	{
+		"$envmap"		"maps/sp_streetwar2/c-1902_-2867_230"
+	}
+}

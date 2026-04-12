@@ -1,0 +1,11 @@
+"patch"
+{
+	"include"		"materials/NATURE/WATER_CANALS_WATER2.vmt"
+	"replace"
+	{
+		"$envmap"		"maps/sp_casino2/c3200_6029_1060"
+		"Proxies"
+		{
+		}
+	}
+}

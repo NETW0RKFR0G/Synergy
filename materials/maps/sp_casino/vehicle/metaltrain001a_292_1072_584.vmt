@@ -1,0 +1,8 @@
+"patch"
+{
+	"include"		"materials/VEHICLE/METALTRAIN001A.vmt"
+	"replace"
+	{
+		"$envmap"		"maps/sp_casino/c292_1072_584"
+	}
+}

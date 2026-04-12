@@ -1,0 +1,8 @@
+// Valve Game Info file
+//  These are key/value pairs.  Certain mods will use different settings.
+//
+game "The Citizen Returns"
+startmap "sp_intro"
+trainingmap "sp_intro"
+hlversion "1000"
+mpentity "info_player_deathmatch"

@@ -1,0 +1,11 @@
+"patch"
+{
+	"include"		"materials/NATURE/MUDFLOOR001A.vmt"
+	"replace"
+	{
+		"LightmappedGeneric_DX9"
+		{
+			"$envmap"		"maps/sp_canyon/c-3866_-10286_34"
+		}
+	}
+}

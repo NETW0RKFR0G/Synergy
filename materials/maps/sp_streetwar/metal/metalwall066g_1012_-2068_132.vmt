@@ -1,0 +1,8 @@
+"patch"
+{
+	"include"		"materials/METAL/METALWALL066G.vmt"
+	"replace"
+	{
+		"$envmap"		"maps/sp_streetwar/c1012_-2068_132"
+	}
+}

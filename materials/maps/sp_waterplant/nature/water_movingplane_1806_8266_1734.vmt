@@ -1,0 +1,11 @@
+"patch"
+{
+	"include"		"materials/NATURE/WATER_MOVINGPLANE.vmt"
+	"replace"
+	{
+		"$envmap"		"maps/sp_waterplant/c1806_8266_1734"
+		"Proxies"
+		{
+		}
+	}
+}

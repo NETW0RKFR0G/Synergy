@@ -1,0 +1,8 @@
+"patch"
+{
+	"include"		"materials/BUILDING_TEMPLATE/BUILDING_TEMPLATE021F.vmt"
+	"replace"
+	{
+		"$envmap"		"maps/sp_postsquare/c-2616_1248_520"
+	}
+}

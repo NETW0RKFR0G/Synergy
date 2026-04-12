@@ -1,0 +1,8 @@
+"patch"
+{
+	"include"		"materials/WOOD/WOODDOOR014A.vmt"
+	"replace"
+	{
+		"$envmap"		"maps/sp_intro/c-1088_-4033_-1939"
+	}
+}

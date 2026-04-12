@@ -1,0 +1,11 @@
+"patch"
+{
+	"include"		"materials/EFFECTS/COMBINESHIELD/COMSHIELDWALL3.vmt"
+	"replace"
+	{
+		"$envmap"		"maps/sp_casino/c1170_3516_1084"
+		"Proxies"
+		{
+		}
+	}
+}

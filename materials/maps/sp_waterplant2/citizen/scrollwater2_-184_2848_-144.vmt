@@ -1,0 +1,11 @@
+"patch"
+{
+	"include"		"materials/CITIZEN/SCROLLWATER2.vmt"
+	"replace"
+	{
+		"$envmap"		"maps/sp_waterplant2/c-184_2848_-144"
+		"Proxies"
+		{
+		}
+	}
+}

@@ -1,0 +1,8 @@
+"patch"
+{
+	"include"		"materials/CITIZEN2/CI_CONCRETEWALLBOTTOM.vmt"
+	"replace"
+	{
+		"$envmap"		"maps/sp_canal1/c8961_10473_136"
+	}
+}

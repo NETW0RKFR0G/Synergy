@@ -1,0 +1,8 @@
+"patch"
+{
+	"include"		"materials/CITIZEN2/CI_OILSTAIN.vmt"
+	"replace"
+	{
+		"$envmap"		"maps/sp_waterplant/c1259_6120_1185"
+	}
+}

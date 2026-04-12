@@ -1,0 +1,8 @@
+"patch"
+{
+	"include"		"materials/METAL/METALCEILING005A.vmt"
+	"replace"
+	{
+		"$envmap"		"maps/sp_streetwar/c-1763_-831_66"
+	}
+}

@@ -1,0 +1,8 @@
+"patch"
+{
+	"include"		"materials/maps/sp_canal1/nature/toxicslime002a_-416_5464_384.vmt"
+	"insert"
+	{
+		"$waterdepth"		"288"
+	}
+}
