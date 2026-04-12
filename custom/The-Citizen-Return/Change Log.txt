@@ -1,0 +1,22 @@
+//Change Log//
+
+//Added//
+
+Bin file (for preventing the could not load library client error and possible in-game crashes)
+Skill.cfg ( to fix and calibrate the npc`s life and put a limit in the ammo that the player can get)
+Skillmanifest.cfg ( allow load the skillepisodic.cfg)
+Skillepisodic ( fix possible behaviour bugs and lays down a damage limit for npc´s)
+
+//Fixed//
+Game.info ( now allows the mod to get the resources from the source sdk folder itself and not anymore hl2 or hl2ep2)
+Broken HudLayout
+
+//Credits//
+
+Patch by Platinum 7 
+Files by malortie
+Additional files edited whit notepad ++ 5.8.2
+Special thanks to the valve forum and for Mr.funeral ( he got a channel whit the same name check it out )
+
+(Pootisis)
+

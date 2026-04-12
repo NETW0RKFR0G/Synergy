@@ -1,0 +1,30 @@
+// Choreo version 1
+actor "rebels_larry"
+{
+  channel "wav"
+  {
+  }
+  channel "gesture"
+  {
+    event gesture "2"
+    {
+      time 0.000000 34.555557
+      param "spreadwallidle"
+      sequenceduration 2.000000
+    }
+  }
+  channel "move"
+  {
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "12"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off

@@ -1,0 +1,32 @@
+<html>
+<head>
+<style media="all" type="text/css">
+	body
+	{
+		margin-top: 80px;
+		background-color: #151515;
+		color: Silver;
+		font-family: Tahoma;
+		font-size: 16pt;
+	}
+	pre
+	{
+		font-family: Tahoma;
+	}
+	span.t1
+	{
+		color: GreenYellow;
+		font-size: 20pt;
+		margin: 0px 0px 0px 0px;
+		padding: 0px 0px 0px 0px;
+		display: inline;
+	}
+</style>
+</head>
+<body>
+<center>
+<pre>You are playing
+<span class="t1">Synergy on Steam</span></pre>
+</center>
+</body>
+</html>

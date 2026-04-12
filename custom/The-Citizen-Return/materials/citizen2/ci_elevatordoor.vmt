@@ -1,0 +1,9 @@
+"LightmappedGeneric"
+
+{ "$basetexture" "citizen2/ci_elevatordoor" 
+  "$surfaceprop" "metal"
+  "$translucent" 1
+  "$decal" 1
+
+
+} 

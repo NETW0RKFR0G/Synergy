@@ -1,0 +1,17 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "citizen2\ci_ripple"
+
+
+	"Proxies"
+		{
+		"TextureScroll"
+			{
+				"textureScrollVar" "$basetexturetransform"
+				"texturescrollrate" 0.25
+				"texturescrollangle" -90.00
+			}	
+		}
+
+
+}

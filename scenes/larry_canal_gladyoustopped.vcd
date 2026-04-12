@@ -1,0 +1,149 @@
+// Choreo version 1
+actor "larry2"
+{
+  channel "wav"
+  {
+    event speak "gladyoustopped"
+    {
+      time 0.386667 3.741951
+      param "npc_larry_gladyoustopped"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "lookat"
+  {
+    event lookat "atairboat"
+    {
+      time 0.026666 1.640000
+      param "airboat"
+    }
+    event lookat "atplayer"
+    {
+      time 1.693333 3.860000
+      param "player"
+    }
+  }
+  channel "face"
+  {
+    event face "faceplayer"
+    {
+      time 1.573333 3.953333
+      param "!player"
+    }
+    event face "faceboat"
+    {
+      time 0.026666 1.546666
+      param "airboat"
+    }
+  }
+  channel "expression"
+  {
+    event flexanimation "flexanim"
+    {
+      time 0.406667 1.606667
+      param ""
+      flexanimations samples_use_time
+      {
+        "inner_raiser" combo 
+        {
+          0.1780 0.8000
+        }
+        {
+          0.1780 0.5000
+        }
+        "outer_raiser" combo 
+        {
+          0.1780 0.2300
+        }
+        {
+          0.1780 0.5000
+        }
+        "cheek_raiser" combo 
+        {
+          0.1780 0.3900
+        }
+        {
+          0.1780 0.5000
+        }
+        "part" combo 
+        {
+          0.1780 0.4400
+        }
+        {
+          0.1780 0.5000
+        }
+        "smile" 
+        {
+          0.1780 0.2500
+        }
+      }
+    }
+    event flexanimation "flexanim2"
+    {
+      time 2.980000 3.786666
+      param ""
+      flexanimations samples_use_time
+      {
+        "part" combo 
+        {
+          0.1860 0.3100
+        }
+        {
+          0.1860 0.5000
+        }
+        "smile" 
+        {
+          0.1860 0.2500
+        }
+        "head_updown" range 15.0 -15.0 
+        {
+          0.1860 0.1700
+        }
+        "head_tilt" range 15.0 -15.0 
+        {
+          0.1860 0.7100
+        }
+        "eyes_updown" range 30.0 -30.0 
+        {
+          0.1860 0.6900
+        }
+      }
+    }
+  }
+  channel "gesture"
+  {
+    event gesture "gest1"
+    {
+      time 1.733333 4.033333
+      param "G_righthandpoint"
+      absolutetags playback_time
+      {
+        "apex" 0.205882
+        "accent" 0.441176
+        "loop" 0.470588
+        "end" 0.676471
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.205882
+        "accent" 0.441176
+        "loop" 0.470588
+        "end" 0.676471
+      }
+      sequenceduration 2.300000
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "SceneRampTool" "100"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+}
+fps 60
+snap off

@@ -1,0 +1,63 @@
+// Choreo version 1
+actor "larry"
+{
+  channel "wav"
+  {
+    event speak "wav1"
+    {
+      time 0.096297 2.116433
+      param "npc_larry_postsquare_speakofthedevil"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "flex"
+  {
+    event flexanimation "anim1"
+    {
+      time 0.200000 2.085185
+      param ""
+      flexanimations samples_use_time
+      {
+        "cheek_raiser" combo 
+        {
+          0.1520 1.0000
+        }
+        {
+          0.1520 0.5000
+        }
+        "part" combo 
+        {
+          0.1520 1.0000
+        }
+        {
+          0.1520 0.5000
+        }
+        "jaw_clencher" 
+        {
+          0.1520 0.6900
+        }
+        "jaw_drop" 
+        {
+          0.1520 0.0000
+        }
+        "eyes_rightleft" range 30.0 -30.0 
+        {
+          0.1520 0.0000
+        }
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "90"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off

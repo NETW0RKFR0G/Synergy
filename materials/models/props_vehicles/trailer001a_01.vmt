@@ -1,0 +1,15 @@
+
+"VertexLitGeneric"
+{
+	// Original shader: VertexLitTexture
+	"$basetexture" "Models/props_vehicles/trailer001a_01"
+	"$surfaceprop" "solidmetal"
+	"$envmap" "env_cubemap"
+	"$basealphaenvmapmask" 1
+
+	
+	$detail detail\metal_detail_01
+	$detailtexturetransform "center .5 .5 scale 8 4 rotate 0 translate 0 0" 
+	$detailblendfactor .85
+	$detailblendmode 0
+}

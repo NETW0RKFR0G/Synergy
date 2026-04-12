@@ -1,0 +1,185 @@
+// Choreo version 1
+event loop "loop"
+{
+  time 13.700000 -1.000000
+  param "13.000000"
+  loopcount "0"
+}
+actor "citizen_female2"
+{
+  channel "wav"
+  {
+    event speak "npc_citizen.pain09"
+    {
+      time 1.031009 1.794546
+      param "npc_postsquare_hesdead"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "change"
+    {
+      time 5.199183 6.798865
+      param "npc_postsquare_finallychange"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "3"
+    {
+      time 8.605165 9.475913
+      param "npc_postsquare_outofyourway"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "waytogo"
+    {
+      time 3.135080 4.144536
+      param "npc_postsquare_waytogo"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "lookat"
+  {
+    event lookat "at floor"
+    {
+      time 0.057228 2.703456
+      param "target_fixedspot"
+    }
+    event lookat "atplayer"
+    {
+      time 5.164996 14.049424
+      param "!player"
+    }
+    event lookat "atbust"
+    {
+      time 2.895764 4.323113
+      param "blunt_breenbust"
+    }
+  }
+  channel "face"
+  {
+    event face "floor"
+    {
+      time 0.044407 4.186362
+      param "target_fixedspot"
+    }
+    event face "face player"
+    {
+      time 4.827388 14.071164
+      param "!player"
+    }
+  }
+  channel "move to"
+  {
+    event moveto "to target corner"
+    {
+      time 7.733370 14.081383
+      param "target_corner"
+    }
+  }
+  channel "flexanims"
+  {
+    event flexanimation "hesdead"
+    {
+      time 1.028242 2.374396
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "lid_raiser" combo 
+        {
+          0.2220 1.0000
+        }
+        {
+          0.2220 0.5000
+        }
+        "inner_raiser" combo 
+        {
+          0.2220 1.0000
+        }
+        {
+          0.2220 0.5000
+        }
+        "part" combo 
+        {
+          0.2220 1.0000
+        }
+        {
+          0.2220 0.5000
+        }
+        "funneler" combo 
+        {
+          0.2220 1.0000
+        }
+        {
+          0.2220 0.5000
+        }
+        "head_updown" range 15.0 -15.0 
+        {
+          0.2220 0.0000
+        }
+      }
+    }
+    event flexanimation "smile"
+    {
+      time 5.130807 7.459867
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "lid_tightener" combo 
+        {
+          0.1900 0.7400
+        }
+        {
+          0.1900 0.5000
+        }
+        "outer_raiser" combo 
+        {
+          0.1900 1.0000
+        }
+        {
+          0.1900 0.5000
+        }
+        "corner_puller" combo 
+        {
+          0.1900 0.3900
+        }
+        {
+          0.1900 0.5000
+        }
+        "head_tilt" range 15.0 -15.0 
+        {
+          0.1900 0.2500
+        }
+      }
+    }
+  }
+  channel "gestures"
+  {
+    event gesture "hesdead"
+    {
+      time 0.998328 1.998328
+      param "urgenthandsweep"
+    }
+    event gesture "2"
+    {
+      time 5.378671 6.712004
+      param "g_arrest_clench"
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "92"
+  "ExpressionTool" "100"
+  "RampTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

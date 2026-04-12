@@ -1,0 +1,376 @@
+// Choreo version 1
+actor "larry"
+{
+  channel "WAVs"
+  {
+    event speak "Speech1"
+    {
+      time 0.220000 4.186213
+      param "npc_larry_duress_speech1"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "speech2"
+    {
+      time 5.390097 13.869598
+      param "npc_larry_duress_speech2"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "speech3"
+    {
+      time 15.188034 26.789078
+      param "npc_larry_duress_speech3"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "speech4"
+    {
+      time 27.598293 42.810856
+      param "npc_larry_duress_speech4"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "speech5"
+    {
+      time 43.805553 54.725780
+      param "npc_larry_duress_speech5"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Flex"
+  {
+    event flexanimation "1"
+    {
+      time -1.777778 5.444445
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "lid_closer" combo 
+        {
+          2.1889 1.0000
+        }
+        {
+          2.1889 0.5000
+        }
+        "eyes_updown" range 30.0 -30.0 
+        {
+          2.1889 0.5900
+        }
+      }
+    }
+    event flexanimation "2"
+    {
+      time 5.222224 13.722221
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "lid_closer" combo 
+        {
+          0.2620 0.0000
+        }
+        {
+          0.2620 0.5000
+        }
+        "corner_depressor" combo 
+        {
+          0.2620 1.0000
+        }
+        {
+          0.2620 0.5000
+        }
+        "eyes_updown" range 30.0 -30.0 
+        {
+          0.2620 0.1700
+        }
+      }
+    }
+    event flexanimation "3"
+    {
+      time 24.500000 27.111111
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "wrinkler" 
+        {
+          0.2800 1.0000
+        }
+        "upper_raiser" combo 
+        {
+          0.2800 1.0000
+        }
+        {
+          0.2800 0.5000
+        }
+        "corner_depressor" combo 
+        {
+          0.2800 0.8600
+        }
+        {
+          0.2800 0.5000
+        }
+        "eyes_updown" range 30.0 -30.0 
+        {
+          0.2800 0.8000
+        }
+      }
+    }
+    event flexanimation "4"
+    {
+      time 17.166668 25.166670
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "head_updown" range 15.0 -15.0 
+        {
+          0.2320 -0.0000
+        }
+        "eyes_updown" range 30.0 -30.0 
+        {
+          0.2320 -0.0000
+        }
+        "head_forwardback" range 0.2 -0.2 
+        {
+          0.2320 -0.0000
+        }
+      }
+    }
+    event flexanimation "5"
+    {
+      time 14.611111 17.111113
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "corner_depressor" combo 
+        {
+          0.2800 1.0000
+        }
+        {
+          0.2800 0.5000
+        }
+        "head_rightleft" range 30.0 -30.0 
+        {
+          0.2800 0.6100
+        }
+        "eyes_updown" range 30.0 -30.0 
+        {
+          0.2800 0.7900
+        }
+        "head_forwardback" range 0.2 -0.2 
+        {
+          0.2800 1.0000
+        }
+      }
+    }
+    event flexanimation "6"
+    {
+      time 31.333336 36.944443
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "lid_tightener" combo 
+        {
+          0.3020 1.0000
+        }
+        {
+          0.3020 0.5000
+        }
+        "inner_raiser" combo 
+        {
+          0.3020 1.0000
+        }
+        {
+          0.3020 0.5000
+        }
+        "chin_raiser" 
+        {
+          0.3020 1.0000
+        }
+        "head_rightleft" range 30.0 -30.0 
+        {
+          0.3020 0.0500
+        }
+        "eyes_rightleft" range 30.0 -30.0 
+        {
+          0.3020 0.8400
+        }
+      }
+    }
+    event flexanimation "2"
+    {
+      time 35.555557 43.722221
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "lid_closer" combo 
+        {
+          0.2620 0.0000
+          0.2860 0.0000
+        }
+        {
+          0.2620 0.5000
+          0.2860 0.5000
+        }
+        "corner_depressor" combo 
+        {
+          0.2620 1.0000
+          0.2860 1.0000
+        }
+        {
+          0.2620 0.5000
+          0.2860 0.5000
+        }
+        "eyes_updown" range 30.0 -30.0 
+        {
+          0.2620 0.1700
+          0.2860 0.1294
+        }
+        "head_updown" range 15.0 -15.0 
+        {
+          0.2860 -0.0000
+        }
+      }
+    }
+    event flexanimation "7"
+    {
+      time 43.611115 49.500004
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "outer_raiser" combo 
+        {
+          0.2320 1.0000
+        }
+        {
+          0.2320 0.5000
+        }
+        "head_updown" range 15.0 -15.0 
+        {
+          0.2320 0.3600
+        }
+        "head_tilt" range 15.0 -15.0 
+        {
+          0.2320 0.2200
+        }
+        "eyes_updown" range 30.0 -30.0 
+        {
+          0.2320 0.5200
+        }
+        "head_forwardback" range 0.2 -0.2 
+        {
+          0.2320 -0.0000
+        }
+      }
+    }
+    event flexanimation "8"
+    {
+      time 49.083336 54.194447
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "head_updown" range 15.0 -15.0 
+        {
+          0.3100 -0.0000
+        }
+        "head_tilt" range 15.0 -15.0 
+        {
+          0.3100 1.0000
+        }
+        "eyes_updown" range 30.0 -30.0 
+        {
+          0.3100 0.6700
+        }
+        "head_forwardback" range 0.2 -0.2 
+        {
+          0.3100 1.0000
+        }
+      }
+    }
+    event flexanimation "9"
+    {
+      time 27.833334 31.333334
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "lid_raiser" combo 
+        {
+          0.2640 1.0000
+        }
+        {
+          0.2640 0.5000
+        }
+        "inner_raiser" combo 
+        {
+          0.2640 1.0000
+        }
+        {
+          0.2640 0.5000
+        }
+        "outer_raiser" combo 
+        {
+          0.2640 1.0000
+        }
+        {
+          0.2640 0.5000
+        }
+      }
+    }
+  }
+  channel "Gesture"
+  {
+  }
+}
+
+actor "rebel_sitting1"
+{
+  channel "lookat"
+  {
+    event lookat "tately"
+    {
+      time 0.333333 54.666668
+      param "tely"
+    }
+  }
+}
+
+actor "rebel_sitting2"
+{
+  channel "lookat"
+  {
+    event lookat "attely"
+    {
+      time 0.083333 54.750004
+      param "tely"
+    }
+  }
+}
+
+actor "rebel_sitting3"
+{
+  channel "lookat"
+  {
+    event lookat "attely"
+    {
+      time 0.166667 54.833336
+      param "tely"
+    }
+  }
+}
+
+scalesettings
+{
+  "SceneRampTool" "100"
+  "GestureTool" "100"
+  "ExpressionTool" "100"
+  "RampTool" "100"
+  "CChoreoView" "12"
+}
+fps 60
+snap off
+ignorePhonemes off

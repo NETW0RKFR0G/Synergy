@@ -1,0 +1,18 @@
+"VertexlitGeneric"
+
+{ "$basetexture" "citizen2/ci_gold"
+
+
+       "$surfaceprop" "metal"
+        "$envmap" "env_cubemap"
+	"$envmapmask" "detail\metal_detail_01"
+
+	$detail detail\metal_detail_01
+	$detailscale 5
+	$detailblendfactor .75
+	$detailblendmode 0
+
+
+
+
+ } 

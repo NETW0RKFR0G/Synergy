@@ -1,0 +1,23 @@
+"LightmappedGeneric"
+
+
+{
+
+  "$basetexture" "citizen2/ci_smoke01"   	
+  "$translucent" "1"
+  "$decal" 1
+  
+	
+
+
+
+"Proxies"
+{
+"TextureScroll"
+{
+"texturescrollvar" "$basetexturetransform"
+"texturescrollrate" 0.0625
+"texturescrollangle" 135.00
+}
+}
+}

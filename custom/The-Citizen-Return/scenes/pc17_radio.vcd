@@ -1,0 +1,58 @@
+// Choreo version 1
+actor "cubicvirtuoso"
+{
+  channel "WAV"
+  {
+    event speak "radio1"
+    {
+      time 0.025641 7.141492
+      param "npc_pc17_radio1"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "radio2"
+    {
+      time 7.166667 13.977552
+      param "npc_pc17_radio2"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "radio3"
+    {
+      time 14.025642 20.074100
+      param "npc_pc17_radio3"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "radio4"
+    {
+      time 20.194445 28.428505
+      param "npc_pc17_radio4"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "radio5"
+    {
+      time 28.500000 41.105217
+      param "npc_pc17_radio5"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "24"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off

@@ -1,0 +1,15 @@
+"VertexlitGeneric"
+
+{ "$basetexture" "models/custom/plasticbox" 
+  "$surfaceprop" "plastic"
+  "$bumpmap" "models/custom/plasticbox_normal"
+  "$envmap" "env_cubemap"
+  "$normalmapalphaenvmapmask" 1
+
+	$detail detail\metal_detail_01
+	$detailscale 5
+	$detailblendfactor .75
+	$detailblendmode 0
+
+
+} 

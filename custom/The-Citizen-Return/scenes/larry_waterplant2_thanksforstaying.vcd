@@ -1,0 +1,90 @@
+// Choreo version 1
+actor "rebels_larry2"
+{
+  channel "wav"
+  {
+    event speak "thanksforstaying"
+    {
+      time 0.560000 2.034467
+      param "npc_larry_waterplant2_thanksforstaying"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "facetowards"
+  {
+    event face "faceplayer"
+    {
+      time 0.420000 2.786666
+      param "!player"
+    }
+  }
+  channel "lookat"
+  {
+    event lookat "atplayer"
+    {
+      time 0.406666 2.766666
+      param "!player"
+    }
+  }
+  channel "gestures"
+  {
+    event gesture "salute"
+    {
+      time 1.539999 2.806666
+      param "g_salute"
+    }
+  }
+  channel "flex"
+  {
+    event flexanimation "flex1"
+    {
+      time 0.420000 2.426666
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "inner_raiser" combo 
+        {
+          0.4240 1.0000
+        }
+        {
+          0.4240 0.5000
+        }
+        "corner_puller" combo 
+        {
+          0.4240 0.4000
+        }
+        {
+          0.4240 0.5000
+        }
+        "head_tilt" range 15.0 -15.0 
+        {
+          0.4240 0.0500
+        }
+      }
+    }
+  }
+  channel "walktowards"
+  {
+    event moveto "movetoplayer"
+    {
+      time 0.033333 1.066666
+      param "!player"
+      param2 "Walk"
+      distancetotarget 70.00
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

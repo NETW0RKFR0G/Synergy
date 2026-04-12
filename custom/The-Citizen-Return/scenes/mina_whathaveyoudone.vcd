@@ -1,0 +1,202 @@
+// Choreo version 1
+actor "mina"
+{
+  channel "WAV"
+  {
+    event speak "whathaveyoudone"
+    {
+      time 0.088940 4.946355
+      param "npc_mina_whathaveyoudone"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Face"
+  {
+    event face "Faceplayer"
+    {
+      time 0.637011 5.605443
+      param "!player"
+    }
+  }
+  channel "Look"
+  {
+    event lookat "lookatplayer"
+    {
+      time 1.318851 5.525697
+      param "!player"
+    }
+    event lookat "lookatsouvenir"
+    {
+      time 0.098396 1.121385
+      param "souvenir"
+    }
+  }
+  channel "Expression"
+  {
+    event flexanimation "startled"
+    {
+      time 0.098396 1.351270
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "inner_raiser" combo 
+        {
+          0.1700 1.0000
+        }
+        {
+          0.1700 0.5000
+        }
+        "corner_depressor" combo 
+        {
+          0.1700 1.0000
+        }
+        {
+          0.1700 0.5000
+        }
+        "part" combo 
+        {
+          0.1700 0.6600
+        }
+        {
+          0.1700 0.5000
+        }
+        "puckerer" combo 
+        {
+          0.1700 0.4500
+        }
+        {
+          0.1700 0.5000
+        }
+        "funneler" combo 
+        {
+          0.1700 1.0000
+        }
+        {
+          0.1700 0.5000
+        }
+        "bite" 
+        {
+          0.1700 0.7400
+        }
+        "jaw_drop" 
+        {
+          0.1700 1.0000
+        }
+      }
+    }
+    event flexanimation "angry"
+    {
+      time 1.385753 5.581155
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "lid_raiser" combo 
+        {
+          0.2020 0.7400
+        }
+        {
+          0.2020 0.5000
+        }
+        "lid_tightener" combo 
+        {
+          0.2020 1.0000
+        }
+        {
+          0.2020 0.5000
+        }
+        "lowerer" combo 
+        {
+          0.2020 1.0000
+        }
+        {
+          0.2020 0.5000
+        }
+        "wrinkler" 
+        {
+          0.2020 1.0000
+        }
+        "dilator" 
+        {
+          0.2020 1.0000
+        }
+        "part" combo 
+        {
+          0.2020 1.0000
+        }
+        {
+          0.2020 0.5000
+        }
+        "jaw_clencher" 
+        {
+          0.2020 0.5100
+        }
+      }
+    }
+  }
+  channel "walkto"
+  {
+    event moveto "walktoplayer"
+    {
+      time 1.494728 3.359671
+      param "!player"
+      distancetotarget 39.00
+    }
+  }
+  channel "gestures"
+  {
+    event gesture "pointup"
+    {
+      time 3.362750 5.612750
+      param "g_scan_ID"
+      absolutetags playback_time
+      {
+        "apex" 0.120400
+        "accent" 0.301000
+        "loop" 0.902999
+        "end" 0.948149
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.126984
+        "accent" 0.317460
+        "loop" 0.952381
+        "end" 1.031746
+      }
+      sequenceduration 2.133333
+    }
+    event gesture "noway"
+    {
+      time 0.106798 2.573464
+      param "urgenthandsweep"
+      absolutetags playback_time
+      {
+        "apex" 0.191781
+        "accent" 0.301370
+        "loop" 0.547945
+        "end" 0.616438
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.191781
+        "accent" 0.301370
+        "loop" 0.547945
+        "end" 0.616438
+      }
+      sequenceduration 2.466667
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "116"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

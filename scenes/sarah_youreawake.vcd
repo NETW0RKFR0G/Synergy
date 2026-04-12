@@ -1,0 +1,145 @@
+// Choreo version 1
+actor "rebel_sarah"
+{
+  channel "WAV"
+  {
+    event speak "1"
+    {
+      time 0.066667 2.108390
+      param "npc_sarah_youareawake"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Facing"
+  {
+    event face "1"
+    {
+      time 0.059259 2.077778
+      param "lookat_playerstart"
+    }
+  }
+  channel "Looking at"
+  {
+    event lookat "1"
+    {
+      time 0.066667 2.025926
+      param "lookat_playerstart"
+    }
+  }
+  channel "Movement"
+  {
+  }
+  channel "Gestures"
+  {
+    event gesture "1"
+    {
+      time 0.066667 1.700000
+      param "G_puncuate"
+      absolutetags playback_time
+      {
+        "apex" 0.250000
+        "accent" 0.416667
+        "loop" 0.562500
+        "end" 0.729167
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.250000
+        "accent" 0.416667
+        "loop" 0.562500
+        "end" 0.729167
+      }
+      sequenceduration 1.633333
+    }
+  }
+  channel "Expressions"
+  {
+    event flexanimation "yourawake"
+    {
+      time 0.148148 0.877777
+      param ""
+      flexanimations samples_use_time
+      {
+        "lid_raiser" combo 
+        {
+          0.2860 0.5300
+        }
+        {
+          0.2860 0.5000
+        }
+        "inner_raiser" combo 
+        {
+          0.2860 1.0000
+        }
+        {
+          0.2860 0.5000
+        }
+        "cheek_raiser" combo 
+        {
+          0.2860 0.7000
+        }
+        {
+          0.2860 0.5000
+        }
+        "wrinkler" 
+        {
+          0.2860 0.4100
+        }
+        "dilator" 
+        {
+          0.2860 0.8100
+        }
+      }
+    }
+    event flexanimation "yourawake2"
+    {
+      time 0.933334 2.025926
+      param ""
+      flexanimations samples_use_time
+      {
+        "inner_raiser" combo 
+        {
+          0.1940 1.0000
+        }
+        {
+          0.1940 0.5000
+        }
+        "corner_puller" combo 
+        {
+          0.1940 0.4100
+        }
+        {
+          0.1940 0.5000
+        }
+        "part" combo 
+        {
+          0.1940 0.6100
+        }
+        {
+          0.1940 0.5000
+        }
+        "bite" 
+        {
+          0.1940 0.1400
+        }
+        "smile" 
+        {
+          0.1940 0.2000
+        }
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "90"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off

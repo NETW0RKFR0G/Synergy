@@ -1,0 +1,9 @@
+"LightmappedGeneric"
+
+{ "$basetexture" "citizen2/ci_extinguisher" 
+  "$surfaceprop" "metal"
+  "$selfillum" 1
+  "$selfillumtint" "[0 0.75 0.25]"	
+	
+
+} 

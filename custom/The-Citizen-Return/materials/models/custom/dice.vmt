@@ -1,0 +1,17 @@
+"VertexlitGeneric"
+
+{ 
+	"$basetexture" "models/custom/dice"
+	"$bumpmap" "models/custom/dice_normal"
+        "$surfaceprop" "plastic"
+      
+
+	$detail detail\metal_detail_01
+	$detailscale 10
+	$detailblendfactor .95
+	$detailblendmode 0
+
+
+
+
+ } 

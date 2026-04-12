@@ -1,0 +1,5 @@
+"LightmappedGeneric"
+
+{ "$basetexture" "citizen2/ci_books1"
+  "$surfaceprop" "paper"
+ } 

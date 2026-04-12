@@ -1,0 +1,107 @@
+// Choreo version 1
+actor "monky"
+{
+  channel "Movement"
+  {
+    event moveto "Door"
+    {
+      time 6.487878 8.673939
+      param "doortarget"
+      param2 "Walk"
+      distancetotarget 48.00
+    }
+  }
+  channel "Looking"
+  {
+    event lookat "door"
+    {
+      time 0.030303 8.651515
+      param "doortarget2"
+    }
+  }
+  channel "Gesture"
+  {
+    event gesture "1"
+    {
+      time 0.040404 0.840404
+      param "swing"
+    }
+    event gesture "2"
+    {
+      time 0.858586 3.058586
+      param "throw1"
+      sequenceduration 2.200000
+    }
+    event gesture "3"
+    {
+      time 3.060606 4.393939
+      param "Kick_Door"
+      sequenceduration 1.333333
+    }
+    event gesture "4"
+    {
+      time 4.393939 5.427273
+      param "MeleeAttack01"
+    }
+    event gesture "5"
+    {
+      time 5.444444 6.411111
+      param "cower"
+      sequenceduration 0.966667
+    }
+  }
+  channel "Facing"
+  {
+    event face "door"
+    {
+      time 0.030303 8.671718
+      param "doortarget2"
+    }
+  }
+  channel "snd"
+  {
+    event speak "1"
+    {
+      time 0.262626 1.501787
+      param "Breakable.Concrete"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "2"
+    {
+      time 1.575758 2.890542
+      param "Breakable.Metal"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "3"
+    {
+      time 3.545455 5.343210
+      param "Breakable.Glass"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "4"
+    {
+      time 4.757576 5.762292
+      param "Breakable.Ceiling"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "66"
+  "ExpressionTool" "100"
+  "RampTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off

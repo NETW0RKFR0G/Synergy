@@ -1,0 +1,152 @@
+// Choreo version 1
+actor "mina"
+{
+  channel "expression"
+  {
+    event flexanimation "flex1"
+    {
+      time 0.040000 5.053333
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "lid_raiser" combo 
+        {
+          0.3040 1.0000
+        }
+        {
+          0.3040 0.5000
+        }
+        "lid_tightener" combo 
+        {
+          0.3040 1.0000
+        }
+        {
+          0.3040 0.5000
+        }
+        "outer_raiser" combo 
+        {
+          0.3040 1.0000
+        }
+        {
+          0.3040 0.5000
+        }
+        "lowerer" combo 
+        {
+          0.3040 0.4000
+        }
+        {
+          0.3040 0.5000
+        }
+        "corner_depressor" combo 
+        {
+          0.3040 0.7400
+        }
+        {
+          0.3040 0.5000
+        }
+        "part" combo 
+        {
+          0.3040 1.0000
+        }
+        {
+          0.3040 0.5000
+        }
+        "bite" 
+        {
+          0.3040 1.0000
+        }
+        "presser" 
+        {
+          0.3040 0.7500
+        }
+        "jaw_clencher" 
+        {
+          0.3040 1.0000
+        }
+      }
+    }
+  }
+  channel "gesture"
+  {
+    event gesture "head"
+    {
+      time 0.060000 1.693333
+      param "hg_headshake"
+      absolutetags playback_time
+      {
+        "apex" 0.208333
+        "loop" 0.270833
+        "extreme" 0.416667
+        "end" 0.625000
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.208333
+        "loop" 0.270833
+        "extreme" 0.416667
+        "end" 0.625000
+      }
+      sequenceduration 1.633333
+    }
+    event gesture "head"
+    {
+      time 1.540000 3.173333
+      param "hg_headshake"
+      absolutetags playback_time
+      {
+        "apex" 0.208333
+        "loop" 0.270833
+        "extreme" 0.416667
+        "end" 0.625000
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.208333
+        "loop" 0.270833
+        "extreme" 0.416667
+        "end" 0.625000
+      }
+      sequenceduration 1.633333
+    }
+    event gesture "head"
+    {
+      time 2.980000 4.613333
+      param "hg_headshake"
+      absolutetags playback_time
+      {
+        "apex" 0.208333
+        "loop" 0.270833
+        "extreme" 0.416667
+        "end" 0.625000
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.208333
+        "loop" 0.270833
+        "extreme" 0.416667
+        "end" 0.625000
+      }
+      sequenceduration 1.633333
+    }
+  }
+  channel "lookat"
+  {
+    event lookat "atplayer"
+    {
+      time 0.020000 5.060000
+      param "!player"
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "ExpressionTool" "100"
+  "RampTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

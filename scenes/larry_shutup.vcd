@@ -1,0 +1,73 @@
+// Choreo version 1
+actor "rebels_larry"
+{
+  channel "wav"
+  {
+    event speak "1"
+    {
+      time 0.060000 0.868345
+      param "npc_larry_shutup"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "look"
+  {
+    event lookat "1"
+    {
+      time 0.046667 0.820000
+      param "medic"
+    }
+  }
+  channel "face"
+  {
+    event face "1"
+    {
+      time 0.033334 0.820000
+      param "medic"
+    }
+  }
+  channel "move"
+  {
+  }
+  channel "gesture"
+  {
+  }
+  channel "expression"
+  {
+    event flexanimation "1"
+    {
+      time 0.033333 1.173333
+      param ""
+      flexanimations samples_use_time
+      {
+        "lid_tightener" combo 
+        {
+          0.2300 1.0000
+        }
+        {
+          0.2300 0.5000
+        }
+        "lowerer" combo 
+        {
+          0.2300 1.0000
+        }
+        {
+          0.2300 0.5000
+        }
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+}
+fps 60
+snap off

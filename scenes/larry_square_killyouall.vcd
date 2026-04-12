@@ -1,0 +1,101 @@
+// Choreo version 1
+actor "larry"
+{
+  channel "WAV"
+  {
+    event speak "wav"
+    {
+      time 0.133333 2.762993
+      param "npc_larry_square_killyouall"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "expressions"
+  {
+    event flexanimation "flex1"
+    {
+      time 0.013333 1.046666
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "blink" 
+        {
+          0.1620 1.0000
+        }
+        "head_updown" range 15.0 -15.0 
+        {
+          0.1620 0.8600
+        }
+      }
+    }
+    event flexanimation "flex2"
+    {
+      time 1.493333 2.933333
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "lid_raiser" combo 
+        {
+          0.2080 1.0000
+        }
+        {
+          0.2080 0.5000
+        }
+        "outer_raiser" combo 
+        {
+          0.2080 1.0000
+        }
+        {
+          0.2080 0.5000
+        }
+        "lowerer" combo 
+        {
+          0.2080 0.4000
+        }
+        {
+          0.2080 0.5000
+        }
+        "cheek_raiser" combo 
+        {
+          0.2080 0.9300
+        }
+        {
+          0.2080 0.5000
+        }
+        "wrinkler" 
+        {
+          0.2080 1.0000
+        }
+        "part" combo 
+        {
+          0.2080 1.0000
+        }
+        {
+          0.2080 0.5000
+        }
+        "head_rightleft" range 30.0 -30.0 
+        {
+          0.2080 0.1200
+        }
+        "eyes_rightleft" range 30.0 -30.0 
+        {
+          0.2080 0.0000
+        }
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "ExpressionTool" "100"
+  "RampTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

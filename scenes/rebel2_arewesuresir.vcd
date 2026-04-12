@@ -1,0 +1,51 @@
+// Choreo version 1
+actor "rebel_medic"
+{
+  channel "WAV"
+  {
+    event speak "1"
+    {
+      time 0.046667 1.253923
+      param "npc_rebel2_arewesuresir"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Facing"
+  {
+    event face "1"
+    {
+      time 0.146667 1.200000
+      param "rebel_argento"
+    }
+  }
+  channel "Looking at"
+  {
+    event lookat "1"
+    {
+      time 0.040000 1.220000
+      param "rebel_argento"
+    }
+  }
+  channel "Movement"
+  {
+  }
+  channel "Gestures"
+  {
+  }
+  channel "Expressions"
+  {
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off

@@ -1,0 +1,10 @@
+"sky"
+
+{ 
+  "$hdrbasetexture" "skybox/sky10_up" 	
+  "$basetexture" "skybox/sky10_up" 
+  "$nofog" "1"
+  "$ignorez" "1"
+ 
+
+} 

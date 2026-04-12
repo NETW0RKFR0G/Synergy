@@ -1,0 +1,106 @@
+// Choreo version 1
+actor "rebel_arthur"
+{
+  channel "wav"
+  {
+    event speak "npc_arthur_takethat"
+    {
+      time 0.190477 3.026803
+      param "npc_arthur_takethat"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "look"
+  {
+  }
+  channel "face"
+  {
+  }
+  channel "gesture"
+  {
+    event gesture "1"
+    {
+      time 0.177778 2.477778
+      param "g_fist_swing_across"
+      absolutetags playback_time
+      {
+        "apex" 0.176471
+        "accent" 0.250000
+        "loop" 0.441176
+        "end" 0.588235
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.176471
+        "accent" 0.250000
+        "loop" 0.441176
+        "end" 0.588235
+      }
+      sequenceduration 2.300000
+    }
+  }
+  channel "expression"
+  {
+    event flexanimation "2"
+    {
+      time 0.249207 2.701589
+      param ""
+      flexanimations samples_use_time
+      {
+        "lid_raiser" combo 
+        {
+          0.3460 1.0000
+        }
+        {
+          0.3460 0.5000
+        }
+        "inner_raiser" combo 
+        {
+          0.3460 1.0000
+        }
+        {
+          0.3460 0.5000
+        }
+        "outer_raiser" combo 
+        {
+          0.3460 1.0000
+        }
+        {
+          0.3460 0.5000
+        }
+        "stretcher" combo 
+        {
+          0.3460 1.0000
+        }
+        {
+          0.3460 0.5000
+        }
+        "smile" 
+        {
+          0.3460 0.2300
+        }
+        "head_tilt" range 15.0 -15.0 
+        {
+          0.3460 0.3700
+        }
+        "head_forwardback" range 0.2 -0.2 
+        {
+          0.3460 0.0000
+        }
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "30"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off

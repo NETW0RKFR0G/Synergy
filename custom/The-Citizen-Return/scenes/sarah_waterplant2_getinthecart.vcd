@@ -1,0 +1,106 @@
+// Choreo version 1
+actor "rebel_sarah"
+{
+  channel "wav"
+  {
+    event speak "npc_sarah_getinthecart"
+    {
+      time 0.046666 2.724398
+      param "npc_sarah_getinthecart"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "lookat"
+  {
+    event lookat "atplayer"
+    {
+      time 0.060000 3.006666
+      param "!player"
+    }
+  }
+  channel "moveto"
+  {
+  }
+  channel "face"
+  {
+  }
+  channel "gesture"
+  {
+    event gesture "gest"
+    {
+      time 0.213333 2.180000
+      param "g_plead_01"
+      absolutetags playback_time
+      {
+        "apex" 0.275862
+        "accent" 0.448276
+        "loop" 0.689655
+        "end" 0.862069
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.275862
+        "accent" 0.448276
+        "loop" 0.689655
+        "end" 0.862069
+      }
+    }
+  }
+  channel "flex"
+  {
+    event flexanimation "flex"
+    {
+      time 0.060000 2.973333
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "lid_raiser" combo 
+        {
+          0.0660 1.0000
+        }
+        {
+          0.0660 0.5000
+        }
+        "outer_raiser" combo 
+        {
+          0.0660 1.0000
+        }
+        {
+          0.0660 0.5000
+        }
+        "lowerer" combo 
+        {
+          0.0660 0.0000
+        }
+        {
+          0.0660 0.5000
+        }
+        "part" combo 
+        {
+          0.0660 1.0000
+        }
+        {
+          0.0660 0.5000
+        }
+        "head_tilt" range 15.0 -15.0 
+        {
+          0.0660 0.0000
+        }
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "ExpressionTool" "100"
+  "RampTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

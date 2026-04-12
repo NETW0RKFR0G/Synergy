@@ -1,0 +1,15 @@
+//How to install//
+ 
+*Certify your self that the soure sdk 2013 is installed and its setted in the beta upcoming beta state in the configuration tab
+
+*dowload the mod first
+
+*When dowloaded drag the files on the source mod that is at:(programs(86x)/Steam/Steam apps/Source mods) folder or if is  exe file istall the files there and if the exe file install messy files in the source mods folder just create a folder and drag the archives for it
+
+*When the mod is in the source folder open the patch zip archive and then drag the folders to the mod folder and the substitute the old files for the new ones
+
+*Restart the if its opened and click play when you find the mod if you have any problems whit this patch report it on my profile at:
+
+//Stay tunned for more patches or do it for your-self and watch out for weegees//
+
+ 

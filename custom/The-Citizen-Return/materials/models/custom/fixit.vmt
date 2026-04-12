@@ -1,0 +1,20 @@
+"VertexlitGeneric"
+
+{ 
+
+	"$basetexture" "models/custom/fixit"
+	"$surfaceprop" "Metal"
+        "$bumpmap" "models/custom\fixit_normal"
+	"$envmap" "env_cubemap"
+	"$normalmapalphaenvmapmask" 1
+
+  
+ 	"$detail" "detail\metal_detail_01"
+	"$detailscale" 5
+	"$detailblendfactor" .85
+	"$detailblendmode" 0
+
+
+
+
+ } 

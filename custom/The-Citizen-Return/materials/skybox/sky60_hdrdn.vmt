@@ -1,0 +1,13 @@
+"sky"
+
+{ 
+
+  //"$hdrbasetexture" "skybox/sky60_hdrdn" 
+  //"$hdrcompressedtexture" "skybox/sky60dn" 
+  "$nofog" "1"
+  "$ignorez" "1"
+ 
+  "$basetexture "skybox/sky60dn"
+
+
+} 

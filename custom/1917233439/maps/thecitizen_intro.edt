@@ -1,0 +1,89 @@
+"thecitizen_intro"
+{
+	entity
+	{
+		delete {classname "logic_auto" origin "-4503.16 135 -171"}
+		edit {classname "game_text" values {spawnflags "1"} }
+		edit {classname "func_areaportal" values {targetname "disabledPortal" StartOpen "1"} }
+		edit {classname "point_viewcontrol" values {spawnflags "140"} }
+		create {classname "point_viewcontrol" origin "-4480 -20 -100"
+			values
+			{
+				targetname "syn_viewcontrol"
+				spawnflags "140"
+				angles "0 0 0"
+			}
+		}
+		create {classname "hud_timer"
+			values
+			{
+				targetname "syn_hudtimer"
+				TimerText "STARTING IN..."
+				TimerType "1"
+				OnTimer "syn_viewcontrol,Disable,,0,-1"
+				OnTimer "cam1,Enable,,0,1"
+				OnTimer "text1_CFPresents,Display,,0,-1"
+				OnTimer "titlebong,PlaySound,,0,-1"
+				OnTimer "BUZZ,PlaySound,,0,-1"
+				OnTimer "text2_MBProduction,Display,,5,-1"
+				OnTimer "titlebong,PlaySound,,5,-1"
+				OnTimer "text_Mappedby,Display,,9.8,-1"
+				OnTimer "text_ChrisFox1,Display,,9.8,-1"
+				OnTimer "text_and,Display,,9.8,-1"
+				OnTimer "text_Kasperg1,Display,,9.8,-1"
+				OnTimer "titlebong,PlaySound,,9.8,-1"
+				OnTimer "text_Conceptby,Display,,14,-1"
+				OnTimer "text_Kasperg2,Display,,14,-1"
+				OnTimer "titlebong,PlaySound,,14,-1"
+				OnTimer "text_storyby,Display,,19,-1"
+				OnTimer "text_ChrisFox1,Display,,19,-1"
+				OnTimer "text_and,Display,,19,-1"
+				OnTimer "text_Kasperg1,Display,,19,-1"
+				OnTimer "titlebong,PlaySound,,19,-1"
+				OnTimer "text_actors,Display,,24,-1"
+				OnTimer "text_Rick,Display,,24,-1"
+				OnTimer "text_anneFox,Display,,24,-1"
+				OnTimer "text_Baz,Display,,24,-1"
+				OnTimer "titlebong,PlaySound,,24,-1"
+				OnTimer "text_jason,Display,,28,-1"
+				OnTimer "text_ChrisFox3,Display,,28,-1"
+				OnTimer "text_jM,Display,,28,-1"
+				OnTimer "titlebong,PlaySound,,28,-1"
+				OnTimer "text_Musicby,Display,,33,-1"
+				OnTimer "text_BDR,,33,-1"
+				OnTimer "text_Maylia,Display,,33,-1"
+				OnTimer "titlebong,PlaySound,,33,-1"
+				OnTimer "light1,TurnOn,,38,-1"
+				OnTimer "explosion,PlaySound,,38,-1"
+				OnTimer "intromusic,PlaySound,,38,-1"
+				OnTimer "light1,TurnOff,,43,-1"
+				OnTimer "text_ordinarycitizen,Display,,45,-1"
+				OnTimer "text_lifedifficult,Display,,48,-1"
+				OnTimer "text_joinresist,Display,,51,-1"
+				OnTimer "text_untiltoday,Display,,54,-1"
+				OnTimer "floorkill,Kill,,60,-1"
+				OnTimer "cam1,Disable,,60,-1"
+				OnTimer "floorkill2,Kill,,60,-1"
+				OnTimer "syn_teleport_01,Teleport,,60,-1"
+				OnTimer "cop_breakdoor,BeginSequence,,62,-1"
+			}
+		}
+		create {classname "trigger_once" origin "-4482 -20 -40"
+			values
+			{
+				spawnflags "1"
+				model "*6"
+				OnTrigger "syn_viewcontrol,Enable,,0,-1"
+				OnTrigger "syn_hudtimer,Start,45,1,-1"
+			}
+		}
+		create {classname "point_teleport" origin "-1241 37.83 -92"
+			values
+			{
+				targetname "syn_teleport_01"
+				target "player"
+				angles "0 130.5 0"
+			}
+		}
+	}
+}

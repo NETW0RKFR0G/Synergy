@@ -1,0 +1,17 @@
+"VertexlitGeneric"
+
+{ "$basetexture" "models/custom/book1_c"
+
+
+       "$surfaceprop" "metal"
+
+
+	$detail detail\noise_detail_01
+	$detailscale 5
+	$detailblendfactor .55
+	$detailblendmode 0
+
+
+
+
+ } 

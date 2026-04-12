@@ -1,0 +1,13 @@
+"LightmappedGeneric"
+
+{ "$basetexture" "citizen2/ci_northernpetrol" 
+  "$surfaceprop" "metal"
+ 
+	$detail detail\metal_detail_01
+	$detailscale 5
+	$detailblendfactor 0.75
+	$detailblendmode 0
+
+
+
+} 

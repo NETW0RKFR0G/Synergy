@@ -1,0 +1,7 @@
+"UnlitGeneric"
+
+{ "$basetexture" "citizen2/ci_fluorescentnaranja" 
+  "$surfaceprop" "computer"
+
+
+} 

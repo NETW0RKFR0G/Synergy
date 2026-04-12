@@ -1,0 +1,121 @@
+// Choreo version 1
+actor "rebel_sarah"
+{
+  channel "WAV"
+  {
+    event speak "1"
+    {
+      time 0.096296 6.064187
+      param "npc_sarah_utilitybelt"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Facing"
+  {
+    event face "1"
+    {
+      time 0.081482 5.996296
+      param "!player"
+    }
+  }
+  channel "Looking at"
+  {
+    event lookat "1"
+    {
+      time 4.125926 6.033334
+      param "!player"
+    }
+    event lookat "1"
+    {
+      time 0.096296 2.425926
+      param "!player"
+    }
+    event lookat "2"
+    {
+      time 2.525926 4.048148
+      param "looktarget_shelves"
+    }
+  }
+  channel "Movement"
+  {
+  }
+  channel "Gestures"
+  {
+    event gesture "1"
+    {
+      time 3.333334 5.966667
+      param "holdhands"
+      absolutetags playback_time
+      {
+        "apex" 0.269231
+        "accent" 0.294872
+        "loop" 0.307692
+        "end" 0.730769
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.269231
+        "accent" 0.294872
+        "loop" 0.307692
+        "end" 0.730769
+      }
+      sequenceduration 2.633333
+    }
+    event gesture "2"
+    {
+      time 2.162963 3.796296
+      param "g_right_openhand"
+      absolutetags playback_time
+      {
+        "apex" 0.291667
+        "accent" 0.416667
+        "loop" 0.520833
+        "end" 0.625000
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.291667
+        "accent" 0.416667
+        "loop" 0.520833
+        "end" 0.625000
+      }
+      sequenceduration 1.633333
+    }
+    event gesture "1"
+    {
+      time 0.140741 2.774075
+      param "holdhands"
+      absolutetags playback_time
+      {
+        "apex" 0.269231
+        "accent" 0.294872
+        "loop" 0.307692
+        "end" 0.730769
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.269231
+        "accent" 0.294872
+        "loop" 0.307692
+        "end" 0.730769
+      }
+      sequenceduration 2.633333
+    }
+  }
+  channel "Expressions"
+  {
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "90"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off

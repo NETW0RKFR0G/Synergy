@@ -1,0 +1,79 @@
+"thecitizen_part1"
+{
+	entity
+	{
+		create {classname "info_spawn_manager" values {targetname "syn_spawn_manager"} }
+		delete {targetname "resupply_start_master"}
+		delete {targetname "global_newgame_spawner_ar2"}
+		delete {targetname "global_newgame_spawner_smg"}
+		delete {targetname "global_newgame_spawner_crossbow"}
+		delete {targetname "global_newgame_spawner_shotgun"}
+		delete {targetname "global_newgame_spawner_crowbar"}
+		delete {targetname "global_newgame_spawner_pistol"}
+		delete {targetname "global_newgame_spawner_suit"}
+		delete {targetname "global_newgame_spawner_physcannon"}
+		delete {targetname "global_newgame_template"}
+		delete {targetname "global_newgame_entmaker"}
+		delete {targetname "global_newgame_spawner_jeep"}
+		create {classname "logic_auto"
+			values {spawnflags "1"
+				OnMapSpawn "npc_turret_floor,AddOutput,OnTipped !self:SelfDestruct::0:-1,0,-1"
+				OnMapSpawn "susan_goodluck,AddOutput,OnCompletion door_anoclose:Unlock::0:-1,0,-1"
+				OnMapSpawn "susan_goodluck,AddOutput,OnCompletion door_anoclose:Open::0.5:-1,0,-1"
+				OnMapSpawn "susan_goodluck,AddOutput,OnCompletion roomdoor2noclose:Unlock::0:-1,0,-1"
+				OnMapSpawn "susan_goodluck,AddOutput,OnCompletion roomdoor2noclose:Open::2:-1,0,-1"
+				OnMapSpawn "trigger_opendoor_chica1,AddOutput,OnStartTouch roomdoor2noclose:Unlock::0:-1,0,-1"
+				OnMapSpawn "trigger_opendoor_chica1,AddOutput,OnStartTouch roomdoor2noclose:Open::0.1:-1,0,-1"
+				OnMapSpawn "syn_trig1,AddOutput,OnTrigger syn_teleport_01:Teleport::0:-1,0,-1"
+				OnMapSpawn "garage_denied_access,AddOutput,OnStartTouch text_garage_noaccessov:Display::0:-1,0,-1"
+				OnMapSpawn "garage_denied_access,AddOutput,OnStartTouch text_garage_noaccess2ov:Display::6:-1,0,-1"
+				OnMapSpawn "garage_denied_access,AddOutput,OnStartTouch text_garage_noaccess3ov:Display::13:-1,0,-1"} }
+		edit {targetname "text_garage_noaccess" values {targetname "text_garage_noaccessov" holdtime "3.0"} }
+		edit {targetname "text_garage_noaccess2" values {targetname "text_garage_noaccess2ov" holdtime "4.0"} }
+		edit {targetname "text_garage_noaccess3" values {targetname "text_garage_noaccess3ov" holdtime "4.0"} }
+		edit {classname "game_text" values {spawnflags "1"} }
+		edit {classname "func_areaportal" values {targetname "disabledPortal" StartOpen "1"} }
+		edit {classname "point_viewcontrol" values {spawnflags "140"} }
+		edit {targetname "door_a" values {targetname "door_anoclose"} }
+		edit {targetname "roomdoor2" values {targetname "roomdoor2noclose"} }
+		create {classname "info_player_equip" values {targetname "cpickup" weapon_crowbar "1" startdisabled "1"} }
+		edit {classname "weapon_crowbar" values {OnPlayerPickUp "cpickup,Enable,,0,-1" OnPlayerPickUp "cpickup,EquipAllPlayers,,0.1,-1"} }
+		create {classname "ambient_generic" values {message "bully_getmytv.wav"} }
+		create {classname "ambient_generic" values {message "bully_itsbroken.wav"} }
+		create {classname "ambient_generic" values {message "bully_stoptouching.wav"} }
+		create {classname "ambient_generic" values {message "susan_followme.wav"} }
+		create {classname "ambient_generic" values {message "susan_woundup.wav"} }
+		create {classname "ambient_generic" values {message "susan_medkits.wav"} }
+		create {classname "ambient_generic" values {message "susan_goseeArgento.wav"} }
+		create {classname "ambient_generic" values {message "susan_goodluck.wav"} }
+		create {classname "ambient_generic" values {message "argento_heyman.wav"} }
+		create {classname "ambient_generic" values {message "argento_seethatscanner.wav"} }
+		create {classname "ambient_generic" values {message "argento_keepeyesonit.wav"} }
+		create {classname "ambient_generic" values {message "argento_ohyeah.wav"} }
+		create {classname "ambient_generic" values {message "argento_lookingforwork.wav"} }
+		create {classname "ambient_generic" values {message "argento_cantrustyou.wav"} }
+		create {classname "ambient_generic" values {message "argento_goseeLarry.wav"} }
+		create {classname "ambient_generic" values {message "argento_underlockdown.wav"} }
+		create {classname "ambient_generic" values {message "argento_getoutthatway.wav"} }
+		create {classname "ambient_generic" values {message "argento_losethecops.wav"} }
+		create {classname "ambient_generic" values {message "argento_bettergetgoing.wav"} }
+		create {classname "ambient_generic" values {message "larry_whosthere.wav"} }
+		create {classname "ambient_generic" values {message "larry_welcometolarrys.wav"} }
+		create {classname "ambient_generic" values {message "larry_supposeargentosentyou.wav"} }
+		create {classname "ambient_generic" values {message "larry_carcomment2a.wav"} }
+		create {classname "ambient_generic" values {message "larry_notmuchicando.wav"} }
+		create {classname "ambient_generic" values {message "larry_hole.wav"} }
+		create {classname "ambient_generic" values {message "larry_becarefuldownthere.wav"} }
+		create {classname "ambient_generic" values {message "gaol_speech.wav"} }
+		create {classname "ambient_generic" values {message "gaol_learnlesson.wav"} }
+		edit {classname "trigger_once" origin "2073 318.5 -218" values {targetname "syn_trig1"} }
+		create {classname "point_teleport" origin "2085 310 -260"
+			values
+			{
+				targetname "syn_teleport_01"
+				target "player"
+				angles "0 -115 0"
+			}
+		}
+	}
+}

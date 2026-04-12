@@ -1,0 +1,60 @@
+// Choreo version 1
+actor "anne"
+{
+  channel "wav"
+  {
+    event speak "1"
+    {
+      time 0.060000 1.505442
+      param "npc_anne_fewseconds"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Eyes"
+  {
+    event flexanimation "eyes"
+    {
+      time 0.100000 1.320000
+      param ""
+      flexanimations samples_use_time
+      {
+        "blink" 
+        {
+          0.1840 0.2600
+        }
+        "outer_raiser" combo 
+        {
+          0.1840 1.0000
+        }
+        {
+          0.1840 0.5000
+        }
+        "dilator" 
+        {
+          0.1840 1.0000
+        }
+        "chin_raiser" 
+        {
+          0.1840 0.3300
+        }
+        "head_tilt" range 15.0 -15.0 
+        {
+          0.1840 1.0000
+        }
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off

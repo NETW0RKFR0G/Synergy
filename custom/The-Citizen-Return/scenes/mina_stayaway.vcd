@@ -1,0 +1,77 @@
+// Choreo version 1
+actor "mina"
+{
+  channel "WAV"
+  {
+    event speak "stayaway"
+    {
+      time 0.240000 1.885488
+      param "npc_mina_stayaway"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "expression"
+  {
+    event flexanimation "1"
+    {
+      time 0.360000 2.693333
+      param ""
+      flexanimations samples_use_time
+      {
+        "lid_raiser" combo 
+        {
+          0.1500 0.8100
+        }
+        {
+          0.1500 0.5000
+        }
+        "lowerer" combo 
+        {
+          0.1500 1.0000
+        }
+        {
+          0.1500 0.5000
+        }
+        "part" combo 
+        {
+          0.1500 1.0000
+        }
+        {
+          0.1500 0.5000
+        }
+        "puckerer" combo 
+        {
+          0.1500 1.0000
+        }
+        {
+          0.1500 0.5000
+        }
+        "jaw_clencher" 
+        {
+          0.1500 1.0000
+        }
+      }
+    }
+  }
+  channel "lookat"
+  {
+    event lookat "atplayer"
+    {
+      time 0.073333 1.380000
+      param "!player"
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "SceneRampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "RampTool" "100"
+}
+fps 60
+snap off

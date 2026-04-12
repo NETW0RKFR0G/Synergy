@@ -1,0 +1,88 @@
+// Choreo version 1
+event loop "loop_pose"
+{
+  time 7.284011 -1.000000
+  param "3.666667"
+  loopcount "-1"
+}
+actor "larry"
+{
+  channel "wav"
+  {
+    event speak "wav1"
+    {
+      time 0.096297 1.512714
+      param "npc_larry_postsquare_keepyourhead"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "flexanim"
+  {
+    event flexanimation "flexanim1"
+    {
+      time 0.022222 1.559259
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "lid_raiser" combo 
+        {
+          0.1480 1.0000
+        }
+        {
+          0.1480 0.5000
+        }
+        "lid_tightener" combo 
+        {
+          0.1480 0.8500
+        }
+        {
+          0.1480 0.5000
+        }
+        "outer_raiser" combo 
+        {
+          0.1480 1.0000
+        }
+        {
+          0.1480 0.5000
+        }
+      }
+    }
+  }
+  channel "lookat"
+  {
+    event lookat "atplayer"
+    {
+      time 0.029629 1.559259
+      param "!player"
+    }
+  }
+  channel "pose"
+  {
+    event gesture "crouch"
+    {
+      time 0.051852 3.666667
+      param "CoverLow_R"
+      sequenceduration 6.000000
+    }
+    event gesture "crouch"
+    {
+      time 3.666667 7.284011
+      param "CoverLow_R"
+      sequenceduration 6.000000
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "82"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

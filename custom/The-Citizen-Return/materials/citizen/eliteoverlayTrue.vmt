@@ -1,0 +1,15 @@
+"Refract"
+{
+
+        "$bluramount" "1"
+        "$translucent" 1
+ 	"$refractamount" ".100"
+	"$REFRACTTINTTEXTURE" "citizen\eliteoverlay"
+	"$scale" "[1 1]"
+    	"$normalmap" "citizen\eliteoverlay_normal"
+    	"$dudvmap" "citizen\eliteoverlay_dudv"
+
+	
+}
+
+

@@ -1,0 +1,14 @@
+"soundscapes_manifest"
+{
+	"file"		"scripts/soundscapes_synergy.txt"
+	"file"		"scripts/soundscapes.txt"
+	"file"		"scripts/soundscapes_canals.txt"
+	"file"		"scripts/soundscapes_citadel.txt"
+	"file"		"scripts/soundscapes_coast.txt"
+	"file"		"scripts/soundscapes_elab.txt"
+	"file"		"scripts/soundscapes_klab.txt"
+	"file"		"scripts/soundscapes_prison.txt"
+	"file"		"scripts/soundscapes_streetwar.txt"
+	"file"		"scripts/soundscapes_town.txt"
+	"file"		"scripts/soundscapes_trainyard.txt"
+}

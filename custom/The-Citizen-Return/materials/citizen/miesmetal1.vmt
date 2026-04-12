@@ -1,0 +1,12 @@
+"LightmappedGeneric"
+
+{ "$basetexture" "citizen/miesmetal1" 
+  "$surfaceprop" "metal"
+  "$envmap" "env_cubemap"
+  "$envmapmask" "citizen/miesmetal1mask"
+
+	$detail detail\metal_detail_01
+	$detailscale 4
+	$detailblendfactor .75
+	$detailblendmode 0
+} 

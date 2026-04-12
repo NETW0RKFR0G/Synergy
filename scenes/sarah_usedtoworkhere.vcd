@@ -1,0 +1,107 @@
+// Choreo version 1
+actor "rebel_sarah"
+{
+  channel "WAV"
+  {
+    event speak "1"
+    {
+      time 0.096297 2.934664
+      param "npc_sarah_usedtoworkhere"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Facing"
+  {
+    event face "1"
+    {
+      time 0.059260 2.892593
+      param "!player"
+    }
+  }
+  channel "Looking at"
+  {
+    event lookat "1"
+    {
+      time 0.103704 2.803704
+      param "!player"
+    }
+  }
+  channel "Movement"
+  {
+  }
+  channel "Gestures"
+  {
+    event gesture "1"
+    {
+      time 2.051852 3.351852
+      param "hg_nod_left"
+      absolutetags playback_time
+      {
+        "apex" 0.236842
+        "extreme" 0.473684
+        "loop" 0.568947
+        "end" 0.578947
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.236842
+        "extreme" 0.473684
+        "loop" 0.578947
+        "end" 0.578947
+      }
+    }
+  }
+  channel "Expressions"
+  {
+    event flexanimation "flex1"
+    {
+      time 2.044444 3.314815
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "lid_tightener" combo 
+        {
+          0.0440 1.0000
+        }
+        {
+          0.0440 0.5000
+        }
+        "outer_raiser" combo 
+        {
+          0.0440 0.5600
+        }
+        {
+          0.0440 0.5000
+        }
+        "corner_puller" combo 
+        {
+          0.0440 0.1100
+        }
+        {
+          0.0440 0.5000
+        }
+        "part" combo 
+        {
+          0.0440 0.7000
+        }
+        {
+          0.0440 0.5000
+        }
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "90"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

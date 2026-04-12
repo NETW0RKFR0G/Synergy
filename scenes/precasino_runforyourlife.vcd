@@ -1,0 +1,38 @@
+// Choreo version 1
+actor "rebel_2"
+{
+  channel "wav"
+  {
+    event speak "1"
+    {
+      time 0.093333 1.627596
+      param "npc_precasino_runforyourlife"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "move"
+  {
+  }
+  channel "gest"
+  {
+    event lookat "atplayer"
+    {
+      time 0.060000 1.786667
+      param "!player"
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

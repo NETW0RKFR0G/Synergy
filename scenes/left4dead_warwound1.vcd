@@ -1,0 +1,148 @@
+// Choreo version 1
+actor "left4dead"
+{
+  channel "lookat"
+  {
+    event lookat "lookatplayer"
+    {
+      time -0.626667 -0.126667
+      param "!player"
+    }
+    event lookat "lookatplayer"
+    {
+      time 0.004167 5.114521
+      param "!player"
+    }
+  }
+  channel "wav"
+  {
+    event speak "left4dead_warwound1"
+    {
+      time 0.003156 5.077600
+      param "npc_left4dead_warwound1"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "eyes"
+  {
+    event flexanimation "eyes1"
+    {
+      time -0.555556 -0.055556
+      param ""
+    }
+    event flexanimation "eyes1"
+    {
+      time 0.848485 3.191920
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "inner_raiser" combo 
+        {
+          0.1863 1.0000
+        }
+        {
+          0.1863 0.5000
+        }
+        "bite" 
+        {
+          0.1863 0.0000
+        }
+        "mouth_drop" combo 
+        {
+          0.1863 0.0000
+        }
+        {
+          0.1863 0.5000
+        }
+        "smile" 
+        {
+          0.1863 0.3900
+        }
+        "head_updown" range 15.0 -15.0 
+        {
+          0.1863 0.3000
+        }
+      }
+    }
+    event flexanimation "eyes2"
+    {
+      time 3.348485 4.505051
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "lid_raiser" combo 
+        {
+          0.2422 0.4300
+        }
+        {
+          0.2422 0.5000
+        }
+        "lid_tightener" combo 
+        {
+          0.2422 0.9900
+        }
+        {
+          0.2422 0.5000
+        }
+        "outer_raiser" combo 
+        {
+          0.2422 1.0000
+        }
+        {
+          0.2422 0.5000
+        }
+        "lowerer" combo 
+        {
+          0.2422 0.0900
+        }
+        {
+          0.2422 0.5000
+        }
+        "wrinkler" 
+        {
+          0.2422 0.7300
+        }
+        "dilator" 
+        {
+          0.2422 0.9900
+        }
+        "upper_raiser" combo 
+        {
+          0.2422 0.2000
+        }
+        {
+          0.2422 0.5000
+        }
+        "puckerer" combo 
+        {
+          0.2422 0.6800
+        }
+        {
+          0.2422 0.5000
+        }
+        "smile" 
+        {
+          0.2422 0.1600
+        }
+        "head_tilt" range 15.0 -15.0 
+        {
+          0.2422 0.5400
+        }
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "132"
+  "ExpressionTool" "98"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+  "GestureTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

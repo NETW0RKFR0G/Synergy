@@ -1,0 +1,105 @@
+// Choreo version 1
+actor "larry"
+{
+  channel "wav"
+  {
+    event speak "wav1"
+    {
+      time 0.029240 4.488197
+      param "npc_larry_postsquare_okifthisisthestation"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "wav2"
+    {
+      time 4.859259 7.123205
+      param "npc_larry_postsquare_butletsnottake"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "faceactor"
+  {
+    event face "faceplayer"
+    {
+      time 4.192594 7.107409
+      param "!player"
+    }
+  }
+  channel "lookatactor"
+  {
+    event lookat "atplayer"
+    {
+      time 4.385186 7.240741
+      param "!player"
+    }
+  }
+  channel "flexanim"
+  {
+    event flexanimation "anim1"
+    {
+      time 2.733334 4.196297
+      param ""
+      flexanimations samples_use_time
+      {
+        "inner_raiser" combo 
+        {
+          0.1880 0.6400
+        }
+        {
+          0.1880 0.5000
+        }
+        "cheek_raiser" combo 
+        {
+          0.1880 1.0000
+        }
+        {
+          0.1880 0.5000
+        }
+        "part" combo 
+        {
+          0.1880 1.0000
+        }
+        {
+          0.1880 0.5000
+        }
+      }
+    }
+  }
+  channel "gesture"
+  {
+    event gesture "gest1"
+    {
+      time 3.037037 4.670370
+      param "G_puncuate"
+      absolutetags playback_time
+      {
+        "apex" 0.250000
+        "accent" 0.416667
+        "loop" 0.562500
+        "end" 0.729167
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.250000
+        "accent" 0.416667
+        "loop" 0.562500
+        "end" 0.729167
+      }
+      sequenceduration 1.633333
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "90"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off

@@ -1,0 +1,13 @@
+"LightmappedGeneric"
+{
+ "$basetexture" "Nature/cliffface001a"
+ "$surfaceprop" "dirt"
+ "$basetexturetransform" "center 0 0 scale 2 2 rotate 0 translate 0 0"
+
+
+	$detail detail\rock_detail_01
+  	$detailscale 3
+  	$detailblendfactor 0.75
+  	$detailblendmode 0
+
+}

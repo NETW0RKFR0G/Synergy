@@ -1,0 +1,9 @@
+"LightmappedGeneric"
+
+{ "$basetexture" "citizen2/ci_d4" 
+  "$surfaceprop" "tile"
+  "$bumpmap" "citizen2/ci_d4normal"
+
+
+
+} 

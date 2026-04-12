@@ -1,0 +1,10 @@
+"LightmappedGeneric"
+
+{ "$basetexture" "citizen2/ci_redtiles2" 
+  "$surfaceprop" "tile"
+  "$bumpmap" "citizen2/ci_redtiles2_normal"
+  "$envmap" "env_cubemap"
+  "$envmapmask" "citizen2/ci_redtilesgreyscale"
+
+
+} 

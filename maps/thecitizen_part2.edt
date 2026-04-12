@@ -1,0 +1,60 @@
+"thecitizen_part2"
+{
+	entity
+	{
+		create {classname "info_spawn_manager" values {targetname "syn_spawn_manager"} }
+		delete {targetname "resupply_start_master"}
+		delete {targetname "global_newgame_spawner_ar2"}
+		delete {targetname "global_newgame_spawner_smg"}
+		delete {targetname "global_newgame_spawner_crossbow"}
+		delete {targetname "global_newgame_spawner_shotgun"}
+		delete {targetname "global_newgame_spawner_crowbar"}
+		delete {targetname "global_newgame_spawner_pistol"}
+		delete {targetname "global_newgame_spawner_suit"}
+		delete {targetname "global_newgame_spawner_physcannon"}
+		delete {targetname "global_newgame_template"}
+		delete {targetname "global_newgame_entmaker"}
+		delete {targetname "global_newgame_spawner_jeep"}
+		create {classname "logic_auto"
+			values {spawnflags "1"
+				OnMapSpawn "npc_turret_floor,AddOutput,OnTipped !self:SelfDestruct::0:-1,0,-1"
+				OnMapSpawn "close_234_aftersuit_trigger,AddOutput,OnTrigger syn_teleport_01:Teleport::0:-1,0,-1"
+				OnMapSpawn "doorpuzzle_counter,AddOutput,OnHitMax door_135noclose:Open::0:-1,0,-1"
+				OnMapSpawn "syn_trig1,AddOutput,OnTrigger door_24noclose:Open::0:-1,0,-1"
+				OnMapSpawn "doorpuzzle2_counter,AddOutput,OnHitMin door_15noclose:Open::0:-1,0,-1"} }
+		edit {classname "game_text" values {spawnflags "1"} }
+		edit {classname "func_areaportal" values {targetname "disabledPortal" StartOpen "1"} }
+		edit {classname "point_viewcontrol" values {spawnflags "140"} }
+		create {classname "info_player_equip"
+			values
+			{
+				targetname "syn_equipment_base"
+				startdisabled "0"
+				weapon_crowbar "1"
+			}
+		}
+		create {classname "info_player_equip" values {targetname "spickup" startdisabled "1" item_suit "1"} }
+		edit
+		{
+			classname "item_suit"
+			values
+			{
+				OnPlayerTouch "spickup,Enable,,0,-1"
+				OnPlayerTouch "spickup,EquipAllPlayers,,0.1,-1"
+			}
+		}
+		create {classname "point_teleport" origin "1630 -3010 -40"
+			values
+			{
+				targetname "syn_teleport_01"
+				target "player"
+				angles "0 -90 0"
+			}
+		}
+		edit {targetname "door_135" values {targetname "door_135noclose"} }
+		edit {targetname "door_24" values {targetname "door_24noclose"} }
+		edit {targetname "door_15" values {targetname "door_15noclose"} }
+		edit {classname "trigger_once" origin "258.5 -2425 -8" values {targetname "syn_trig1"} }
+		edit {classname "weapon_crowbar" values {OnPlayerPickUp "syn_equipment_base,EquipAllPlayers,,0.1,-1"} }
+	}
+}

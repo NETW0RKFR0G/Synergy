@@ -1,0 +1,49 @@
+// Choreo version 1
+actor "s1"
+{
+  channel "WAV"
+  {
+    event speak "1"
+    {
+      time 0.040000 2.063039
+      param "npc_rescuer_manthisguyisheavy"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+}
+
+actor "s4"
+{
+  channel "WAV"
+  {
+    event speak "2"
+    {
+      time 2.166667 7.623356
+      param "npc_medic_sureis"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Look at"
+  {
+    event lookat "1"
+    {
+      time 4.546666 7.420000
+      param "camera4"
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off

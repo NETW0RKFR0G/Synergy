@@ -1,0 +1,187 @@
+// Choreo version 1
+actor "larry"
+{
+  channel "WAV"
+  {
+    event speak "wav"
+    {
+      time 0.133333 5.125623
+      param "npc_larry_square_gonnaliveforever"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "gestures"
+  {
+    event gesture "gest2"
+    {
+      time 0.033334 2.666667
+      param "G_righthandroll"
+      absolutetags playback_time
+      {
+        "apex" 0.282051
+        "accent" 0.397436
+        "loop" 0.512821
+        "end" 0.641026
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.282051
+        "accent" 0.397436
+        "loop" 0.512821
+        "end" 0.641026
+      }
+      sequenceduration 2.633333
+    }
+    event gesture "gest3"
+    {
+      time 3.266667 5.566666
+      param "g_fist_swing_across"
+      absolutetags playback_time
+      {
+        "apex" 0.176471
+        "accent" 0.250000
+        "loop" 0.441176
+        "end" 0.588235
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.176471
+        "accent" 0.250000
+        "loop" 0.441176
+        "end" 0.588235
+      }
+      sequenceduration 2.300000
+    }
+  }
+  channel "expression"
+  {
+    event flexanimation "flex1"
+    {
+      time 0.046667 1.553333
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "lid_tightener" combo 
+        {
+          0.1940 1.0000
+        }
+        {
+          0.1940 0.5000
+        }
+        "cheek_raiser" combo 
+        {
+          0.1940 1.0000
+        }
+        {
+          0.1940 0.5000
+        }
+        "upper_raiser" combo 
+        {
+          0.1940 1.0000
+        }
+        {
+          0.1940 0.5000
+        }
+        "part" combo 
+        {
+          0.1940 1.0000
+        }
+        {
+          0.1940 0.5000
+        }
+        "head_updown" range 15.0 -15.0 
+        {
+          0.1940 1.0000
+        }
+      }
+    }
+    event flexanimation "flex2"
+    {
+      time 1.613333 4.106667
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "lid_closer" combo 
+        {
+          0.1520 1.0000
+        }
+        {
+          0.1520 0.5000
+        }
+        "part" combo 
+        {
+          0.1520 1.0000
+        }
+        {
+          0.1520 0.5000
+        }
+        "head_updown" range 15.0 -15.0 
+        {
+          0.1520 0.0000
+        }
+      }
+    }
+    event flexanimation "flex3"
+    {
+      time 4.126666 5.139999
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "lid_raiser" combo 
+        {
+          0.1420 1.0000
+        }
+        {
+          0.1420 0.5000
+        }
+        "lid_tightener" combo 
+        {
+          0.1420 0.0000
+        }
+        {
+          0.1420 0.5000
+        }
+        "outer_raiser" combo 
+        {
+          0.1420 1.0000
+        }
+        {
+          0.1420 0.5000
+        }
+        "part" combo 
+        {
+          0.1420 1.0000
+        }
+        {
+          0.1420 0.5000
+        }
+        "jaw_clencher" 
+        {
+          0.1420 1.0000
+        }
+        "smile" 
+        {
+          0.1420 0.4400
+        }
+        "head_forwardback" range 0.2 -0.2 
+        {
+          0.1420 0.0000
+        }
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "ExpressionTool" "100"
+  "RampTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

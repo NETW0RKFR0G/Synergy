@@ -1,0 +1,322 @@
+// Choreo version 1
+actor "rescuer_1"
+{
+  channel "WAV"
+  {
+    event speak "1"
+    {
+      time 0.289293 11.806391
+      param "npc_rescuer_speech"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Look at"
+  {
+    event lookat "1"
+    {
+      time 8.471033 12.285904
+      param "lookat_camera_player"
+    }
+    event lookat "2"
+    {
+      time 7.204655 8.313351
+      param "lookat_away"
+    }
+    event lookat "1"
+    {
+      time 0.282626 7.001757
+      param "lookat_camera_player"
+    }
+  }
+  channel "Face"
+  {
+    event face "1"
+    {
+      time 0.282626 12.275643
+      param "lookat_camera_player"
+    }
+  }
+  channel "Gesture"
+  {
+    event gesture "1"
+    {
+      time 1.480017 3.780017
+      param "G_righthandpoint"
+      absolutetags playback_time
+      {
+        "apex" 0.205882
+        "accent" 0.441176
+        "loop" 0.470588
+        "end" 0.676471
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.205882
+        "accent" 0.441176
+        "loop" 0.470588
+        "end" 0.676471
+      }
+      sequenceduration 2.300000
+    }
+    event gesture "2"
+    {
+      time 10.161177 11.794510
+      param "hg_headshake"
+      absolutetags playback_time
+      {
+        "apex" 0.208333
+        "loop" 0.270833
+        "extreme" 0.416667
+        "end" 0.625000
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.208333
+        "loop" 0.270833
+        "extreme" 0.416667
+        "end" 0.625000
+      }
+      sequenceduration 1.633333
+    }
+    event gesture "3"
+    {
+      time 9.132191 10.432192
+      param "hg_nod_left"
+      absolutetags playback_time
+      {
+        "apex" 0.236842
+        "extreme" 0.473684
+        "loop" 0.568947
+        "end" 0.578947
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.236842
+        "extreme" 0.473684
+        "loop" 0.578947
+        "end" 0.578947
+      }
+      sequenceduration 1.300000
+    }
+    event gesture "2"
+    {
+      time 4.161176 5.794510
+      param "hg_headshake"
+      absolutetags playback_time
+      {
+        "apex" 0.208333
+        "loop" 0.270833
+        "extreme" 0.416667
+        "end" 0.625000
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.208333
+        "loop" 0.270833
+        "extreme" 0.416667
+        "end" 0.625000
+      }
+      sequenceduration 1.633333
+    }
+    event gesture "5"
+    {
+      time 9.987263 12.287264
+      param "G_righthandpoint"
+      absolutetags playback_time
+      {
+        "apex" 0.205882
+        "accent" 0.441176
+        "loop" 0.470588
+        "end" 0.676471
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.205882
+        "accent" 0.441176
+        "loop" 0.470588
+        "end" 0.676471
+      }
+      sequenceduration 2.300000
+    }
+    event gesture "standcrouchtoidle"
+    {
+      time 0.000000 0.300000
+      param "standtocrouchhide"
+      sequenceduration 0.600000
+    }
+    event gesture "crouchidlehide"
+    {
+      time 0.290000 11.363636
+      param "crouchidlehide"
+      sequenceduration 4.000000
+    }
+    event gesture "crouchhidetostand "
+    {
+      time 11.235238 12.257574
+      param "Crouch_to_stand"
+      sequenceduration 0.700000
+    }
+  }
+  channel "Expression"
+  {
+    event flexanimation "1"
+    {
+      time 0.523495 2.327843
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "lid_raiser" combo 
+        {
+          1.3011 1.0000
+        }
+        {
+          1.3011 0.5000
+        }
+        "inner_raiser" combo 
+        {
+          1.3011 1.0000
+        }
+        {
+          1.3011 0.5000
+        }
+        "outer_raiser" combo 
+        {
+          1.3011 1.0000
+        }
+        {
+          1.3011 0.5000
+        }
+        "lowerer" combo 
+        {
+          1.3011 1.0000
+        }
+        {
+          1.3011 0.5000
+        }
+        "chin_raiser" 
+        {
+          1.3011 0.5700
+        }
+        "head_tilt" range 15.0 -15.0 
+        {
+          1.3011 0.7700
+        }
+      }
+    }
+    event flexanimation "2"
+    {
+      time 2.509003 3.965525
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "outer_raiser" combo 
+        {
+          0.3540 1.0000
+        }
+        {
+          0.3540 0.5000
+        }
+      }
+    }
+    event flexanimation "3"
+    {
+      time 4.030742 6.646684
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "lid_raiser" combo 
+        {
+          0.2840 1.0000
+        }
+        {
+          0.2840 0.5000
+        }
+        "lid_tightener" combo 
+        {
+          0.2840 1.0000
+        }
+        {
+          0.2840 0.5000
+        }
+        "inner_raiser" combo 
+        {
+          0.2840 1.0000
+        }
+        {
+          0.2840 0.5000
+        }
+        "outer_raiser" combo 
+        {
+          0.2840 1.0000
+        }
+        {
+          0.2840 0.5000
+        }
+        "corner_depressor" combo 
+        {
+          0.2840 1.0000
+        }
+        {
+          0.2840 0.5000
+        }
+      }
+    }
+    event flexanimation "3"
+    {
+      time 9.132191 11.748133
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "lid_raiser" combo 
+        {
+          0.2840 1.0000
+        }
+        {
+          0.2840 0.5000
+        }
+        "lid_tightener" combo 
+        {
+          0.2840 1.0000
+        }
+        {
+          0.2840 0.5000
+        }
+        "inner_raiser" combo 
+        {
+          0.2840 1.0000
+        }
+        {
+          0.2840 0.5000
+        }
+        "outer_raiser" combo 
+        {
+          0.2840 1.0000
+        }
+        {
+          0.2840 0.5000
+        }
+        "corner_depressor" combo 
+        {
+          0.2840 1.0000
+        }
+        {
+          0.2840 0.5000
+        }
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "SceneRampTool" "100"
+  "GestureTool" "100"
+  "ExpressionTool" "100"
+  "RampTool" "100"
+  "CChoreoView" "66"
+}
+fps 60
+snap off
+ignorePhonemes off

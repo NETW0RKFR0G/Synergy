@@ -1,0 +1,17 @@
+"VertexlitGeneric"
+
+{ 
+
+  "$basetexture" "models/custom/genesis" 
+  "$surfaceprop" "plastic"
+  "$bumpmap" "models/custom/genesis_normal"
+  "$envmap" "env_cubemap"
+  "$normalmapalphaenvmapmask" 1
+
+	$detail detail\metal_detail_01
+	$detailscale 4
+	$detailblendfactor .45
+	$detailblendmode 0
+
+
+} 

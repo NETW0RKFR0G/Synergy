@@ -1,0 +1,124 @@
+// Choreo version 1
+actor "rebel_larry"
+{
+  channel "wav"
+  {
+    event speak "1"
+    {
+      time 0.060000 4.373106
+      param "npc_larry_sickandtired2"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "look"
+  {
+  }
+  channel "face"
+  {
+  }
+  channel "move"
+  {
+  }
+  channel "gesture"
+  {
+    event gesture "1"
+    {
+      time 1.700000 3.333333
+      param "hg_headshake"
+      absolutetags playback_time
+      {
+        "apex" 0.208333
+        "loop" 0.270833
+        "extreme" 0.416667
+        "end" 0.625000
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.208333
+        "loop" 0.270833
+        "extreme" 0.416667
+        "end" 0.625000
+      }
+      sequenceduration 1.633333
+    }
+    event gesture "1"
+    {
+      time 0.046666 1.680000
+      param "hg_headshake"
+      absolutetags playback_time
+      {
+        "apex" 0.208333
+        "loop" 0.270833
+        "extreme" 0.416667
+        "end" 0.625000
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.208333
+        "loop" 0.270833
+        "extreme" 0.416667
+        "end" 0.625000
+      }
+      sequenceduration 1.633333
+    }
+    event gesture "1"
+    {
+      time 3.340000 4.973333
+      param "hg_headshake"
+      absolutetags playback_time
+      {
+        "apex" 0.208333
+        "loop" 0.270833
+        "extreme" 0.416667
+        "end" 0.625000
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.208333
+        "loop" 0.270833
+        "extreme" 0.416667
+        "end" 0.625000
+      }
+      sequenceduration 1.633333
+    }
+  }
+  channel "expression"
+  {
+    event flexanimation "1"
+    {
+      time 0.033334 4.933334
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "corner_depressor" combo 
+        {
+          0.3320 1.0000
+        }
+        {
+          0.3320 0.5000
+        }
+        "funneler" combo 
+        {
+          0.3320 0.6400
+        }
+        {
+          0.3320 0.5000
+        }
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

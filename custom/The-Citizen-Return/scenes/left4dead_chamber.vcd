@@ -1,0 +1,138 @@
+// Choreo version 1
+actor "chamber_guy"
+{
+  channel "lookat"
+  {
+    event lookat "lookatplayer"
+    {
+      time -0.626667 -0.126667
+      param "!player"
+    }
+    event lookat "lookatplayer"
+    {
+      time 6.552730 7.709635
+      param "!player"
+    }
+    event lookat "target"
+    {
+      time 0.030769 6.503541
+      param "target_chamberguy"
+    }
+  }
+  channel "wav"
+  {
+    event speak "left4dead_chamber"
+    {
+      time 0.005128 7.704833
+      param "npc_left4dead_chamber"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "eyes"
+  {
+    event flexanimation "eyes1"
+    {
+      time -0.555556 -0.055556
+      param ""
+    }
+    event flexanimation "face1"
+    {
+      time -0.071795 6.648717
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "blink" 
+        {
+          0.2632 0.6300
+        }
+        "outer_raiser" combo 
+        {
+          0.2632 1.0000
+        }
+        {
+          0.2632 0.5000
+        }
+        "dilator" 
+        {
+          0.2632 1.0000
+        }
+        "jaw_drop" 
+        {
+          0.2632 0.7100
+        }
+        "head_updown" range 15.0 -15.0 
+        {
+          0.2632 1.0000
+        }
+      }
+    }
+    event flexanimation "wideeyes"
+    {
+      time 6.723810 8.814288
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "lid_raiser" combo 
+        {
+          0.2600 1.0000
+        }
+        {
+          0.2600 0.5000
+        }
+        "lid_tightener" combo 
+        {
+          0.2600 0.0000
+        }
+        {
+          0.2600 0.5000
+        }
+        "outer_raiser" combo 
+        {
+          0.2600 1.0000
+        }
+        {
+          0.2600 0.5000
+        }
+        "part" combo 
+        {
+          0.2600 1.0000
+        }
+        {
+          0.2600 0.5000
+        }
+        "jaw_drop" 
+        {
+          0.2600 0.4800
+        }
+      }
+    }
+  }
+  channel "gesture"
+  {
+  }
+  channel "face"
+  {
+    event face "target"
+    {
+      time 0.016260 7.638212
+      param "target_chamberguy"
+    }
+  }
+  channel "move"
+  {
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "70"
+  "ExpressionTool" "100"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+  "GestureTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

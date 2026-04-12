@@ -1,0 +1,85 @@
+"edict_blacklist"
+{
+	// Entities listed here will be forced server-side only, and thus not consume an edict
+	// This may have unforeseen consequences for some entities so end-to-end testing is important
+	// Use "print_edicts" command to see what takes up the most edicts on a map
+	// Entity names support regex
+
+	"ai\w+",							// UNTESTED: All AI related stuff should be fine server-only
+	"ambient_generic",					// Tested: Sounds and music still seem to play
+	"assault_assaultpoint",				// UNTESTED
+	"assault_rallypoint",				// UNTESTED
+	"env_shooter",						// UNTESTED
+	"info_npc_spawn_destination",		// UNTESTED: expecting to work since it's just a location
+	"info_player_coop",					// Tested
+	"info_player_equip",				// Tested: Player still gets weapons
+	"info_player_start",				// Tested
+	"info_snipertarget",				// UNTESTED: expecting to work since it's just a location
+	"info_target_command_point",		// UNTESTED: expecting to work since it's just a location
+	"info_target_gunshipcrash",			// UNTESTED: expecting to work since it's just a location
+	"info_teleport_destination",		// UNTESTED: expecting to work since it's just a location
+	//"instanced_scripted_scene",		// UNTESTED: Seems to be used to network facial animations in tf2, lets keep it to be safe
+	"item_dynamic_resupply",			// UNTESTED
+	"logic_auto",						// Tested; probably should be server-side only like all other logic_ entities anyway
+	"npc_antlion_template_maker",		// UNTESTED
+	"npc_enemyfinder",					// UNTESTED
+	"npc_heli_avoidspher",				// UNTESTED
+	"npc_heli_avoidsphere",				// UNTESTED
+	"npc_helicoptersensor",				// UNTESTED
+	"npc_maker",						// UNTESTED
+	"npc_template_maker",				// UNTESTED
+	"path_corner",						// UNTESTED: expecting to work since it's just a location
+	"path_track",						// May be needed for some old-style effects???
+	"phys_ragdollmagnet",				// UNTESTED
+	"point_antlion_repellant",			// Confirmed thumpers still work (TODO double check that it actually creates this ent)
+	"point_teleport",					// UNTESTED: expecting to work since it's just a location
+	"scripted_sequence",				// Tests confirmed scenes still seem to work as they did
+
+	// The following are entities that failed testing in some way as a server-side only entity.
+	// Keeping these here for documentation purposes.
+
+	// TODO: triggers don't detect touches work without edict
+	//"trigger_once",
+	//"trigger_multiple",
+	//"trigger_hurt", // may need this for fish in water???
+	//"trigger_changelevel",
+	//"trigger_transition",
+	//"trigger_teleport",
+
+	// Needs to be edict, otherwise facial expressions (other than mouth) will not work for clients
+	//"logic_choreographed_scene",
+
+	// This breaks ep1_c17_06 (likely other cases too), barney won't go on the train (probably failed EHANDLE lookup)
+	// Which sucks because there can be 100+ of these
+	// If we can get this working, we need to check for EFL_FORCE_CHECK_TRANSMIT
+	// since then it needs to be an edict
+	//"info_target",
+
+	// Vehicles do not collide with it without edict
+	//"func_vehicleclip",
+
+	// No soundscapes play on client
+	//"env_soundscape",
+	
+	// Dismounts don't work
+	//"info_ladder_dismount",
+
+	// Crash
+	//"phys_bone_follower",
+
+	// No ropes, as expected; edictguard watches these
+	//"keyframe_rope",
+	//"move_rope",
+
+	// ep2_outland_01, seems player stays stuck in rubble after vort tries to attack it
+	//"npc_bullseye",
+
+	// transitions no workie
+	//"info_landmark",
+
+	// npc_scanner spotlights always point to world origin due to entity lookup failing in beam_shared.cpp::GetAbsEndPos()
+	//"spotlight_end",
+
+	// Broke d1_trainstation_06 crowbar spawn
+	//"env_entity_maker",
+}

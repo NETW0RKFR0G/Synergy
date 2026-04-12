@@ -1,0 +1,28 @@
+"LightmappedGeneric"
+{
+	
+
+	"$basetexture" "citizen2\ci_ripple_low"
+	"$translucent" 1
+	"$surfaceprop" "water"
+	"$envmap" "env_cubemap"
+	"$envmapmask" "citizen2\ci_ripple_low_specular"
+	
+"Proxies"
+{
+"TextureScroll"
+{
+"texturescrollvar" "$basetexturetransform"
+"texturescrollvar" "$envmapmasktransform"
+"texturescrollrate" 0.25
+"texturescrollangle" -90.00
+}
+}
+}
+
+
+
+
+	
+
+

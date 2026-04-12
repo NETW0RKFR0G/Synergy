@@ -1,0 +1,35 @@
+// Choreo version 1
+actor "rebel_larry"
+{
+  channel "wav"
+  {
+    event speak "nottoofar"
+    {
+      time 0.084103 1.471495
+      param "npc_larry_nottoofarnow"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "lookat"
+  {
+    event lookat "atplayer"
+    {
+      time 0.064102 1.525641
+      param "!player"
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "156"
+  "ExpressionTool" "100"
+  "SceneRampTool" "100"
+  "GestureTool" "100"
+  "RampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

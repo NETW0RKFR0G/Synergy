@@ -1,0 +1,32 @@
+// Choreo version 1
+actor "larry"
+{
+  channel "facetowards"
+  {
+    event face "facefenetre"
+    {
+      time 0.200000 1.080000
+      param "fenetre"
+    }
+  }
+  channel "lookat"
+  {
+    event lookat "lookatfenetre"
+    {
+      time -0.020000 1.146667
+      param "fenetre"
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

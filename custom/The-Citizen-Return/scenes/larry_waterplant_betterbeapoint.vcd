@@ -1,0 +1,48 @@
+// Choreo version 1
+actor "larry"
+{
+  channel "wav"
+  {
+    event speak "npc_larry_betterbeapoint"
+    {
+      time 0.320000 2.328526
+      param "npc_larry_betterbeapoint"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "lookat"
+  {
+    event lookat "atlever"
+    {
+      time 1.053333 2.486667
+      param "dynamic_lever"
+    }
+    event lookat "atplayer"
+    {
+      time 0.020000 0.953333
+      param "!player"
+    }
+  }
+  channel "face"
+  {
+    event face "facelever"
+    {
+      time 0.033333 2.433333
+      param "dynamic_lever"
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "SceneRampTool" "100"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

@@ -1,0 +1,18 @@
+"thecitizen_part16"
+{
+	entity
+	{
+		delete {classname "point_clientcommand"}
+		create {classname "info_spawn_manager" values {targetname "syn_spawn_manager"} }
+		create {classname "logic_auto"
+			values {spawnflags "1"
+				OnMapSpawn "npc_turret_floor,AddOutput,OnTipped !self:SelfDestruct::0:-1,0,-1"
+				OnMapSpawn "credits,AddOutput,OnCreditsDone tocit2:Command:changelevel cit2 sp_intro:0:-1,0,-1"
+				OnMapSpawn "credits,AddOutput,OnCreditsDone endgame:EndGame::5:-1,0,-1"} }
+		edit {classname "game_text" values {spawnflags "1"} }
+		edit {classname "func_areaportal" values {targetname "disabledPortal" StartOpen "1"} }
+		edit {classname "point_viewcontrol" values {spawnflags "140"} }
+		create {classname "point_servercommand" values {targetname "tocit2"} }
+		create {classname "game_end" values {targetname "endgame"} }
+	}
+}

@@ -1,0 +1,51 @@
+// Choreo version 1
+actor "larry"
+{
+  channel "wav"
+  {
+    event speak "wav1"
+    {
+      time 0.096297 2.650492
+      param "npc_larry_postsquare_waitsomethingsfishy"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "flex"
+  {
+    event flexanimation "flex1"
+    {
+      time 0.422222 3.181481
+      param ""
+      flexanimations samples_use_time
+      {
+        "lid_tightener" combo 
+        {
+          0.1260 1.0000
+        }
+        {
+          0.1260 0.5000
+        }
+        "cheek_raiser" combo 
+        {
+          0.1260 1.0000
+        }
+        {
+          0.1260 0.5000
+        }
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "90"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off

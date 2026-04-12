@@ -1,0 +1,128 @@
+// Choreo version 1
+actor "left4dead"
+{
+  channel "lookat"
+  {
+    event lookat "lookatplayer"
+    {
+      time -0.626667 -0.126667
+      param "!player"
+    }
+    event lookat "lookatplayer"
+    {
+      time 0.004167 4.493309
+      param "!player"
+    }
+  }
+  channel "wav"
+  {
+    event speak "left4dead_warwound2"
+    {
+      time -0.001895 4.382822
+      param "npc_left4dead_warwound2"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "eyes"
+  {
+    event flexanimation "eyes1"
+    {
+      time -0.555556 -0.055556
+      param ""
+    }
+    event flexanimation "eyes1"
+    {
+      time 0.520202 2.863637
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "inner_raiser" combo 
+        {
+          0.1863 1.0000
+        }
+        {
+          0.1863 0.5000
+        }
+        "bite" 
+        {
+          0.1863 0.0000
+        }
+        "mouth_drop" combo 
+        {
+          0.1863 0.0000
+        }
+        {
+          0.1863 0.5000
+        }
+        "smile" 
+        {
+          0.1863 0.3900
+        }
+        "head_updown" range 15.0 -15.0 
+        {
+          0.1863 0.3000
+        }
+      }
+    }
+    event flexanimation "CanLiveWithThat"
+    {
+      time 2.994950 4.252525
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "outer_raiser" combo 
+        {
+          0.2347 1.0000
+        }
+        {
+          0.2347 0.5000
+        }
+        "dilator" 
+        {
+          0.2347 1.0000
+        }
+        "upper_raiser" combo 
+        {
+          0.2347 0.8100
+        }
+        {
+          0.2347 0.5000
+        }
+        "jaw_drop" 
+        {
+          0.2347 0.5100
+        }
+        "smile" 
+        {
+          0.2347 0.5100
+        }
+        "head_updown" range 15.0 -15.0 
+        {
+          0.2347 0.6700
+        }
+        "eyes_updown" range 30.0 -30.0 
+        {
+          0.2347 0.9900
+        }
+        "eyes_rightleft" range 30.0 -30.0 
+        {
+          0.2347 1.0000
+        }
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "132"
+  "ExpressionTool" "98"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+  "GestureTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

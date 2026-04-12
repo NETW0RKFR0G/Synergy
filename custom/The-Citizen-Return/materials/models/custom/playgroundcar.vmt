@@ -1,0 +1,17 @@
+"VertexlitGeneric"
+
+{ 
+
+  "$basetexture" "models/custom/playgroundcar" 
+  "$surfaceprop" "metal"
+  "$bumpmap" "models/custom/playgroundcar_normal"
+  "$envmap" "env_cubemap"
+  "$normalmapalphaenvmapmask" 1
+
+	$detail detail\metal_detail_01
+	$detailtexturetransform "center 0.5 0.5 scale 6 4 rotate 0 translate 0 0"
+	$detailblendfactor .95
+	$detailblendmode 0
+
+
+} 

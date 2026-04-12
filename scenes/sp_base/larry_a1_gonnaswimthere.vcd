@@ -1,0 +1,35 @@
+// Choreo version 1
+actor "rebel_larry"
+{
+  channel "WAV"
+  {
+    event speak "larry_a1_gonnaswimthere"
+    {
+      time 0.100000 2.091111
+      param "npc_larry_a1_gonnaswimthere"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "lookat"
+  {
+    event lookat "atplayer"
+    {
+      time 0.040000 2.160000
+      param "!player"
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

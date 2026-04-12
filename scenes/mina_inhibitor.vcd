@@ -1,0 +1,130 @@
+// Choreo version 1
+actor "mina"
+{
+  channel "WAV"
+  {
+    event speak "inhibitor"
+    {
+      time 0.166667 3.897551
+      param "npc_mina_inhibitor"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Face_towards"
+  {
+    event face "faceplayer"
+    {
+      time 0.033333 3.446667
+      param "!player"
+    }
+  }
+  channel "Look_at"
+  {
+    event lookat "lookatplayer"
+    {
+      time 0.040000 1.420000
+      param "!player"
+    }
+    event lookat "lookatlarry"
+    {
+      time 1.440000 3.440001
+      param "larry2"
+    }
+  }
+  channel "Gestures"
+  {
+    event gesture "1"
+    {
+      time 0.233333 2.366667
+      param "g_arrest_clench"
+      absolutetags playback_time
+      {
+        "apex" 0.349206
+        "accent" 0.571428
+        "loop" 0.587301
+        "end" 0.714286
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.103448
+        "accent" 0.275862
+        "loop" 0.431034
+        "end" 0.517241
+      }
+      sequenceduration 1.966667
+    }
+    event gesture "2"
+    {
+      time 2.433333 4.066666
+      param "hg_puncuate_down"
+      absolutetags playback_time
+      {
+        "apex" 0.333333
+        "extreme" 0.541667
+        "loop" 0.552500
+        "end" 0.562500
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.333333
+        "extreme" 0.541667
+        "loop" 0.562500
+        "end" 0.562500
+      }
+      sequenceduration 1.633333
+    }
+  }
+  channel "Face_animations"
+  {
+    event flexanimation "1"
+    {
+      time 0.173333 1.526666
+      param ""
+      flexanimations samples_use_time
+      {
+        "inner_raiser" combo 
+        {
+          0.1780 1.0000
+        }
+        {
+          0.1780 0.5000
+        }
+        "upper_raiser" combo 
+        {
+          0.1780 0.7000
+        }
+        {
+          0.1780 0.5000
+        }
+        "part" combo 
+        {
+          0.1780 0.7600
+        }
+        {
+          0.1780 0.5000
+        }
+        "smile" 
+        {
+          0.1780 0.2600
+        }
+        "head_tilt" range 15.0 -15.0 
+        {
+          0.1780 0.0000
+        }
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off

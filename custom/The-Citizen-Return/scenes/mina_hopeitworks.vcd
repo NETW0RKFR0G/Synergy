@@ -1,0 +1,359 @@
+// Choreo version 1
+actor "mina"
+{
+  channel "WAV"
+  {
+    event speak "hopeitworks"
+    {
+      time 0.093333 5.737913
+      param "npc_mina_hopeitworks"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "goodluck"
+    {
+      time 6.720000 7.581882
+      param "npc_mina_goodluck"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Face_towards"
+  {
+    event face "faceplayer"
+    {
+      time 0.033333 5.726667
+      param "!player"
+    }
+  }
+  channel "Look_at"
+  {
+    event lookat "lookatplayer"
+    {
+      time 0.040000 2.066667
+      param "!player"
+    }
+    event lookat "lookatlarry"
+    {
+      time 4.620000 7.940001
+      param "larry2"
+    }
+    event lookat "lookat_airboat"
+    {
+      time 2.180000 4.573333
+      param "airboat"
+    }
+  }
+  channel "Gestures"
+  {
+    event gesture "1"
+    {
+      time 0.033333 2.166667
+      param "g_arrest_clench"
+      absolutetags playback_time
+      {
+        "apex" 0.349206
+        "accent" 0.571428
+        "loop" 0.587301
+        "end" 0.714286
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.103448
+        "accent" 0.275862
+        "loop" 0.431034
+        "end" 0.517241
+      }
+      sequenceduration 1.966667
+    }
+    event gesture "2"
+    {
+      time 2.433333 8.393333
+      param "hg_puncuate_down"
+      absolutetags playback_time
+      {
+        "apex" 0.091350
+        "extreme" 0.134153
+        "loop" 0.144153
+        "end" 0.154153
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.333333
+        "extreme" 0.541667
+        "loop" 0.562500
+        "end" 0.562500
+      }
+      sequenceduration 1.633333
+    }
+  }
+  channel "Face_animations"
+  {
+    event flexanimation "1"
+    {
+      time 0.173333 1.526666
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "inner_raiser" combo 
+        {
+          0.1780 1.0000
+        }
+        {
+          0.1780 0.5000
+        }
+        "upper_raiser" combo 
+        {
+          0.1780 0.7000
+        }
+        {
+          0.1780 0.5000
+        }
+        "part" combo 
+        {
+          0.1780 0.7600
+        }
+        {
+          0.1780 0.5000
+        }
+        "smile" 
+        {
+          0.1780 0.2600
+        }
+        "head_tilt" range 15.0 -15.0 
+        {
+          0.1780 0.0000
+        }
+      }
+    }
+    event flexanimation "excuse"
+    {
+      time 4.399999 5.959999
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "lid_tightener" combo 
+        {
+          0.2340 1.0000
+        }
+        {
+          0.2340 0.5000
+        }
+        "inner_raiser" combo 
+        {
+          0.2340 1.0000
+        }
+        {
+          0.2340 0.5000
+        }
+        "cheek_raiser" combo 
+        {
+          0.2340 0.5100
+        }
+        {
+          0.2340 0.5000
+        }
+        "wrinkler" 
+        {
+          0.2340 1.0000
+        }
+        "corner_depressor" combo 
+        {
+          0.2340 0.4400
+        }
+        {
+          0.2340 0.5000
+        }
+        "chin_raiser" 
+        {
+          0.2340 0.5900
+        }
+        "tightener" 
+        {
+          0.2340 0.0000
+        }
+        "smile" 
+        {
+          0.2340 0.3800
+        }
+        "head_updown" range 15.0 -15.0 
+        {
+          0.2340 0.2200
+        }
+        "head_tilt" range 15.0 -15.0 
+        {
+          0.2340 0.0200
+        }
+      }
+    }
+    event flexanimation "smile"
+    {
+      time 6.640000 7.853333
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "lid_closer" combo 
+        {
+          0.1500 0.0500
+        }
+        {
+          0.1500 0.5000
+        }
+        "inner_raiser" combo 
+        {
+          0.1500 1.0000
+        }
+        {
+          0.1500 0.5000
+        }
+        "smile" 
+        {
+          0.1500 0.3800
+        }
+      }
+    }
+  }
+  channel "moveto"
+  {
+    event moveto "totarget"
+    {
+      time 1.066666 8.333333
+      param "larry2"
+      param2 "Walk"
+      distancetotarget 70.00
+    }
+  }
+}
+
+actor "larry2"
+{
+  channel "move"
+  {
+    event moveto "tomina"
+    {
+      time 0.073333 4.393334
+      param "mina"
+      param2 "Walk"
+      distancetotarget 70.00
+    }
+  }
+  channel "lookat"
+  {
+    event lookat "at player"
+    {
+      time 4.433332 6.539999
+      param "!player"
+    }
+    event lookat "at mina"
+    {
+      time 0.073333 4.373333
+      param "mina"
+    }
+    event lookat "at mina2"
+    {
+      time 6.579999 8.426666
+      param "mina"
+    }
+  }
+  channel "flex"
+  {
+    event flexanimation "worried"
+    {
+      time 4.446666 7.973333
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "lid_raiser" combo 
+        {
+          0.1680 1.0000
+        }
+        {
+          0.1680 0.5000
+        }
+        "lid_tightener" combo 
+        {
+          0.1680 0.8000
+        }
+        {
+          0.1680 0.5000
+        }
+        "inner_raiser" combo 
+        {
+          0.1680 1.0000
+        }
+        {
+          0.1680 0.5000
+        }
+        "cheek_raiser" combo 
+        {
+          0.1680 0.4800
+        }
+        {
+          0.1680 0.5000
+        }
+        "corner_depressor" combo 
+        {
+          0.1680 1.0000
+        }
+        {
+          0.1680 0.5000
+        }
+        "part" combo 
+        {
+          0.1680 0.0000
+        }
+        {
+          0.1680 0.5000
+        }
+        "bite" 
+        {
+          0.1680 1.0000
+        }
+        "jaw_drop" 
+        {
+          0.1680 1.0000
+        }
+        "head_updown" range 15.0 -15.0 
+        {
+          0.1680 0.7000
+        }
+        "eyes_updown" range 30.0 -30.0 
+        {
+          0.1680 1.0000
+        }
+      }
+    }
+  }
+  channel "facetowards"
+  {
+    event face "face mina"
+    {
+      time 0.080000 4.346666
+      param "mina"
+    }
+    event face "face mina"
+    {
+      time 6.613334 8.440000
+      param "mina"
+    }
+    event face "face player"
+    {
+      time 4.433334 6.560001
+      param "!player"
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

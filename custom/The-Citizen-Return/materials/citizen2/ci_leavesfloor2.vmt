@@ -1,0 +1,17 @@
+// envmaptint_fix
+"LightmappedGeneric"
+{
+	"$basetexture" "citizen2/ci_leavesfloor2"
+	"$surfaceprop" "concrete"
+	"$envmaptint" "[ .5 .5 .5 ]"
+
+	"LightmappedGeneric_DX9"
+ 	{
+		"$bumpmap" "citizen2/ci_leavesfloor2_normal"
+		"$envmap" "env_cubemap"
+		"$envmapsaturation" 1
+		"$envmapcontrast" 1
+		"$envmaptint" "[ .6 .6 .6 ]"
+		"$normalmapalphaenvmapmask" 1
+	}
+}

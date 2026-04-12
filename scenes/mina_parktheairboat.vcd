@@ -1,0 +1,99 @@
+// Choreo version 1
+actor "mina"
+{
+  channel "WAV"
+  {
+    event speak "parktheairboat"
+    {
+      time 0.306667 2.157506
+      param "npc_mina_parktheairboat"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Lookat"
+  {
+    event lookat "lookatplayer"
+    {
+      time 0.006667 0.566667
+      param "!player"
+    }
+  }
+  channel "Faceat"
+  {
+  }
+  channel "Gesture"
+  {
+    event gesture "pointing"
+    {
+      time 0.193333 1.993333
+      param "g_right_openhand"
+      absolutetags playback_time
+      {
+        "apex" 0.226415
+        "accent" 0.377358
+        "loop" 0.490566
+        "extreme" 0.541667
+        "end" 0.566038
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.291667
+        "accent" 0.416667
+        "loop" 0.520833
+        "extreme" 0.541667
+        "end" 0.625000
+      }
+      sequenceduration 1.633333
+    }
+  }
+  channel "Faceanim"
+  {
+    event flexanimation "faceanim"
+    {
+      time 0.600000 1.546667
+      param ""
+      flexanimations samples_use_time
+      {
+        "inner_raiser" combo 
+        {
+          0.3913 1.0000
+        }
+        {
+          0.3913 0.5000
+        }
+        "corner_puller" combo 
+        {
+          0.3913 0.2400
+        }
+        {
+          0.3913 0.5000
+        }
+        "head_tilt" range 15.0 -15.0 
+        {
+          0.3913 0.0000
+        }
+        "eyes_updown" range 30.0 -30.0 
+        {
+          0.3913 0.0000
+        }
+        "eyes_rightleft" range 30.0 -30.0 
+        {
+          0.3913 1.0000
+        }
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "ExpressionTool" "100"
+  "SceneRampTool" "100"
+  "GestureTool" "100"
+  "RampTool" "100"
+}
+fps 60
+snap off

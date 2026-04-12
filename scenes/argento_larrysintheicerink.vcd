@@ -1,0 +1,101 @@
+// Choreo version 1
+actor "rebel_argento"
+{
+  channel "WAV"
+  {
+    event speak "1"
+    {
+      time 0.066666 5.924081
+      param "npc_argento_larrysintheicerink"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Facing"
+  {
+  }
+  channel "Looking at"
+  {
+    event lookat "1"
+    {
+      time 0.100000 0.886666
+      param "rebel_soldier"
+    }
+    event lookat "2"
+    {
+      time 1.186667 2.100000
+      param "rebel_sarah"
+    }
+    event lookat "3"
+    {
+      time 2.320000 3.546666
+      param "!player"
+    }
+    event gesture "4"
+    {
+      time 3.780000 4.753333
+      param "rebel_medic"
+    }
+  }
+  channel "Movement"
+  {
+  }
+  channel "Gestures"
+  {
+    event gesture "1"
+    {
+      time 3.740000 5.773334
+      param "G_medurgent_mid"
+      absolutetags playback_time
+      {
+        "apex" 0.150000
+        "accent" 0.250000
+        "loop" 0.400000
+        "end" 0.533333
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.150000
+        "accent" 0.250000
+        "loop" 0.400000
+        "end" 0.533333
+      }
+      sequenceduration 2.033333
+    }
+    event gesture "2"
+    {
+      time 0.193334 4.286667
+      param "g_Pacer_ArmsCrossed"
+      absolutetags playback_time
+      {
+        "apex" 0.067473
+        "accent" 0.288274
+        "loop" 0.785016
+        "end" 0.910423
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.285714
+        "accent" 0.464286
+        "loop" 0.642857
+        "end" 0.892857
+      }
+      sequenceduration 0.966667
+    }
+  }
+  channel "Expressions"
+  {
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off

@@ -1,0 +1,951 @@
+"npc_male_trynotto"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"			"vo\npc\male01\answer35.wav"
+}
+
+"npc_female_holddownthisspot"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"			"vo\npc\female01\holddownspot01.wav"
+}
+
+
+
+"npc_male_noo"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"			"vo/npc/male01/no02.wav"
+}
+
+"npc_male_wegotantlions"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"			"vo/outland_02/griggs_wegotantlions02.wav"
+}
+
+"npc_male_ihatebugs"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"			"vo/npc/male02/reb2_antlions07.wav"
+}
+
+"npc_male_damnthesethings"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"			"vo/npc/male02/reb2_antlions12.wav"
+}
+
+"npc_male_hesdonethisbefore"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"			"vo/npc/male01/gordead_ans18.wav"
+}
+
+"npc_male_dayhasfinallycome"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"			"vo/npc/male01/question10.wav"
+}
+
+"npc_male_illstayhere"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"			"vo/npc/male01/illstayhere01.wav"
+}
+
+
+
+"npc_male_combinewarning"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"			"vo/npc/male01/combine01.wav"
+}
+
+
+
+"npc_postsquare_pleaseno"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"			"vo/npc/female01/gordead_ans06.wav"
+}
+
+
+"npc_postsquare_hesdead"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"			"vo/npc/female01/gordead_ques01.wav"
+}
+
+"npc_postsquare_outofyourway"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"			"vo/npc/female01/outofyourway02.wav"
+}
+
+"npc_postsquare_finallychange"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"			"vo/npc/female01/question16.wav"
+}
+
+"npc_postsquare_waytogo"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"			"vo/npc/female01/gordead_ques02.wav"
+}
+
+
+
+
+"npc_presquare_doorlocked"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"			"vo/streetwar/tunnel/male01/d3_c17_06_post_det01.wav"
+}
+
+"npc_presquare_notgordon"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"			"vo/npc/female01/gordead_ans17.wav"
+}
+
+"npc_female_heretohelp"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"			"vo\npc\female01\heretohelp02.wav"
+}
+
+"npc_male_whatsthepassword"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"			"vo\streetwar\tunnel\male01\c17_06_password02.wav"
+}
+
+"npc_male_comeonin"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"			"vo\streetwar\tunnel\male01\c17_06_password04.wav"
+}
+
+"npc_illstayhere"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.600000"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"			"vo\npc\male01\illstayhere01.wav"
+}
+
+
+"npc_square_explosiveshelper"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.600000"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"			"square_explosives.wav"
+}
+
+"npc_square_sniperhelper"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.600000"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"			"square_sniper.wav"
+}
+
+//PRECASINO FIXES
+
+"npc_precasino_doingsomething"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.600000"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"			"vo\npc\male01\doingsomething.wav"
+}
+
+"npc_precasino_talkingtoyourself"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.600000"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"			"*vo/npc/female01/answer09.wav"
+}
+
+"npc_precasino_endlikethis"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.600000"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"			"*vo/npc/female01/gordead_ques14.wav"
+}
+
+
+"npc_precasino_firsttime"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.600000"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"			"*vo/npc/male01/answer36.wav"
+}
+
+
+"npc_precasino_hungry"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.600000"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"			"*vo/npc/male01/question28.wav"
+}
+
+
+"npc_precasino_imwithyou"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.600000"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"			"*vo/npc/female01/answer13.wav"
+}
+
+
+"npc_precasino_letsgo"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.600000"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"			"*vo/npc/male01/letsgo02.wav"
+}
+
+
+"npc_precasino_kidsaround"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.600000"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"			"*vo/npc/male01/question30.wav"
+}
+
+
+
+
+"npc_precasino_partoftheplan"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.600000"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"			"*vo/npc/female01/question11.wav"
+}
+
+
+"npc_precasino_bullshit"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.600000"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"			"*vo/npc/female01/question26.wav"
+}
+
+
+
+"npc_precasino_gethellout"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"			"vo/npc/male01/gethellout.wav"
+}
+
+"npc_precasino_strider"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.600000"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"			"*vo/npc/male01/strider.wav"
+}
+
+
+"npc_precasino_runforyourlife"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"			"*vo/npc/female01/runforyourlife01.wav"
+}
+
+///END OF PRECASINO FIXES
+
+
+"npc_square_endlikethis"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.600000"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"			"*vo/npc/male01/gordead_ques14.wav"
+}
+
+
+
+"npc_rebel1_allover"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.600000"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"			"*vo/npc/male01/question04.wav"
+}
+
+
+
+"npc_rebelrandom3_littlecorner"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.600000"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"			"*vo/npc/female01/littlecorner01.wav"
+}
+
+"npc_rebelrandom4_sellinsurance"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.600000"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"			"*vo/npc/female01/question02.wav"
+}
+
+
+"npc_citizen_gunship"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.600000"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"			"*vo/coast/barn/male01/lite_gunship02.wav"
+}
+
+
+"npc_citizen_whatsthepoint"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.600000"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"			"*vo/npc/female01/gordead_ans12.wav"
+}
+
+"casino_radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"/cas_radio.mp3"
+}
+
+
+"base_radio"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.6"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"mp3/radioloop.mp3"
+}
+
+
+
+"npc_presquare_scottish1"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"/presquare_scottish1.wav"
+}
+
+
+
+"npc_presquare_scottish2a"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"/presquare_scottish2a.wav"
+} 
+
+"npc_presquare_scottish2a"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"/presquare_scottish2a.wav"
+}
+
+
+"npc_presquare_scottish2b"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"/presquare_scottish2b.wav"
+}
+
+
+
+"npc_presquare_scottish3"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"/presquare_scottish3.wav"
+}
+
+
+
+"npc_stranded_rebel_wait"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"/stranded_wait.wav"
+}
+
+
+"npc_mina_goeswitheverything"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.4"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"/mina_goeswitheverything.wav"
+}
+
+"npc_mina_overhere"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"/mina_overhere.wav"
+}
+
+"npc_mina_imglad"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"/mina_imglad.wav"
+}
+
+
+"npc_mina_inhibitor"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"/mina_inhibitor.wav"
+}
+
+"npc_mina_youcantake"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"/mina_youcantake.wav"
+}
+
+
+"npc_mina_parktheairboat"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"/mina_parktheairboat.wav"
+}
+
+"npc_mina_gunship"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"/mina_gunship.wav"
+}
+
+"npc_mina_whathaveyoudone"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"/mina_whathaveyoudone.wav"
+}
+
+"npc_mina_youknowthat"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"/mina_youknowthat.wav"
+}
+
+"npc_mina_hopeitworks"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"/mina_hopeitworks.wav"
+}
+
+
+"npc_mina_stayaway"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"/mina_stayaway.wav"
+}
+
+
+"npc_mina_thatwasclose"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"/mina_thatwasclose.wav"
+}
+
+
+"npc_mina_goodluck"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"/mina_goodluck.wav"
+}
+
+
+
+
+"npc_rebel_random5_howdowegetout"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"/rebel5_howdowegetout.wav"
+}
+
+
+
+"npc_base_iknowyou"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"/base_iknowyou.wav"
+}
+
+
+"npc_male_helpme"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/streetwar/sniper/male01/c17_09_help02.wav"
+}
+
+
+
+
+
+//MUSIC////////////////////////////////////////////////////////////////////////////
+
+
+"music_song21"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.65"
+	"pitch"		"PITCH_NORM"
+	"dsp"		"0"
+	"soundlevel"	"SNDLVL_NONE"	
+	"wave"		"*#music/hl1_song21.mp3"
+}
+
+
+
+
+
+"music_hl2_song7"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"0.65"
+	"pitch"		"PITCH_NORM"
+	"dsp"		"0"
+	"soundlevel"	"SNDLVL_NONE"	
+	"wave"		"*#music/hl2_song7.mp3"
+}
+
+
+"music_hl2_song31"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"0.65"
+	"pitch"		"PITCH_NORM"
+	"dsp"		"0"
+	"soundlevel"	"SNDLVL_NONE"	
+	"wave"		"*#music/hl2_song31.mp3"
+}
+
+
+"music_hl1_song10"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"0.75"
+	"pitch"		"PITCH_NORM"
+	"dsp"		"0"
+	"soundlevel"	"SNDLVL_NONE"	
+	"wave"		"*#music/hl1_song10.mp3"
+}
+
+"music_g7m"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"0.75"
+	"pitch"		"PITCH_NORM"
+	"dsp"		"0"
+	"soundlevel"	"SNDLVL_NONE"	
+	"wave"		"*#/g7m.mp3"
+}
+
+
+"music_hl2_song3"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"0.55"
+	"pitch"		"PITCH_NORM"
+	"dsp"		"0"
+	"soundlevel"	"SNDLVL_NONE"	
+	"wave"		"*#music/hl2_song3.mp3"
+}
+
+
+
+
+//////////////////////////////////EASTER EGG GUY/////////////
+
+
+
+"npc_ee_beenawhile"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"1"
+	"pitch"		"PITCH_NORM"
+	"dsp"		"0"
+	"soundlevel"	"SNDLVL_TALKING"	
+	"wave"		"/ee_beenawhile.wav"
+}
+
+
+"npc_ee_hesaid"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"1"
+	"pitch"		"PITCH_NORM"
+	"dsp"		"0"
+	"soundlevel"	"SNDLVL_TALKING"	
+	"wave"		"/ee_hesaid.wav"
+}
+
+
+
+"npc_ee_what"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"1"
+	"pitch"		"PITCH_NORM"
+	"dsp"		"0"
+	"soundlevel"	"SNDLVL_TALKING"	
+	"wave"		"/ee_what.wav"
+}
+
+
+"npc_ee_wellyoudidnt"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"1"
+	"pitch"		"PITCH_NORM"
+	"dsp"		"0"
+	"soundlevel"	"SNDLVL_TALKING"	
+	"wave"		"/ee_wellyoudidnt.wav"
+}
+
+
+"npc_ee_inthatcase"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"1"
+	"pitch"		"PITCH_NORM"
+	"dsp"		"0"
+	"soundlevel"	"SNDLVL_TALKING"	
+	"wave"		"/ee_inthatcase.wav"
+}
+
+
+///////////////////////////////////////////////
+
+
+"npc_precasino_lament1"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"1"
+	"pitch"		"PITCH_NORM"
+	"dsp"		"0"
+	"soundlevel"	"SNDLVL_TALKING"	
+	"wave"		"/precasino_lament1.wav"
+}
+
+"npc_precasino_lament2"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"1"
+	"pitch"		"PITCH_NORM"
+	"dsp"		"0"
+	"soundlevel"	"SNDLVL_TALKING"	
+	"wave"		"/precasino_lament2.wav"
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,77 @@
+// Choreo version 1
+actor "rebels_larry2"
+{
+  channel "wav"
+  {
+    event speak "npc_larry_waterplant2_bothleavenow"
+    {
+      time 0.153333 2.208299
+      param "npc_larry_waterplant2_bothleavenow"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "lookat"
+  {
+    event lookat "at sarah"
+    {
+      time 0.060000 0.960000
+      param "rebel_sarah"
+    }
+    event lookat "atplayer"
+    {
+      time 1.120000 2.020000
+      param "!player"
+    }
+  }
+  channel "moveto"
+  {
+  }
+  channel "face"
+  {
+    event face "facedoor"
+    {
+      time 0.026666 2.320000
+      param "reactor_evacdoor2"
+    }
+  }
+  channel "gesture"
+  {
+    event gesture "point"
+    {
+      time 0.353333 1.986666
+      param "G_puncuate"
+      absolutetags playback_time
+      {
+        "apex" 0.250000
+        "accent" 0.416667
+        "loop" 0.562500
+        "end" 0.729167
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.250000
+        "accent" 0.416667
+        "loop" 0.562500
+        "end" 0.729167
+      }
+      sequenceduration 1.633333
+    }
+  }
+  channel "flex"
+  {
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "ExpressionTool" "100"
+  "RampTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

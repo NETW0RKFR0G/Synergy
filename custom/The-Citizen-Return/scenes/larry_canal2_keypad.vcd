@@ -1,0 +1,97 @@
+// Choreo version 1
+actor "rebel_larry"
+{
+  channel "wav"
+  {
+    event speak "keypad"
+    {
+      time 0.086666 2.791791
+      param "npc_larry_keypad"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "lookat"
+  {
+    event lookat "atkeypad"
+    {
+      time 0.053333 2.813333
+      param "keypad"
+    }
+  }
+  channel "flexanim"
+  {
+    event flexanimation "flex"
+    {
+      time 0.293333 2.480000
+      param ""
+      flexanimations samples_use_time
+      {
+        "lid_tightener" combo 
+        {
+          0.1960 1.0000
+        }
+        {
+          0.1960 0.5000
+        }
+        "lowerer" combo 
+        {
+          0.1960 1.0000
+        }
+        {
+          0.1960 0.5000
+        }
+        "dilator" 
+        {
+          0.1960 0.5300
+        }
+        "corner_depressor" combo 
+        {
+          0.1960 1.0000
+        }
+        {
+          0.1960 0.5000
+        }
+        "head_tilt" range 15.0 -15.0 
+        {
+          0.1960 0.7500
+        }
+      }
+    }
+  }
+  channel "gesture"
+  {
+    event gesture "gest1"
+    {
+      time 0.040000 2.273333
+      param "G_noway_small"
+      absolutetags playback_time
+      {
+        "apex" 0.151515
+        "accent" 0.287879
+        "loop" 0.454545
+        "end" 0.575758
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.151515
+        "accent" 0.287879
+        "loop" 0.454545
+        "end" 0.575758
+      }
+      sequenceduration 2.233333
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "ExpressionTool" "100"
+  "SceneRampTool" "100"
+  "GestureTool" "100"
+  "RampTool" "100"
+}
+fps 60
+snap off

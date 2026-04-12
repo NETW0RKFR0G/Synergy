@@ -1,0 +1,8 @@
+"LightmappedGeneric"
+
+{ "$basetexture" "citizen2/ci_bui7" 
+  "$surfaceprop" "concrete"
+  "$envmap" "env_cubemap"
+  "$envmapmask" "citizen2/ci_bui7_mask"
+
+} 

@@ -1,0 +1,147 @@
+// Choreo version 1
+actor "rebel_sniper_helper"
+{
+  channel "wav"
+  {
+    event speak "1"
+    {
+      time 0.060000 6.892834
+      param "npc_square_sniperhelper"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "look"
+  {
+    event lookat "1"
+    {
+      time 0.053333 7.373333
+      param "!player"
+    }
+  }
+  channel "flex"
+  {
+    event flexanimation "flex imperative"
+    {
+      time 1.766667 3.020000
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "lid_raiser" combo 
+        {
+          0.2580 1.0000
+        }
+        {
+          0.2580 0.5000
+        }
+        "lid_tightener" combo 
+        {
+          0.2580 1.0000
+        }
+        {
+          0.2580 0.5000
+        }
+        "outer_raiser" combo 
+        {
+          0.2580 1.0000
+        }
+        {
+          0.2580 0.5000
+        }
+        "dilator" 
+        {
+          0.2580 1.0000
+        }
+        "part" combo 
+        {
+          0.2580 1.0000
+        }
+        {
+          0.2580 0.5000
+        }
+      }
+    }
+    event flexanimation "nod"
+    {
+      time 5.553333 7.153333
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "outer_raiser" combo 
+        {
+          0.3160 1.0000
+        }
+        {
+          0.3160 0.5000
+        }
+        "head_updown" range 15.0 -15.0 
+        {
+          0.3160 1.0000
+        }
+        "head_tilt" range 15.0 -15.0 
+        {
+          0.3160 1.0000
+        }
+        "eyes_rightleft" range 30.0 -30.0 
+        {
+          0.3160 0.0000
+        }
+      }
+    }
+    event flexanimation "closeeyes"
+    {
+      time 0.026667 0.440000
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "lid_closer" combo 
+        {
+          0.0960 0.8000
+        }
+        {
+          0.0960 0.5000
+        }
+        "head_updown" range 15.0 -15.0 
+        {
+          0.0960 0.0000
+        }
+      }
+    }
+  }
+  channel "punctuate"
+  {
+    event gesture "punctuate"
+    {
+      time 1.679999 3.313333
+      param "G_puncuate"
+      absolutetags playback_time
+      {
+        "apex" 0.250000
+        "accent" 0.416667
+        "loop" 0.562500
+        "end" 0.729167
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.250000
+        "accent" 0.416667
+        "loop" 0.562500
+        "end" 0.729167
+      }
+      sequenceduration 1.633333
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

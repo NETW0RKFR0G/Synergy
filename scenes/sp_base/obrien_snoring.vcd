@@ -1,0 +1,74 @@
+// Choreo version 1
+event loop "loop1"
+{
+  time 14.466668 -1.000000
+  param "0.000000"
+  loopcount "-1"
+}
+actor "obrien"
+{
+  channel "wav"
+  {
+    event speak "snoring"
+    {
+      time 0.286666 14.460180
+      param "npc_obrien_snoring"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "flex"
+  {
+    event flexanimation "eyesclosed"
+    {
+      time -0.116667 16.216663
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "blink" 
+        {
+          0.1620 0.9100
+        }
+        "dilator" 
+        {
+          0.1620 0.0000
+        }
+      }
+    }
+  }
+  channel "flex2"
+  {
+    event flexanimation "headbow"
+    {
+      time -0.183334 16.200001
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "dilator" 
+        {
+          0.2060 1.0000
+        }
+        "head_updown" range 15.0 -15.0 
+        {
+          0.2060 0.0000
+        }
+      }
+    }
+  }
+  channel "loop"
+  {
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "40"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

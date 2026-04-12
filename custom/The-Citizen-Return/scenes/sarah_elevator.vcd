@@ -1,0 +1,211 @@
+// Choreo version 1
+actor "rebel_sarah"
+{
+  channel "wav"
+  {
+    event speak "think he meant up"
+    {
+      time 0.060000 4.703764
+      param "npc_sarah_ithinkhemeantup"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "lost argento"
+    {
+      time 13.400170 17.985886
+      param "npc_sarah_lostargento"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "and that guy"
+    {
+      time 19.274357 23.418892
+      param "npc_sarah_andthatguy"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "lookat"
+  {
+    event lookat "atplayer"
+    {
+      time 2.975556 22.783756
+      param "!player"
+    }
+    event lookat "atrope"
+    {
+      time 1.522222 2.888889
+      param "endofrope2"
+    }
+    event lookat "atplayer"
+    {
+      time 0.033334 1.466667
+      param "dynamic_larry"
+    }
+  }
+  channel "face"
+  {
+    event face "face player"
+    {
+      time 0.040000 22.745811
+      param "!player"
+    }
+  }
+  channel "gesture"
+  {
+    event gesture "gest"
+    {
+      time 1.322222 2.955555
+      param "g_right_openhand"
+      absolutetags playback_time
+      {
+        "apex" 0.291667
+        "accent" 0.416667
+        "loop" 0.520833
+        "end" 0.625000
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.291667
+        "accent" 0.416667
+        "loop" 0.520833
+        "end" 0.625000
+      }
+      sequenceduration 1.633333
+    }
+  }
+  channel "flex"
+  {
+    event flexanimation "lookdown"
+    {
+      time 13.474999 16.352776
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "inner_raiser" combo 
+        {
+          0.1340 1.0000
+        }
+        {
+          0.1340 0.5000
+        }
+        "corner_depressor" combo 
+        {
+          0.1340 0.9500
+        }
+        {
+          0.1340 0.5000
+        }
+        "head_rightleft" range 30.0 -30.0 
+        {
+          0.1340 1.0000
+        }
+        "head_updown" range 15.0 -15.0 
+        {
+          0.1340 0.0000
+        }
+        "eyes_updown" range 30.0 -30.0 
+        {
+          0.1340 0.0000
+        }
+      }
+    }
+    event flexanimation "puzzled"
+    {
+      time 21.822224 24.311111
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "lid_raiser" combo 
+        {
+          0.1500 1.0000
+        }
+        {
+          0.1500 0.5000
+        }
+        "inner_raiser" combo 
+        {
+          0.1500 1.0000
+        }
+        {
+          0.1500 0.5000
+        }
+        "corner_puller" combo 
+        {
+          0.1500 1.0000
+        }
+        {
+          0.1500 0.5000
+        }
+        "corner_depressor" combo 
+        {
+          0.1500 1.0000
+        }
+        {
+          0.1500 0.5000
+        }
+        "bite" 
+        {
+          0.1500 0.6900
+        }
+        "eyes_rightleft" range 30.0 -30.0 
+        {
+          0.1500 0.0000
+        }
+      }
+    }
+    event flexanimation "flexangry"
+    {
+      time 16.466665 18.516665
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "lowerer" combo 
+        {
+          0.2760 1.0000
+        }
+        {
+          0.2760 0.5000
+        }
+        "eyes_rightleft" range 30.0 -30.0 
+        {
+          0.2760 0.0000
+        }
+      }
+    }
+    event flexanimation "smile"
+    {
+      time 1.801282 2.724359
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "inner_raiser" combo 
+        {
+          0.0800 1.0000
+        }
+        {
+          0.0800 0.5000
+        }
+        "smile" 
+        {
+          0.0800 0.3800
+        }
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "104"
+  "ExpressionTool" "100"
+  "RampTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

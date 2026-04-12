@@ -1,0 +1,165 @@
+// Choreo version 1
+actor "larryexample"
+{
+  channel "wav"
+  {
+    event speak "1"
+    {
+      time 1.359999 2.294602
+      param "npc_larry_canyon_thisistheplace"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "letsgo"
+    {
+      time 2.673333 3.404762
+      param "npc_larry_letsgo"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "lookat"
+  {
+    event lookat "atrebel1"
+    {
+      time 0.065641 2.540000
+      param "rebel1example"
+    }
+    event lookat "atplayer"
+    {
+      time 2.593333 4.646667
+      param "!player"
+    }
+  }
+  channel "facetowards"
+  {
+    event face "facerebel1"
+    {
+      time 0.058461 2.586666
+      param "rebel1example"
+    }
+  }
+  channel "gest"
+  {
+    event gesture "1"
+    {
+      time 2.333333 4.633333
+      param "g_point_swing"
+      absolutetags playback_time
+      {
+        "apex" 0.176471
+        "accent" 0.250000
+        "loop" 0.441176
+        "end" 0.588235
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.176471
+        "accent" 0.250000
+        "loop" 0.441176
+        "end" 0.588235
+      }
+      sequenceduration 2.300000
+    }
+  }
+}
+
+actor "rebel1example"
+{
+  channel "wav"
+  {
+    event speak "youmadeit"
+    {
+      time 0.080000 0.630522
+      param "barn.youmadeit"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "lookat"
+  {
+    event lookat "atplayer"
+    {
+      time 0.020000 0.706667
+      param "!player"
+    }
+  }
+  channel "face"
+  {
+    event face "faceplayer"
+    {
+      time 0.020000 0.780000
+      param "!player"
+    }
+    event face "facelarry"
+    {
+      time 0.826667 4.513333
+      param "larryexample"
+    }
+  }
+}
+
+actor "sarahexample"
+{
+  channel "look"
+  {
+    event lookat "atplayer"
+    {
+      time 0.025641 0.782051
+      param "!player"
+    }
+    event lookat "atlarry"
+    {
+      time 0.820513 4.519231
+      param "larryexample"
+    }
+  }
+  channel "face"
+  {
+    event face "faceLarry"
+    {
+      time 0.025641 4.525641
+      param "larryexample"
+    }
+  }
+}
+
+actor "rebelgirlexample"
+{
+  channel "look"
+  {
+    event face "faceplayer"
+    {
+      time 0.025641 0.788462
+      param "!player"
+    }
+    event lookat "looklarry"
+    {
+      time 0.820513 4.512821
+      param "larryexample"
+    }
+  }
+  channel "face"
+  {
+    event face "facelarry"
+    {
+      time 0.019231 4.538462
+      param "larryexample"
+    }
+  }
+}
+
+scalesettings
+{
+  "SceneRampTool" "100"
+  "GestureTool" "100"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "CChoreoView" "104"
+}
+fps 60
+snap off
+ignorePhonemes off

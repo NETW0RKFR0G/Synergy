@@ -1,0 +1,53 @@
+// Choreo version 1
+actor "rebel_larry"
+{
+  channel "facetowards"
+  {
+    event face "facescreen"
+    {
+      time 0.240000 2.526667
+      param "gunship1"
+    }
+  }
+  channel "lookat"
+  {
+    event lookat "lookatscreen"
+    {
+      time 0.286666 4.540000
+      param "gunship1"
+    }
+  }
+}
+
+
+
+actor "rebel_tracks"
+{
+  channel "facetowards"
+  {
+    event face "facescreen"
+    {
+      time 0.460000 4.540000
+      param "gunship1"
+    }
+  }
+  channel "lookat"
+  {
+    event lookat "lookatscreen"
+    {
+      time 0.540000 4.526666
+      param "gunship1"
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off

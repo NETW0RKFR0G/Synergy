@@ -1,0 +1,88 @@
+// Choreo version 1
+actor "rebels_larry"
+{
+  channel "wav"
+  {
+    event speak "1"
+    {
+      time 0.086666 2.971745
+      param "npc_larry_goingtokillyouassholes"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "look"
+  {
+  }
+  channel "face"
+  {
+  }
+  channel "move"
+  {
+  }
+  channel "gesture"
+  {
+    event gesture "killyou"
+    {
+      time 0.073333 4.766667
+      param "hg_headshake"
+      absolutetags playback_time
+      {
+        "apex" 0.072503
+        "loop" 0.094253
+        "extreme" 0.145005
+        "end" 0.217507
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.208333
+        "loop" 0.270833
+        "extreme" 0.416667
+        "end" 0.625000
+      }
+      sequenceduration 1.633333
+    }
+  }
+  channel "expression"
+  {
+    event flexanimation "eyes"
+    {
+      time 0.993334 2.533334
+      param ""
+      flexanimations samples_use_time
+      {
+        "blink" 
+        {
+          0.6933 1.0000
+        }
+        "lowerer" combo 
+        {
+          0.6933 1.0000
+        }
+        {
+          0.6933 0.5000
+        }
+        "dilator" 
+        {
+          0.6933 1.0000
+        }
+        "head_updown" range 15.0 -15.0 
+        {
+          0.6933 0.0000
+        }
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+}
+fps 60
+snap off

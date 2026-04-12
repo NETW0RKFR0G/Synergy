@@ -1,0 +1,50 @@
+// Choreo version 1
+actor "gman"
+{
+  channel "wav"
+  {
+    event speak "citadel.gman_exit02"
+    {
+      time 0.160000 3.839773
+      param "citadel.gman_exit02"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "gesture"
+  {
+    event gesture "tie"
+    {
+      time 2.193334 5.160000
+      param "G_tiefidget"
+      absolutetags playback_time
+      {
+        "apex" 0.238636
+        "accent" 0.468636
+        "loop" 0.478636
+        "end" 0.488636
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.238636
+        "accent" 0.477273
+        "loop" 0.488636
+        "end" 0.488636
+      }
+      sequenceduration 2.966667
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "ExpressionTool" "100"
+  "SceneRampTool" "100"
+  "GestureTool" "100"
+  "RampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

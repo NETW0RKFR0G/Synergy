@@ -1,0 +1,9 @@
+"UnlitGeneric"
+
+{ "$basetexture" "citizen2/ci_combinecable" 
+  "$surfaceprop" "paper"
+  "$translucent" 1
+  "$decal" 1
+
+
+} 

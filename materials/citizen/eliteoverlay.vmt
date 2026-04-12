@@ -1,0 +1,34 @@
+"Refract"
+{
+	"$bluramount" "1"
+       	 "$translucent" 1
+ 	"$refractamount" ".100"
+	"$REFRACTTINTTEXTURE" "citizen\eliteoverlay"
+	"$scale" "[1 1]"
+    	"$normalmap" "citizen\eliteoverlay_normal"
+    	"$dudvmap" "citizen\eliteoverlay_dudv"
+
+
+	"Refract_dx60"
+	{
+		"$fallbackmaterial" "citizen\eliteoverlay2"
+
+	}	
+
+	"Refract_dx70"
+	{
+		"$fallbackmaterial" "citizen\eliteoverlay2"
+
+	}
+
+	
+	"Refract_dx80"
+	{
+		"$fallbackmaterial" "citizen\eliteoverlay2"
+
+	}
+
+
+}
+	
+

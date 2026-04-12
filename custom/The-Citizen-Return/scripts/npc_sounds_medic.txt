@@ -1,0 +1,345 @@
+"npc_medic_areyoudoneyet"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.6"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/medic_areyoudoneyet.wav"
+}
+
+"npc_medic_bestidea"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.6"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/medic_bestidea.wav"
+}
+
+
+"npc_medic_cantseetheuse"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.6"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/medic_cantseetheuse.wav"
+}
+
+
+"npc_medic_careful"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.6"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/medic_careful.wav"
+}
+
+
+"npc_medic_dearme"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.6"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/medic_dearme.wav"
+}
+
+
+"npc_medic_doesnotgetbetter"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.6"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/medic_doesnotgetbetter.wav"
+}
+
+
+
+"npc_medic_finally"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.6"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/medic_finally.wav"
+}
+
+
+"npc_medic_getoutoftheresarah"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.6"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/medic_getoutoftheresarah.wav"
+}
+
+"npc_medic_gothitatelvet"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.6"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/medic_gothitatelvet.wav"
+}
+
+
+"npc_medic_hopesarah"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.6"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/medic_hopesarah.wav"
+}
+
+
+"npc_medic_introspeech1"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.6"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/medic_introspeech.wav"
+}
+
+
+"npc_medic_message"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.6"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/medic_message.wav"
+}
+
+
+"npc_medic_nearlythere"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.6"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/medic_nearlythere.wav"
+}
+
+
+"npc_medic_nothangingaround"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.6"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/medic_nothangingaround.wav"
+}
+
+
+"npc_medic_seemstobe"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.6"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/medic_seemstobe.wav"
+}
+
+
+
+"npc_medic_shellgetintheway"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.6"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/medic_shellgetintheway.wav"
+}
+
+
+"npc_medic_shrapnel"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.6"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/medic_shrapnel.wav"
+}
+
+"npc_medic_squished"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.6"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/medic_squished.wav"
+}
+
+
+"npc_medic_sureis"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.6"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/medic_sureis.wav"
+}
+
+"npc_medic_willthatholdthem"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.6"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/medic_willthatholdthem.wav"
+}
+
+
+"npc_m1_getitallready"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.6"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/m1_getitallready.wav"
+}
+
+
+
+"npc_m1_getthatlegset"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.6"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/m1_getthatlegset.wav"
+}
+
+
+
+"npc_m1_needmuchtime"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.6"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/m1_needmuchtime.wav"
+}
+
+
+
+"npc_m1_thinkyoucansavehim"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.6"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/m1_thinkyoucansavehim.wav"
+}
+
+
+"npc_m2_boutanhour"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.6"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/m2_boutanhour.wav"
+}
+
+
+"npc_m2_hescominground"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.6"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/m2_hescominground.wav"
+}
+
+
+"npc_m2_probably"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.6"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/m2_probably.wav"
+}
+
+"npc_m2_somuchforkeeping"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.6"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/m2_somuchforkeeping.wav"
+}
+
+"npc_m1_damnit"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.6"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/m1_damnit.wav"
+}

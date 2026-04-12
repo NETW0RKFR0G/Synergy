@@ -1,0 +1,80 @@
+// Choreo version 1
+event loop "loop1"
+{
+  time 17.000000 -1.000000
+  param "2.000000"
+  loopcount "-1"
+}
+actor "metrocop_apartment"
+{
+  channel "wav"
+  {
+    event speak "chatter1"
+    {
+      time 0.913333 1.609954
+      param "NPC_MetroPolice.Freeze"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "chatter2"
+    {
+      time 3.346667 5.726735
+      param "NPC_MetroPolice.Cupcop.Failure"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "face"
+  {
+    event face "face citizen"
+    {
+      time 0.053334 17.646666
+      param "citizen_female2"
+    }
+  }
+  channel "lookat"
+  {
+    event lookat "at citizen"
+    {
+      time 0.053333 17.758333
+      param "citizen_female2"
+    }
+  }
+  channel "move"
+  {
+    event moveto "moveto"
+    {
+      time 0.031250 17.843750
+      param "target_fixedspot"
+    }
+  }
+}
+
+actor "citizen_female2"
+{
+  channel "wav"
+  {
+    event speak "npc_citizen.pain09"
+    {
+      time 2.273333 3.099728
+      param "npc_postsquare_pleaseno"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "64"
+  "ExpressionTool" "100"
+  "RampTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

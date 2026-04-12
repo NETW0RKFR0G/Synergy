@@ -1,0 +1,10 @@
+"VertexLitGeneric"
+{
+     "$basetexture" "models\props_pipes\concrete_pipe001a_01"
+     "$surfaceprop" "concrete"
+
+	$detail detail\noise_detail_01
+	$detailtexturetransform "center .5 .5 scale 6 6 rotate 0 translate 0 0" 
+	$detailblendfactor .95
+	$detailblendmode 0
+}

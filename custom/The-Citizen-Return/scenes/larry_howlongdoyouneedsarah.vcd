@@ -1,0 +1,90 @@
+// Choreo version 1
+actor "rebels_larry"
+{
+  channel "wav"
+  {
+    event speak "1"
+    {
+      time 0.020000 1.627982
+      param "npc_larry_howlongdoyouneedsarah"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "look"
+  {
+    event lookat "1"
+    {
+      time 0.033333 1.593333
+      param "anne"
+    }
+  }
+  channel "face"
+  {
+    event face "1"
+    {
+      time 0.053333 1.606667
+      param "anne"
+    }
+  }
+  channel "move"
+  {
+  }
+  channel "gesture"
+  {
+    event gesture "1"
+    {
+      time 0.193333 2.226666
+      param "G_what"
+      absolutetags playback_time
+      {
+        "apex" 0.133333
+        "accent" 0.200000
+        "loop" 0.366667
+        "end" 0.533333
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.133333
+        "accent" 0.200000
+        "loop" 0.366667
+        "end" 0.533333
+      }
+      sequenceduration 2.033333
+    }
+  }
+  channel "expression"
+  {
+    event flexanimation "flexanimation"
+    {
+      time 0.133334 1.646667
+      param ""
+      flexanimations samples_use_time
+      {
+        "inner_raiser" combo 
+        {
+          0.2060 1.0000
+        }
+        {
+          0.2060 0.5000
+        }
+        "head_updown" range 15.0 -15.0 
+        {
+          0.2060 0.0000
+        }
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+}
+fps 60
+snap off

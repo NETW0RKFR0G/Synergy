@@ -1,0 +1,74 @@
+// Choreo version 1
+actor "anne"
+{
+  channel "wav"
+  {
+    event speak "1"
+    {
+      time 0.066666 1.210249
+      param "npc_anne_icangetthistoo"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "face"
+  {
+    event flexanimation "faceexpression"
+    {
+      time 0.066667 1.100000
+      param ""
+      flexanimations samples_use_time
+      {
+        "lid_tightener" combo 
+        {
+          0.2980 1.0000
+        }
+        {
+          0.2980 0.5000
+        }
+        "lowerer" combo 
+        {
+          0.2980 1.0000
+        }
+        {
+          0.2980 0.5000
+        }
+        "dilator" 
+        {
+          0.2980 1.0000
+        }
+        "upper_raiser" combo 
+        {
+          0.2980 0.2500
+        }
+        {
+          0.2980 0.5000
+        }
+        "lower_lip" 
+        {
+          0.2980 0.4100
+        }
+        "head_updown" range 15.0 -15.0 
+        {
+          0.2980 0.0000
+        }
+        "eyes_updown" range 30.0 -30.0 
+        {
+          0.2980 1.0000
+        }
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off

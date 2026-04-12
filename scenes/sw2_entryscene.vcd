@@ -1,0 +1,925 @@
+// Choreo version 1
+actor "rebel_argento"
+{
+  channel "WAV"
+  {
+    event speak "wait stop"
+    {
+      time 0.066667 1.912653
+      param "npc_argento_sw2_waitstop"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "warn every rebel"
+    {
+      time 2.380000 5.073515
+      param "npc_argento_sw2_warneveryrebel"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "just saving skins"
+    {
+      time 5.303030 7.404436
+      param "npc_argento_sw2_justsavingskins"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "messaging post"
+    {
+      time 9.000000 10.631202
+      param "npc_argento_sw2_messagingpost"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "nochoice"
+    {
+      time 14.333333 15.825215
+      param "npc_argento_sw2_nochoice"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "orders start"
+    {
+      time 16.242426 20.073719
+      param "npc_argento_sw2_soldiergettopost"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "orders"
+    {
+      time 20.212122 21.470354
+      param "npc_argento_sw2_tallyellowbuilding"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "orders"
+    {
+      time 21.575758 23.845509
+      param "npc_argento_sw2_rebelsontopfloor"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "orders"
+    {
+      time 23.969698 26.242352
+      param "npc_argento_sw2_entranceroundback"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "orders end"
+    {
+      time 26.424242 28.995852
+      param "npc_argento_sw2_takethisnote"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "trap"
+    {
+      time 31.416668 32.612495
+      param "npc_argento_sw2_couldbeatrap"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "risky"
+    {
+      time 32.916664 34.658161
+      param "npc_argento_sw2_toorisky"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "charlieHQ"
+    {
+      time 35.083336 37.234085
+      param "npc_argento_sw2_charliehq"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "most secure"
+    {
+      time 37.333336 40.572521
+      param "npc_argento_sw2_mostsecure"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "our friend here"
+    {
+      time 48.166668 51.034332
+      param "npc_argento_sw2_ourfriendhere"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "faith"
+    {
+      time 51.250000 54.291813
+      param "npc_argento_sw2_faith"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "radio"
+    {
+      time 56.166672 59.429077
+      param "npc_argento_sw2_takethisradio"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "we wait"
+    {
+      time 59.750004 62.954357
+      param "npc_argento_sw2_wewait"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "hook up"
+    {
+      time 67.166672 68.292839
+      param "npc_argento_sw2_hookup"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "stay alive"
+    {
+      time 69.583344 71.745705
+      param "npc_argento_sw2_stayalive"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "if you make it"
+    {
+      time 63.333332 67.135597
+      param "npc_argento_sw2_ifyoumakeit"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Look"
+  {
+    event lookat "player"
+    {
+      time 16.083334 23.000004
+      param "!player"
+    }
+    event lookat "sarah"
+    {
+      time 54.083336 56.166672
+      param "rebel_sarah"
+    }
+    event lookat "medic"
+    {
+      time 10.333334 15.750001
+      param "rebel_medic"
+    }
+    event lookat "soldier"
+    {
+      time 4.333336 8.083334
+      param "rebel_soldier"
+    }
+    event lookat "soldier"
+    {
+      time 29.583336 36.916668
+      param "rebel_soldier"
+    }
+    event lookat "medic"
+    {
+      time 41.083336 48.583336
+      param "rebel_medic"
+    }
+    event lookat "sarah"
+    {
+      time 0.333332 2.416667
+      param "rebel_sarah"
+    }
+    event lookat "player"
+    {
+      time 49.083336 53.666672
+      param "!player"
+    }
+    event lookat "player"
+    {
+      time 57.250004 70.916672
+      param "!player"
+    }
+  }
+  channel "Face"
+  {
+    event face "face player"
+    {
+      time 0.416667 12.688890
+      param "!player"
+    }
+    event face "medic"
+    {
+      time 13.222222 17.722223
+      param "rebel_medic"
+    }
+    event face "face player"
+    {
+      time 18.194447 29.911114
+      param "!player"
+    }
+    event face "soldier"
+    {
+      time 30.444445 37.500004
+      param "rebel_soldier"
+    }
+    event face "face player"
+    {
+      time 37.861115 71.022224
+      param "!player"
+    }
+  }
+  channel "gesture"
+  {
+    event gesture "1"
+    {
+      time 0.605557 2.838890
+      param "G_noway_big"
+      absolutetags playback_time
+      {
+        "apex" 0.151515
+        "accent" 0.272727
+        "loop" 0.424242
+        "end" 0.575758
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.151515
+        "accent" 0.272727
+        "loop" 0.424242
+        "end" 0.575758
+      }
+      sequenceduration 2.233333
+    }
+    event gesture "shake head"
+    {
+      time 4.938891 6.572225
+      param "hg_headshake"
+      absolutetags playback_time
+      {
+        "apex" 0.208333
+        "loop" 0.270833
+        "extreme" 0.416667
+        "end" 0.625000
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.208333
+        "loop" 0.270833
+        "extreme" 0.416667
+        "end" 0.625000
+      }
+      sequenceduration 1.633333
+    }
+    event gesture "shake head"
+    {
+      time 5.472225 7.105558
+      param "hg_headshake"
+      absolutetags playback_time
+      {
+        "apex" 0.208333
+        "loop" 0.270833
+        "extreme" 0.416667
+        "end" 0.625000
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.208333
+        "loop" 0.270833
+        "extreme" 0.416667
+        "end" 0.625000
+      }
+      sequenceduration 1.633333
+    }
+    event gesture "shake head"
+    {
+      time 6.472225 8.105558
+      param "hg_headshake"
+      absolutetags playback_time
+      {
+        "apex" 0.208333
+        "loop" 0.270833
+        "extreme" 0.416667
+        "end" 0.625000
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.208333
+        "loop" 0.270833
+        "extreme" 0.416667
+        "end" 0.625000
+      }
+      sequenceduration 1.633333
+    }
+    event gesture "2"
+    {
+      time 14.005557 16.705559
+      param "G_shrug"
+      absolutetags playback_time
+      {
+        "apex" 0.100741
+        "accent" 0.299040
+        "loop" 0.538271
+        "end" 0.807407
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.160000
+        "accent" 0.240000
+        "loop" 0.320000
+        "end" 0.440000
+      }
+      sequenceduration 1.700000
+    }
+    event gesture "3"
+    {
+      time 16.272224 18.572224
+      param "G_righthandpoint"
+      absolutetags playback_time
+      {
+        "apex" 0.205882
+        "accent" 0.441176
+        "loop" 0.470588
+        "end" 0.676471
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.205882
+        "accent" 0.441176
+        "loop" 0.470588
+        "end" 0.676471
+      }
+      sequenceduration 2.300000
+    }
+    event gesture "point"
+    {
+      time 25.405558 29.838890
+      param "G_righthandpoint"
+      absolutetags playback_time
+      {
+        "apex" 0.106811
+        "accent" 0.228881
+        "loop" 0.244140
+        "end" 0.880597
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.205882
+        "accent" 0.441176
+        "loop" 0.470588
+        "end" 0.676471
+      }
+      sequenceduration 2.300000
+    }
+    event gesture "point"
+    {
+      time 55.672222 60.105556
+      param "G_righthandpoint"
+      absolutetags playback_time
+      {
+        "apex" 0.106811
+        "accent" 0.228881
+        "loop" 0.244140
+        "end" 0.880597
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.205882
+        "accent" 0.441176
+        "loop" 0.470588
+        "end" 0.676471
+      }
+      sequenceduration 2.300000
+    }
+    event gesture "4"
+    {
+      time 31.138889 34.838890
+      param "G_medurgent_mid"
+      absolutetags playback_time
+      {
+        "apex" 0.082432
+        "accent" 0.137387
+        "loop" 0.446429
+        "end" 0.767857
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.150000
+        "accent" 0.250000
+        "loop" 0.400000
+        "end" 0.533333
+      }
+      sequenceduration 2.033333
+    }
+    event gesture "5"
+    {
+      time 33.538887 38.038891
+      param "g_Pacer_ArmsCrossed"
+      absolutetags playback_time
+      {
+        "apex" 0.150265
+        "accent" 0.338235
+        "loop" 0.617647
+        "end" 0.794118
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.285714
+        "accent" 0.464286
+        "loop" 0.642857
+        "end" 0.892857
+      }
+      sequenceduration 0.966667
+    }
+    event gesture "6"
+    {
+      time 36.672222 40.972221
+      param "g_fist"
+      absolutetags playback_time
+      {
+        "apex" 0.094391
+        "accent" 0.133721
+        "loop" 0.461538
+        "end" 0.830769
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.176471
+        "accent" 0.250000
+        "loop" 0.441176
+        "end" 0.588235
+      }
+      sequenceduration 2.300000
+    }
+    event gesture "7"
+    {
+      time 48.205555 53.238888
+      param "g_present"
+      absolutetags playback_time
+      {
+        "apex" 0.100611
+        "accent" 0.276316
+        "loop" 0.539474
+        "end" 0.789474
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.192308
+        "accent" 0.474359
+        "loop" 0.512821
+        "end" 0.641026
+      }
+      sequenceduration 2.633333
+    }
+    event gesture "8"
+    {
+      time 51.072224 55.638893
+      param "g_mid_relaxed_fist_accent"
+      absolutetags playback_time
+      {
+        "apex" 0.235294
+        "accent" 0.366681
+        "loop" 0.500000
+        "end" 0.808824
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.176471
+        "accent" 0.235294
+        "loop" 0.441176
+        "end" 0.588235
+      }
+      sequenceduration 2.300000
+    }
+    event gesture "9"
+    {
+      time 71.005554 72.305557
+      param "G_lookatthis"
+      absolutetags playback_time
+      {
+        "apex" 0.184211
+        "accent" 0.421053
+        "loop" 0.463684
+        "end" 0.473684
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.184211
+        "accent" 0.421053
+        "loop" 0.473684
+        "end" 0.473684
+      }
+      sequenceduration 1.300000
+    }
+  }
+  channel "flex"
+  {
+    event flexanimation "1"
+    {
+      time 19.672224 22.038891
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "inner_raiser" combo 
+        {
+          0.2540 1.0000
+        }
+        {
+          0.2540 0.5000
+        }
+        "outer_raiser" combo 
+        {
+          0.2540 1.0000
+        }
+        {
+          0.2540 0.5000
+        }
+        "head_updown" range 15.0 -15.0 
+        {
+          0.2540 1.0000
+        }
+        "head_tilt" range 15.0 -15.0 
+        {
+          0.2540 0.8400
+        }
+        "eyes_updown" range 30.0 -30.0 
+        {
+          0.2540 0.7700
+        }
+        "head_forwardback" range 0.2 -0.2 
+        {
+          0.2540 1.0000
+        }
+      }
+    }
+  }
+  channel "move"
+  {
+  }
+}
+
+actor "rebel_sarah"
+{
+  channel "WAV"
+  {
+    event speak "be careful"
+    {
+      time 54.583336 55.429413
+      param "npc_anne_becareful"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Look"
+  {
+    event lookat "player"
+    {
+      time 53.083336 57.583336
+      param "!player"
+    }
+    event lookat "soldier"
+    {
+      time 7.166667 9.333334
+      param "rebel_soldier"
+    }
+    event lookat "medic"
+    {
+      time 10.500000 14.750000
+      param "rebel_medic"
+    }
+    event lookat "medic"
+    {
+      time 40.666668 47.583336
+      param "rebel_medic"
+    }
+    event lookat "soldier"
+    {
+      time 29.000000 31.166668
+      param "rebel_soldier"
+    }
+    event lookat "argento"
+    {
+      time 31.250004 37.333336
+      param "rebel_argento"
+    }
+  }
+  channel "face"
+  {
+    event face "argento"
+    {
+      time 1.000000 53.333336
+      param "rebel_argento"
+    }
+    event face "player"
+    {
+      time 53.833332 57.250000
+      param "!player"
+    }
+  }
+}
+
+actor "rebel_medic"
+{
+  channel "WAV"
+  {
+    event speak "birdmail"
+    {
+      time 10.878788 14.205047
+      param "npc_rebel2_birdmail"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "argento is right"
+    {
+      time 41.416668 46.988708
+      param "npc_rebel2_argentoisright"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "look"
+  {
+    event lookat "argento"
+    {
+      time 10.666666 15.166666
+      param "rebel_argento"
+    }
+    event lookat "soldier"
+    {
+      time 7.916667 10.333333
+      param "rebel_soldier"
+    }
+    event lookat "argento"
+    {
+      time 0.416666 5.583333
+      param "rebel_argento"
+    }
+    event lookat "player"
+    {
+      time 41.000000 49.500000
+      param "!player"
+    }
+    event lookat "soldier"
+    {
+      time 29.083336 31.500000
+      param "rebel_soldier"
+    }
+    event lookat "argento"
+    {
+      time 31.833334 37.000000
+      param "rebel_argento"
+    }
+    event lookat "sarah"
+    {
+      time 54.416672 56.500004
+      param "rebel_sarah"
+    }
+  }
+  channel "face"
+  {
+    event face "argento"
+    {
+      time 0.416666 40.083336
+      param "rebel_argento"
+    }
+    event face "player"
+    {
+      time 40.416672 48.750004
+      param "!player"
+    }
+  }
+  channel "gesture"
+  {
+    event gesture "1"
+    {
+      time 41.000004 43.800003
+      param "G_medpuct_mid"
+      absolutetags playback_time
+      {
+        "apex" 0.096880
+        "accent" 0.272727
+        "loop" 0.515152
+        "end" 0.757576
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.137931
+        "accent" 0.258621
+        "loop" 0.396552
+        "end" 0.517241
+      }
+      sequenceduration 1.966667
+    }
+    event gesture "2"
+    {
+      time 42.833336 48.300003
+      param "g_plead_01"
+      absolutetags playback_time
+      {
+        "apex" 0.121212
+        "accent" 0.318182
+        "loop" 0.530303
+        "end" 0.727273
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.275862
+        "accent" 0.448276
+        "loop" 0.689655
+        "end" 0.862069
+      }
+      sequenceduration 1.966667
+    }
+    event gesture "3"
+    {
+      time 10.750000 12.783334
+      param "G_what"
+      absolutetags playback_time
+      {
+        "apex" 0.133333
+        "accent" 0.200000
+        "loop" 0.366667
+        "end" 0.533333
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.133333
+        "accent" 0.200000
+        "loop" 0.366667
+        "end" 0.533333
+      }
+      sequenceduration 2.033333
+    }
+    event gesture "4"
+    {
+      time 12.750001 14.783334
+      param "G_what"
+      absolutetags playback_time
+      {
+        "apex" 0.133333
+        "accent" 0.200000
+        "loop" 0.366667
+        "end" 0.750000
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.133333
+        "accent" 0.200000
+        "loop" 0.366667
+        "end" 0.533333
+      }
+      sequenceduration 2.033333
+    }
+    event gesture "5"
+    {
+      time 45.666664 47.899998
+      param "G_noway_small"
+      absolutetags playback_time
+      {
+        "apex" 0.151515
+        "accent" 0.287879
+        "loop" 0.454545
+        "end" 0.575758
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.151515
+        "accent" 0.287879
+        "loop" 0.454545
+        "end" 0.575758
+      }
+      sequenceduration 2.233333
+    }
+  }
+  channel "flex"
+  {
+    event flexanimation "1"
+    {
+      time 44.000004 47.250004
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "inner_raiser" combo 
+        {
+          0.2860 1.0000
+        }
+        {
+          0.2860 0.5000
+        }
+        "outer_raiser" combo 
+        {
+          0.2860 1.0000
+        }
+        {
+          0.2860 0.5000
+        }
+        "head_updown" range 15.0 -15.0 
+        {
+          0.2860 1.0000
+        }
+        "head_tilt" range 15.0 -15.0 
+        {
+          0.2860 0.0000
+        }
+      }
+    }
+  }
+}
+
+actor "rebel_soldier"
+{
+  channel "WAV"
+  {
+    event speak "agreed"
+    {
+      time 7.545455 8.371215
+      param "npc_rebel1_agree"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "go together"
+    {
+      time 29.030304 30.359646
+      param "npc_rebel1_gotogether"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "look"
+  {
+    event lookat "argento"
+    {
+      time 16.250000 40.500000
+      param "rebel_argento"
+    }
+    event lookat "medic"
+    {
+      time 10.333335 16.000000
+      param "rebel_medic"
+    }
+    event lookat "argento"
+    {
+      time 0.666666 9.833333
+      param "rebel_argento"
+    }
+    event lookat "medic"
+    {
+      time 40.833336 46.500000
+      param "rebel_medic"
+    }
+    event lookat "player"
+    {
+      time 46.666668 51.666668
+      param "!player"
+    }
+    event lookat "sarah"
+    {
+      time 52.166668 57.666668
+      param "rebel_sarah"
+    }
+  }
+  channel "face"
+  {
+    event face "argento"
+    {
+      time 0.500000 46.666668
+      param "rebel_argento"
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "44"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

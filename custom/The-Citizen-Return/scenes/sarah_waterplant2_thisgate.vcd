@@ -1,0 +1,69 @@
+// Choreo version 1
+actor "rebel_sarah"
+{
+  channel "wav"
+  {
+    event speak "npc_sarah_thisgate"
+    {
+      time 0.213333 3.214240
+      param "npc_sarah_thisgate"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "lookat"
+  {
+    event lookat "atplayer"
+    {
+      time 0.060000 1.193333
+      param "!player"
+    }
+    event lookat "atplayer"
+    {
+      time 1.720000 3.073333
+      param "!player"
+    }
+    event lookat "atglowgreen"
+    {
+      time 3.373333 5.580000
+      param "glow_green"
+    }
+  }
+  channel "moveto"
+  {
+    event moveto "todoor"
+    {
+      time 0.033334 3.006667
+      param "reactor_evacdoor2"
+      param2 "Run"
+      distancetotarget 60.00
+    }
+  }
+  channel "face"
+  {
+    event face "facedoor"
+    {
+      time 0.886666 5.599999
+      param "reactor_evacdoor2"
+    }
+  }
+  channel "gesture"
+  {
+  }
+  channel "flex"
+  {
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "ExpressionTool" "100"
+  "RampTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

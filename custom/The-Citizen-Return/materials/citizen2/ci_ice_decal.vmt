@@ -1,0 +1,12 @@
+"LightmappedGeneric"
+
+{ "$basetexture" "citizen2/ci_ice_decal" 
+  "$surfaceprop" "glass"
+  "$envmap" "env_cubemap"
+  "$envmapmask" "citizen2/ci_ice_decal_mask"	
+  "$translucent" "1"
+  "$decal" "1"
+
+
+
+} 

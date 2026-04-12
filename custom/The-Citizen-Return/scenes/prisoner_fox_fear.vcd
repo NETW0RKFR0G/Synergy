@@ -1,0 +1,201 @@
+// Choreo version 1
+actor "prisoner_fox"
+{
+  channel "Look#"
+  {
+    event lookat "1"
+    {
+      time 2.086667 2.960000
+      param "!player"
+    }
+    event lookat "target"
+    {
+      time 6.033651 8.100317
+      param "feartarget1"
+    }
+    event lookat "target"
+    {
+      time 0.013333 2.080000
+      param "feartarget1"
+    }
+    event lookat "1"
+    {
+      time 5.064445 5.937778
+      param "!player"
+    }
+    event lookat "target"
+    {
+      time 2.973333 5.040000
+      param "feartarget1"
+    }
+    event lookat "1"
+    {
+      time 8.220001 9.093334
+      param "!player"
+    }
+    event lookat "target"
+    {
+      time 9.236825 11.303492
+      param "feartarget1"
+    }
+    event lookat "1"
+    {
+      time 11.410478 12.119048
+      param "!player"
+    }
+    event lookat "1"
+    {
+      time 14.300953 15.174286
+      param "!player"
+    }
+    event lookat "target"
+    {
+      time 18.200317 20.266985
+      param "feartarget1"
+    }
+    event lookat "target"
+    {
+      time 12.227619 14.294286
+      param "feartarget1"
+    }
+    event lookat "1"
+    {
+      time 17.278730 18.152063
+      param "!player"
+    }
+    event lookat "target"
+    {
+      time 15.259047 17.111429
+      param "feartarget1"
+    }
+    event lookat "1"
+    {
+      time 20.362860 21.236193
+      param "!player"
+    }
+    event lookat "target"
+    {
+      time 21.379683 23.446348
+      param "feartarget1"
+    }
+    event lookat "1"
+    {
+      time 23.481907 24.190475
+      param "!player"
+    }
+  }
+  channel "Gesture"
+  {
+    event gesture "1"
+    {
+      time 0.095238 23.990477
+      param "g_Pacer_ArmsCrossed"
+      absolutetags playback_time
+      {
+        "apex" 0.080581
+        "accent" 0.424303
+        "loop" 0.881474
+        "end" 0.972112
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.285714
+        "accent" 0.464286
+        "loop" 0.642857
+        "end" 0.892857
+      }
+      sequenceduration 0.966667
+    }
+    event gesture "2"
+    {
+      time 0.142857 24.038097
+      param "hg_puncuate_down"
+      absolutetags playback_time
+      {
+        "apex" 0.072709
+        "extreme" 0.391434
+        "loop" 0.905378
+        "end" 0.984064
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.333333
+        "extreme" 0.541667
+        "loop" 0.562500
+        "end" 0.562500
+      }
+      sequenceduration 1.633333
+    }
+    event gesture "3"
+    {
+      time 11.880952 15.895237
+      param "hg_headshake"
+      absolutetags playback_time
+      {
+        "apex" 0.084767
+        "loop" 0.579913
+        "extreme" 0.437894
+        "end" 0.757438
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.208333
+        "loop" 0.270833
+        "extreme" 0.416667
+        "end" 0.625000
+      }
+      sequenceduration 1.633333
+    }
+    event gesture "4"
+    {
+      time 5.880953 11.871429
+      param "hg_nod_left"
+      absolutetags playback_time
+      {
+        "apex" 0.119522
+        "extreme" 0.466135
+        "loop" 0.760956
+        "end" 0.944223
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.236842
+        "extreme" 0.473684
+        "loop" 0.578947
+        "end" 0.578947
+      }
+      sequenceduration 1.300000
+    }
+    event gesture "3"
+    {
+      time 0.119047 4.133333
+      param "hg_headshake"
+      absolutetags playback_time
+      {
+        "apex" 0.084767
+        "extreme" 0.437894
+        "loop" 0.579913
+        "end" 0.757438
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.208333
+        "loop" 0.270833
+        "extreme" 0.416667
+        "end" 0.625000
+      }
+      sequenceduration 1.633333
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "28"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off

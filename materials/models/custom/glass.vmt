@@ -1,0 +1,15 @@
+"VertexLitGeneric"
+
+{ "$basetexture" "citizen/miesglass1" 
+  "$surfaceprop" "glass"
+  "$envmap" "env_cubemap"
+  "$envmapmask" "citizen/miesglass1mask"
+  "$translucent" 1
+
+	$detail detail\metal_detail_01
+	$detailscale 4
+	$detailblendfactor .65
+	$detailblendmode 0	
+
+
+} 

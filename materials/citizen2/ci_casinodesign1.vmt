@@ -1,0 +1,9 @@
+"LightMappedGeneric"
+
+{ "$basetexture" "citizen2/ci_casinodesign1" 
+  "$decal" 1
+  "$translucent" 1
+ 
+
+
+} 

@@ -1,0 +1,78 @@
+
+	SYNERGY
+	HALF-LIFE 2 COOPERATIVE MOD
+
+----------------------------------------------
+	CREDITS (SYNERGY TEAM)
+----------------------------------------------
+
+	Devin "VOSK" "Mr.Hankey" Dawson
+	Jonathan "JonnyQuattro" Delgado
+	Scott "[-PeaNuT-]" Dawson
+	Seth "4-Legged Tumor"
+	Stijn "Stino" Tallon
+	Kenneth "Archanor" Foldal Moe
+	Anthony "Deathstick" Russello
+	Alecksander "fury_161" Sarunac
+	Nick "nickelrodent"
+	Alexander "Lexxy" Ali
+	Laurent "Pursoup" Froissart
+	Travis "Krazy Kasrkin" Wehrman
+
+----------------------------------------------
+	CREDITS (PAST SYNERGY TEAM)
+----------------------------------------------
+
+	John "Michael65" Davidson
+	Matthew ">kilgore"
+	"General Dodo"
+	"WhiteLegion"
+	"Magic Ninja"
+	Tim Vanderlinden "Tim-Coop"
+	"Xenon"
+
+----------------------------------------------
+	CREDITS (OTHERS)
+----------------------------------------------
+
+	Jakob "PizzaDude" Fischer
+	http://www.pizzadude.dk
+		"Kitchen Police" font characters (below) used in "SynFont"
+			e, g, n, r, s, y
+
+	Half-Life: Source High Definition Pack
+		Content used from the pack, provided to us by H.I.T.
+			at http://www.hl-improvement.com
+		Also see HLSHD_Readme.txt for more information
+
+	Combine Pulse Rifle MK2 Weapon Files
+		Original model files:  Valve Software
+		Original material files:  Valve Software
+		Model changes and compile:  NovaRain ( from H.I.T. Forum at http://www.hl-improvement.com )
+		New materials:  fakefactory
+		New animations:  LEDHED
+		Reload sounds:  Global Warfare Mod 1.5
+
+	MP5K Weapon Files
+		Original source files:  Romka ( from H.I.T. Forum at http://www.hl-improvement.com )
+
+----------------------------------------------
+	COPYRIGHT
+----------------------------------------------
+
+    All content distributed with Synergy is Copyright (C) 2005 - 2008 "Synergy Development Team",
+    All "other" content (mentioned under "CREDITS (OTHERS)") is Copyright their respective owners.
+
+    WE DO NOT TAKE OWNERSHIP OF THE OBJECTS MENTIONED IN "CREDITS (OTHERS)".
+    WE HAVE OR ARE ACTIVELY ATTEMPTING TO OBTAIN PERMISSION TO USE AND DISTRIBUTE CONTENT.
+
+    YOU ARE NOT PERMITTED TO REDISTRIBUTE ANY CONTENT DISTRIBUTED WITH SYNERGY,
+    UNLESS GIVEN EXPLICIT PERMISSION TO DO SO.  DO NOT TAKE ANY CONTENT INTO OTHER GAMES OR MODS.
+    DO NOT UPLOAD CONTENT TO OTHER WEBSITES OTHER THAN THOSE BELONGING
+    TO THE SYNERGY MOD OR THE SYNERGY MOD TEAM.
+
+    Thank you for respecting our wishes.
+
+    If you believe we have neglected to mention someone who you think should be credited
+    please send an e-mail to:	synergymod@gmail.com
+

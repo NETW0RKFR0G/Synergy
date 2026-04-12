@@ -1,0 +1,78 @@
+// Choreo version 1
+actor "larry"
+{
+  channel "wav"
+  {
+    event speak "1"
+    {
+      time 3.893333 9.605442
+      param "npc_larry_square_doing"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "2"
+    {
+      time 10.214286 13.198050
+      param "npc_larry_square_alreadydone"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "3"
+    {
+      time 13.277779 15.710069
+      param "npc_larry_square_wontneedtoremember"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "4"
+    {
+      time 15.833334 22.276871
+      param "npc_larry_square_youcantbreak"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "6"
+    {
+      time 27.388889 31.278233
+      param "npc_larry_square_laugh"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "7"
+    {
+      time 0.722224 3.578278
+      param "larry_nooo.wav"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "8"
+    {
+      time 22.444445 27.436735
+      param "npc_larry_square_gonnaliveforever"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "gesture"
+  {
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "12"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

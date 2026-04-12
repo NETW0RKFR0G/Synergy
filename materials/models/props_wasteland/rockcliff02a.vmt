@@ -1,0 +1,12 @@
+
+"VertexLitGeneric"
+{
+	"$basetexture" "Nature/ci_temporarywall"
+	"$surfaceprop" "concrete"
+
+	$detail detail\rock_detail_01
+	$detailscale 4
+	$detailblendfactor .55
+	$detailblendmode 0
+	
+}

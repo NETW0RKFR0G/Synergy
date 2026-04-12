@@ -1,0 +1,12 @@
+"LightmappedGeneric"
+
+{ "$basetexture" "citizen2/ci_ice3" 
+  "$surfaceprop" "glass"
+
+	$detail detail\metal_detail_01
+	$detailscale 2
+	$detailblendfactor .25
+	$detailblendmode 0
+
+
+} 

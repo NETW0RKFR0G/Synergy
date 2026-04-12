@@ -1,0 +1,26 @@
+// Choreo version 1
+actor "odessa"
+{
+  channel "wav"
+  {
+    event speak "1"
+    {
+      time 0.073333 1.045329
+      param "npc_citizen.gordead_ans08"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off

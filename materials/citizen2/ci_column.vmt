@@ -1,0 +1,9 @@
+"LightmappedGeneric"
+
+{ "$basetexture" "citizen2/ci_column" 
+  "$surfaceprop" "tile"
+  "$envmap" "env_cubemap"
+  "$envmapmask" "citizen2/ci_columnalpha"
+
+
+} 

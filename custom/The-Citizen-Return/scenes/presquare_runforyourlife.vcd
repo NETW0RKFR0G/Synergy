@@ -1,0 +1,84 @@
+// Choreo version 1
+actor "citizen_fighter2"
+{
+  channel "Wav"
+  {
+    event speak "runforyourlife"
+    {
+      time 0.326666 1.860929
+      param "npc_precasino_runforyourlife"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "lookat"
+  {
+    event lookat "atplayer"
+    {
+      time 0.013334 1.880000
+      param "!player"
+    }
+  }
+  channel "runto"
+  {
+    event moveto "movetoplayer"
+    {
+      time 0.013334 1.946667
+      param "!player"
+      param2 "Run"
+      distancetotarget 129.00
+    }
+  }
+  channel "flex"
+  {
+    event flexanimation "flex"
+    {
+      time 0.026667 3.153334
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "lid_raiser" combo 
+        {
+          0.2620 1.0000
+        }
+        {
+          0.2620 0.5000
+        }
+        "inner_raiser" combo 
+        {
+          0.2620 1.0000
+        }
+        {
+          0.2620 0.5000
+        }
+        "corner_depressor" combo 
+        {
+          0.2620 0.4300
+        }
+        {
+          0.2620 0.5000
+        }
+        "part" combo 
+        {
+          0.2620 1.0000
+        }
+        {
+          0.2620 0.5000
+        }
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "SceneRampTool" "100"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

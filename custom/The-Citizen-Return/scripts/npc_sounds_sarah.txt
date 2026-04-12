@@ -1,0 +1,645 @@
+
+// CANAL2
+
+"npc_sarah_broadcast"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"1.0"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/sarah_sawwhathappened.wav"
+}
+
+"npc_sarah_bothok"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"1.0"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/sarah_itsyou.wav"
+}
+
+"npc_sarah_notsolucky"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"1.0"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/sarah_noteveryonesolucky.wav"
+}
+
+"npc_sarah_thethingis"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"1.0"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/sarah_planintomotion.wav"
+}
+
+
+"npc_sarah_boatmechanic"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"1.0"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/sarah_obrienproblems.wav"
+}
+
+//////////////////////////////////////////////////////
+
+"npc_sarah_thatsright"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.9"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/sarah_thatsright.wav"
+}
+
+
+"npc_sarah_unconscious"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.9"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/sarah_seemtobeunconcious.wav"
+}
+
+
+"npc_sarah_goodluckairboat"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.9"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/sarah_goodluckontheairboat.wav"
+}
+
+"npc_sarah_carefuldownthere"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.9"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/sarah_carefuldownthere.wav"
+}
+
+
+"npc_sarah_waterproof"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.9"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/sarah_waterproof.wav"
+}
+
+
+"npc_sarah_controlroom"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.9"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/sarah_controlroom.wav"
+}
+
+////
+
+"npc_sarah_comeonquickly"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.9"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/sarah_cmonquickly.wav"
+}
+
+
+"npc_sarah_watchout"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.9"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/sarah_watchout.wav"
+}
+
+
+"npc_sarah_getinthecart"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.9"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/sarah_getthecart.wav"
+}
+
+"npc_sarah_ithinkhemeantup"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.9"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/sarah_standingonlift.wav"
+}
+
+
+"npc_sarah_lostargento"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.9"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/sarah_lostargento.wav"
+}
+
+"npc_sarah_andthatguy"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.9"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/sarah_andthatguy.wav"
+}
+
+
+"npc_sarah_thisisit"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.9"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/sarah_thisisit.wav"
+}
+
+"npc_sarah_imonit"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.9"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/sarah_imonit.wav"
+}
+
+
+"npc_sarah_cantbepossible"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.9"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/sarah_whatnoway.wav"
+}
+
+
+"npc_sarah_automaticstasis"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.9"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/sarah_singularity.wav"
+}
+
+
+"npc_sarah_onemoment"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.9"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/sarah_onemoment.wav"
+}
+
+"npc_sarah_override"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.9"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/sarah_manualoverride.wav"
+}
+
+
+"npc_sarah_makesnosense"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.9"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/sarah_itmakesnosense.wav"
+}
+
+
+"npc_sarah_whatnoway"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.9"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/sarah_whatnoway2.wav"
+}
+
+"npc_sarah_sacrifice"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.9"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/sarah_sacrifice.wav"
+}
+
+"npc_sarah_inthatcase"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.9"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/sarah_staywithyouright.wav"
+}
+
+
+
+"npc_sarah_butstill"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.9"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/sarah_butstill.wav"
+}
+
+"npc_sarah_thisgate"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.9"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/sarah_gatetotunnels.wav"
+}
+
+
+"npc_sarah_areyouok"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.9"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/sarah_areyouok.wav"
+}
+
+
+"npc_sarah_explosion"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.9"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/sarah_explosioncaughtcarts.wav"
+}
+
+"npc_sarah_thebeach"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.9"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/sarah_beachthisway.wav"
+}
+
+
+"npc_sarah_bravething"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.9"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/sarah_promiseme.wav"
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+
+"npc_sarah_ayefirmative"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.6"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/sarah_ayefirmative.wav"
+}
+
+
+"npc_sarah_backtoothers"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.6"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/sarah_backtoothers.wav"
+}
+
+
+"npc_sarah_crazyidiot"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.6"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/sarah_crazyidiot.wav"
+}
+
+"npc_sarah_gammasquad"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.6"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/sarah_gammasquad.wav"
+}
+
+"npc_sarah_handmethatweapon"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.6"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/sarah_handmethatweapon.wav"
+}
+
+
+"npc_sarah_icanopenthis"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.6"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/sarah_icanopenthis.wav"
+}
+
+
+"npc_sarah_iknew"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.6"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/sarah_iknew.wav"
+}
+
+"npc_sarah_omgitsjack"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.6"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/sarah_omgitsjack.wav"
+}
+
+
+"npc_sarah_usedtoworkhere"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.6"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/sarah_usedtoworkhere.wav"
+}
+
+"npc_sarah_utilitybelt"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.6"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/sarah_utilitybelt.wav"
+}
+
+"npc_sarah_werein"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.6"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/sarah_werein.wav"
+}
+
+"npc_sarah_youareawake"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.6"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/sarah_youreawake.wav"
+}
+
+
+
+"npc_sarah_ohmygod"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.8"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/sarah_ohmygod.wav"
+}
+
+
+"npc_sarah_youmadeit"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.8"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/sarah_youmadeit.wav"
+}
+
+"npc_sarah_youmadeit2"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.8"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/sarah_youmadeit.wav"
+}
+
+
+"npc_sarah_hadmeworried"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.8"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/sarah_hadmeworried.wav"
+}
+
+
+"npc_sarah_howareyoufeeling"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.8"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/sarah_howareyoufeeling.wav"
+}
+
+"npc_sarah_takeasecond"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.8"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/sarah_takeasecond.wav"
+}
+
+
+"npc_sarah_argentowaiting"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.8"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/sarah_argentowaiting.wav"
+}
+
+
+
+"npc_sarah_grabyourstuff"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.8"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/sarah_grabyourstuff.wav"
+}
+
+"npc_sarah_getusoutofhere"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"1"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/guide_getusoutofhere.wav"
+}
+
+"npc_sarah_theplaceiscrawling"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"1"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/sarah_theplaceiscrawling.wav"
+}

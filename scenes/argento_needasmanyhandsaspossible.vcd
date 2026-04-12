@@ -1,0 +1,100 @@
+// Choreo version 1
+actor "rebel_argento"
+{
+  channel "WAV"
+  {
+    event speak "1"
+    {
+      time 0.073334 3.091747
+      param "npc_argento_needasmanyhandsaspossible"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Facing"
+  {
+    event face "1"
+    {
+      time 0.066667 0.866667
+      param "rebel_sarah"
+    }
+    event face "2"
+    {
+      time 1.013334 2.773334
+      param "!player"
+    }
+  }
+  channel "Looking at"
+  {
+    event lookat "1"
+    {
+      time 0.080000 1.113333
+      param "rebel_sarah"
+    }
+    event lookat "2"
+    {
+      time 1.240000 2.920000
+      param "!player"
+    }
+  }
+  channel "Movement"
+  {
+  }
+  channel "Gestures"
+  {
+    event gesture "1"
+    {
+      time 0.033333 2.333333
+      param "G_righthandheavy"
+      absolutetags playback_time
+      {
+        "apex" 0.220588
+        "accent" 0.411765
+        "loop" 0.514706
+        "end" 0.617647
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.220588
+        "accent" 0.411765
+        "loop" 0.514706
+        "end" 0.617647
+      }
+    }
+    event gesture "2"
+    {
+      time 1.526666 3.493333
+      param "G_look"
+      absolutetags playback_time
+      {
+        "apex" 0.172414
+        "accent" 0.258621
+        "loop" 0.344828
+        "end" 0.517241
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.172414
+        "accent" 0.258621
+        "loop" 0.344828
+        "end" 0.517241
+      }
+      sequenceduration 1.966667
+    }
+  }
+  channel "Expressions"
+  {
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off

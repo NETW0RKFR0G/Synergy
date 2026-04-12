@@ -1,0 +1,110 @@
+// Choreo version 1
+actor "rebel_medic"
+{
+  channel "WAV"
+  {
+    event speak "1"
+    {
+      time 0.640000 2.285306
+      param "npc_rebel2_cmonsoldierletsgo"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Move"
+  {
+    event moveto "movetoplayer"
+    {
+      time 0.006666 0.813333
+      param "!player"
+    }
+  }
+  channel "Gestures"
+  {
+    event gesture "move_arms"
+    {
+      time 0.826667 2.793333
+      param "g_point_swing_across"
+      absolutetags playback_time
+      {
+        "apex" 0.275862
+        "accent" 0.448276
+        "loop" 0.689655
+        "end" 0.862069
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.176471
+        "accent" 0.352941
+        "loop" 0.441176
+        "end" 0.588235
+      }
+      sequenceduration 2.300000
+    }
+  }
+  channel "Face Expression"
+  {
+    event flexanimation "rebel2_flexanimation"
+    {
+      time 0.393333 1.193333
+      param ""
+      flexanimations samples_use_time
+      {
+        "outer_raiser" combo 
+        {
+          0.2500 0.7900
+        }
+        {
+          0.2500 0.5000
+        }
+        "head_tilt" range 15.0 -15.0 
+        {
+          0.2500 1.0000
+        }
+        "eyes_rightleft" range 30.0 -30.0 
+        {
+          0.2500 0.0000
+        }
+      }
+    }
+    event flexanimation "Flex animation 2"
+    {
+      time 1.200000 1.886667
+      param ""
+      flexanimations samples_use_time
+      {
+        "lowerer" combo 
+        {
+          0.2020 1.0000
+        }
+        {
+          0.2020 0.5000
+        }
+        "head_updown" range 15.0 -15.0 
+        {
+          0.2020 0.0200
+        }
+      }
+    }
+  }
+  channel "Lookat"
+  {
+    event lookat "lookatplayer"
+    {
+      time 0.026666 2.746666
+      param "!player"
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off

@@ -1,0 +1,145 @@
+// Choreo version 1
+actor "larry"
+{
+  channel "wav"
+  {
+    event speak "npc_larry_betterbeapoint"
+    {
+      time 2.886667 4.596236
+      param "npc_larry_getgateopen"
+      param2 "0.8"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "inconvenient"
+    {
+      time 0.053334 2.267937
+      param "npc_larry2_inconvenient"
+      param2 "1"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "lookat"
+  {
+    event lookat "atgate"
+    {
+      time 3.739999 5.173333
+      param "target_gate"
+    }
+    event lookat "atplayer"
+    {
+      time 2.733333 3.666667
+      param "!player"
+    }
+    event lookat "atgate"
+    {
+      time -0.046667 2.633333
+      param "target_gate"
+    }
+  }
+  channel "face"
+  {
+    event face "faceplayer"
+    {
+      time 2.653333 3.333333
+      param "!player"
+    }
+    event face "facegate"
+    {
+      time 0.033333 2.613333
+      param "target_gate"
+    }
+    event face "facegate"
+    {
+      time 3.353332 5.199999
+      param "target_gate"
+    }
+    event gesture "point"
+    {
+      time -0.680000 -0.180000
+      param "g_point"
+      absolutetags playback_time
+      {
+        "apex" 0.147059
+        "accent" 0.367647
+        "loop" 0.588235
+        "end" 0.602941
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.147059
+        "accent" 0.367647
+        "loop" 0.588235
+        "end" 0.602941
+      }
+      sequenceduration 2.300000
+    }
+  }
+  channel "gesture"
+  {
+    event gesture "point"
+    {
+      time 3.513333 4.453333
+      param "G_righthandpoint"
+      absolutetags playback_time
+      {
+        "apex" 0.205882
+        "accent" 0.441176
+        "loop" 0.470588
+        "end" 0.676471
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.205882
+        "accent" 0.441176
+        "loop" 0.470588
+        "end" 0.676471
+      }
+      sequenceduration 2.300000
+    }
+  }
+  channel "flex"
+  {
+    event flexanimation "worried"
+    {
+      time 0.446666 2.640000
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "lowerer" combo 
+        {
+          0.7220 1.0000
+        }
+        {
+          0.7220 0.5000
+        }
+        "cheek_raiser" combo 
+        {
+          0.7220 0.6500
+        }
+        {
+          0.7220 0.5000
+        }
+        "head_tilt" range 15.0 -15.0 
+        {
+          0.7220 0.2000
+        }
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "SceneRampTool" "100"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

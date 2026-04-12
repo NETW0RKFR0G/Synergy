@@ -1,0 +1,91 @@
+// Choreo version 1
+event loop "loop"
+{
+  time 32.222225 -1.000000
+  param "0.000000"
+  loopcount "-1"
+}
+actor "larry2"
+{
+  channel "wav"
+  {
+    event speak "letsgo"
+    {
+      time 0.246667 0.978096
+      param "npc_larry_letsgo"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "lookat"
+  {
+    event lookat "player"
+    {
+      time 0.206666 1.060000
+      param "!player"
+    }
+    event lookat "at airboat"
+    {
+      time 1.120000 2.466666
+      param "airboat"
+    }
+  }
+  channel "face"
+  {
+    event lookat "atplayer"
+    {
+      time 0.193334 1.113334
+      param "!player"
+    }
+    event face "boat"
+    {
+      time 1.140000 2.553333
+      param "airboat"
+    }
+  }
+  channel "gesture"
+  {
+    event gesture "letsgo"
+    {
+      time 0.093333 1.726666
+      param "hg_puncuate_down"
+      absolutetags playback_time
+      {
+        "apex" 0.333333
+        "extreme" 0.541667
+        "loop" 0.552500
+        "end" 0.562500
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.333333
+        "extreme" 0.541667
+        "loop" 0.562500
+        "end" 0.562500
+      }
+      sequenceduration 1.633333
+    }
+  }
+  channel "moveto"
+  {
+    event moveto "movetotarget"
+    {
+      time 0.093333 37.447472
+      param "target_leaving"
+      param2 "Walk"
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "28"
+  "ExpressionTool" "100"
+  "RampTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

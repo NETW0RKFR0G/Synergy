@@ -1,0 +1,17 @@
+"LightmappedGeneric"
+
+{ "$basetexture" "citizen2/ci_brick2" 
+  "$surfaceprop" "tile"
+  "$bumpmap" "citizen2/ci_brick2_normal"
+  "$envmap" "env_cubemap"
+  "$normalmapalphaenvmapmask" 1
+
+	$detail detail\noise_detail_01
+	$detailscale 5
+	$detailblendfactor .45
+	$detailblendmode 0
+
+
+
+
+} 

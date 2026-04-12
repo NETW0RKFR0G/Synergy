@@ -1,0 +1,17 @@
+"LightmappedGeneric"
+
+{ "$basetexture" "citizen2/ci_gold" 
+  "$surfaceprop" "metal"
+  "$envmap" "env_cubemap"
+  "$envmapmask" "citizen2/ci_gold_mask"
+
+   
+	$detail detail\metal_detail_01
+  	$detailscale 2
+  	$detailblendfactor 0.5
+  	$detailblendmode 0
+  	$detailtexturetransform "center .5 .5 scale 1 1 rotate 00 translate 0 0"	
+
+
+
+} 

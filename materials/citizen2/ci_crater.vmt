@@ -1,0 +1,9 @@
+"LightmappedGeneric"
+
+{ "$basetexture" "citizen2/ci_crater" 
+  "$surfaceprop" "concrete"
+  "$translucent" 1
+  "$decal" 1
+
+
+} 

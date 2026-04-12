@@ -1,0 +1,15 @@
+"LightmappedGeneric"
+
+{ "$basetexture" "citizen2/ci_plaque3" 
+  "$surfaceprop" "metal"
+  "$bumpmap" "citizen2/ci_plaque3_normal"
+  "$envmap" "env_cubemap"
+  "$normalmapalphaenvmapmask" 1
+
+	
+	$detail detail\metal_detail_01
+	$detailtexturetransform "center 0.5 0.5 scale 2 4 rotate 0 translate 0 0"
+	$detailblendfactor 0.75
+	$detailblendmode 0
+
+} 

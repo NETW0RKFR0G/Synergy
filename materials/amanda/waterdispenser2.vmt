@@ -1,0 +1,14 @@
+Refract
+{
+	$normalmap "amanda/waterdispenser_normal"
+	$model 1
+	$fogenable 1
+	$fogstart 0
+	$fogend 3
+	"$translucent" 1
+	"$bluramount" "100"  
+	"$REFRACTTINTTEXTURE" "amanda\waterdispenser"
+	$dudvmap "amanda/waterdispenser_dudv"
+	$refracttint "[.2 .3 .2]"		
+	$refractamount .1
+}

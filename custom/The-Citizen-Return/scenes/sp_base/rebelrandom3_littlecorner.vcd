@@ -1,0 +1,69 @@
+// Choreo version 1
+actor "rebel_idle"
+{
+  channel "WAV"
+  {
+    event speak "npc_rebelrandom4_sellinsurance"
+    {
+      time 0.093334 2.172971
+      param "npc_rebelrandom3_littlecorner"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event lookat "atplayer"
+    {
+      time -0.613333 -0.113333
+      param "!player"
+    }
+  }
+  channel "lookat"
+  {
+    event lookat "atplayer"
+    {
+      time 0.037037 2.691358
+      param "!player"
+    }
+  }
+  channel "flex"
+  {
+    event flexanimation "angry"
+    {
+      time 1.074074 2.333334
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "lid_tightener" combo 
+        {
+          0.8700 1.0000
+        }
+        {
+          0.8700 0.5000
+        }
+        "lowerer" combo 
+        {
+          0.8700 1.0000
+        }
+        {
+          0.8700 0.5000
+        }
+        "head_updown" range 15.0 -15.0 
+        {
+          0.8700 1.0000
+        }
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "108"
+  "SceneRampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "RampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

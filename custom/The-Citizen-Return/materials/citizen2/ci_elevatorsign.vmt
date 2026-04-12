@@ -1,0 +1,13 @@
+"LightmappedGeneric"
+
+{ "$basetexture" "citizen2/ci_elevatorsign" 
+  "$surfaceprop" "metal"
+ 
+	$detail detail\metal_detail_01
+	$detailtexturetransform "center .5 .5 scale 2 1 rotate 0 translate 0 0" 
+	$detailblendfactor 0.75
+	$detailblendmode 0
+
+
+
+} 

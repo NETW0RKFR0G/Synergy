@@ -1,0 +1,101 @@
+// Choreo version 1
+actor "larry"
+{
+  channel "wav"
+  {
+    event speak "wav1"
+    {
+      time 0.096297 2.754982
+      param "npc_larry_postsquare_anothersniper"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "face"
+  {
+    event flexanimation "face1"
+    {
+      time 0.074074 1.100000
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "lid_raiser" combo 
+        {
+          0.1840 1.0000
+        }
+        {
+          0.1840 0.5000
+        }
+        "outer_raiser" combo 
+        {
+          0.1840 1.0000
+        }
+        {
+          0.1840 0.5000
+        }
+        "part" combo 
+        {
+          0.1840 1.0000
+        }
+        {
+          0.1840 0.5000
+        }
+      }
+    }
+    event flexanimation "face2"
+    {
+      time 1.214815 2.662963
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "lowerer" combo 
+        {
+          0.1580 1.0000
+        }
+        {
+          0.1580 0.5000
+        }
+        "corner_puller" combo 
+        {
+          0.1580 0.1000
+        }
+        {
+          0.1580 0.5000
+        }
+        "chin_raiser" 
+        {
+          0.1580 0.8500
+        }
+        "lower_lip" 
+        {
+          0.1580 1.0000
+        }
+        "eyes_rightleft" range 30.0 -30.0 
+        {
+          0.1580 0.0000
+        }
+      }
+    }
+  }
+  channel "head turn"
+  {
+    event lookat "atplayer"
+    {
+      time 0.051852 2.877778
+      param "!player"
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "90"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

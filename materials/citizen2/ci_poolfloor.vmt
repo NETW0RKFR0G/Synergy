@@ -1,0 +1,15 @@
+"LightmappedGeneric"
+{
+   "$baseTexture" "citizen2/ci_poolfloor"
+   "$bumpmap" "citizen2/ci_poolfloor_normal"
+   "$envmap" "env_cubemap"
+    "$normalmapalphaenvmapmask" 1
+
+	$detail detail\metal_detail_01
+	$detailscale 5
+	$detailblendfactor 0.85
+	$detailblendmode 0
+
+
+
+}

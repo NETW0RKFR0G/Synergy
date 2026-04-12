@@ -1,0 +1,171 @@
+// Choreo version 1
+actor "stranded"
+{
+  channel "wav"
+  {
+    event speak "wav1"
+    {
+      time 0.193333 6.629070
+      param "npc_casino2_hellothere"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "face"
+  {
+  }
+  channel "expression"
+  {
+    event flexanimation "flex1"
+    {
+      time 0.080000 1.566666
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "lid_raiser" combo 
+        {
+          0.1500 0.8000
+        }
+        {
+          0.1500 0.5000
+        }
+        "lid_tightener" combo 
+        {
+          0.1500 0.5600
+        }
+        {
+          0.1500 0.5000
+        }
+        "inner_raiser" combo 
+        {
+          0.1500 1.0000
+        }
+        {
+          0.1500 0.5000
+        }
+        "cheek_raiser" combo 
+        {
+          0.1500 0.6900
+        }
+        {
+          0.1500 0.5000
+        }
+        "puckerer" combo 
+        {
+          0.1500 0.3000
+        }
+        {
+          0.1500 0.5000
+        }
+        "smile" 
+        {
+          0.1500 0.3400
+        }
+      }
+    }
+    event flexanimation "flex2"
+    {
+      time 3.373333 4.960000
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "lid_tightener" combo 
+        {
+          0.5847 1.0000
+        }
+        {
+          0.5847 0.5000
+        }
+        "lowerer" combo 
+        {
+          0.5847 1.0000
+        }
+        {
+          0.5847 0.5000
+        }
+        "corner_puller" combo 
+        {
+          0.5847 0.5400
+        }
+        {
+          0.5847 0.5000
+        }
+        "chin_raiser" 
+        {
+          0.5847 0.5600
+        }
+        "tightener" 
+        {
+          0.5847 0.5300
+        }
+        "lower_lip" 
+        {
+          0.5847 0.0000
+        }
+        "head_tilt" range 15.0 -15.0 
+        {
+          0.5847 0.0000
+        }
+      }
+    }
+    event flexanimation "flex3"
+    {
+      time 5.400000 6.960000
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "inner_raiser" combo 
+        {
+        }
+        {
+        }
+        "cheek_raiser" combo 
+        {
+        }
+        {
+        }
+        "wrinkler" 
+        {
+        }
+        "dilator" 
+        {
+        }
+        "puckerer" combo 
+        {
+        }
+        {
+        }
+        "smile" 
+        {
+        }
+        "eyes_updown" range 30.0 -30.0 
+        {
+        }
+        "eyes_rightleft" range 30.0 -30.0 
+        {
+        }
+      }
+    }
+  }
+  channel "lookat"
+  {
+    event lookat "atplayer"
+    {
+      time 0.026667 7.066667
+      param "!player"
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

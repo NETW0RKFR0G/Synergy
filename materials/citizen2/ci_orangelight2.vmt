@@ -1,0 +1,7 @@
+"LightmappedGeneric"
+
+{ "$basetexture" "citizen2/ci_orangelight1" 
+  "$surfaceprop" "computer"
+
+
+} 
