@@ -6,7 +6,7 @@ Coming soon
 
 2. Testing other ver. of Synergy and HL2.. as of right now it is working with the default ver.  (works on pre-Anniversary)  (WORKING)
 
-3.   Fixing    dialog
+3.   Fixing    dialog  (FIXED)
 MP3 initialized with no sound cache, this may cause janking. [ mp3\backbuzz.mp3 ]
 Failed to create decoder for MP3 [ mp3\backbuzz.mp3 ]
 MP3 initialized with no sound cache, this may cause janking. [ mp3\backbuzz.mp3 ]
@@ -20,5 +20,7 @@ Failed to create decoder for MP3 [ mp3\backbuzz.mp3 ]
 
 
 4. Looks like some trigger in the campaign is just not triggering.
--The NPC blocking the door so we can go out of the arena
--The interupter you need to activate with  the key card isnt activating
+-The NPC blocking the door so we can go out of the arena (FIXED)
+-The interupter you need to activate with  the key card isnt activating (FIXED)
+
+5. Creating an all in one exec file.
