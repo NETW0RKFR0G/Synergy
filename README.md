@@ -1,6 +1,6 @@
 Coming soon
 
---To Do
+--Done
 
     1. Compressing Synergy_pak.vpk because its bigger than 100MB.    (IT SHOULD CAUSE ANY ISSE FOR THE MOD) ( This  is a default file that comes with Synergy.   (FIXED)
 
@@ -22,6 +22,8 @@ Coming soon
     4. Looks like some trigger in the campaign is just not triggering.
     -The NPC blocking the door so we can go out of the arena (FIXED)
     -The interupter you need to activate with  the key card isnt activating (FIXED)
+
+--To Do
 
 5. Creating an all in one exec file.
 
