@@ -32,3 +32,7 @@ Need to add a couple  of change.
 7. Working on  certain models and missing sound
 
 8. Adding cutom settings
+
+9. Finding more play tester
+Thanks to :
+Diablokenny307
