@@ -1,0 +1,8 @@
+"patch"
+{
+	"include"		"materials/CITIZEN/MIESGLASS1.vmt"
+	"replace"
+	{
+		"$envmap"		"maps/sp_precasino/c-2252_612_-412"
+	}
+}

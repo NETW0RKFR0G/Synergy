@@ -1,0 +1,11 @@
+"LightmappedGeneric"
+
+{ "$basetexture" "citizen2/ci_bowling1" 
+  "$surfaceprop" "metal"
+
+	$detail detail\metal_detail_01
+	$detailtexturetransform "center 0.5 0.5 scale 4 2 rotate 0 translate 0 0"
+	$detailblendfactor 0.75
+	$detailblendmode 0
+
+} 

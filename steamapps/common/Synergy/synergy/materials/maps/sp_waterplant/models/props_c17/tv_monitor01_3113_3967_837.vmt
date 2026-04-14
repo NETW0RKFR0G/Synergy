@@ -1,0 +1,8 @@
+"patch"
+{
+	"include"		"materials/MODELS/PROPS_C17/TV_MONITOR01.vmt"
+	"replace"
+	{
+		"$envmap"		"maps/sp_waterplant/c3113_3967_837"
+	}
+}

@@ -1,0 +1,8 @@
+"patch"
+{
+	"include"		"materials/TILE/TILEWALL007E.vmt"
+	"replace"
+	{
+		"$envmap"		"maps/sp_postsquare/c-170_2196_344"
+	}
+}

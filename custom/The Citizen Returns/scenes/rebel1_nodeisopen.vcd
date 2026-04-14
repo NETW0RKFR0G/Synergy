@@ -1,0 +1,56 @@
+// Choreo version 1
+actor "rebel_soldier"
+{
+  channel "WAV"
+  {
+    event speak "1"
+    {
+      time 0.093334 2.604581
+      param "npc_rebel1_nodeisopen"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Facing"
+  {
+    event face "1"
+    {
+      time 0.046666 2.580000
+      param "target_datanode"
+    }
+  }
+  channel "Looking at"
+  {
+    event lookat "1"
+    {
+      time 1.766667 2.533334
+      param "target_datanode"
+    }
+    event lookat "2"
+    {
+      time 0.020000 1.726667
+      param "rebel_argento"
+    }
+  }
+  channel "Movement"
+  {
+  }
+  channel "Gestures"
+  {
+  }
+  channel "Expressions"
+  {
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off

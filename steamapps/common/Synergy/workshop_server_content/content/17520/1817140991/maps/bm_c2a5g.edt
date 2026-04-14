@@ -1,0 +1,151 @@
+bm_c2a5g
+{
+	console
+	{
+		sv_turbophysics "0"
+		sk_gargantua_dmg_slash "80"
+		sk_gargantua_dmg_fire "30"
+	}
+	entity
+	{
+//TEMP PLACEHOLDERS
+		edit {classname "prop_flare" values {classname "prop_physics" model "models/props_junk/flare.mdl"} }
+		edit {classname "item_weapon_crowbar" values {classname "weapon_crowbar"} }
+		edit {classname "item_weapon_frag" values {classname "weapon_frag"} }
+		edit {classname "item_weapon_357" values {classname "weapon_357"} }
+		edit {classname "fog_volume" values {classname "func_smokevolume"} }
+		edit {classname "item_weapon_shotgun" values {classname "weapon_shotgun"} }
+		edit {classname "item_ammo_shotgun" values {classname "item_box_buckshot"} }
+		edit {classname "item_grenade_mp5" values {classname "item_ammo_smg1_grenade"} }
+		edit {classname "func_conveyor_bms" values {classname "func_conveyor" spawnflags "0"} }
+		edit {classname "npc_gargantua" values {classname "npc_bmsgargantua"} }
+//Starting Equips
+		create {classname "info_player_equip"
+			values
+			{
+				targetname "syn_equipment_base"
+				item_suit "1"
+				weapon_crowbar "1"
+					ammo_pistol "18"
+				weapon_frag "1"
+				weapon_357 "1"
+					ammo_357 "6"
+					ammo_smg1 "30"
+				weapon_crossbow "1"
+					ammo_xbowbolt "5"
+				weapon_shotgun "1"
+					ammo_buckshot "12"
+				weapon_rpg "1"
+				ResponseContext "weapon_mp5 weapon_glock weapon_satchel weapon_tau"
+			}
+		}
+		
+		delete {classname "info_player_start"}
+		create {classname "info_spawn_manager" values {targetname "syn_spawn_manager"} }
+		create {classname "info_player_coop" origin "430 2545 675" values {targetname "syn_spawnpoint_00" startdisabled "0" angles "0 -90 0"} }
+		create {classname "info_player_coop" origin "-845 255 405" values {targetname "syn_spawnpoint_01" startdisabled "1" angles "0 180 0"} }
+		create {classname "info_player_coop" origin "-1375 735 265" values {targetname "syn_spawnpoint_02" startdisabled "1" angles "0 180 0"} }
+		create {classname "info_player_coop" origin "-50 5455 260" values {targetname "syn_spawnpoint_03" startdisabled "1" angles "0 90 0"} }
+		
+		create {classname "logic_auto"
+			values
+			{
+				spawnflags "1"
+				OnMapSpawn "syn_trig1,AddOutput,OnTrigger syn_spawn_manager:SetCheckPoint:syn_spawnpoint_01:0:1,0,-1"
+				OnMapSpawn "gargachasecounter,AddOutput,OnHitMax syn_gargrun:StartSchedule::10:-1,0,-1"
+				OnMapSpawn "syn_trig2,AddOutput,OnTrigger syn_spawn_manager:SetCheckPoint:syn_spawnpoint_03:0:1,0,-1"
+				OnMapSpawn "syn_trig2,AddOutput,OnTrigger big_boy_blue:SetDamageFilter::0:1,0,-1"
+			}
+		}
+		
+		edit {classname "trigger_once" origin "-1232 32 352" values {targetname "syn_trig1"} }
+		edit {classname "trigger_once" origin "-894 4528 -14.64" values {targetname "syn_trig2"} }
+		edit {classname "trigger_once" origin "-1408 736 260" values {classname "logic_relay" targetname "syn_rel1"} }
+		create {classname "syn_transition_wall" origin "-1415 845 200" values {solid "6" targetname "syn_antirush_wall" angles "0 0 0" DisableShadows "1"} }
+		create {classname "trigger_coop" origin "-1308 768 360"
+			values
+			{
+				edt_getbspmodelfor_classname "trigger_once"
+				edt_getbspmodelfor_origin "-912 576 464"
+				targetname "syn_cooptrig_01"
+				spawnflags "1"
+				startdisabled "0"
+				usehud "1"
+				playervalue "66"
+				counttype "1"
+				target "syn_cooptele_01"
+				OnStartTouch "syn_spawn_manager,SetCheckPoint,syn_spawnpoint_02,0,1"
+				OnPlayersIn "syn_antirush_wall,kill,,0,-1"
+				OnPlayersIn "syn_rel1,Trigger,,0,1"
+				OnPlayersIn "!self,TeleportPlayersNotTouching,,0.5,1"
+				OnPlayersIn "!self,Disable,,1,-1"
+			}
+		}
+		create {classname "info_target" origin "-1375 735 265" values {targetname "syn_cooptele_01" angles "0 180 0"} }
+		
+		edit {classname "filter_damage_class" values {classname "filter_activator_class" filterclass "prop_physics"} }
+		create {classname "aiscripted_schedule" origin "-1595 745 30" values {targetname "syn_gargrun" m_iszEntity "big_boy_blue" goalent "player" forcestate "2" graball "1" schedule "6" spawnflags "4"} }
+		create {classname "logic_navigation" origin "-1595 745 30" values {targetname "syn_gargrunnav" target "big_boy_blue" spawnflags "1"} }
+		create {classname "npc_enemyfinder" origin "-1595 745 50" values {targetname "syn_finder" FieldOfView "-1.0" StartOn "1"} }
+		create {classname "npc_enemyfinder" origin "-1055 3190 -65" values {targetname "syn_finder" FieldOfView "-1.0" StartOn "1"} }
+		create {classname "npc_enemyfinder" origin "-2800 2815 -60" values {targetname "syn_finder" FieldOfView "-1.0" StartOn "1"} }
+		create {classname "npc_enemyfinder" origin "-2765 1500 30" values {targetname "syn_finder" FieldOfView "-1.0" StartOn "1"} }
+		create {classname "ai_goal_follow"
+			values
+			{
+				targetname "gargfollow"
+				Actor "big_boy_blue"
+				goal "player"
+				MaximumState "3"
+			}
+		}
+		create {classname "trigger_once" origin "-2823 2108 -15"
+			values
+			{
+				edt_getbspmodelfor_classname "trigger_once"
+				edt_getbspmodelfor_origin "-894 4528 -14.64"
+				spawnflags "1"
+				OnTrigger "syn_gargmv,BeginSequence,,0,1"
+			}
+		}
+		create {classname "scripted_sequence" origin "-2045 1470 30"
+			values
+			{
+				targetname "syn_gargmv"
+				spawnflags "224"
+				m_iszNextScript "syn_gargmv2"
+				m_iszEntity "big_boy_blue"
+				m_fMoveTo "2"
+				m_flRadius "0"
+				angles "0 180 0"
+			}
+		}
+		create {classname "scripted_sequence" origin "-2660 1470 -100"
+			values
+			{
+				targetname "syn_gargmv2"
+				spawnflags "224"
+				//m_iszNextScript "syn_gargmv2"
+				m_iszEntity "big_boy_blue"
+				m_fMoveTo "2"
+				m_flRadius "0"
+				angles "0 130 0"
+			}
+		}
+		delete {targetname "player_block_garga"}
+		
+		create {classname "item_ammo_crate" origin "-55 5630 232" values {angles "0 -90 0" AmmoType "3"} }
+		
+		delete {targetname "c2a5g_changelevel"}
+		create {classname "trigger_changelevel" origin "182 8096 -168"
+			values
+			{
+				edt_getbspmodelfor_classname "trigger_once"
+				edt_getbspmodelfor_origin "-894 4528 -14.64"
+				angles "0 90 0"
+				map "bm_c3a1a"
+				landmark "c2a5h_c3a1a_landmark"
+			}
+		}
+	}
+}

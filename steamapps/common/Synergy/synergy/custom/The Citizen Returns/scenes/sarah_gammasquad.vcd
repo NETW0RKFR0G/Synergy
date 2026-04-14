@@ -1,0 +1,184 @@
+// Choreo version 1
+actor "rebel_sarah"
+{
+  channel "WAV"
+  {
+    event speak "1"
+    {
+      time 0.093334 8.011475
+      param "npc_sarah_gammasquad"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Facing"
+  {
+    event face "1"
+    {
+      time 0.066667 7.892592
+      param "rebel_soldier"
+    }
+  }
+  channel "Looking at"
+  {
+    event lookat "1"
+    {
+      time 4.903704 7.729630
+      param "rebel_soldier"
+    }
+    event lookat "1"
+    {
+      time 2.607408 4.796297
+      param "looktarget_icelarry"
+    }
+    event lookat "1"
+    {
+      time 0.051852 2.522223
+      param "rebel_soldier"
+    }
+  }
+  channel "Movement"
+  {
+  }
+  channel "Gestures"
+  {
+    event gesture "shake head"
+    {
+      time 2.133334 3.766667
+      param "hg_headshake"
+      absolutetags playback_time
+      {
+        "apex" 0.208333
+        "loop" 0.270833
+        "extreme" 0.416667
+        "end" 0.625000
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.208333
+        "loop" 0.270833
+        "extreme" 0.416667
+        "end" 0.625000
+      }
+      sequenceduration 1.633333
+    }
+    event flexanimation "surprise"
+    {
+      time 0.140740 1.870370
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "lid_raiser" combo 
+        {
+          0.1740 0.6100
+        }
+        {
+          0.1740 0.5000
+        }
+        "outer_raiser" combo 
+        {
+          0.1740 1.0000
+        }
+        {
+          0.1740 0.5000
+        }
+        "corner_depressor" combo 
+        {
+          0.1740 0.1000
+        }
+        {
+          0.1740 0.5000
+        }
+        "puckerer" combo 
+        {
+          0.1740 0.3300
+        }
+        {
+          0.1740 0.5000
+        }
+        "jaw_clencher" 
+        {
+          0.1740 1.0000
+        }
+      }
+    }
+  }
+  channel "Expressions"
+  {
+    event flexanimation "grim"
+    {
+      time 5.266667 8.003704
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "lid_tightener" combo 
+        {
+        }
+        {
+        }
+        "blink" 
+        {
+          0.1720 0.2100
+        }
+        "outer_raiser" combo 
+        {
+        }
+        {
+        }
+        "lowerer" combo 
+        {
+          0.1720 0.7000
+        }
+        {
+          0.1720 0.5000
+        }
+        "part" combo 
+        {
+          0.1720 1.0000
+        }
+        {
+          0.1720 0.5000
+        }
+        "head_updown" range 15.0 -15.0 
+        {
+        }
+        "head_forwardback" range 0.2 -0.2 
+        {
+        }
+      }
+    }
+    event gesture "1"
+    {
+      time 0.074074 2.040740
+      param "broadsweepdown"
+      absolutetags playback_time
+      {
+        "apex" 0.310345
+        "accent" 0.500000
+        "loop" 0.586207
+        "end" 0.655172
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.310345
+        "accent" 0.500000
+        "loop" 0.586207
+        "end" 0.655172
+      }
+      sequenceduration 1.966667
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "90"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

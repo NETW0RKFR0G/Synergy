@@ -1,0 +1,52 @@
+// Choreo version 1
+actor "larry"
+{
+  channel "facetowards"
+  {
+    event face "facescreen"
+    {
+      time 0.240000 2.526667
+      param "prop_battery"
+    }
+  }
+  channel "lookat"
+  {
+    event lookat "lookatscreen"
+    {
+      time 0.286666 4.540000
+      param "prop_battery"
+    }
+  }
+}
+
+actor "rebel1"
+{
+  channel "facetowards"
+  {
+    event face "facescreen"
+    {
+      time 0.460000 4.540000
+      param "prop_battery"
+    }
+  }
+  channel "lookat"
+  {
+    event lookat "lookatscreen"
+    {
+      time 0.540000 4.526666
+      param "prop_battery"
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

@@ -1,0 +1,87 @@
+// Choreo version 1
+actor "rebel_sarah"
+{
+  channel "wav"
+  {
+    event speak "npc_sarah_comeon"
+    {
+      time 0.046666 1.311927
+      param "npc_sarah_comeonquickly"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "lookat"
+  {
+    event lookat "atplayer"
+    {
+      time 0.060000 0.413333
+      param "!player"
+    }
+  }
+  channel "moveto"
+  {
+  }
+  channel "face"
+  {
+  }
+  channel "gesture"
+  {
+  }
+  channel "flex"
+  {
+    event flexanimation "flex"
+    {
+      time 0.060000 1.373333
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "lid_raiser" combo 
+        {
+          0.0660 1.0000
+        }
+        {
+          0.0660 0.5000
+        }
+        "outer_raiser" combo 
+        {
+          0.0660 1.0000
+        }
+        {
+          0.0660 0.5000
+        }
+        "lowerer" combo 
+        {
+          0.0660 0.0000
+        }
+        {
+          0.0660 0.5000
+        }
+        "part" combo 
+        {
+          0.0660 1.0000
+        }
+        {
+          0.0660 0.5000
+        }
+        "head_tilt" range 15.0 -15.0 
+        {
+          0.0660 0.0000
+        }
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "ExpressionTool" "100"
+  "RampTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

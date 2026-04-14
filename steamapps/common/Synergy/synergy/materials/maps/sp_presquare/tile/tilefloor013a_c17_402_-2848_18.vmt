@@ -1,0 +1,11 @@
+"patch"
+{
+	"include"		"materials/TILE/TILEFLOOR013A_C17.vmt"
+	"replace"
+	{
+		"LightmappedGeneric_DX9"
+		{
+			"$envmap"		"maps/sp_presquare/c402_-2848_18"
+		}
+	}
+}

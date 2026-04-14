@@ -1,0 +1,106 @@
+// Choreo version 1
+actor "mina"
+{
+  channel "WAV"
+  {
+    event speak "thatwasclose"
+    {
+      time 0.093333 3.373991
+      param "npc_mina_thatwasclose"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "expression"
+  {
+    event flexanimation "1"
+    {
+      time 0.053333 0.906666
+      param ""
+      flexanimations samples_use_time
+      {
+        "lid_tightener" combo 
+        {
+          0.1460 1.0000
+        }
+        {
+          0.1460 0.5000
+        }
+        "inner_raiser" combo 
+        {
+          0.1460 0.9600
+        }
+        {
+          0.1460 0.5000
+        }
+      }
+    }
+    event flexanimation "2"
+    {
+      time 1.326666 2.079999
+      param ""
+      flexanimations samples_use_time
+      {
+        "outer_raiser" combo 
+        {
+          0.1640 1.0000
+        }
+        {
+          0.1640 0.5000
+        }
+        "part" combo 
+        {
+          0.1640 1.0000
+        }
+        {
+          0.1640 0.5000
+        }
+        "puckerer" combo 
+        {
+          0.1640 0.2100
+        }
+        {
+          0.1640 0.5000
+        }
+      }
+    }
+    event flexanimation "3"
+    {
+      time 2.466667 3.280000
+      param ""
+      flexanimations samples_use_time
+      {
+        "lid_tightener" combo 
+        {
+          0.1260 1.0000
+        }
+        {
+          0.1260 0.5000
+        }
+        "lowerer" combo 
+        {
+          0.1260 1.0000
+        }
+        {
+          0.1260 0.5000
+        }
+        "head_tilt" range 15.0 -15.0 
+        {
+          0.1260 0.0000
+        }
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "SceneRampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "RampTool" "100"
+}
+fps 60
+snap off

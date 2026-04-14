@@ -1,0 +1,8 @@
+"patch"
+{
+	"include"		"materials/CITIZEN/MIESMETAL2.vmt"
+	"replace"
+	{
+		"$envmap"		"maps/sp_postsquare/c872_512_-248"
+	}
+}

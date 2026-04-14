@@ -1,0 +1,66 @@
+bm_c2a1b
+{
+	console
+	{
+		sv_turbophysics "0"
+	}
+	entity
+	{
+//TEMP PLACEHOLDERS
+		edit {classname "prop_flare" values {classname "prop_physics" model "models/props_junk/flare.mdl"} }
+		edit {classname "item_weapon_crowbar" values {classname "weapon_crowbar"} }
+		edit {classname "item_weapon_frag" values {classname "weapon_frag"} }
+		edit {classname "item_weapon_357" values {classname "weapon_357"} }
+		edit {classname "fog_volume" values {classname "func_smokevolume"} }
+		edit {classname "item_weapon_shotgun" values {classname "weapon_shotgun"} }
+		edit {classname "item_ammo_shotgun" values {classname "item_box_buckshot"} }
+		edit {classname "item_grenade_mp5" values {classname "item_ammo_smg1_grenade"} }
+		edit {classname "func_conveyor_bms" values {classname "func_conveyor" spawnflags "0"} }
+		edit {classname "npc_gargantua" values {classname "npc_bmsgargantua"} }
+//--
+//Starting Equips
+		create {classname "info_player_equip"
+			values
+			{
+				targetname "syn_equipment_base"
+				item_suit "1"
+				weapon_crowbar "1"
+					ammo_pistol "18"
+				weapon_frag "1"
+				weapon_357 "1"
+					ammo_357 "6"
+					ammo_smg1 "30"
+				weapon_shotgun "1"
+					ammo_buckshot "12"
+				ResponseContext "weapon_mp5 weapon_glock weapon_satchel"
+			}
+		}
+		
+		create {classname "logic_auto"
+			values
+			{
+				spawnflags "1"
+				OnMapSpawn "c2a1b_console_branch,AddOutput,OnTrue syn_buttonback:Unlock::0:-1,0,-1"
+				OnMapSpawn "c2a1b_console_branch,AddOutput,OnTrue c2a1b_console_switch_01:Lock::0:-1,0,-1"
+				OnMapSpawn "c2a1b_console_branch,AddOutput,OnTrue syn_spawn_manager:SetCheckPoint:syn_spawnpoint_02:0:1,0,-1"
+				OnMapSpawn "c2a1b_console_branch,AddOutput,OnFalse syn_buttonback:Lock::0:-1,0,-1"
+				OnMapSpawn "beep_relay,AddOutput,OnTrigger syn_spawn_manager:SetCheckPoint:syn_spawnpoint_01:0:1,0,-1"
+				OnMapSpawn "down,AddOutput,OnPressed !self:Lock::0:-1,0,-1"
+				OnMapSpawn "elevator2,AddOutput,OnFullyOpen down:Unlock::0:-1,0,-1"
+				OnMapSpawn "elevator2,AddOutput,OnFullyClosed down:Unlock::0:-1,0,-1"
+				OnMapSpawn "elevator2,AddOutput,OnOpen down:Lock::0:-1,0,-1"
+				OnMapSpawn "elevator2,AddOutput,OnClose down:Lock::0:-1,0,-1"
+				
+			}
+		}
+		
+		delete {classname "info_player_start"}
+		create {classname "info_spawn_manager" values {targetname "syn_spawn_manager"} }
+		create {classname "info_player_coop" origin "785 1040 356" values {targetname "syn_spawnpoint_00" startdisabled "0" angles "0 90 0"} }
+		create {classname "info_player_coop" origin "1135 2990 230" values {targetname "syn_spawnpoint_01" startdisabled "1" angles "0 180 0"} }
+		create {classname "info_player_coop" origin "1025 1685 -285" values {targetname "syn_spawnpoint_02" startdisabled "1" angles "0 90 0"} }
+		
+		edit {targetname "down" values {wait "3" spawnflags "5121"} }
+		edit {classname "func_button" origin "689 983 -144" values {targetname "syn_buttonback" spawnflags "3073"} }
+	}
+}

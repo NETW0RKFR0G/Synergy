@@ -1,0 +1,87 @@
+bm_c2a4e
+{
+	console
+	{
+		sv_turbophysics "0"
+	}
+	entity
+	{
+//TEMP PLACEHOLDERS
+		edit {classname "prop_flare" values {classname "prop_physics" model "models/props_junk/flare.mdl"} }
+		edit {classname "item_weapon_crowbar" values {classname "weapon_crowbar"} }
+		edit {classname "item_weapon_frag" values {classname "weapon_frag"} }
+		edit {classname "item_weapon_357" values {classname "weapon_357"} }
+		edit {classname "fog_volume" values {classname "func_smokevolume"} }
+		edit {classname "item_weapon_shotgun" values {classname "weapon_shotgun"} }
+		edit {classname "item_ammo_shotgun" values {classname "item_box_buckshot"} }
+		edit {classname "item_grenade_mp5" values {classname "item_ammo_smg1_grenade"} }
+		edit {classname "func_conveyor_bms" values {classname "func_conveyor" spawnflags "0"} }
+		edit {classname "npc_gargantua" values {classname "npc_bmsgargantua"} }
+//Starting Equips
+		create {classname "info_player_equip"
+			values
+			{
+				targetname "syn_equipment_base"
+				item_suit "1"
+				weapon_crowbar "1"
+					ammo_pistol "18"
+				weapon_frag "1"
+				weapon_357 "1"
+					ammo_357 "6"
+					ammo_smg1 "30"
+				weapon_shotgun "1"
+					ammo_buckshot "12"
+				weapon_crossbow "1"
+					ammo_xbowbolt "4"
+				ResponseContext "weapon_mp5 weapon_glock weapon_satchel"
+			}
+		}
+		
+		delete {targetname "weapons"}
+		delete {targetname "suit"}
+		delete {targetname "ammo"}
+		delete {targetname "new_game_spawn"}
+		delete {classname "info_player_start"}
+		delete {classname "keyframe_rope"}
+		delete {classname "move_rope"}
+		delete {classname "logic_achievement"}
+		create {classname "info_spawn_manager" values {targetname "syn_spawn_manager"} }
+		create {classname "info_player_coop" origin "4488 -32 -415" values {targetname "syn_spawnpoint_00" startdisabled "0" angles "0 180 0"} }
+		create {classname "info_player_coop" origin "3445 1280 230" values {targetname "syn_spawnpoint_01" startdisabled "1" angles "0 180 0"} }
+		create {classname "info_player_coop" origin "-1005 995 355" values {targetname "syn_spawnpoint_02" startdisabled "1" angles "0 180 0"} }
+		create {classname "info_player_coop" origin "-75 -840 405" values {targetname "syn_spawnpoint_03" startdisabled "1" angles "0 -90 0"} }
+		create {classname "syn_transition_wall" origin "4600 -30 -600" values {solid "6" targetname "syn_backtrack" angles "0 180 0"} }
+		
+		create {classname "logic_auto"
+			values
+			{
+				spawnflags "1"
+				OnMapSpawn "syn_trig1,AddOutput,OnTrigger syn_spawn_manager:SetCheckPoint:syn_spawnpoint_01:0:1,0,-1"
+				OnMapSpawn "syn_trig2,AddOutput,OnTrigger syn_spawn_manager:SetCheckPoint:syn_spawnpoint_02:0:1,0,-1"
+				OnMapSpawn "Trigger_Setup_NogoodupthereScene,AddOutput,OnTrigger syn_spawn_manager:SetCheckPoint:syn_spawnpoint_03:0:1,0,-1"
+			}
+		}
+		
+		edit {classname "trigger_multiple" origin "3304 1280 246" values {targetname "syn_trig1"} }
+		edit {classname "trigger_once" origin "-398.5 971.5 409" values {targetname "syn_trig2"} }
+		
+		create {classname "syn_transition_wall" origin "-1985 -1265 400" values {solid "6" targetname "syn_antirush_wall" angles "0 90 0"} }
+		create {classname "trigger_coop" origin "-2055 -900 592"
+			values
+			{
+				//Apparently this system initiallizes all entities, then checks for the trigger model
+				//This will crash on almost every occasion
+				//edt_getbspmodelfor_classname "trigger_physics_trap"
+				//edt_getbspmodelfor_origin "129 1216 480"
+				model "*246"
+				spawnflags "1"
+				CountType "1"
+				UseHUD "1"
+				PlayerValue "80"
+				OnPlayersIn "syn_antirush_wall,kill,,0,-1"
+				OnPlayersIn "!self,Disable,,0,-1"
+			}
+		}
+		create {classname "trigger_changelevel" origin "-1978 -1256 494" values {targetname "toc2a4fedt" angles "0 90 0" model "*185" map "bm_c2a4fedt" landmark "bm_c2a4e_bm_c2a4f"} }
+	}
+}

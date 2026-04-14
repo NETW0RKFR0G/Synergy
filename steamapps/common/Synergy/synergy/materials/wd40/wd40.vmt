@@ -1,0 +1,7 @@
+"vertexlitGeneric"
+{
+    "$basetexture" "wd40/wd40"
+    "$envmap" "env_cubemap"
+    "$envmaptint" "[1 1 1]"
+    "$basealphaenvmapmask" "1" 
+}

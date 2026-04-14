@@ -1,0 +1,105 @@
+// Choreo version 1
+actor "medic"
+{
+  channel "WAV"
+  {
+    event speak "1"
+    {
+      time 0.153846 3.056295
+      param "npc_medic_getoutoftheresarah"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Face"
+  {
+    event face "anne"
+    {
+      time 0.076923 6.551282
+      param "anne"
+    }
+  }
+  channel "Look at"
+  {
+    event lookat "anne"
+    {
+      time 0.230769 6.525640
+      param "anne"
+    }
+  }
+  channel "Gesture"
+  {
+    event gesture "hands"
+    {
+      time -0.692308 16.487181
+      param "urgenthandsweep"
+      absolutetags playback_time
+      {
+        "apex" 0.073113
+        "accent" 0.076557
+        "loop" 0.080000
+        "end" 0.144851
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.191781
+        "accent" 0.301370
+        "loop" 0.547945
+        "end" 0.616438
+      }
+      sequenceduration 2.466667
+    }
+  }
+  channel "Expressions"
+  {
+    event flexanimation "facexpression"
+    {
+      time 0.358975 5.807693
+      param ""
+      flexanimations samples_use_time
+      {
+        "inner_raiser" combo 
+        {
+          0.1660 1.0000
+        }
+        {
+          0.1660 0.5000
+        }
+        "cheek_raiser" combo 
+        {
+          0.1660 1.0000
+        }
+        {
+          0.1660 0.5000
+        }
+        "corner_depressor" combo 
+        {
+          0.1660 0.7900
+        }
+        {
+          0.1660 0.5000
+        }
+        "jaw_drop" 
+        {
+          0.1660 0.4100
+        }
+        "head_tilt" range 15.0 -15.0 
+        {
+          0.1660 0.1600
+        }
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "52"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off

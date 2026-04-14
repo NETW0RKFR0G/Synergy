@@ -1,0 +1,8 @@
+"patch"
+{
+	"include"		"materials/CITIZEN2/CI_WOODFLOOR1.vmt"
+	"replace"
+	{
+		"$envmap"		"maps/sp_casino/c588_3373_1117"
+	}
+}

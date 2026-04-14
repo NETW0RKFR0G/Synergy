@@ -1,0 +1,8 @@
+"patch"
+{
+	"include"		"materials/BUILDING_TEMPLATE/BUILDING_TEMPLATE007D.vmt"
+	"replace"
+	{
+		"$envmap"		"maps/sp_presquare/c2399_-3828_-6"
+	}
+}

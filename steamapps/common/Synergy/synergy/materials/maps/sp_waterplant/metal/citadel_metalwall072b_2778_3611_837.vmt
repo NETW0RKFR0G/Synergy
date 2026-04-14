@@ -1,0 +1,8 @@
+"patch"
+{
+	"include"		"materials/METAL/CITADEL_METALWALL072B.vmt"
+	"replace"
+	{
+		"$envmap"		"maps/sp_waterplant/c2778_3611_837"
+	}
+}

@@ -1,0 +1,8 @@
+"patch"
+{
+	"include"		"materials/CITIZEN2/CI_BUI6.vmt"
+	"replace"
+	{
+		"$envmap"		"maps/sp_precasino/c-6269_-8776_774"
+	}
+}

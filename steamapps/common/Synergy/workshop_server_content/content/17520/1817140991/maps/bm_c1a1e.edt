@@ -1,0 +1,88 @@
+//dont fall! boxes
+//post pone music til after checkpoint, or maket checkpoint eatiler!! (music stops on reload)
+bm_c1a1e
+{
+	console
+	{
+		sv_turbophysics "0"
+	}
+	entity
+	{
+//TEMP PLACEHOLDERS
+		edit {classname "prop_flare" values {classname "prop_physics" model "models/props_junk/flare.mdl"} }
+		edit {classname "item_weapon_crowbar" values {classname "weapon_crowbar"} }
+		edit {classname "item_weapon_frag" values {classname "weapon_frag"} }
+		edit {classname "fog_volume" values {classname "func_smokevolume"} }
+//--
+//Block Backtracking
+		create {classname "prop_dynamic" origin "-3552.01 -4224.65 -3656"
+			values
+			{
+				model "models/synergy/tools/syn_transition.mdl"
+				angles "0 270 0"
+				solid "6"
+				DisableShadows "1"
+			}
+		}
+
+		create {classname "info_player_equip"
+			values
+			{
+				targetname "syn_equipmenet_base"
+				item_suit "1"
+				weapon_crowbar "1"
+					ammo_pistol "18"
+				weapon_frag "1"
+				ResponseContext "weapon_glock"
+			}
+		}
+		
+		create {classname "info_spawn_manager" values {targetname "syn_spawn_manager"} }
+		delete {classname "info_player_start"}
+		create {classname "info_player_coop" origin "-2555 -5390 -3610" values {targetname "syn_spawnpoint_00" startdisabled "0" angles "0 -90 0"} }
+		create {classname "info_player_coop" origin "-3440 -7010 -3355" values {targetname "syn_spawnpoint_01" startdisabled "1" angles "0 -90 0"} }
+
+//Dont restart of someone falls
+		delete {targetname "c1a1d_loadsaved"}
+//Kill those who fall
+		create {classname "trigger_hurt" origin "-3808 -7936 -4712"
+			values
+			{
+				model "*30"
+				spawnflags "1"
+				damage "1000"
+				damagetype "32"//fall
+				nodmgforce "1"
+			}
+		}
+		
+		edit {targetname "crab_vs_snake_encounter" values {targetname "crab_vs_snake_counter"} }
+		edit {classname "trigger_multiple" origin "-3903.98 -7224 -3341" values {targetname "syn_trig1"} }
+		
+		create {classname "logic_auto"
+			values
+			{
+				spawnflags "1"
+				OnMapSpawn "syn_trig1,AddOutput,OnTrigger syn_spawn_manager:SetCheckPoint:syn_spawnpoint_01:1,0,-1"
+			}
+		}
+
+//end waiter
+		edit {targetname "lift_transition_button" values {spawnflags "3073"} }
+		create {classname "trigger_coop" origin "-1806 -8626 -3550.5"
+			values
+			{
+				model "*59"
+				spawnflags "1"
+				//targetname ""
+				CountType "1"
+				UseHUD "1"
+				PlayerValue "66"
+				OnPlayersIn "lift_transition_button,UnLock,,0,-1"
+				OnPlayersIn "!self,Kill,,2,1"
+			}
+		}
+
+		create {classname "logic_relay" values {targetname "travis_func_tester"} }
+	}
+}

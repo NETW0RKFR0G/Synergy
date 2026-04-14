@@ -1,0 +1,8 @@
+"patch"
+{
+	"include"		"materials/PROPS/MAILBOXWOOD01A.vmt"
+	"replace"
+	{
+		"$envmap"		"maps/sp_postsquare/c-634_2049_160"
+	}
+}

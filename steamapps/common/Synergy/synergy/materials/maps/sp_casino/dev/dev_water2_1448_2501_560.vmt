@@ -1,0 +1,11 @@
+"patch"
+{
+	"include"		"materials/DEV/DEV_WATER2.vmt"
+	"replace"
+	{
+		"$envmap"		"maps/sp_casino/c1448_2501_560"
+		"Proxies"
+		{
+		}
+	}
+}

@@ -1,0 +1,9 @@
+"sky"
+
+{ "$hdrcompressedtexture" "skybox/sky60_hdrlf" 
+
+  "$nofog" "1"
+  "$ignorez" "1"
+ "$basetexture "skybox/sky60lf"
+
+} 

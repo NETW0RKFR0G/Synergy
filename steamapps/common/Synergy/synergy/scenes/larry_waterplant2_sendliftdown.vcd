@@ -1,0 +1,56 @@
+// Choreo version 1
+actor "rebels_larry"
+{
+  channel "WAV"
+  {
+    event speak "npc_larry_waterplant2_sendliftdown"
+    {
+      time 0.053333 2.816508
+      param "npc_larry_waterplant2_sendliftdown"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Gesture"
+  {
+  }
+  channel "Facetowards"
+  {
+  }
+  channel "look at"
+  {
+    event lookat "lookat_bullseye"
+    {
+      time 0.100000 2.246667
+      param "target_lift"
+    }
+  }
+}
+
+actor "rebel_sarah"
+{
+  channel "wav"
+  {
+    event speak "becareful"
+    {
+      time 3.133334 3.979411
+      param "npc_anne_becareful"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "98"
+  "SceneRampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

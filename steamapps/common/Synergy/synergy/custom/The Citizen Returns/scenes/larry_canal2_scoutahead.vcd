@@ -1,0 +1,91 @@
+// Choreo version 1
+actor "rebel_larry"
+{
+  channel "wav"
+  {
+    event speak "1"
+    {
+      time 0.086666 1.488571
+      param "npc_larry_soldierscoutahead"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "facial expressions"
+  {
+  }
+  channel "gesture"
+  {
+    event gesture "gest1"
+    {
+      time 0.646667 2.280000
+      param "g_point"
+      absolutetags playback_time
+      {
+        "apex" 0.250000
+        "accent" 0.416667
+        "loop" 0.562500
+        "end" 0.729167
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.147059
+        "accent" 0.367647
+        "loop" 0.588235
+        "end" 0.602941
+      }
+      sequenceduration 2.300000
+    }
+  }
+  channel "lookat"
+  {
+    event lookat "atplayer"
+    {
+      time 0.033333 1.040000
+      param "!player"
+    }
+    event lookat "at target"
+    {
+      time 1.060000 2.473333
+      param "trapdoor_target"
+    }
+  }
+  channel "face"
+  {
+    event face "face player"
+    {
+      time 0.033334 1.026668
+      param "!player"
+    }
+    event face "face target"
+    {
+      time 1.046666 3.779999
+      param "target_intrain"
+    }
+  }
+}
+
+actor "rebel_tracks"
+{
+  channel "face"
+  {
+    event face "faceplayer"
+    {
+      time 0.053333 3.760000
+      param "!player"
+    }
+  }
+}
+
+scalesettings
+{
+  "SceneRampTool" "100"
+  "GestureTool" "100"
+  "ExpressionTool" "100"
+  "RampTool" "100"
+  "CChoreoView" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

@@ -1,0 +1,8 @@
+"patch"
+{
+	"include"		"materials/CITIZEN/MIESGLASS1.vmt"
+	"replace"
+	{
+		"$envmap"		"maps/sp_streetwar/c703_-3608_18"
+	}
+}

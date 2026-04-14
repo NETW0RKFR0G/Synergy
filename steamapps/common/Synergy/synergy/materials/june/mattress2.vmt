@@ -1,0 +1,9 @@
+"vertexlitGeneric"
+{
+    "$basetexture" "june/mattress2"
+
+	$detail detail\noise_detail_01
+	$detailscale 5
+	$detailblendfactor .65
+	$detailblendmode 0
+}

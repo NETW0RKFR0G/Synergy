@@ -1,0 +1,8 @@
+"patch"
+{
+	"include"		"materials/PLASTER/PLASTERWALL030C.vmt"
+	"replace"
+	{
+		"$envmap"		"maps/sp_presquare/c3249_-3081_94"
+	}
+}

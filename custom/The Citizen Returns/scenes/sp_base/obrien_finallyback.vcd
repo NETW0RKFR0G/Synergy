@@ -1,0 +1,210 @@
+// Choreo version 1
+actor "obrien"
+{
+  channel "wav"
+  {
+    event speak "obrien_finallyback"
+    {
+      time 0.106667 4.908118
+      param "npc_obrien_finallyback"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "obrien_anyway"
+    {
+      time 5.342105 6.865643
+      param "npc_obrien_anyway"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "facetowards"
+  {
+    event face "fp"
+    {
+      time 0.035088 5.000000
+      param "!player"
+    }
+    event face "pump"
+    {
+      time 5.210527 6.938598
+      param "fuelpump"
+    }
+  }
+  channel "lookat"
+  {
+    event lookat "lp"
+    {
+      time 0.035088 3.587720
+      param "!player"
+    }
+    event lookat "bat"
+    {
+      time 3.657895 8.061404
+      param "battery"
+    }
+  }
+  channel "gesture"
+  {
+    event gesture "gest1"
+    {
+      time 0.061404 2.294737
+      param "G_noway_small"
+      absolutetags playback_time
+      {
+        "apex" 0.151515
+        "accent" 0.287879
+        "loop" 0.454545
+        "end" 0.575758
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.151515
+        "accent" 0.287879
+        "loop" 0.454545
+        "end" 0.575758
+      }
+      sequenceduration 2.233333
+    }
+    event gesture "gest2"
+    {
+      time 2.017543 3.949122
+      param "G_righthandpoint"
+      absolutetags playback_time
+      {
+        "apex" 0.245151
+        "accent" 0.525325
+        "loop" 0.560346
+        "end" 0.805498
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.205882
+        "accent" 0.441176
+        "loop" 0.470588
+        "end" 0.676471
+      }
+      sequenceduration 2.300000
+    }
+    event gesture "gest3"
+    {
+      time 3.833334 5.533334
+      param "G_shrug"
+      absolutetags playback_time
+      {
+        "apex" 0.160000
+        "accent" 0.240000
+        "loop" 0.320000
+        "end" 0.440000
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.160000
+        "accent" 0.240000
+        "loop" 0.320000
+        "end" 0.440000
+      }
+      sequenceduration 1.700000
+    }
+    event gesture "gest4"
+    {
+      time 5.982457 8.282456
+      param "G_righthandpoint"
+      absolutetags playback_time
+      {
+        "apex" 0.205882
+        "accent" 0.441176
+        "loop" 0.470588
+        "end" 0.676471
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.205882
+        "accent" 0.441176
+        "loop" 0.470588
+        "end" 0.676471
+      }
+      sequenceduration 2.300000
+    }
+  }
+  channel "faceanimations"
+  {
+    event flexanimation "flex1"
+    {
+      time 0.105263 2.543860
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "lid_raiser" combo 
+        {
+          0.1680 1.0000
+        }
+        {
+          0.1680 0.5000
+        }
+        "outer_raiser" combo 
+        {
+          0.1680 1.0000
+        }
+        {
+          0.1680 0.5000
+        }
+        "smile" 
+        {
+          0.1680 0.4400
+        }
+      }
+    }
+    event flexanimation "flex2"
+    {
+      time 3.184211 5.438597
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "lid_tightener" combo 
+        {
+          0.2080 0.3900
+        }
+        {
+          0.2080 0.5000
+        }
+        "inner_raiser" combo 
+        {
+          0.2080 1.0000
+        }
+        {
+          0.2080 0.5000
+        }
+        "puckerer" combo 
+        {
+          0.2080 0.3900
+        }
+        {
+          0.2080 0.5000
+        }
+        "lower_lip" 
+        {
+          0.2080 0.3900
+        }
+        "head_tilt" range 15.0 -15.0 
+        {
+          0.2080 0.0000
+        }
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "76"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

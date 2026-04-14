@@ -1,0 +1,758 @@
+"npc_argento_allrightmenletsgo"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.6"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/argento_alrightmenletsgo.wav"
+}
+
+
+"npc_argento_anotherforcefield"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.6"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/argento_anotherforcefield.wav"
+}
+
+
+"npc_argento_awwshit"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.6"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/argento_awwshit.wav"
+}
+
+
+"npc_argento_comeonmen"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.6"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/argento_comeonmen.wav"
+}
+
+"npc_argento_everyoneready"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.6"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/argento_everyoneready.wav"
+}
+
+"npc_argento_findaway"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.6"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/argento_findaway.wav"
+}
+
+"npc_argento_findsomecover"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.6"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/argento_findsomecover.wav"
+}
+
+
+"npc_argento_followme"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.6"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/argento_followme.wav"
+}
+
+
+"npc_argento_getjackedinprivate"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.6"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/argento_getjackedinprivate.wav"
+}
+
+
+"npc_argento_gogogo"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.6"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/argento_gogogo.wav"
+}
+
+
+"npc_argento_hopethatsnotlarry"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.6"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/argento_hopethatsnotlarry.wav"
+}
+
+"npc_argento_howsthedatasearchgoing"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.6"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/argento_howsthedatasearchgoing.wav"
+}
+
+"npc_argento_itsnotlarry"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.6"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/argento_itsnotlarry.wav"
+}
+
+
+"npc_argento_itstooquiet"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.6"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/argento_itstooquiet.wav"
+}
+
+"npc_argento_keepitdiscrete"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.6"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/argento_keepitdiscrete.wav"
+}
+
+"npc_argento_killemall"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.6"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/argento_killemall.wav"
+}
+
+"npc_argento_killthoseSOBs"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.6"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/argento_killthoseSOBs.wav"
+}
+
+
+"npc_argento_kityourselfout"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.6"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/argento_kityourselfout.wav"
+}
+
+
+"npc_argento_larrysintheicerink"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.6"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/argento_larrysintheicerink.wav"
+}
+
+"npc_argento_looksclearfollowme"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.6"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/argento_looksclearfollowme.wav"
+}
+
+
+"npc_argento_allrightmenletsgo"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.6"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/argento_allrightmenletsgo.wav"
+}
+
+"npc_argento_normallyidobject"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.6"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/argento_normallyidobject.wav"
+}
+
+"npc_argento_ohtheysawyou"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.6"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/argento_ohtheysawyou.wav"
+}
+
+"npc_argento_patrolcoming"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.6"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/argento_patrolcoming.wav"
+}
+
+
+"npc_argento_proceedwithcaution"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.6"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/argento_proceedwithcaution.wav"
+}
+
+"npc_argento_regroupinasafeplace"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.6"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/argento_regroupinasaferplace.wav"
+}
+
+"npc_argento_report"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.6"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/argento_report.wav"
+}
+
+
+"npc_argento_rockandahardplace"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.6"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/argento_rockandahardplace.wav"
+}
+
+"npc_argento_scoutaheadnoheroics"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.6"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/argento_scoutaheadnoheroics.wav"
+}
+
+
+"npc_argento_shitsgonnahitthefan"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.6"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/argento_shitsgonnahitthefan.wav"
+}
+
+"npc_argento_soldiergetreadytofight"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.6"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/argento_soldiergetreadytofight.wav"
+}
+
+"npc_argento_somethingswrong"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.6"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/argento_somethingswrong.wav"
+}
+
+"npc_argento_stayfrosty"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.6"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/argento_stayfrosty.wav"
+}
+
+"npc_argento_thatswhatthedatanodesays"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.6"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/argento_thatswhatthedatanodesays.wav"
+}
+
+"npc_argento_therestofyoustayalert"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.6"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/argento_therestofyoustayalert.wav"
+}
+
+"npc_argento_theyrerightonus"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.6"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/argento_theyrerightonus.wav"
+}
+
+
+"npc_argento_thisisit"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.6"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/argento_thisisit.wav"
+}
+
+"npc_argento_wegottagetouttahere"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.6"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/argento_wegottagetouttahere.wav"
+}
+
+"npc_argento_whatthehellareyoudoing"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.6"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/argento_whatthehellareyoudoing.wav"
+}
+
+
+"npc_argento_needasmanyhandsaspossible"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.6"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/argento_needasmanyhandsaspossible.wav"
+}
+
+
+"npc_argento_sw2_charliehq"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.9"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/argento_sw2_charliehq.wav"
+}
+
+
+"npc_argento_sw2_couldbeatrap"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.9"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/argento_sw2_couldbeatrap.wav"
+}
+
+
+"npc_argento_sw2_entranceroundback"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.8"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/argento_sw2_entranceroundback.wav"
+}
+
+
+"npc_argento_sw2_faith"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.8"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/argento_sw2_faith.wav"
+}
+
+
+"npc_argento_sw2_hookup"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.8"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/argento_sw2_hookup.wav"
+}
+
+
+"npc_argento_sw2_justsavingskins"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.8"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/argento_sw2_justsavingskins.wav"
+}
+
+
+"npc_argento_sw2_messagingpost"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.8"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/argento_sw2_messagingpost.wav"
+}
+
+
+"npc_argento_sw2_mostsecure"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.8"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/argento_sw2_mostsecure.wav"
+}
+
+
+"npc_argento_sw2_nochoice"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.8"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/argento_sw2_nochoice.wav"
+}
+
+
+"npc_argento_sw2_ourfriendhere"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.8"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/argento_sw2_ourfriendhere.wav"
+}
+
+
+"npc_argento_sw2_rebelsontopfloor"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.8"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/argento_sw2_rebelsontopfloor.wav"
+}
+
+
+"npc_argento_sw2_soldiergettopost"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.8"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/argento_sw2_soldiergettopost.wav"
+}
+
+
+"npc_argento_sw2_stayalive"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.8"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/argento_sw2_stayalive.wav"
+}
+
+
+"npc_argento_sw2_takethisnote"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.8"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/argento_sw2_takethisnote.wav"
+}
+
+
+"npc_argento_sw2_takethisradio"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.8"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/argento_sw2_takethisradio.wav"
+}
+
+
+"npc_argento_sw2_tallyellowbuilding"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.6"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/argento_sw2_tallyellowbuilding.wav"
+}
+
+
+"npc_argento_sw2_toorisky"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.8"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/argento_sw2_toorisky.wav"
+}
+
+
+"npc_argento_sw2_waitstop"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.8"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/argento_sw2_waitstop.wav"
+}
+
+
+"npc_argento_sw2_warneveryrebel"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.8"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/argento_sw2_warneveryrebel.wav"
+}
+
+
+"npc_argento_sw2_wewait"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.8"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/argento_sw2_wewait.wav"
+}
+
+
+"npc_argento_sw2_ifyoumakeit"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.8"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/argento_sw2_ifyoumakeit.wav"
+}
+
+
+"npc_argento_oldplayground"
+{
+	"channel"	"CHAN_BODY "
+	"volume"	"1"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"@/argento_radio_oldplayground.wav"
+}
+
+
+"npc_argento_topfloor"
+{
+	"channel"	"CHAN_BODY "
+	"volume"	"1"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"@/argento_radio_topfloor.wav"
+}
+
+"npc_argento_outofrange"
+{
+	"channel"	"CHAN_BODY "
+	"volume"	"1"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"@/argento_radio_outofrange.wav"
+}
+
+"npc_argento_package"
+{
+	"channel"	"CHAN_BODY "
+	"volume"	"1"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"@/argento_radio_package.wav"
+}
+
+
+
+
+

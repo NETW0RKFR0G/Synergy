@@ -1,0 +1,70 @@
+// Choreo version 1
+actor "rebelgirlexample"
+{
+  channel "wav"
+  {
+    event speak "1"
+    {
+      time 0.093333 1.714376
+      param "npc_female_holddownthisspot"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "facial expressions"
+  {
+    event flexanimation "flexangry"
+    {
+      time 0.046667 1.680000
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "lid_tightener" combo 
+        {
+          0.1120 1.0000
+        }
+        {
+          0.1120 0.5000
+        }
+        "lowerer" combo 
+        {
+          0.1120 1.0000
+        }
+        {
+          0.1120 0.5000
+        }
+        "bite" 
+        {
+          0.1120 1.0000
+        }
+      }
+    }
+  }
+  channel "gesture"
+  {
+  }
+  channel "lookat"
+  {
+    event lookat "atplayer"
+    {
+      time 0.046666 1.753332
+      param "!player"
+    }
+  }
+  channel "face"
+  {
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

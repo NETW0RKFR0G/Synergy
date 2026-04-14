@@ -1,0 +1,175 @@
+// Choreo version 1
+actor "medic"
+{
+  channel "WAV"
+  {
+    event speak "1"
+    {
+      time 0.153846 2.737020
+      param "npc_medic_areyoudoneyet"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Face"
+  {
+    event face "a"
+    {
+      time 0.051282 2.910256
+      param "anne"
+    }
+  }
+  channel "Look at"
+  {
+    event lookat "1"
+    {
+      time 0.025641 2.884615
+      param "anne"
+    }
+  }
+  channel "Gesture"
+  {
+    event gesture "1"
+    {
+      time 0.051282 2.017949
+      param "g_plead_01"
+      absolutetags playback_time
+      {
+        "apex" 0.275862
+        "accent" 0.448276
+        "loop" 0.689655
+        "end" 0.862069
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.275862
+        "accent" 0.448276
+        "loop" 0.689655
+        "end" 0.862069
+      }
+      sequenceduration 1.966667
+    }
+  }
+  channel "Expressions"
+  {
+    event gesture "2"
+    {
+      time 1.282052 3.515385
+      param "G_noway_small"
+      absolutetags playback_time
+      {
+        "apex" 0.151515
+        "accent" 0.287879
+        "loop" 0.454545
+        "end" 0.575758
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.151515
+        "accent" 0.287879
+        "loop" 0.454545
+        "end" 0.575758
+      }
+      sequenceduration 2.233333
+    }
+    event gesture "3"
+    {
+      time 2.051282 3.751282
+      param "G_shrug"
+      absolutetags playback_time
+      {
+        "apex" 0.160000
+        "accent" 0.240000
+        "loop" 0.320000
+        "end" 0.440000
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.160000
+        "accent" 0.240000
+        "loop" 0.320000
+        "end" 0.440000
+      }
+      sequenceduration 1.700000
+    }
+  }
+}
+
+actor "anne"
+{
+  channel "wav"
+  {
+    event speak "1"
+    {
+      time 3.179487 6.279351
+      param "npc_anne_shutupasshole"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "givemeaminute"
+  {
+    event flexanimation "givemeaminute"
+    {
+      time 3.128206 5.628206
+      param ""
+      flexanimations samples_use_time
+      {
+        "lowerer" combo 
+        {
+          0.2640 1.0000
+        }
+        {
+          0.2640 0.5000
+        }
+        "dilator" 
+        {
+          0.2640 1.0000
+        }
+        "corner_depressor" combo 
+        {
+          0.2640 1.0000
+        }
+        {
+          0.2640 0.5000
+        }
+        "part" combo 
+        {
+          0.2640 0.5400
+        }
+        {
+          0.2640 0.5000
+        }
+        "jaw_clencher" 
+        {
+          0.2640 1.0000
+        }
+        "head_rightleft" range 30.0 -30.0 
+        {
+          0.2640 0.0000
+        }
+        "head_updown" range 15.0 -15.0 
+        {
+          0.2640 1.0000
+        }
+        "eyes_rightleft" range 30.0 -30.0 
+        {
+          0.2640 0.0000
+        }
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "28"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off

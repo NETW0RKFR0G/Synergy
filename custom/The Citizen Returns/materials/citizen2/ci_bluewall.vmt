@@ -1,0 +1,5 @@
+"LightmappedGeneric"
+{
+   "$baseTexture" "citizen2/ci_bluewall"
+   "$bumpmap" "citizen2/ci_bluewall_normal"
+}

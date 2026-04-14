@@ -1,0 +1,17 @@
+"VertexlitGeneric"
+
+{ "$basetexture" "models/custom/closet" 
+  "$surfaceprop" "metal"
+  "$bumpmap" "models/custom/closet_normal"
+  "$envmap" "env_cubemap"
+  "$normalmapalphaenvmapmask" 1
+	//"$envmaptint" "[1 1 1]"
+	//"$envmapcontrast" 1
+
+	$detail detail\metal_detail_01
+	$detailscale 6
+	$detailblendfactor .85
+	$detailblendmode 0
+
+
+} 

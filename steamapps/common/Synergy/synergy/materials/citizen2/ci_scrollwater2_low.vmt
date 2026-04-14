@@ -1,0 +1,26 @@
+"UnlitGeneric"
+{
+	
+
+	"$basetexture" "citizen2\ci_scrollwater2_low"
+	"$translucent" 1
+	"$surfaceprop" "water"
+
+	
+"Proxies"
+{
+"TextureScroll"
+{
+"texturescrollvar" "$basetexturetransform"
+"texturescrollrate" 0.5
+"texturescrollangle" -90.00
+}
+}
+}
+
+
+
+
+	
+
+

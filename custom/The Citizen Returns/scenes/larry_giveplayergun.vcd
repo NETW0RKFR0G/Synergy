@@ -1,0 +1,47 @@
+// Choreo version 1
+actor "rebels_larry"
+{
+  channel "wav"
+  {
+  }
+  channel "face"
+  {
+    event face "1"
+    {
+      time 1.486666 10.300740
+      param "!player"
+    }
+  }
+  channel "look at"
+  {
+    event lookat "1"
+    {
+      time 1.526667 10.296050
+      param "!player"
+    }
+  }
+  channel "gesture"
+  {
+  }
+  channel "move"
+  {
+    event moveto "player"
+    {
+      time 0.026667 10.294321
+      param "!player"
+      param2 "Run"
+      distancetotarget 48.00
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "54"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off

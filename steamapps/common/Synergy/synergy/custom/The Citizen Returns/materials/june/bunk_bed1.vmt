@@ -1,0 +1,12 @@
+"vertexlitGeneric"
+{
+    "$basetexture" "june/bunk_bed1"
+    "$alphatest" 1
+
+	$detail detail\metal_detail_01
+	$detailscale 8
+	$detailblendfactor .85
+	$detailblendmode 0
+
+
+}

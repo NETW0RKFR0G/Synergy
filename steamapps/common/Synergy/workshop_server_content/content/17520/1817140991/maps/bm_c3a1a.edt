@@ -1,0 +1,50 @@
+bm_c3a1a
+{
+	console
+	{
+		sv_turbophysics "0"
+	}
+	entity
+	{
+//TEMP PLACEHOLDERS
+		edit {classname "prop_flare" values {classname "prop_physics" model "models/props_junk/flare.mdl"} }
+		edit {classname "item_weapon_crowbar" values {classname "weapon_crowbar"} }
+		edit {classname "item_weapon_frag" values {classname "weapon_frag"} }
+		edit {classname "item_weapon_357" values {classname "weapon_357"} }
+		edit {classname "fog_volume" values {classname "func_smokevolume"} }
+		edit {classname "item_weapon_shotgun" values {classname "weapon_shotgun"} }
+		edit {classname "item_ammo_shotgun" values {classname "item_box_buckshot"} }
+		edit {classname "item_grenade_mp5" values {classname "item_ammo_smg1_grenade"} }
+		edit {classname "func_conveyor_bms" values {classname "func_conveyor" spawnflags "0"} }
+		edit {classname "npc_gargantua" values {classname "npc_bmsgargantua"} }
+//--
+//Starting Equips
+		create {classname "info_player_equip"
+			values
+			{
+				targetname "syn_equipment_base"
+				item_suit "1"
+				item_armor "45"
+				weapon_crowbar "1"
+					ammo_pistol "18"
+				weapon_frag "1"
+				weapon_357 "1"
+					ammo_357 "6"
+					ammo_smg1 "45"
+				weapon_rpg "1"
+					ammo_rpg_round "2"
+				weapon_crossbow "1"
+					ammo_xbowbolt "5"
+				weapon_shotgun "1"
+					ammo_buckshot "12"
+				ResponseContext "weapon_mp5 weapon_glock weapon_satchel weapon_tau"
+			}
+		}
+		
+		delete {targetname "c3a1a_cinephys_block_02"}
+		delete {targetname "c3a1a_equipment"}
+		delete {targetname "c3a1a_equipment_template"}
+		create {classname "info_spawn_manager" values {targetname "syn_spawn_manager"} }
+		create {classname "syn_transition_wall" origin "4550 875 -440" values {targetname "syn_antiback" angles "0 0 0" solid "6"} }
+	}
+}

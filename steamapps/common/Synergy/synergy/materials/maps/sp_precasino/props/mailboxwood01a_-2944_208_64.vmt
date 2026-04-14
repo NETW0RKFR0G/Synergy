@@ -1,0 +1,8 @@
+"patch"
+{
+	"include"		"materials/PROPS/MAILBOXWOOD01A.vmt"
+	"replace"
+	{
+		"$envmap"		"maps/sp_precasino/c-2944_208_64"
+	}
+}

@@ -1,0 +1,167 @@
+// Choreo version 1
+actor "s2"
+{
+  channel "WAV"
+  {
+    event speak "still breathing?"
+    {
+      time 0.066667 1.332155
+      param "npc_rescuer_stillbreathing"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "suitspeech"
+    {
+      time 4.106666 13.057959
+      param "npc_rescuer_suit"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "josh?"
+    {
+      time 18.833334 20.267166
+      param "npc_rescuer_josh"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "whathappened?"
+    {
+      time 24.333332 25.189568
+      param "npc_rescuer_whathappened"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "damn"
+    {
+      time 29.555555 30.465487
+      param "npc_rescuer_damn"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "freak"
+    {
+      time 34.111111 35.826485
+      param "npc_rescuer_shesgonnafreak"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "everyoneelse"
+    {
+      time 39.111111 40.385307
+      param "npc_rescuer_howseveryoneelse"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "whatsgonnahappen"
+    {
+      time 50.611111 53.693558
+      param "npc_rescuer_whatsgonnahappen"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+}
+
+actor "s3"
+{
+  channel "WAV"
+  {
+    event speak "jseems to be"
+    {
+      time 1.253334 4.167439
+      param "npc_medic_seemstobe"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "cantseetheuse"
+    {
+      time 13.277778 18.688026
+      param "npc_medic_cantseetheuse"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "gothitatelvet"
+    {
+      time 20.444445 24.461496
+      param "npc_medic_gothitatelvet"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "shrapnel"
+    {
+      time 25.444445 29.409252
+      param "npc_medic_shrapnel"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "hopesarah"
+    {
+      time 31.333334 33.672745
+      param "npc_medic_hopesarah"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "getintheway"
+    {
+      time 36.277779 37.897369
+      param "npc_medic_shellgetintheway"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "message"
+    {
+      time 40.722221 50.544262
+      param "npc_medic_message"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "nearly there"
+    {
+      time 54.111115 59.405266
+      param "npc_medic_nearlythere"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Look at"
+  {
+    event lookat "1"
+    {
+      time 0.777778 4.833333
+      param "camera5"
+    }
+    event lookat "1"
+    {
+      time 14.555556 18.611113
+      param "camera5"
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "48"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

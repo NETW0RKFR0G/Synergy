@@ -1,0 +1,46 @@
+"AppState"
+{
+	"appid"		"17520"
+	"Universe"		"1"
+	"LauncherPath"		"D:\\HL2-SERVERS\\The Citizen Return  COOP (DEV)\\steamcmd.exe"
+	"name"		"Synergy"
+	"StateFlags"		"4"
+	"installdir"		"Synergy"
+	"LastUpdated"		"1776098092"
+	"LastPlayed"		"0"
+	"SizeOnDisk"		"884556742"
+	"StagingSize"		"0"
+	"buildid"		"17830056"
+	"LastOwner"		"76561198008528803"
+	"DownloadType"		"2"
+	"UpdateResult"		"0"
+	"BytesToDownload"		"543605680"
+	"BytesDownloaded"		"543605680"
+	"BytesToStage"		"2168041825"
+	"BytesStaged"		"2168041825"
+	"TargetBuildID"		"0"
+	"AutoUpdateBehavior"		"0"
+	"AllowOtherDownloadsWhileRunning"		"0"
+	"ScheduledAutoUpdate"		"0"
+	"InstalledDepots"
+	{
+		"17522"
+		{
+			"manifest"		"3351780534749169701"
+			"size"		"736208294"
+		}
+		"17521"
+		{
+			"manifest"		"6903198116355090518"
+			"size"		"148348448"
+		}
+	}
+	"UserConfig"
+	{
+		"BetaKey"		"public"
+	}
+	"MountedConfig"
+	{
+		"BetaKey"		"public"
+	}
+}

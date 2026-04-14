@@ -1,0 +1,26 @@
+
+"VertexLitGeneric"
+{
+	// Original shader: VertexLitTexture
+	"$basetexture" "Models/props_vehicles/tanker001a_01"
+	"$surfaceprop" "solidmetal"
+	"$envmap" "env_cubemap"
+	"$basealphaenvmapmask" 1
+
+	
+	$detail detail\metal_detail_01
+	$detailtexturetransform "center .5 .5 scale 10 5 rotate 0 translate 0 0" 
+	$detailblendfactor .85
+	$detailblendmode 0
+
+ 	"vertexlitgeneric_HDR_dx9"
+ 	{
+  		"$envmaptint" "[.25 .25 .25]"
+ 	}
+
+
+	"vertexlitgeneric_DX9"
+ 	{
+  		"$envmaptint" "[.25 .25 .25]"
+ 	}
+}

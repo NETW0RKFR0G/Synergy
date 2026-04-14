@@ -1,0 +1,11 @@
+"patch"
+{
+	"include"		"materials/NATURE/WATER_CANALS_WATER2.vmt"
+	"replace"
+	{
+		"$envmap"		"maps/sp_canal2/c13484_8364_96"
+		"Proxies"
+		{
+		}
+	}
+}

@@ -1,0 +1,8 @@
+"patch"
+{
+	"include"		"materials/CITIZEN/MIESMETAL2.vmt"
+	"replace"
+	{
+		"$envmap"		"maps/sp_canyon/c-4401_-9354_34"
+	}
+}

@@ -1,0 +1,13 @@
+"LightmappedGeneric"
+{
+ "$basetexture" "citizen2/ci_cliffface"
+ "$surfaceprop" "dirt"
+ "$basetexturetransform" "center 0 0 scale 2 2 rotate 0 translate 0 0"
+
+	$detail detail\rock_detail_01
+	$detailscale 5
+	$detailblendfactor .45
+	$detailblendmode 0
+
+
+}

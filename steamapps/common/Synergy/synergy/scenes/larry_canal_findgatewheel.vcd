@@ -1,0 +1,108 @@
+// Choreo version 1
+actor "larry"
+{
+  channel "wav"
+  {
+    event speak "findgatewheel"
+    {
+      time 0.060000 1.868254
+      param "npc_larry_findgatewheel"
+      param2 "VOL_NORM"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "missing"
+    {
+      time 1.993333 2.775555
+      param "npc_larry_itsmissing"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "lookat"
+  {
+    event lookat "atplayer"
+    {
+      time 0.053334 3.255803
+      param "!player"
+    }
+  }
+  channel "gesture"
+  {
+    event gesture "gest1"
+    {
+      time 0.106667 2.740000
+      param "G_righthandroll"
+      absolutetags playback_time
+      {
+        "apex" 0.282051
+        "accent" 0.397436
+        "loop" 0.512821
+        "end" 0.641026
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.282051
+        "accent" 0.397436
+        "loop" 0.512821
+        "end" 0.641026
+      }
+      sequenceduration 2.633333
+    }
+  }
+  channel "face"
+  {
+    event flexanimation "face"
+    {
+      time 1.907407 2.753086
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "outer_raiser" combo 
+        {
+          0.3944 0.8300
+        }
+        {
+          0.3944 0.5000
+        }
+        "part" combo 
+        {
+          0.3944 0.7500
+        }
+        {
+          0.3944 0.5000
+        }
+        "eyes_updown" range 30.0 -30.0 
+        {
+          0.3944 0.0000
+        }
+        "eyes_rightleft" range 30.0 -30.0 
+        {
+          0.3944 0.0000
+        }
+      }
+    }
+  }
+  channel "turnbodytowards"
+  {
+    event face "faceplayer"
+    {
+      time 0.030864 3.253087
+      param "!player"
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "108"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

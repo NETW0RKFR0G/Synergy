@@ -1,0 +1,101 @@
+// Choreo version 1
+actor "medic"
+{
+  channel "WAV"
+  {
+    event speak "1"
+    {
+      time 5.564102 8.031178
+      param "npc_medic_dearme"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Face"
+  {
+    event face "1"
+    {
+      time 5.487180 8.448719
+      param "target_lookatjeff"
+    }
+  }
+  channel "Look at"
+  {
+    event lookat "jeff"
+    {
+      time 5.538461 8.346153
+      param "target_lookatjeff"
+    }
+  }
+  channel "Gesture"
+  {
+  }
+  channel "Expressions"
+  {
+    event flexanimation "medicface"
+    {
+      time 1.179487 9.166666
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "inner_raiser" combo 
+        {
+          0.2220 1.0000
+        }
+        {
+          0.2220 0.5000
+        }
+        "cheek_raiser" combo 
+        {
+          0.2220 0.7500
+        }
+        {
+          0.2220 0.5000
+        }
+        "dilator" 
+        {
+          0.2220 1.0000
+        }
+        "corner_depressor" combo 
+        {
+          0.2220 0.7900
+        }
+        {
+          0.2220 0.5000
+        }
+        "head_tilt" range 15.0 -15.0 
+        {
+          0.2220 0.2500
+        }
+      }
+    }
+  }
+}
+
+actor "anne"
+{
+  channel "wav"
+  {
+    event speak "1"
+    {
+      time 8.564102 10.746778
+      param "npc_anne_thisisntgood"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "26"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

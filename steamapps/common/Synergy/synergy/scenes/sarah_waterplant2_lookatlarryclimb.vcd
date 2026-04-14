@@ -1,0 +1,27 @@
+// Choreo version 1
+actor "rebel_sarah"
+{
+  channel "look at"
+  {
+    event lookat "lookat_larry"
+    {
+      time 0.087778 3.540278
+      param "rebels_larry"
+    }
+  }
+  channel "body"
+  {
+  }
+}
+
+scalesettings
+{
+  "GestureTool" "100"
+  "ExpressionTool" "100"
+  "SceneRampTool" "100"
+  "RampTool" "98"
+  "CChoreoView" "96"
+}
+fps 60
+snap off
+ignorePhonemes off

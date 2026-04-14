@@ -1,0 +1,122 @@
+// Choreo version 1
+event loop "loop_crouch"
+{
+  time 8.866667 -1.000000
+  param "4.511111"
+  loopcount "-1"
+}
+actor "larry"
+{
+  channel "wav"
+  {
+    event speak "wav1"
+    {
+      time 0.177778 3.544672
+      param "npc_larry_postsquare_getridofhim"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "faceactor"
+  {
+  }
+  channel "lookat"
+  {
+    event lookat "atplayer"
+    {
+      time 0.051851 3.529629
+      param "!player"
+    }
+    event lookat "atplayer"
+    {
+      time 5.940740 7.381481
+      param "!player"
+    }
+  }
+  channel "faceanims"
+  {
+    event flexanimation "eyebrows"
+    {
+      time 2.081482 3.774074
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "inner_raiser" combo 
+        {
+          0.3620 1.0000
+        }
+        {
+          0.3620 0.5000
+        }
+        "dilator" 
+        {
+          0.3620 0.9400
+        }
+        "corner_depressor" combo 
+        {
+          0.3620 0.4000
+        }
+        {
+          0.3620 0.5000
+        }
+        "funneler" combo 
+        {
+          0.3620 0.7500
+        }
+        {
+          0.3620 0.5000
+        }
+        "lower_lip" 
+        {
+          0.3620 0.6500
+        }
+        "eyes_rightleft" range 30.0 -30.0 
+        {
+          0.3620 1.0000
+        }
+      }
+    }
+  }
+  channel "pose"
+  {
+    event gesture "pose"
+    {
+      time 0.022222 2.688889
+      param "d1_town05_Daniels_Kneel_Idle"
+      sequenceduration 2.000000
+    }
+    event gesture "pose"
+    {
+      time 2.688889 4.511111
+      param "d1_town05_Daniels_Kneel_Idle"
+      sequenceduration 2.000000
+    }
+    event gesture "pose"
+    {
+      time 4.511111 8.866667
+      param "d1_town05_Daniels_Kneel_Idle"
+      sequenceduration 2.000000
+    }
+  }
+  channel "moveto"
+  {
+    event moveto "to spot"
+    {
+      time 0.007408 8.922222
+      param "target_truckspot"
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "90"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

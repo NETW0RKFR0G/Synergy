@@ -1,0 +1,139 @@
+bm_c2a4f
+{
+	console
+	{
+		sv_turbophysics "0"
+	}
+	entity
+	{
+//TEMP PLACEHOLDERS
+		edit {classname "prop_flare" values {classname "prop_physics" model "models/props_junk/flare.mdl"} }
+		edit {classname "item_weapon_crowbar" values {classname "weapon_crowbar"} }
+		edit {classname "item_weapon_frag" values {classname "weapon_frag"} }
+		edit {classname "item_weapon_357" values {classname "weapon_357"} }
+		edit {classname "fog_volume" values {classname "func_smokevolume"} }
+		edit {classname "item_weapon_shotgun" values {classname "weapon_shotgun"} }
+		edit {classname "item_ammo_shotgun" values {classname "item_box_buckshot"} }
+		edit {classname "item_grenade_mp5" values {classname "item_ammo_smg1_grenade"} }
+		edit {classname "func_conveyor_bms" values {classname "func_conveyor" spawnflags "0"} }
+		edit {classname "npc_gargantua" values {classname "npc_bmsgargantua"} }
+//--
+//Starting Equips
+		create {classname "info_player_equip"
+			values
+			{
+				targetname "syn_equipment_base"
+				item_suit "1"
+				weapon_crowbar "1"
+					ammo_pistol "18"
+				weapon_frag "1"
+				weapon_357 "1"
+					ammo_357 "6"
+					ammo_smg1 "30"
+				weapon_shotgun "1"
+					ammo_buckshot "12"
+				weapon_crossbow "1"
+					ammo_xbowbolt "6"
+				ResponseContext "weapon_mp5 weapon_glock weapon_satchel"
+			}
+		}
+		
+		delete {targetname "suit"}
+		delete {targetname "weapons"}
+		delete {targetname "new_game_spawn"}
+		delete {classname "keyframe_rope"}
+		delete {classname "move_rope"}
+		create {classname "info_spawn_manager" values {targetname "syn_spawn_manager"} }
+		create {classname "info_player_coop" origin "3425 -860 -236" values {targetname "syn_spawnpoint_00" startdisabled "0" angles "0 -90 0"} }
+		create {classname "info_player_coop" origin "157 2523 -427" values {targetname "syn_spawnpoint2_00" startdisabled "1" angles "0 -30 0"} }
+		create {classname "info_player_coop" origin "2250 -520 -235" values {targetname "syn_spawnpoint_01" startdisabled "1" angles "0 0 0"} }
+		create {classname "syn_transition_wall" origin "3527 -655 -400" values {solid "6" targetname "syn_backtrack" angles "0 -90 0"} }
+		
+		edit {targetname "SCI01_Surgery" values {baseclass "npc_citizen"} }
+		edit {targetname "SCI02_Surgery" values {baseclass "npc_citizen"} }
+		edit {targetname "SCI03_Surgery" values {baseclass "npc_citizen"} }
+		
+		create {classname "logic_auto"
+			values
+			{
+				spawnflags "1"
+				OnMapSpawn "Trigger_mapGTransitionRelated,AddOutput,OnTrigger syn_spawn_manager:SetCheckPoint:syn_spawnpoint2_00:0:1,0,-1"
+				OnMapSpawn "Trigger_mapGTransitionRelated,AddOutput,OnTrigger syn_antirush_coopto4g:Disable::0:-1,0,-1"
+				OnMapSpawn "music_sync,AddOutput,OnTrigger syn_ambushreturn_tp:TeleportPlayersNotTouching::0:1,0,-1"
+				OnMapSpawn "music_sync,AddOutput,OnTrigger syn_spawn_manager:SetCheckPoint:syn_spawnpoint_01:0:1,0,-1"
+				OnMapSpawn "Phase_1,AddOutput,OnTrigger npc_human_grunt:BeginRappel::1:1,0,-1"
+				OnMapSpawn "balcony_g4_s4,AddOutput,OnSpawnNPC balcony_assault_goal_04:Activate::0.5:-1,0,-1"
+				OnMapSpawn "balcony_g4_s4,AddOutput,OnSpawnNPC balcony_assault_goal_04:BeginAssault::1:-1,0,-1"
+				OnMapSpawn "scene_trigger,AddOutput,OnTrigger synrmsquad:Trigger::0:-1,0,-1"
+			}
+		}
+		
+		create {classname "trigger_coop" origin "2408 -1220 -226"
+			values
+			{
+				//edt_getbspmodelfor_targetname "dl_upd_tr"
+				model "*183"
+				targetname "syn_ambushreturn_tp"
+				spawnflags "1"
+				target "syn_ambushreturn_targ"
+			}
+		}
+		create {classname "info_target" origin "2760 -345 -300" values {targetname "syn_ambushreturn_targ" angles "0 -90 0" startdisabled "0"} }
+		create {classname "logic_relay"
+			values
+			{
+				targetname "synrmsquad"
+				OnTrigger "SCI01_Surgery,AddOutput,spawnflags 1048576,0,-1"
+				OnTrigger "SCI02_Surgery,AddOutput,spawnflags 1048576,0,-1"
+				OnTrigger "SCI03_Surgery,AddOutput,spawnflags 1048576,0,-1"
+				OnTrigger "SCI01_Surgery,RemoveFromPlayerSquad,,0,-1"
+				OnTrigger "SCI02_Surgery,RemoveFromPlayerSquad,,0,-1"
+				OnTrigger "SCI03_Surgery,RemoveFromPlayerSquad,,0,-1"
+			}
+		}
+		
+		create {classname "syn_transition_wall" origin "1715 2065 -180" values {solid "6" targetname "syn_antirush_wallto4g" angles "0 180 0"} }
+		create {classname "trigger_coop" origin "1630 2065 -165"
+			values
+			{
+				//edt_getbspmodelfor_targetname "Trigger_SurgeryRoomScientist_VisualIntroduction"
+				model "*177"
+				targetname "syn_antirush_coopto4g"
+				spawnflags "1"
+				startdisabled "0"
+				CountType "1"
+				UseHUD "1"
+				PlayerValue "66"
+				OnPlayersIn "syn_antirush_wallto4g,kill,,0,-1"
+				OnPlayersIn "!self,Disable,,0,-1"
+			}
+		}
+		edit {targetname "surgery_door_tr" values {targetname "surgery_door_trnodisable" startdisabled "0"} }
+		//No blocking door
+		delete {targetname "SCI01_Surgery_WatchFreeman"}
+		delete {targetname "SCI02_Surgery_WatchFreeman"}
+		delete {targetname "SCI03_Surgery_WatchFreeman"}
+		
+		delete {classname "trigger_changelevel"}
+		create {classname "trigger_changelevel" origin "3440 -626 -176" values {targetname "toc2a4e" spawnflags "4" model "*67" map "bm_c2a4e" landmark "bm_c2a4e_bm_c2a4f"} }
+		create {classname "info_landmark" origin "3440 -626 -176" values {targetname "c2a4c_c2a4e_trans"} }
+		create {classname "trigger_changelevel" origin "3440 -626 -176" values {targetname "toc2a4e" spawnflags "4" model "*67" map "bm_c2a4c" landmark "c2a4c_c2a4e_trans"} }
+		create {classname "trigger_changelevel" origin "1743 2068 -55" values {targetname "toc2a4g" angles "0 90 0" model "*67" map "bm_c2a4g" landmark "bm_c2a4f_bm_c2a4g"} }
+		create {classname "trigger_changelevel" origin "384 2520 -196" values {targetname "fromc2a4g" spawnflags "6" startdisabled "1" model "*67" map "bm_c2a4g" landmark "bm_c2a4g_bm_c2a4f_2"} }
+		create {classname "trigger_changelevel" origin "2405 -2265 -205" values {targetname "bm_c2a4f_bm_c2a4h_tedt" model "*177" map "bm_c2a4h" landmark "bm_c2a4f_bm_c2a4h"} }
+		delete {targetname "player_touchleveltransition"}
+		
+		create {classname "env_global" values {targetname "syn_gloset" globalstate "syn_transition"} }
+		create {classname "logic_auto"
+			values
+			{
+				spawnflags "1"
+				globalstate "syn_transition"
+				OnMapSpawn "syn_spawn_manager,SetCheckPoint,syn_spawnpoint2_00,0,-1"
+				OnMapSpawn "syn_stragglersfailsave,Enable,,0,-1"
+			}
+		}
+		create {classname "trigger_teleport" origin "3425 -860 -236" values {targetname "syn_stragglersfailsave" target "syn_spawnpoint2_tp" startdisabled "1" model "*177" spawnflags "1"} }
+		create {classname "info_teleport_destination" origin "157 2523 -427" values {targetname "syn_spawnpoint2_tp" startdisabled "0" angles "0 -30 0"} }
+	}
+}

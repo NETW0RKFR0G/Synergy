@@ -1,0 +1,41 @@
+// Choreo version 1
+actor "rebel_soldier"
+{
+  channel "WAV"
+  {
+    event speak "1"
+    {
+      time 0.033334 2.260409
+      param "npc_rebel1_takethatalienscum"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Facing"
+  {
+  }
+  channel "Looking at"
+  {
+  }
+  channel "Movement"
+  {
+  }
+  channel "Gestures"
+  {
+  }
+  channel "Expressions"
+  {
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off

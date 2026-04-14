@@ -1,0 +1,8 @@
+"patch"
+{
+	"include"		"materials/GLASS/GLASSWINDOW007A.vmt"
+	"replace"
+	{
+		"$envmap"		"maps/sp_canal1/c-839_3912_405"
+	}
+}

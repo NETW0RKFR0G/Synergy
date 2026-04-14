@@ -1,0 +1,14 @@
+"WorldVertexTransition"
+{
+
+	"$basetexture2" "nature\gravelfloor004a"
+	"$surfaceprop2" "gravel"
+	"$basetexture" "concrete/concretewall036a"
+	"$surfaceprop" "concrete"
+
+	$detail detail\noise_detail_01 
+	$detailscale 7
+	$detailblendfactor 0.8
+	$detailblendmode 0
+	
+}

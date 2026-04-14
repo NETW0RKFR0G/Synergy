@@ -1,0 +1,24 @@
+"Refract"
+{
+	
+	"$bluramount" "1"
+        "$translucent" 1
+	"$surfaceprop" "glass"
+ 	"$refractamount" ".100"
+	"$REFRACTTINT" "{180 180 180}"
+	"$REFRACTTINTTEXTURE" "citizen2\ci_dome"
+	"$scale" "[1 1]"
+    	"$normalmap" "citizen2\ci_dome_normal"
+    	"$dudvmap" "citizen2\ci_dome_dudv"
+	"$envmap" "env_cubemap"
+        "$normalmapalphaenvmapmask" 1
+
+	
+
+
+
+
+
+	
+}
+

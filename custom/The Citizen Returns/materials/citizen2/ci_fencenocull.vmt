@@ -1,0 +1,9 @@
+"LightmappedGeneric"
+
+{ "$basetexture" "metal/metalfence004a" 
+  "$surfaceprop" "chainlink"
+  "$translucent" 1
+  "$decal" 1
+  "$nocull" 1
+
+} 

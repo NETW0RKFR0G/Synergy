@@ -1,0 +1,154 @@
+bm_c1a2c
+{
+	console
+	{
+		sv_turbophysics "0"
+	}
+	entity
+	{
+//TEMP PLACEHOLDERS
+		edit {classname "prop_flare" values {classname "prop_physics" model "models/props_junk/flare.mdl"} }
+		edit {classname "item_weapon_crowbar" values {classname "weapon_crowbar"} }
+		edit {classname "item_weapon_frag" values {classname "weapon_frag"} }
+		edit {classname "item_weapon_357" values {classname "weapon_357"} }
+		edit {classname "fog_volume" values {classname "func_smokevolume"} }
+//--
+		
+		create {classname "info_spawn_manager" values {targetname "syn_spawn_manager"} }
+		create {classname "info_player_coop" origin "2112 -112 16" values {angles "0 90 0"} }//2104 -240 -56
+		create {classname "info_player_coop" origin "-1000 15 1870" values {targetname "syn_spawnpoint_end" startdisabled "1" angles "0 -80 0"} }
+
+//Block Backtracking
+//stairs
+		create {classname "prop_dynamic" origin "2048.01 -224 -128"
+			values
+			{
+				model "models/synergy/tools/syn_transition.mdl"
+				angles "0 90 0"
+				solid "6"
+				DisableShadows "1"
+			}
+		}
+//vent
+		create {classname "prop_dynamic" origin "1256.01 -847.99 72"
+			values
+			{
+				model "models/synergy/tools/syn_transition.mdl"
+				angles "0 270 0"
+				solid "6"
+				DisableShadows "1"
+			}
+		}
+//kill extra wall from last level
+		create {classname "logic_auto"
+			values
+			{
+				spawnflags "1"
+				OnMapTransition "syn_antirush_wall*_c1a2b,Kill,,0,-1"
+			}
+		}
+
+		create {classname "info_player_equip"
+			values
+			{
+				targetname "syn_equipmenet_base"
+				item_suit "1"
+				weapon_crowbar "1"
+					ammo_pistol "18"
+				weapon_frag "1"
+				ResponseContext "weapon_glock"
+			}
+		}
+		
+//
+		create {classname "info_player_equip"
+			values
+			{
+				targetname "syn_equipmenet_357"
+				StartDisabled "1"
+				weapon_357 "1"
+					ammo_357 "6"
+			}
+		}
+		create {classname "env_global"
+			values
+			{
+				//initialstate "0"
+				targetname "syn_global_357"
+				globalstate "syn_357_found"
+			}
+		}
+		create {classname "logic_auto"
+			values
+			{
+				spawnflags "1"
+				globalstate "syn_357_found"
+				OnMapSpawn "syn_equipmenet_357,Enable,-1,0,-1"
+				//OnMapSpawn "syn_global_357,TurnOn,,1,-1"
+			}
+		}
+		create {classname "logic_auto"
+			values
+			{
+				spawnflags "1"
+				OnMapSpawn "weapon_357,AddOutput,OnCacheInteraction syn_equipmenet_357:Enable::0:-1,0,-1"//OnPlayerTouch
+				OnMapSpawn "weapon_357,AddOutput,OnCacheInteraction syn_equipmenet_357:EquipAllPlayers::0.1:-1,0,-1"//OnPlayerTouch
+			}
+		}
+
+//alt route elevator - dont fall
+		delete {targetname "trigger_elevator_fall"}
+
+//make elevator1 passable
+		edit {targetname "elevator1" values {spawnflags "539"} }
+
+//end
+		edit {targetname "change_c1a2b_c1a3a" values {spawnflags "0" StartDisabled "1"} }
+		create {classname "logic_auto"
+			values
+			{
+				spawnflags "1"
+				OnMapSpawn "ele1_path3,AddOutput,OnPass change_c1a2b_c1a3a:Enable::0:-1,0,-1"
+			}
+		}
+		delete {targetname "trigger_c1a2c_c1a3a"}
+	//	create {classname "trigger_coop" origin "-968 -288 1825"
+	//		values
+	//		{
+	//			model "*32"
+	//			spawnflags "1"
+	//			parentname "elevator1"
+	//			//targetname ""
+	//			CountType "1"
+	//			UseHUD "1"
+	//			PlayerValue "50"
+	//			OnPlayersIn "change_c1a2b_c1a3a,Enable,,1,1"
+	//			OnPlayersIn "!self,Disable,,1,1"
+	//		}
+	//	}
+		
+		delete {classname "trigger_once" origin "-974 -36 1904"}
+		edit {classname "trigger_once" origin "-1022 -60 1904" values {classname "logic_relay" targetname "syn_endrel"} }
+		create {classname "trigger_coop" origin "-940 -72 1924"
+			values
+			{
+				edt_getbspmodelfor_classname "trigger_once"
+				edt_getbspmodelfor_origin "-200 304 252.72"
+				spawnflags "1"
+				usehud "1"
+				counttype "1"
+				playervalue "66"
+				target "syn_endtp"
+				OnTrigger "syn_spawn_manager,SetCheckPoint,syn_spawnpoint_end,0,1"
+				OnPlayersIn "elevator1_doorclose,PlaySound,,0,-1"
+				OnPlayersIn "ele1_boards,Break,,3,1"
+				OnPlayersIn "syn_endrel,Trigger,,0,1"
+				OnPlayersIn "!self,TeleportPlayersNotTouching,,1,1"
+				OnPlayersIn "!self,Disable,,1.5,1"
+			}
+		}
+		create {classname "info_target" origin "-1000 15 1870" values {targetname "syn_endtp" startdisabled "0" angles "0 -80 0"} }
+		
+		create {classname "logic_relay" values {targetname "travis_func_tester"} }
+	}
+}

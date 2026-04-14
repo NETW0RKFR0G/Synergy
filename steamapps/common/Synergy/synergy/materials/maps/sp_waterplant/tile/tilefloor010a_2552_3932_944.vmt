@@ -1,0 +1,8 @@
+"patch"
+{
+	"include"		"materials/TILE/TILEFLOOR010A.vmt"
+	"replace"
+	{
+		"$envmap"		"maps/sp_waterplant/c2552_3932_944"
+	}
+}

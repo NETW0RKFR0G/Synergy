@@ -1,0 +1,56 @@
+//"Refract"
+"LightMappedGeneric"
+
+{
+	
+	"$basetexture" "citizen2\ci_diceglass"
+	//"$bluramount" "1"
+        //"$translucent" 1
+	"$surfaceprop" "glass"
+ 	//"$refractamount" ".100"
+	//"$REFRACTTINT" "{180 180 180}"
+	//"$REFRACTTINTTEXTURE" "citizen2\ci_diceglass"
+	//"$scale" "[1 1]"
+	"$bumpmap" "citizen2\ci_diceglass_normal"
+    	//"$normalmap" "citizen2\ci_diceglass_normal"
+    	//"$dudvmap" "citizen2\ci_diceglass_dudv"
+	"$envmap" "env_cubemap"
+  	"$normalmapalphaenvmapmask" 1
+	
+	$detail detail\metal_detail_01
+	$detailscale 5
+	$detailblendfactor 0.65
+	$detailblendmode 0
+
+
+
+	
+	"Refract_dx60"
+	{
+		"$fallbackmaterial" "citizen2\ci_diceglass_low"
+
+	}	
+
+
+	"Refract_dx70"
+	{
+		"$fallbackmaterial" "citizen2\ci_diceglass_low"
+
+	}	
+
+	
+
+	"Refract_dx80"
+	{
+		"$fallbackmaterial" "citizen2\ci_diceglass_low"
+
+	}	
+	
+
+
+
+
+
+	
+}
+

@@ -1,0 +1,70 @@
+// Choreo version 1
+actor "rebels_larry"
+{
+  channel "wav"
+  {
+    event speak "not pretty"
+    {
+      time 0.080000 1.711202
+      param "npc_larry_notpretty"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "look"
+  {
+  }
+  channel "face"
+  {
+  }
+  channel "move"
+  {
+  }
+  channel "gesture"
+  {
+  }
+  channel "expression"
+  {
+    event flexanimation "1"
+    {
+      time 0.006666 1.973333
+      param ""
+      flexanimations samples_use_time
+      {
+        "lid_raiser" combo 
+        {
+          0.2400 1.0000
+        }
+        {
+          0.2400 0.5000
+        }
+        "lowerer" combo 
+        {
+          0.2400 1.0000
+        }
+        {
+          0.2400 0.5000
+        }
+        "corner_depressor" combo 
+        {
+          0.2400 0.5600
+        }
+        {
+          0.2400 0.5000
+        }
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+}
+fps 60
+snap off

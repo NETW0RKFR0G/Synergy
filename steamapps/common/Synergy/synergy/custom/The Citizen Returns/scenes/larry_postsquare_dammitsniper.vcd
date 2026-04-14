@@ -1,0 +1,131 @@
+// Choreo version 1
+actor "larry"
+{
+  channel "wav"
+  {
+    event speak "wav1"
+    {
+      time 0.096297 5.344007
+      param "npc_larry_postsquare_dammitsniper"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "face"
+  {
+    event flexanimation "faceanim1"
+    {
+      time 0.644445 2.107408
+      param ""
+      flexanimations samples_use_time
+      {
+        "lowerer" combo 
+        {
+          0.1520 1.0000
+        }
+        {
+          0.1520 0.5000
+        }
+        "cheek_raiser" combo 
+        {
+          0.1520 1.0000
+        }
+        {
+          0.1520 0.5000
+        }
+        "wrinkler" 
+        {
+          0.1520 1.0000
+        }
+        "chin_raiser" 
+        {
+          0.1520 1.0000
+        }
+      }
+    }
+    event flexanimation "faceanim2"
+    {
+      time 2.562964 3.759260
+      param ""
+      flexanimations samples_use_time
+      {
+        "inner_raiser" combo 
+        {
+          0.1480 0.9900
+        }
+        {
+          0.1480 0.5000
+        }
+        "head_updown" range 15.0 -15.0 
+        {
+          0.1480 1.0000
+        }
+        "eyes_updown" range 30.0 -30.0 
+        {
+          0.1480 1.0000
+        }
+      }
+    }
+    event flexanimation "faceanim1"
+    {
+      time 3.844445 5.307408
+      param ""
+      flexanimations samples_use_time
+      {
+        "lowerer" combo 
+        {
+          0.1520 1.0000
+        }
+        {
+          0.1520 0.5000
+        }
+        "cheek_raiser" combo 
+        {
+          0.1520 1.0000
+        }
+        {
+          0.1520 0.5000
+        }
+        "wrinkler" 
+        {
+          0.1520 1.0000
+        }
+        "chin_raiser" 
+        {
+          0.1520 1.0000
+        }
+      }
+    }
+  }
+  channel "faceplayer"
+  {
+    event face "faceplayer"
+    {
+      time 2.459260 5.329630
+      param "!player"
+    }
+  }
+  channel "lookat"
+  {
+    event lookat "lookatplayer"
+    {
+      time 4.081481 5.322222
+      param "!player"
+    }
+  }
+  channel "gesture"
+  {
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "126"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off

@@ -1,0 +1,13 @@
+"LightmappedGeneric"
+
+{ "$basetexture" "citizen2/ci_carpet1" 
+  "$surfaceprop" "carpet"
+
+	
+   	$detail detail\noise_detail_01
+	$detailscale 8
+	$detailblendfactor .45
+	$detailblendmode 0
+
+
+} 

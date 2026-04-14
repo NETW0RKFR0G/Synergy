@@ -1,0 +1,8 @@
+"patch"
+{
+	"include"		"materials/METAL/METALROOF008A.vmt"
+	"replace"
+	{
+		"$envmap"		"maps/sp_precasino/c-224_-576_0"
+	}
+}

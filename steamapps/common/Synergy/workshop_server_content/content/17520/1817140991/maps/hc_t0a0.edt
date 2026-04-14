@@ -1,0 +1,97 @@
+hc_t0a0
+{
+	console
+	{
+		sv_turbophysics "0"
+		rebuildents "2"
+	}
+	entity
+	{
+		delete {classname "point_clientcommand"}
+		delete {classname "point_servercommand"}
+		delete {targetname "fade_falldmg"}
+		edit {classname "prop_flare" values {classname "prop_physics" model "models/props_junk/flare.mdl"} }
+		edit {classname "item_weapon_crowbar" values {classname "weapon_crowbar"} }
+		edit {classname "item_weapon_frag" values {classname "weapon_frag"} }
+		edit {classname "item_weapon_357" values {classname "weapon_357"} }
+		edit {classname "fog_volume" values {classname "func_smokevolume"} }
+		edit {classname "item_weapon_shotgun" values {classname "weapon_shotgun"} }
+		edit {classname "item_ammo_shotgun" values {classname "item_box_buckshot"} }
+		edit {classname "env_message" values {spawnflags "2"} }
+		create {classname "info_spawn_manager" values {targetname "syn_spawn_manager"} }
+		create {classname "logic_auto"
+			values
+			{
+				spawnflags "1"
+				OnMapSpawn "train_02,Stop,,0,-1"
+			}
+		}
+		create {classname "info_player_equip"
+			values
+			{
+				targetname "syn_equipment_base"
+			}
+		}
+		
+		delete {classname "info_player_start"}
+		create {classname "info_player_coop" origin "555 30 20" values {targetname "syn_spawnpoint_00" startdisabled "0" angles "0 0 0" parentname "train_02"} }
+		create {classname "info_player_coop" origin "3215 -2605 35" values {targetname "syn_spawnpoint_01" startdisabled "1" angles "0 90 0"} }
+		create {classname "info_player_coop" origin "1665 -3980 35" values {targetname "syn_spawnpoint_02" startdisabled "1" angles "0 90 0" parentname "intro_elevator"} }
+		create {classname "trigger_once" origin "555 30 20"
+			values
+			{
+				edt_mins "-100 -100 -50"
+				edt_maxs "100 100 50"
+				spawnflags "1"
+				OnTrigger "syn_hudtimer,Start,30,0,1"
+			}
+		}
+		create {classname "path_track" origin "505 30 19" values {targetname "t1_00edt" speed "0" target "t1_00"} }
+		edit {targetname "train_02" values {target "t1_00edt"} }
+		create {classname "hud_timer"
+			values
+			{
+				targetname "syn_hudtimer"
+				TimerText "WAITING FOR PLAYERS"
+				TimerType "1"
+				OnTimer "train_02,StartForward,,0,1"
+			}
+		}
+		edit {classname "trigger_once" origin "3196 -2576 60" values {classname "logic_relay" targetname "syn_enterairlock"} }
+		create {classname "trigger_coop" origin "3196 -2576 60"
+			values
+			{
+				edt_getbspmodelfor_classname "trigger_once"
+				edt_getbspmodelfor_origin "3196 -2576 60"
+				spawnflags "1"
+				PlayerValue "70"
+				usehud "1"
+				counttype "1"
+				target "syn_cooptarg_01"
+				OnStartTouch "syn_spawn_manager,SetCheckPoint,syn_spawnpoint_01,0,1"
+				OnPlayersIn "!self,TeleportPlayersNotTouching,,0.5,1"
+				OnPlayersIn "!self,kill,,1,1"
+				OnPlayersIn "syn_enterairlock,Trigger,,0,1"
+			}
+		}
+		create {classname "info_target" origin "3215 -2605 35" values {targetname "syn_cooptarg_01" startdisabled "0" angles "0 90 0"} }
+		edit {classname "trigger_once" origin "1664 -4007 64" values {classname "logic_relay" targetname "syn_enterelev"} }
+		create {classname "trigger_coop" origin "1664 -4007 64"
+			values
+			{
+				edt_getbspmodelfor_classname "trigger_once"
+				edt_getbspmodelfor_origin "1664 -4007 64"
+				spawnflags "1"
+				PlayerValue "70"
+				usehud "1"
+				counttype "1"
+				target "syn_cooptarg_02"
+				OnStartTouch "syn_spawn_manager,SetCheckPoint,syn_spawnpoint_02,0,1"
+				OnPlayersIn "!self,TeleportPlayersNotTouching,,0.5,1"
+				OnPlayersIn "!self,kill,,1,1"
+				OnPlayersIn "syn_enterelev,Trigger,,0,1"
+			}
+		}
+		create {classname "info_target" origin "1665 -3980 35" values {targetname "syn_cooptarg_02" startdisabled "0" angles "0 90 0" parentname "intro_elevator"} }
+	}
+}

@@ -1,0 +1,8 @@
+"patch"
+{
+	"include"		"materials/CITIZEN2/CI_GOLD.vmt"
+	"replace"
+	{
+		"$envmap"		"maps/sp_square/c2204_-741_247"
+	}
+}

@@ -1,0 +1,11 @@
+"patch"
+{
+	"include"		"materials/NATURE/WATER_MOVINGPLANE.vmt"
+	"replace"
+	{
+		"$envmap"		"maps/sp_streetwar3/c2080_616_-290"
+		"Proxies"
+		{
+		}
+	}
+}

@@ -1,0 +1,8 @@
+"patch"
+{
+	"include"		"materials/METAL/METALDOOR004A.vmt"
+	"replace"
+	{
+		"$envmap"		"maps/sp_waterplant/c1315_7095_1617"
+	}
+}

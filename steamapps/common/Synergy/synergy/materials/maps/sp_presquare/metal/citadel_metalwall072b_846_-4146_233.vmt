@@ -1,0 +1,8 @@
+"patch"
+{
+	"include"		"materials/METAL/CITADEL_METALWALL072B.vmt"
+	"replace"
+	{
+		"$envmap"		"maps/sp_presquare/c846_-4146_233"
+	}
+}

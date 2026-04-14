@@ -1,0 +1,8 @@
+"LightmappedGeneric"
+{
+	"$basetexture"		"nature/toxicslime001a"
+	"%tooltexture"		"nature/blendtoxictoxic001a_tooltexture"
+	"$surfaceprop"		"dirt"
+	"$basetexturetransform"		"center .5 .5 scale 1 1 rotate 0 translate 0 0"
+	"$basetexturetransform2"		"center .5 .5 scale 1 1 rotate 0 translate 0 0"
+}

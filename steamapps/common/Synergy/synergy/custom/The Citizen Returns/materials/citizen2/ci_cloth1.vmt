@@ -1,0 +1,7 @@
+"LightmappedGeneric"
+{
+  
+  "$basetexture" "citizen2/ci_cloth1" 
+  "$surfaceprop" "carpet"
+  "$bumpmap" "citizen2/ci_cloth1_normal"
+}

@@ -1,0 +1,9 @@
+"WorldVertexTransition"
+{
+
+	"$basetexture" "nature\gravelfloor004a"
+	"$surfaceprop" "gravel"
+	"$basetexture2" "nature\ci_temporarywall"
+	"$surfaceprop2" "rock"
+	
+}

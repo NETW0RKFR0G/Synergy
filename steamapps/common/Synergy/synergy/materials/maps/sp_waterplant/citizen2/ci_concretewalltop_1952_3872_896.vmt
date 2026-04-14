@@ -1,0 +1,8 @@
+"patch"
+{
+	"include"		"materials/CITIZEN2/CI_CONCRETEWALLTOP.vmt"
+	"replace"
+	{
+		"$envmap"		"maps/sp_waterplant/c1952_3872_896"
+	}
+}

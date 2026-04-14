@@ -1,0 +1,11 @@
+"patch"
+{
+	"include"		"materials/EFFECTS/COMBINESHIELD/COMSHIELDWALL3.vmt"
+	"replace"
+	{
+		"$envmap"		"maps/sp_presquare/c3171_-5507_66"
+		"Proxies"
+		{
+		}
+	}
+}

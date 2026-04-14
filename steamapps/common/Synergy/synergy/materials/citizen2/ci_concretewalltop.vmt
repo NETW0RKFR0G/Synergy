@@ -1,0 +1,9 @@
+"LightmappedGeneric"
+
+{ "$basetexture" "citizen2/ci_concretewalltop" 
+  "$surfaceprop" "concrete"
+  "$bumpmap" "citizen2/ci_concretewalltop_normal"
+  "$envmap" "env_cubemap"
+  "$normalmapalphaenvmapmask" 1
+
+} 

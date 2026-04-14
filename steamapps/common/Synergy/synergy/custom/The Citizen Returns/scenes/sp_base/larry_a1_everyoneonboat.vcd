@@ -1,0 +1,141 @@
+// Choreo version 1
+actor "rebel_larry"
+{
+  channel "wav"
+  {
+    event speak "larry_a1_everyoneonboat"
+    {
+      time 0.160000 2.650340
+      param "npc_larry_a1_everyoneonboat"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Lookingat"
+  {
+    event lookat "lookatboat"
+    {
+      time 0.654762 2.773810
+      param "boat"
+    }
+  }
+  channel "Face"
+  {
+    event flexanimation "flex1"
+    {
+      time 1.601191 2.857142
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "lid_tightener" combo 
+        {
+          0.2180 1.0000
+        }
+        {
+          0.2180 0.5000
+        }
+        "cheek_raiser" combo 
+        {
+          0.2180 1.0000
+        }
+        {
+          0.2180 0.5000
+        }
+        "head_tilt" range 15.0 -15.0 
+        {
+          0.2180 0.0000
+        }
+      }
+    }
+  }
+  channel "Gestures"
+  {
+    event gesture "gest1"
+    {
+      time 0.970238 3.003571
+      param "g_point_swing_across"
+      absolutetags playback_time
+      {
+        "apex" 0.150000
+        "accent" 0.250000
+        "loop" 0.380000
+        "extreme" 0.390000
+        "end" 0.533333
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.176471
+        "accent" 0.352941
+        "loop" 0.441176
+        "extreme" 0.471698
+        "end" 0.588235
+      }
+      sequenceduration 2.300000
+    }
+  }
+}
+
+actor "rebel_sarah"
+{
+  channel "look"
+  {
+    event lookat "atlarry"
+    {
+      time 0.017857 3.017857
+      param "rebel_larry"
+    }
+    event lookat "atplayer"
+    {
+      time 3.047619 5.672618
+      param "!player"
+    }
+  }
+  channel "wav"
+  {
+    event speak "goodluck"
+    {
+      time 3.327381 4.778401
+      param "npc_sarah_goodluckairboat"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+}
+
+actor "rebel_random5"
+{
+  channel "look"
+  {
+    event lookat "atlarry"
+    {
+      time 0.029762 3.029762
+      param "rebel_larry"
+    }
+  }
+}
+
+actor "rebel_random3"
+{
+  channel "look"
+  {
+    event lookat "atlarry"
+    {
+      time 0.023809 3.059524
+      param "rebel_larry"
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "112"
+  "SceneRampTool" "100"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

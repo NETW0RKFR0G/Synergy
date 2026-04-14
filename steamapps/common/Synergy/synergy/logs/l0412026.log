@@ -1,0 +1,16 @@
+L 04/12/2026 - 17:44:44: Log file started (file "logs\L0412026.log") (game "d:\steamlibrary\steamapps\common\synergy\synergy") (version "4300")
+L 04/12/2026 - 17:44:44: Connection to Steam servers successful.
+L 04/12/2026 - 17:44:44:    Public IP is 184.161.210.129.
+L 04/12/2026 - 17:44:44: Assigned anonymous gameserver Steam ID [A:1:55006232:49430].
+L 04/12/2026 - 17:44:44: VAC secure mode disabled.
+L 04/12/2026 - 17:46:43: "BACONTROLL<2><[U:1:48263075]><>" connected, address "76561198008528803"
+L 04/12/2026 - 17:46:44: "BACONTROLL<2><[U:1:48263075]><>" STEAM USERID validated
+L 04/12/2026 - 17:46:51: "BACONTROLL<2><[U:1:48263075]><>" entered the game
+L 04/12/2026 - 18:04:16: "winona<3><[U:1:871863477]><>" connected, address "76561198832129205"
+L 04/12/2026 - 18:04:17: "winona<3><[U:1:871863477]><>" STEAM USERID validated
+L 04/12/2026 - 18:04:19: "winona<3><[U:1:871863477]><>" entered the game
+L 04/12/2026 - 18:04:27: "winona<3><[U:1:871863477]><Unassigned>" disconnected (reason "Disconnect by user.")
+L 04/12/2026 - 18:16:22: server_cvar: "mp_spawntime" "60"
+L 04/12/2026 - 18:16:22: "BACONTROLL<2><[U:1:48263075]><>" disconnected (reason "Server shutting down")
+L 04/12/2026 - 18:16:22: server_message: "quit"
+L 04/12/2026 - 18:16:22: Log file closed.

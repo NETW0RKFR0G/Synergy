@@ -1,0 +1,11 @@
+"patch"
+{
+	"include"		"materials/EFFECTS/COMBINESHIELD/COMSHIELDWALL2.vmt"
+	"replace"
+	{
+		"$envmap"		"maps/sp_streetwar2/c-2220_-3128_-18"
+		"Proxies"
+		{
+		}
+	}
+}

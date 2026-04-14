@@ -1,0 +1,38 @@
+// Choreo version 1
+actor "medic"
+{
+  channel "WAV"
+  {
+    event speak "1"
+    {
+      time 0.230769 2.201517
+      param "npc_medic_finally"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Face"
+  {
+  }
+  channel "Look at"
+  {
+  }
+  channel "Gesture"
+  {
+  }
+  channel "Expressions"
+  {
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "106"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off

@@ -1,0 +1,32 @@
+"js_coop_monsterkill_v2b"
+{
+        console
+        {
+                   "mp_reset" "0"
+		   "mp_weaponstay" "1"
+        }
+	entity
+	{
+//--Starting Items--
+		create {classname "info_player_equip"
+			values {
+				item_suit			"1"
+				item_armor			"45"
+				weapon_physcannon	"1"
+			} }
+//--Setup--
+		create {classname "info_global_settings" values {IsVehicleMap "1" } }
+		"create"
+		{
+		"classname" "logic_auto"
+		"origin" "0 0 0"
+		"values"
+		{
+		"OnMapSpawn" "weapon_*,AddOutput,RespawnCount -1,0,-1"
+		"OnMapSpawn" "item_*,AddOutput,RespawnCount -1,0,-1"
+		}
+		}
+		delete {classname "point_servercommand"}
+		delete {classname "point_clientcommand"}
+	}
+}

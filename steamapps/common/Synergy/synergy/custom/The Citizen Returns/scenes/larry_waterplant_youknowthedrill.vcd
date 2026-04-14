@@ -1,0 +1,69 @@
+// Choreo version 1
+actor "larry"
+{
+  channel "wav"
+  {
+    event speak "youknowthedrill"
+    {
+      time 0.140000 1.386531
+      param "npc_larry_waterplant_youknowthedrill"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "gesture"
+  {
+    event flexanimation "flex1"
+    {
+      time 0.073334 0.946667
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "lid_tightener" combo 
+        {
+          0.2160 0.0400
+        }
+        {
+          0.2160 0.5000
+        }
+        "outer_raiser" combo 
+        {
+          0.2160 1.0000
+        }
+        {
+          0.2160 0.5000
+        }
+        "head_updown" range 15.0 -15.0 
+        {
+          0.2160 0.0000
+        }
+      }
+    }
+  }
+  channel "lookat"
+  {
+    event lookat "atplayer"
+    {
+      time 0.033333 1.080000
+      param "!player"
+    }
+    event lookat "atstairs"
+    {
+      time 1.100000 1.680000
+      param "target_stairs"
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "ExpressionTool" "100"
+  "RampTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

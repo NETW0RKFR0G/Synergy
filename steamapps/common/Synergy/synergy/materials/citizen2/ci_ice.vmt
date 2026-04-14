@@ -1,0 +1,14 @@
+"LightmappedGeneric"
+
+{ "$basetexture" "citizen2/ci_ice" 
+  "$translucent" "1"
+  "$decal" "1"
+
+	$detail detail\metal_detail_01
+	$detailtexturetransform "center .5 .5 scale 4 8 rotate 0 translate 0 0" 
+	$detailblendfactor 0.25
+	$detailblendmode 0
+
+
+
+} 

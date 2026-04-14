@@ -1,0 +1,186 @@
+// Choreo version 1
+actor "rebel_medic"
+{
+  channel "WAV"
+  {
+    event speak "rebel2_hewouldlistentome"
+    {
+      time 0.286666 1.993151
+      param "npc_rebel2_hewouldntlisten"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Eyes"
+  {
+    event flexanimation "eyes"
+    {
+      time -0.633333 -0.133333
+      param ""
+    }
+    event flexanimation "eyesatargento"
+    {
+      time 0.033333 0.706666
+      param ""
+      flexanimations samples_use_time
+      {
+        "inner_raiser" combo 
+        {
+          0.4580 1.0000
+        }
+        {
+          0.4580 0.5000
+        }
+        "jaw_drop" 
+        {
+          0.4580 1.0000
+        }
+      }
+    }
+  }
+  channel "Eyes2"
+  {
+    event flexanimation "angryeyes"
+    {
+      time 0.760000 2.473333
+      param ""
+      flexanimations samples_use_time
+      {
+        "outer_raiser" combo 
+        {
+          0.1680 1.0000
+        }
+        {
+          0.1680 0.5000
+        }
+        "lowerer" combo 
+        {
+          0.1680 1.0000
+        }
+        {
+          0.1680 0.5000
+        }
+        "wrinkler" 
+        {
+          0.1680 1.0000
+        }
+        "dilator" 
+        {
+          0.1680 1.0000
+        }
+        "corner_depressor" combo 
+        {
+          0.1680 1.0000
+        }
+        {
+          0.1680 0.5000
+        }
+        "chin_raiser" 
+        {
+          0.1680 1.0000
+        }
+        "part" combo 
+        {
+          0.1680 0.6100
+        }
+        {
+          0.1680 0.5000
+        }
+        "head_updown" range 15.0 -15.0 
+        {
+          0.1680 0.8000
+        }
+        "eyes_updown" range 30.0 -30.0 
+        {
+          0.1680 0.2100
+        }
+        "eyes_rightleft" range 30.0 -30.0 
+        {
+          0.1680 0.5000
+        }
+      }
+    }
+  }
+  channel "Head"
+  {
+    event gesture "head"
+    {
+      time 0.053333 1.686667
+      param "hg_headshake"
+      absolutetags playback_time
+      {
+        "apex" 0.208333
+        "loop" 0.270833
+        "extreme" 0.416667
+        "end" 0.625000
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.208333
+        "loop" 0.270833
+        "extreme" 0.416667
+        "end" 0.625000
+      }
+      sequenceduration 1.633333
+    }
+  }
+  channel "Gesture"
+  {
+    event gesture "gesture"
+    {
+      time 0.840000 2.666666
+      param "G_righthandroll"
+      absolutetags playback_time
+      {
+        "apex" 0.185247
+        "accent" 0.333444
+        "loop" 0.518691
+        "end" 0.703937
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.282051
+        "accent" 0.397436
+        "loop" 0.512821
+        "end" 0.641026
+      }
+      sequenceduration 2.633333
+    }
+  }
+  channel "LookatPlayer"
+  {
+    event lookat "Lookatplayer"
+    {
+      time 0.760000 2.526667
+      param "!player"
+    }
+  }
+  channel "Lookatargento"
+  {
+    event lookat "Lookatargento"
+    {
+      time -0.193333 0.646667
+      param "argento"
+    }
+  }
+  channel "Faceargento"
+  {
+    event face "faceargento"
+    {
+      time -0.040000 0.700000
+      param "argento"
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off

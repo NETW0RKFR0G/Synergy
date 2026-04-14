@@ -1,0 +1,165 @@
+"npc_arthur_1stbriefing"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.6"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/arthur_1stbriefing.wav"
+}
+
+
+"npc_arthur_board_intro"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.6"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/arthur_board_intro.wav"
+}
+
+
+"npc_arthur_goodluck"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.6"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/arthur_goodluck.wav"
+}
+
+"npc_arthur_gotfuse1"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.6"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/arthur_gotfuse1.wav"
+}
+
+"npc_arthur_gotfuse2"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.6"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/arthur_gotfuse2.wav"
+}
+
+"npc_arthur_greatwork"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.6"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/arthur_greatwork.wav"
+}
+
+"npc_arthur_jesuswept"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.6"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/arthur_jesuswept.wav"
+}
+
+"npc_arthur_niceworkingwithyou"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.6"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/arthur_niceworkingwithyou.wav"
+}
+
+"npc_arthur_rant"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.6"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/arthur_rant.wav"
+}
+
+"npc_arthur_sentrygunfirst"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.6"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/arthur_sentrygunfirst.wav"
+}
+
+
+"npc_arthur_sidedoor"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.6"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/arthur_sidedoor.wav"
+}
+
+
+"npc_arthur_takethat"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.6"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/arthur_takethat.wav"
+}
+
+"npc_arthur_thatswhatimtalkingabout"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.6"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/arthur_thatswhatimtalkingabout.wav"
+}
+
+"npc_arthur_youready"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.6"
+	"pitch"		"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"	
+
+	"wave"		"/arthur_youready.wav"
+}
+
+
+
+
+
+
+
+

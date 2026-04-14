@@ -1,0 +1,8 @@
+"patch"
+{
+	"include"		"materials/CITIZEN2/CI_CASINOMETAL.vmt"
+	"replace"
+	{
+		"$envmap"		"maps/sp_ending/c-5026_-67_-199"
+	}
+}

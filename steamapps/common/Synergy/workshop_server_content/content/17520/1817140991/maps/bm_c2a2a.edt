@@ -1,0 +1,99 @@
+bm_c2a2a
+{
+	console
+	{
+		sv_turbophysics "0"
+	}
+	entity
+	{
+//TEMP PLACEHOLDERS
+		edit {classname "prop_flare" values {classname "prop_physics" model "models/props_junk/flare.mdl"} }
+		edit {classname "item_weapon_crowbar" values {classname "weapon_crowbar"} }
+		edit {classname "item_weapon_frag" values {classname "weapon_frag"} }
+		edit {classname "item_weapon_357" values {classname "weapon_357"} }
+		edit {classname "fog_volume" values {classname "func_smokevolume"} }
+		edit {classname "item_weapon_shotgun" values {classname "weapon_shotgun"} }
+		edit {classname "item_ammo_shotgun" values {classname "item_box_buckshot"} }
+		edit {classname "item_grenade_mp5" values {classname "item_ammo_smg1_grenade"} }
+		edit {classname "func_conveyor_bms" values {classname "func_conveyor" spawnflags "0"} }
+		edit {classname "npc_gargantua" values {classname "npc_bmsgargantua"} }
+//--
+//Starting Equips
+		create {classname "info_player_equip"
+			values
+			{
+				targetname "syn_equipment_base"
+				item_suit "1"
+				weapon_crowbar "1"
+					ammo_pistol "18"
+				weapon_frag "1"
+				weapon_357 "1"
+					ammo_357 "6"
+					ammo_smg1 "30"
+				weapon_shotgun "1"
+					ammo_buckshot "12"
+				ResponseContext "weapon_mp5 weapon_glock weapon_satchel"
+			}
+		}
+		
+		delete {classname "info_player_start"}
+		create {classname "info_global_settings" values {targetname "syn_vehiclemap" IsVehicleMap "1"} }
+		create {classname "info_spawn_manager" values {targetname "syn_spawn_manager"} }
+		create {classname "info_player_coop" origin "-1770 -2050 1460" values {targetname "syn_spawnpoint_00" startdisabled "0" angles "0 0 0" parentname "c2a2a_tram_a_base"} }
+		delete {targetname "c2a2a_equipment"}
+		delete {targetname "c2a2a_equipment_template"}
+		create {classname "logic_auto"
+			values
+			{
+				spawnflags "1"
+				OnMapSpawn "c2a2a_tram_turntable,Trigger,,1,-1"
+				OnMapSpawn "c2a2a_tram_turntable,GoDown,,2,-1"
+				OnMapSpawn "c2a2a_tram_turntable,GoDown,,6,-1"
+				OnMapSpawn "c2a2a_tram_turntable,GoDown,,10,-1"
+				OnMapSpawn "c2a2a_tram_turntable,GoDown,,12,-1"
+				OnMapSpawn "c2a2a_tram_turntable,GoDown,,14,-1"
+				OnMapSpawn "c2a2a_tram_turntable,GoDown,,15,-1"
+				OnMapSpawn "c2a2a_tram_turntable,GoDown,,36,-1"
+				OnMapSpawn "c2a2a_tram_turntable,GoDown,,38,-1"
+				OnMapSpawn "c2a2a_tram_a_base,AddOutput,spawnflags 2,0,1"
+				OnMapSpawn "c2a2a_tram_a_base,StartForward,,0,1"
+				OnMapSpawn "c2a2a_tram_a_base,SetParent,trackB,0,-1"
+				OnMapSpawn "c2a2a_tram_a_base,ClearParent,,36.5,-1"
+				OnMapSpawn "c2a2a_tram_a_base,TeleportToPathTrack,pathTram_a02,37,-1"
+				OnMapSpawn "c2a2a_tram_turntable,kill,,37,-1"
+				OnMapSpawn "c2a2a_tram_a_base,AddOutput,spawnflags 640,36.5,1"
+				OnMapSpawn "syn_stragglers,Enable,,10,1"
+				OnMapSpawn "trigger_changelevel,AddOutput,OnChangeLevel c2a2a_tram_a_base:TeleportToPathTrack:c2a2b_tram_stop_34:0:1,0,-1"
+			}
+		}
+		//edit {targetname "c2a2a_tram_a_base" values {globalname ""} }
+		//edit {targetname "c2a2a_tram_a_prop" values {globalname ""} }
+		//edit {targetname "c2a2a_tram_a_controls" values {globalname ""} }
+		create {classname "logic_collision_pair" values {attach1 "c2a2a_tram_turntable" attach2 "c2a2a_tram_a_prop" startdisabled "1"} }
+		edit {targetname "c2a2a_tram_turntable" values {train "c2a2a_tram_a_base"} }
+		//edt_getbspmodelfor_classname "trigger_once" edt_getbspmodelfor_origin "16 2192 768"
+		create {classname "trigger_teleport" origin "-1730 -2050 1460" values {model "*101" targetname "syn_stragglers" startdisabled "1" spawnflags "1" target "syn_tpspawnreturn"} }
+		create {classname "info_teleport_destination" origin "-1770 -2050 1460" values {targetname "syn_tpspawnreturn" angles "0 0 0" parentname "c2a2a_tram_a_base"} }
+		
+		edit {targetname "c2a2b_tram_stop_31" values {target "c2a2b_tram_stop_31" altpath "c2a2b_tram_stop_32"} }
+		create {classname "syn_transition_wall" origin "-2570 3715 1780" values {solid "6" DisableShadows "1" angles "0 0 0" targetname "syn_antirush_wall"} }
+		create {classname "trigger_coop" origin "-2510 3665 1905"
+			values
+			{
+				edt_getbspmodelfor_classname "trigger_once"
+				edt_getbspmodelfor_origin "-1928 2720 1888"
+				//model "*111"
+				targetname "syn_coopto_2b"
+				angles "0 0 0"
+				startdisabled "0"
+				spawnflags "1"
+				usehud "1"
+				playervalue "80"
+				counttype "1"
+				OnPlayersIn "syn_antirush_wall,kill,,0,-1"
+				OnPlayersIn "c2a2b_tram_stop_31,EnableAlternatePath,,0,1"
+				OnPlayersIn "!self,Disable,,0,-1"
+			}
+		}
+	}
+}

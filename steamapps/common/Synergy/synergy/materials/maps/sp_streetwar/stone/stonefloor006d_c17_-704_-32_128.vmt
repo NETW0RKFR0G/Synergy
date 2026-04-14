@@ -1,0 +1,15 @@
+"patch"
+{
+	"include"		"materials/STONE/STONEFLOOR006D_C17.vmt"
+	"replace"
+	{
+		"LightmappedGeneric_DX9"
+		{
+			"$envmap"		"maps/sp_streetwar/c-704_-32_128"
+		}
+		"lightmappedgeneric_HDR_dx9"
+		{
+			"$envmap"		"maps/sp_streetwar/c-704_-32_128"
+		}
+	}
+}

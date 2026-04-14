@@ -1,0 +1,12 @@
+"LightmappedGeneric"
+
+{ "$basetexture" "citizen2/ci_casino11" 
+  "$surfaceprop" "carpet"
+  //"$bumpmap" "citizen2/ci_carpet3_normal"
+
+	$detail detail\noise_detail_01
+	$detailscale 10
+	$detailblendfactor 0.5
+	$detailblendmode 0
+
+} 

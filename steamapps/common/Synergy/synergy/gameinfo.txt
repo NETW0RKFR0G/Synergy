@@ -1,0 +1,36 @@
+"GameInfo"
+{
+	"title"		" synergy"
+	"game"		"Synergy"
+	"type"		"multiplayer_only"
+	"developer"		"Synergy Mod Team"
+	"developer_url"		"http://synergymod.net"
+	"manual"		"http://synergymod.net/Documents"
+	"icon"		"materials/synergy"
+	"GameData"		"../synergy/SDK/synergy.fgd"
+	"nomodels"		"1"
+	"nohimodel"		"1"
+	"nocrosshair"		"1"
+	"supportsvr"		"0"
+	"filesystem"
+	{
+		"SteamAppId"		"17520"
+		"SearchPaths"
+		{
+			"game+mod+game_write+mod_write+default_write_path"		"|gameinfo_path|."
+			"gamebin"		"|gameinfo_path|bin"
+			"game"		"|gameinfo_path|synergy_pak.vpk"
+			"platform"		"D:\SteamLibrary\steamapps\common\Half-Life 2\platform\platform_misc.vpk"
+			"game"		"D:\SteamLibrary\steamapps\common\Half-Life 2\hl2\hl2_misc.vpk"
+			"game"		"D:\SteamLibrary\steamapps\common\Half-Life 2\hl2\hl2_pak.vpk"
+			"game"		"D:\SteamLibrary\steamapps\common\Half-Life 2\hl2\hl2_sound_misc.vpk"
+			"game"		"D:\SteamLibrary\steamapps\common\Half-Life 2\hl2\hl2_sound_vo_english.vpk"
+			"game"		"D:\SteamLibrary\steamapps\common\Half-Life 2\hl2\hl2_textures.vpk"
+			"platform"		"D:\SteamLibrary\steamapps\common\Half-Life 2\platform"
+			"game"		"D:\SteamLibrary\steamapps\common\Half-Life 2\hl2"
+			"game+download"		"|gameinfo_path|download"
+			"game"		"|gameinfo_path|../../Half-Life 2/ep2/ep2_pak.vpk"
+			"game"		"|gameinfo_path|../../Half-Life 2/episodic/ep1_pak.vpk"
+		}
+	}
+}

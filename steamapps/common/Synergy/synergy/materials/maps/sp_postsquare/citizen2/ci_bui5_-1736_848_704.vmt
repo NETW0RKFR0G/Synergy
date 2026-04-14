@@ -1,0 +1,8 @@
+"patch"
+{
+	"include"		"materials/CITIZEN2/CI_BUI5.vmt"
+	"replace"
+	{
+		"$envmap"		"maps/sp_postsquare/c-1736_848_704"
+	}
+}

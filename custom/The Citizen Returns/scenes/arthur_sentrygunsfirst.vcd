@@ -1,0 +1,115 @@
+// Choreo version 1
+actor "rebel_arthur"
+{
+  channel "wav"
+  {
+    event speak "npc_arthur_sentrygunfirst"
+    {
+      time 0.142858 3.363946
+      param "npc_arthur_sentrygunfirst"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "look"
+  {
+    event lookat "player"
+    {
+      time 0.119048 3.166668
+      param "!player"
+    }
+  }
+  channel "face"
+  {
+    event face "player"
+    {
+      time 0.095238 3.285715
+      param "!player"
+    }
+  }
+  channel "gesture"
+  {
+    event gesture "7"
+    {
+      time 2.261904 4.495237
+      param "G_noway_big"
+      absolutetags playback_time
+      {
+        "apex" 0.151515
+        "accent" 0.272727
+        "loop" 0.424242
+        "end" 0.575758
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.151515
+        "accent" 0.272727
+        "loop" 0.424242
+        "end" 0.575758
+      }
+      sequenceduration 2.233333
+    }
+    event gesture "8"
+    {
+      time 0.190475 2.490475
+      param "G_righthandpoint"
+      absolutetags playback_time
+      {
+        "apex" 0.205882
+        "accent" 0.441176
+        "loop" 0.470588
+        "end" 0.676471
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.205882
+        "accent" 0.441176
+        "loop" 0.470588
+        "end" 0.676471
+      }
+      sequenceduration 2.300000
+    }
+  }
+  channel "expression"
+  {
+    event flexanimation "6"
+    {
+      time 0.523811 3.809525
+      param ""
+      flexanimations samples_use_time
+      {
+        "lowerer" combo 
+        {
+          0.2700 1.0000
+        }
+        {
+          0.2700 0.5000
+        }
+        "head_updown" range 15.0 -15.0 
+        {
+          0.2700 0.0000
+        }
+        "eyes_updown" range 30.0 -30.0 
+        {
+          0.2700 0.6900
+        }
+        "head_forwardback" range 0.2 -0.2 
+        {
+          0.2700 0.0000
+        }
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "28"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off

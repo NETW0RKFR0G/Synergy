@@ -1,0 +1,95 @@
+// Choreo version 1
+actor "larry"
+{
+  channel "wav"
+  {
+    event speak "wav1"
+    {
+      time 0.096297 1.698474
+      param "npc_larry_postsquare_cutitout"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "face"
+  {
+    event flexanimation "faceanim1"
+    {
+      time 0.325926 1.588889
+      param ""
+      flexanimations samples_use_time
+      {
+        "lid_tightener" combo 
+        {
+          0.1500 1.0000
+        }
+        {
+          0.1500 0.5000
+        }
+        "lowerer" combo 
+        {
+          0.1500 1.0000
+        }
+        {
+          0.1500 0.5000
+        }
+        "cheek_raiser" combo 
+        {
+          0.1500 1.0000
+        }
+        {
+          0.1500 0.5000
+        }
+        "wrinkler" 
+        {
+          0.1500 0.7400
+        }
+        "puckerer" combo 
+        {
+          0.1500 0.5300
+        }
+        {
+          0.1500 0.5000
+        }
+        "lower_lip" 
+        {
+          0.1500 1.0000
+        }
+      }
+    }
+  }
+  channel "gesture"
+  {
+    event gesture "gest1"
+    {
+      time 0.185185 2.418518
+      param "G_noway_small"
+      absolutetags playback_time
+      {
+        "apex" 0.151515
+        "accent" 0.287879
+        "loop" 0.454545
+        "end" 0.575758
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.151515
+        "accent" 0.287879
+        "loop" 0.454545
+        "end" 0.575758
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "90"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off

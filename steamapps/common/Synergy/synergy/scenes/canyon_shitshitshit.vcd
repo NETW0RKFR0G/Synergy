@@ -1,0 +1,65 @@
+// Choreo version 1
+actor "sarahexample"
+{
+  channel "wav"
+  {
+    event speak "1"
+    {
+      time 0.093333 3.982630
+      param "npc_anne_shitshitshit"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "facial expressions"
+  {
+    event flexanimation "flexangry"
+    {
+      time 0.046667 4.020000
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "lid_tightener" combo 
+        {
+          0.1120 1.0000
+        }
+        {
+          0.1120 0.5000
+        }
+        "lowerer" combo 
+        {
+          0.1120 1.0000
+        }
+        {
+          0.1120 0.5000
+        }
+        "bite" 
+        {
+          0.1120 1.0000
+        }
+      }
+    }
+  }
+  channel "gesture"
+  {
+  }
+  channel "lookat"
+  {
+  }
+  channel "face"
+  {
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

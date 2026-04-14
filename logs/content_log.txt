@@ -1,0 +1,91 @@
+
+
+[2026-04-13 12:34:21] Client version: 1773426366
+[2026-04-13 12:34:21] Load failed: D:\HL2-SERVERS\The Citizen Return  COOP (DEV)\steamapps\libraryfolders.vdf.
+[2026-04-13 12:34:21] Load failed: D:\HL2-SERVERS\The Citizen Return  COOP (DEV)\config\libraryfolders.vdf.
+[2026-04-13 12:34:21] Steam library folders configuration will be reset.
+[2026-04-13 12:34:21] No install folder configuration files found.
+[2026-04-13 12:34:21] Loaded 0 apps from install folder "D:\HL2-SERVERS\The Citizen Return  COOP (DEV)\steamapps\appmanifest_*.acf".
+[2026-04-13 12:34:21] Triggered async write of Steam library folders configuration (1 libraries).
+[2026-04-13 12:34:25] AppID 17520 beta changed: public
+[2026-04-13 12:34:25] AppID 17520 state changed : Update Required,
+[2026-04-13 12:34:25] AppID 17520 scheduler update : Priority First, not played for 4294967292 seconds, update disabled for 0 seconds
+[2026-04-13 12:34:25] AppID 17520 state changed : Update Required,Update Queued,
+[2026-04-13 12:34:25] AppID 17520 scheduler update : Priority First, not played for 4294967292 seconds, update disabled for 0 seconds
+[2026-04-13 12:34:25] AppID 17520 state changed : Update Required,Update Queued,Update Running,
+[2026-04-13 12:34:25] AppID 17520 App update changed : Running Update,
+[2026-04-13 12:34:25] AppID 17520 App update changed : Running Update,Reconfiguring,
+[2026-04-13 12:34:26] Got 30 download sources and 0 caching proxies via ContentServerDirectoryService::BYieldingGetServersForSteamPipe (CellID 81 / Launcher 3)
+[2026-04-13 12:34:26] Moving to source priority class '6'
+[2026-04-13 12:34:26] Created download interface of type 'SteamCache' (7) to host cache1-yhu-vtrn.steamcontent.com (cache1-yhu-vtrn.steamcontent.com)
+[2026-04-13 12:34:26] Created download interface of type 'SteamCache' (7) to host cache1-yul-vtrn.steamcontent.com (cache1-yul-vtrn.steamcontent.com)
+[2026-04-13 12:34:26] Created download interface of type 'SteamCache' (7) to host cache2-yul-vtrn.steamcontent.com (cache2-yul-vtrn.steamcontent.com)
+[2026-04-13 12:34:26] HTTP/2 available
+[2026-04-13 12:34:26] Created ipv4-only http client
+[2026-04-13 12:34:27] HTTPS (SteamCache,533) - cache1-yhu-vtrn.steamcontent.com (24.200.239.133:443 / 24.200.239.133:443, host: cache1-yhu-vtrn.steamcontent.com): cache1-yhu-vtrn.steamcontent.com/depot/17522/manifest/3351780534749169701/5/3189604249225311826 - received 200 (OK) HTTP response
+[2026-04-13 12:34:27] HTTPS (SteamCache,535) - cache2-yul-vtrn.steamcontent.com (24.200.239.131:443 / 24.200.239.131:443, host: cache2-yul-vtrn.steamcontent.com): cache2-yul-vtrn.steamcontent.com/depot/17521/manifest/6903198116355090518/5/18407588633067772878 - received 200 (OK) HTTP response
+[2026-04-13 12:34:27] AppID 17520 App update changed : Running Update,
+[2026-04-13 12:34:27] AppID 17520 App update changed : Running Update,Verifying Installed,
+[2026-04-13 12:34:29] Validation: full scan in "D:\HL2-SERVERS\The Citizen Return  COOP (DEV)\steamapps\common\Synergy" found 1/326 matching files (279.52 MB/884.56 MB) in 1 seconds).
+[2026-04-13 12:34:29] AppID 17520 App update changed : Running Update,
+[2026-04-13 12:34:29] Found 1 pre-existing matching files for depot 17522 (279516489 bytes)
+[2026-04-13 12:34:29] AppID 17520 App update changed : Running Update,Preallocating,
+[2026-04-13 12:34:29] AppID 17520 preallocated 105 files (562 MB) 
+[2026-04-13 12:34:29] AppID 17520 App update changed : Running Update,
+[2026-04-13 12:34:29] AppID 17520 update started : download 160429232/381346800, store 0/0, reuse 0/0, delta 0/0, stage 279516489/884556742 
+[2026-04-13 12:34:29] AppID 17520 state changed : Update Required,Update Queued,Update Running,Update Started,
+[2026-04-13 12:34:29] AppID 17520 App update changed : Running Update,Downloading,Staging,
+[2026-04-13 12:34:29] Downloading 565 chunks for depot 17522 (3351780534749169701)
+[2026-04-13 12:34:36] Downloading 265 chunks for depot 17521 (6903198116355090518)
+[2026-04-13 12:34:39] Increasing target number of download connections to 4 (rate was 0.000, now 91.550)
+[2026-04-13 12:34:41] AppID 17520 App update changed : Running Update,
+[2026-04-13 12:34:41] AppID 17520 App update changed : Running Update,Verifying Staged,
+[2026-04-13 12:34:51] Verified 843 MB in 'D:\HL2-SERVERS\The Citizen Return  COOP (DEV)', clean bytes tally is now 843 MB
+[2026-04-13 12:34:51] Triggered async write of Steam library folders configuration (1 libraries).
+[2026-04-13 12:34:51] AppID 17520 App update changed : Running Update,
+[2026-04-13 12:34:51] AppID 17520 App update changed : Running Update,Committing,
+[2026-04-13 12:34:51] AppID 17520 starting commit from "D:\HL2-SERVERS\The Citizen Return  COOP (DEV)\steamapps\downloading\17520" to "D:\HL2-SERVERS\The Citizen Return  COOP (DEV)\steamapps\common\Synergy" : 364 updated, 0 moved, 0 deleted files
+[2026-04-13 12:34:52] AppID 17520 state changed : Fully Installed,Update Queued,Update Running,
+[2026-04-13 12:34:52] AppID 17520 finished update, 2 mounted depots (BuildID 17830056) : 17522 (3351780534749169701),17521 (6903198116355090518),
+[2026-04-13 12:34:52] AppID 17520 App update changed : Running Update,
+[2026-04-13 12:34:52] AppID 17520 App update changed : None
+[2026-04-13 12:34:52] AppID 17520 state changed : Fully Installed,Update Queued,
+[2026-04-13 12:34:52] AppID 17520 scheduler finished : staying in schedule (result No Error, state 0xc) 
+[2026-04-13 12:34:52] AppID 17520 state changed : Fully Installed,Update Queued,Update Running,
+[2026-04-13 12:34:52] AppID 17520 Workshop update changed : Running Update,
+[2026-04-13 12:34:52] AppID 17520 Workshop update changed : Running Update,Reconfiguring,
+[2026-04-13 12:34:53] HTTPS (SteamCache,534) - cache1-yul-vtrn.steamcontent.com (24.200.239.129:443 / 24.200.239.129:443, host: cache1-yul-vtrn.steamcontent.com): cache1-yul-vtrn.steamcontent.com/depot/17520/manifest/9013024265140531546/5/8217500699707525719 - received 200 (OK) HTTP response
+[2026-04-13 12:34:53] HTTPS (SteamCache,535) - cache2-yul-vtrn.steamcontent.com (24.200.239.131:443 / 24.200.239.131:443, host: cache2-yul-vtrn.steamcontent.com): cache2-yul-vtrn.steamcontent.com/depot/17520/manifest/2423367317237286452/5/4269914776077451970 - received 200 (OK) HTTP response
+[2026-04-13 12:34:53] HTTPS (SteamCache,534) - cache1-yul-vtrn.steamcontent.com (24.200.239.129:443 / 24.200.239.129:443, host: cache1-yul-vtrn.steamcontent.com): cache1-yul-vtrn.steamcontent.com/depot/17520/manifest/335677381901986876/5/16650857403537853443 - received 200 (OK) HTTP response
+[2026-04-13 12:34:53] HTTPS (SteamCache,534) - cache1-yul-vtrn.steamcontent.com (24.200.239.129:443 / 24.200.239.129:443, host: cache1-yul-vtrn.steamcontent.com): cache1-yul-vtrn.steamcontent.com/depot/17520/manifest/68807751681132066/5/11137383956119970510 - received 200 (OK) HTTP response
+[2026-04-13 12:34:54] HTTPS (SteamCache,533) - cache1-yhu-vtrn.steamcontent.com (24.200.239.133:443 / 24.200.239.133:443, host: cache1-yhu-vtrn.steamcontent.com): cache1-yhu-vtrn.steamcontent.com/depot/17520/manifest/3266693451468711023/5/7337064915212868103 - received 200 (OK) HTTP response
+[2026-04-13 12:34:54] HTTPS (SteamCache,533) - cache1-yhu-vtrn.steamcontent.com (24.200.239.133:443 / 24.200.239.133:443, host: cache1-yhu-vtrn.steamcontent.com): cache1-yhu-vtrn.steamcontent.com/depot/17520/manifest/8907569230911395395/5/15213472749525377458 - received 200 (OK) HTTP response
+[2026-04-13 12:34:54] HTTPS (SteamCache,535) - cache2-yul-vtrn.steamcontent.com (24.200.239.131:443 / 24.200.239.131:443, host: cache2-yul-vtrn.steamcontent.com): cache2-yul-vtrn.steamcontent.com/depot/17520/manifest/3068608541339285504/5/5153668690779634136 - received 200 (OK) HTTP response
+[2026-04-13 12:34:54] HTTPS (SteamCache,534) - cache1-yul-vtrn.steamcontent.com (24.200.239.129:443 / 24.200.239.129:443, host: cache1-yul-vtrn.steamcontent.com): cache1-yul-vtrn.steamcontent.com/depot/17520/manifest/6007650507494966350/5/9882363425537494265 - received 200 (OK) HTTP response
+[2026-04-13 12:34:54] AppID 17520 Workshop update changed : Running Update,
+[2026-04-13 12:34:54] AppID 17520 Workshop update changed : Running Update,Preallocating,
+[2026-04-13 12:34:54] AppID 17520 preallocated 117 files (2067 MB) 
+[2026-04-13 12:34:54] AppID 17520 Workshop update changed : Running Update,
+[2026-04-13 12:34:55] AppID 17520 update started : download 0/543605680, store 0/0, reuse 0/0, delta 0/0, stage 0/2168041825 
+[2026-04-13 12:34:55] AppID 17520 Workshop update changed : Running Update,Downloading,Staging,
+[2026-04-13 12:34:55] Downloading 1 chunks for depot 17520 (6007650507494966350)
+[2026-04-13 12:34:55] Downloading 229 chunks for depot 17520 (3068608541339285504)
+[2026-04-13 12:34:59] Downloading 5 chunks for depot 17520 (3266693451468711023)
+[2026-04-13 12:35:00] Downloading 1427 chunks for depot 17520 (8907569230911395395)
+[2026-04-13 12:35:01] Increasing target number of download connections to 5 (rate was 91.550, now 136.234)
+[2026-04-13 12:35:14] Downloading 352 chunks for depot 17520 (68807751681132066)
+[2026-04-13 12:35:16] Increasing target number of download connections to 6 (rate was 136.234, now 529.265)
+[2026-04-13 12:35:19] Downloading 1 chunks for depot 17520 (335677381901986876)
+[2026-04-13 12:35:19] Downloading 1 chunks for depot 17520 (2423367317237286452)
+[2026-04-13 12:35:19] Downloading 72 chunks for depot 17520 (9013024265140531546)
+[2026-04-13 12:35:21] AppID 17520 Workshop update changed : Running Update,
+[2026-04-13 12:35:21] AppID 17520 Workshop update changed : Running Update,Committing,
+[2026-04-13 12:35:21] AppID 17520 starting commit from "D:\HL2-SERVERS\The Citizen Return  COOP (DEV)\steamapps\workshop/downloads/17520" to "D:\HL2-SERVERS\The Citizen Return  COOP (DEV)\steamapps\workshop/content/17520" : 244 updated, 0 moved, 0 deleted files
+[2026-04-13 12:35:21] AppID 17520 Workshop update changed : Running Update,
+[2026-04-13 12:35:21] AppID 17520 Workshop update changed : None
+[2026-04-13 12:35:21] AppID 17520 state changed : Fully Installed,Update Queued,
+[2026-04-13 12:35:21] AppID 17520 state changed : Fully Installed,
+[2026-04-13 12:35:21] AppID 17520 scheduler finished : removed from schedule (result No Error, state 0xc) 
+[2026-04-13 12:35:22] HTTPS (SteamCache,535) - cache2-yul-vtrn.steamcontent.com (24.200.239.131:443 / 24.200.239.131:443, host: cache2-yul-vtrn.steamcontent.com): Closing connection
+[2026-04-13 12:35:22] HTTPS (SteamCache,534) - cache1-yul-vtrn.steamcontent.com (24.200.239.129:443 / 24.200.239.129:443, host: cache1-yul-vtrn.steamcontent.com): Closing connection
+[2026-04-13 12:35:22] HTTPS (SteamCache,533) - cache1-yhu-vtrn.steamcontent.com (24.200.239.133:443 / 24.200.239.133:443, host: cache1-yhu-vtrn.steamcontent.com): Closing connection

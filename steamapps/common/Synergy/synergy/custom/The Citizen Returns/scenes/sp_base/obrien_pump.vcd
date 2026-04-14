@@ -1,0 +1,194 @@
+// Choreo version 1
+actor "obrien"
+{
+  channel "wav"
+  {
+    event speak "obrien_pump"
+    {
+      time 0.106667 7.821588
+      param "npc_obrien_pump"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "facetowards"
+  {
+    event face "facepump"
+    {
+      time 0.222223 2.697223
+      param "fuelpump"
+    }
+    event face "faceplayer"
+    {
+      time 2.772223 7.897223
+      param "!player"
+    }
+  }
+  channel "lookat"
+  {
+    event lookat "atpump"
+    {
+      time 0.247222 2.713889
+      param "fuelpump"
+    }
+    event face "lookatplayer"
+    {
+      time 2.780555 7.947222
+      param "!player"
+    }
+  }
+  channel "gesture"
+  {
+    event gesture "gest1"
+    {
+      time 0.638889 2.272222
+      param "hg_headshake"
+      absolutetags playback_time
+      {
+        "apex" 0.208333
+        "loop" 0.270833
+        "extreme" 0.416667
+        "end" 0.625000
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.208333
+        "loop" 0.270833
+        "extreme" 0.416667
+        "end" 0.625000
+      }
+      sequenceduration 1.633333
+    }
+    event gesture "gest1"
+    {
+      time 6.122222 7.822222
+      param "G_shrug"
+      absolutetags playback_time
+      {
+        "apex" 0.160000
+        "accent" 0.240000
+        "loop" 0.320000
+        "end" 0.440000
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.160000
+        "accent" 0.240000
+        "loop" 0.320000
+        "end" 0.440000
+      }
+      sequenceduration 1.700000
+    }
+    event gesture "gest3"
+    {
+      time 3.797222 5.763888
+      param "g_plead_01"
+      absolutetags playback_time
+      {
+        "apex" 0.275862
+        "accent" 0.448276
+        "loop" 0.689655
+        "end" 0.862069
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.275862
+        "accent" 0.448276
+        "loop" 0.689655
+        "end" 0.862069
+      }
+      sequenceduration 1.966667
+    }
+  }
+  channel "faceanimations"
+  {
+    event flexanimation "flex1"
+    {
+      time 0.205555 2.863889
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "lid_tightener" combo 
+        {
+          0.1520 1.0000
+        }
+        {
+          0.1520 0.5000
+        }
+        "lid_closer" combo 
+        {
+          0.1520 0.0000
+        }
+        {
+          0.1520 0.5000
+        }
+        "outer_raiser" combo 
+        {
+          0.1520 1.0000
+        }
+        {
+          0.1520 0.5000
+        }
+        "dilator" 
+        {
+          0.1520 0.6400
+        }
+        "chin_raiser" 
+        {
+          0.1520 1.0000
+        }
+      }
+    }
+    event flexanimation "flex2"
+    {
+      time 6.138889 8.322223
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "lid_raiser" combo 
+        {
+          0.1820 1.0000
+        }
+        {
+          0.1820 0.5000
+        }
+        "inner_raiser" combo 
+        {
+          0.1820 1.0000
+        }
+        {
+          0.1820 0.5000
+        }
+        "chin_raiser" 
+        {
+          0.1820 1.0000
+        }
+        "head_tilt" range 15.0 -15.0 
+        {
+          0.1820 0.6700
+        }
+        "eyes_rightleft" range 30.0 -30.0 
+        {
+          0.1820 0.0500
+        }
+        "head_forwardback" range 0.2 -0.2 
+        {
+          0.1820 0.0600
+        }
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "80"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

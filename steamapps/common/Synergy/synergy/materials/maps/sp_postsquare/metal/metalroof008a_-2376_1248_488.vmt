@@ -1,0 +1,8 @@
+"patch"
+{
+	"include"		"materials/METAL/METALROOF008A.vmt"
+	"replace"
+	{
+		"$envmap"		"maps/sp_postsquare/c-2376_1248_488"
+	}
+}

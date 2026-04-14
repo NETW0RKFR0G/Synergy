@@ -1,0 +1,64 @@
+// Choreo version 1
+actor "npc"
+{
+  channel "lookat"
+  {
+    event lookat "left"
+    {
+      time 0.033333 1.520000
+      param "lookat_left"
+    }
+    event lookat "right"
+    {
+      time 1.526666 2.993333
+      param "lookat_right"
+    }
+    event lookat "phone"
+    {
+      time 3.000000 6.020000
+      param "lookat_phonebox"
+    }
+  }
+  channel "face"
+  {
+    event face "box"
+    {
+      time 0.046667 6.013334
+      param "lookat_phonebox"
+    }
+  }
+  channel "gesture"
+  {
+    event gesture "1"
+    {
+      time 1.833333 6.013334
+      param "g_point_swing_across"
+      absolutetags playback_time
+      {
+        "apex" 0.532695
+        "accent" 0.856459
+        "loop" 0.925040
+        "end" 0.976077
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.176471
+        "accent" 0.352941
+        "loop" 0.441176
+        "end" 0.588235
+      }
+      sequenceduration 2.300000
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off

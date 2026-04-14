@@ -1,0 +1,9 @@
+"LightmappedGeneric"
+{
+	"$basetexture"		"nature/rockwall001a"
+	"%tooltexture"		"nature/blendrockgravel001a_tooltexture"
+	"%keywords"		"wasteland"
+	"$surfaceprop"		"concrete"
+	"$bumpmap"		"nature/rockwall001a_normal"
+	"$surfaceprop"		"rock"
+}

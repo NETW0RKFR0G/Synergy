@@ -1,0 +1,90 @@
+// Choreo version 1
+actor "medic"
+{
+  channel "WAV"
+  {
+    event speak "1"
+    {
+      time 0.025641 1.558113
+      param "npc_medic_bestidea"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Face"
+  {
+    event face "1"
+    {
+      time 0.076923 1.525641
+      param "!player"
+    }
+  }
+  channel "Look at"
+  {
+  }
+  channel "Gesture"
+  {
+  }
+  channel "Expressions"
+  {
+    event flexanimation "bestidea"
+    {
+      time 0.099720 2.330058
+      param ""
+      flexanimations samples_use_time
+      {
+        "lid_raiser" combo 
+        {
+          0.1560 1.0000
+        }
+        {
+          0.1560 0.5000
+        }
+        "lid_tightener" combo 
+        {
+          0.1560 1.0000
+        }
+        {
+          0.1560 0.5000
+        }
+        "inner_raiser" combo 
+        {
+          0.1560 1.0000
+        }
+        {
+          0.1560 0.5000
+        }
+        "cheek_raiser" combo 
+        {
+          0.1560 0.6500
+        }
+        {
+          0.1560 0.5000
+        }
+        "corner_puller" combo 
+        {
+          0.1560 0.2000
+        }
+        {
+          0.1560 0.5000
+        }
+        "head_tilt" range 15.0 -15.0 
+        {
+          0.1560 0.0500
+        }
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "178"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off

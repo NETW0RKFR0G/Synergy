@@ -1,0 +1,40 @@
+"VertexlitGeneric"
+{
+	
+
+	"$basetexture" "citizen2\ci_ripple_low"
+	"$translucent" 1
+	"$surfaceprop" "water"
+
+	$detail detail\noise_detail_01 
+	$detailscale 7.74
+	$detailblendfactor 0.4
+	$detailblendmode 0
+
+	
+		"Proxies"
+			{
+			
+	
+			"TextureScroll"
+				{
+					"texturescrollvar" "$basetexturetransform"
+					"texturescrollrate" 0.12
+					"texturescrollangle" -90.00
+				}
+
+				"TextureScroll"
+				{
+					"texturescrollvar" "$detailtexturetransform"
+					"texturescrollrate" 0.12
+					"texturescrollangle" -90.00
+				}
+			}
+}
+
+
+
+
+	
+
+

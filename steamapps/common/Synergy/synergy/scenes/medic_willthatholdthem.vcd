@@ -1,0 +1,103 @@
+// Choreo version 1
+actor "medic"
+{
+  channel "WAV"
+  {
+    event speak "1"
+    {
+      time 0.205128 1.104856
+      param "npc_medic_willthatholdthem"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Face"
+  {
+    event face "target"
+    {
+      time 0.153846 1.294872
+      param "target_lookatjeff"
+    }
+  }
+  channel "Look at"
+  {
+  }
+  channel "Gesture"
+  {
+    event gesture "question"
+    {
+      time 0.070176 2.985018
+      param "urgenthandsweepcrouch"
+      absolutetags playback_time
+      {
+        "apex" 0.117017
+        "accent" 0.187227
+        "loop" 0.234033
+        "end" 0.292542
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.232558
+        "accent" 0.372093
+        "loop" 0.465116
+        "end" 0.581395
+      }
+    }
+  }
+  channel "Expressions"
+  {
+    event flexanimation "willthatholdthem"
+    {
+      time 0.099415 1.248538
+      param ""
+      flexanimations samples_use_time
+      {
+        "inner_raiser" combo 
+        {
+          0.2660 1.0000
+        }
+        {
+          0.2660 0.5000
+        }
+        "cheek_raiser" combo 
+        {
+          0.2660 0.1900
+        }
+        {
+          0.2660 0.5000
+        }
+        "corner_depressor" combo 
+        {
+          0.2660 1.0000
+        }
+        {
+          0.2660 0.5000
+        }
+        "lower_lip" 
+        {
+          0.2660 0.9600
+        }
+        "head_tilt" range 15.0 -15.0 
+        {
+          0.2660 0.8700
+        }
+        "head_forwardback" range 0.2 -0.2 
+        {
+          0.2660 0.0000
+        }
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "104"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off

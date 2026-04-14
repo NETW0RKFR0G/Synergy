@@ -1,0 +1,108 @@
+// Choreo version 1
+actor "medic"
+{
+  channel "WAV"
+  {
+    event speak "cominground"
+    {
+      time 0.060606 0.963282
+      param "npc_m2_hescominground"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "somuch"
+    {
+      time 6.030303 7.728262
+      param "npc_m2_somuchforkeeping"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Look at"
+  {
+    event lookat "player"
+    {
+      time 0.013334 1.953334
+      param "camera7"
+    }
+    event lookat "m2"
+    {
+      time 1.980000 4.266060
+      param "m2"
+    }
+    event lookat "player"
+    {
+      time 10.043637 11.347274
+      param "camera7"
+    }
+    event lookat "m2"
+    {
+      time 5.828485 8.114545
+      param "m2"
+    }
+    event lookat "player"
+    {
+      time 4.346667 5.650304
+      param "camera7"
+    }
+  }
+}
+
+actor "m2"
+{
+  channel "WAV"
+  {
+    event speak "damnit"
+    {
+      time 1.636364 5.409606
+      param "npc_m1_damnit"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "legset"
+    {
+      time 8.181819 11.432612
+      param "npc_m1_getthatlegset"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "look at"
+  {
+    event lookat "player"
+    {
+      time 1.606061 3.621212
+      param "camera7"
+    }
+    event lookat "medic"
+    {
+      time 0.151515 1.075757
+      param "medic"
+    }
+    event lookat "medic"
+    {
+      time 4.212121 5.136364
+      param "medic"
+    }
+    event lookat "player"
+    {
+      time 9.303031 11.318182
+      param "camera7"
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "22"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off

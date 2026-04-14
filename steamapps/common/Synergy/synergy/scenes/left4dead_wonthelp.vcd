@@ -1,0 +1,101 @@
+// Choreo version 1
+actor "left4dead"
+{
+  channel "lookat"
+  {
+    event lookat "lookatplayer"
+    {
+      time -0.626667 -0.126667
+      param "!player"
+    }
+    event lookat "lookatplayer"
+    {
+      time 0.000000 2.867347
+      param "!player"
+    }
+  }
+  channel "eyes"
+  {
+    event flexanimation "eyes1"
+    {
+      time -0.555556 -0.055556
+      param ""
+    }
+    event flexanimation "face1"
+    {
+      time -0.071795 1.743955
+      param ""
+      flexanimations samples_use_time
+      {
+        "blink" 
+        {
+          0.2632 0.6300
+        }
+        "outer_raiser" combo 
+        {
+          0.2632 1.0000
+        }
+        {
+          0.2632 0.5000
+        }
+        "dilator" 
+        {
+          0.2632 1.0000
+        }
+        "jaw_drop" 
+        {
+          0.2632 0.7100
+        }
+        "head_updown" range 15.0 -15.0 
+        {
+          0.2632 1.0000
+        }
+      }
+    }
+  }
+  channel "gesture"
+  {
+    event gesture "gesture1"
+    {
+      time 0.795918 2.429251
+      param "hg_headshake"
+      absolutetags playback_time
+      {
+        "apex" 0.208333
+        "loop" 0.270833
+        "extreme" 0.416667
+        "end" 0.625000
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.208333
+        "loop" 0.270833
+        "extreme" 0.416667
+        "end" 0.625000
+      }
+      sequenceduration 1.633333
+    }
+  }
+  channel "WAV"
+  {
+    event speak "left4dead_wonthelp"
+    {
+      time 0.068027 2.945691
+      param "npc_left4dead_wonthelp"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "98"
+  "ExpressionTool" "100"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+  "GestureTool" "100"
+}
+fps 60
+snap off

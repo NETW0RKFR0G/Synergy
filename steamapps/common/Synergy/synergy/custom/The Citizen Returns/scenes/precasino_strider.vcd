@@ -1,0 +1,67 @@
+// Choreo version 1
+actor "rebel_leader"
+{
+  channel "wav"
+  {
+    event speak "1"
+    {
+      time 0.093333 2.428004
+      param "npc_precasino_strider"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "flex"
+  {
+    event flexanimation "flex"
+    {
+      time 0.046667 2.946666
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "lid_raiser" combo 
+        {
+          0.1320 1.0000
+        }
+        {
+          0.1320 0.5000
+        }
+        "inner_raiser" combo 
+        {
+          0.1320 1.0000
+        }
+        {
+          0.1320 0.5000
+        }
+        "part" combo 
+        {
+          0.1320 1.0000
+        }
+        {
+          0.1320 0.5000
+        }
+      }
+    }
+  }
+  channel "gest"
+  {
+    event lookat "atplayer"
+    {
+      time 0.060000 2.913333
+      param "!player"
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

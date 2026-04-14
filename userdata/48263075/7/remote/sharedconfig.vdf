@@ -1,0 +1,90 @@
+"UserRoamingConfigStore"
+{
+	"Software"
+	{
+		"valve"
+		{
+			"steam"
+			{
+				"StartMenuShortcutCheck"		"1"
+				"DesktopShortcutCheck"		"1"
+				"Tools"
+				{
+					"2805730"
+					{
+						"Registered"		"1"
+					}
+					"1070560"
+					{
+						"Registered"		"1"
+					}
+					"1493710"
+					{
+						"Registered"		"1"
+					}
+					"3658110"
+					{
+						"Registered"		"1"
+					}
+					"1628350"
+					{
+						"Registered"		"1"
+					}
+				}
+				"friendsui"
+				{
+					"FriendsUIJSON"		"{\"bNotifications_ShowIngame\":true,\"bNotifications_ShowOnline\":true,\"bNotifications_ShowMessage\":true,\"bNotifications_EventsAndAnnouncements\":true,\"bSounds_PlayIngame\":true,\"bSounds_PlayOnline\":true,\"bSounds_PlayMessage\":true,\"bSounds_EventsAndAnnouncements\":false,\"bAlwaysNewChatWindow\":false,\"bForceAlphabeticFriendSorting\":false,\"nChatFlashMode\":0,\"bRememberOpenChats\":true,\"bCompactQuickAccess\":false,\"bCompactFriendsList\":false,\"bNotifications_ShowChatRoomNotification\":true,\"bSounds_PlayChatRoomNotification\":true,\"bHideOfflineFriendsInTagGroups\":false,\"bHideCategorizedFriends\":false,\"bCategorizeInGameFriendsByGame\":true,\"nChatFontSize\":2,\"b24HourClock\":false,\"bDoNotDisturbMode\":false,\"bDisableEmbedInlining\":false,\"bSignIntoFriends\":true,\"bDisableSpellcheck\":false,\"bDisableRoomEffects\":false,\"bAnimatedAvatars\":true,\"featuresEnabled\":{\"DoNotDisturb\":1,\"LoaderWindowSynchronization\":1,\"NonFriendMessageHandling\":1,\"NewVoiceHotKeyState\":1,\"PersonaNotifications\":1,\"ServerVirtualizedMemberLists\":1,\"SteamworksChatAPI\":1,\"FriendsFilter\":1}}"
+				}
+				"SurveyDate"		"2026-03-01"
+				"apps"
+				{
+					"1182900"
+					{
+						"cloudenabled"		"1"
+					}
+					"2876550"
+					{
+						"cloudenabled"		"0"
+					}
+					"17520"
+					{
+						"cloudenabled"		"0"
+					}
+				}
+			}
+		}
+	}
+	"JSClientStorage"
+	{
+		"timeline_intro"
+		{
+			"rtSeen"		"0"
+			"rtLinkDismissed"		"1739151616"
+		}
+		"spotlight.review.960090"
+		{
+			"rgPromptDismissals"		"3"
+			"bWasAskedToRevise"		"0"
+		}
+		"spotlight.review.1374490"
+		{
+			"rgPromptDismissals"		"1"
+			"bWasAskedToRevise"		"0"
+		}
+		"spotlight.review.3405340"
+		{
+			"rgPromptDismissals"		"2"
+			"bWasAskedToRevise"		"0"
+		}
+		"spotlight.review.438040"
+		{
+			"rgPromptDismissals"		"1"
+			"bWasAskedToRevise"		"0"
+		}
+		"spotlight.review.220"
+		{
+			"rgPromptDismissals"		"3"
+			"bWasAskedToRevise"		"0"
+		}
+	}
+}

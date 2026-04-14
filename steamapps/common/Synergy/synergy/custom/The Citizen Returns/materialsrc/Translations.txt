@@ -1,0 +1,51 @@
+
+========================English==================================
+"hl2_AmmoFull"			"FULL"
+
+"HL2_357Handgun"	".357 MAGNUM"
+"HL2_Pulse_Rifle"	"OVERWATCH STANDARD ISSUE\n(PULSE-RIFLE)"
+"HL2_Bugbait"		"PHEROPOD\n(BUGBAIT)"
+"HL2_Crossbow"		"CROSSBOW"
+"HL2_Crowbar"		"CROWBAR"
+"HL2_Grenade"		"GRENADE"
+"HL2_GravityGun"	"ZERO-POINT ENERGY GUN\n(GRAVITY GUN)"
+"HL2_Pistol"		"9MM PISTOL"
+"HL2_RPG"		"RPG\n(ROCKET PROPELLED GRENADE)"
+"HL2_Shotgun"		"SHOTGUN"
+"HL2_SMG1"		"SMG\n(SUBMACHINE GUN)"
+
+"HL2_Saved"		"Saved..."
+
+========================French==================================
+"hl2_AmmoFull"			"PLEIN"
+
+"HL2_357Handgun"	".357 MAGNUM"
+"HL2_Pulse_Rifle"	"MILICE STANDARD\n(FUSIL A IMPULSION)"
+"HL2_Bugbait"		"PHEROPODE\n(BUGBAIT)"
+"HL2_Crossbow"		"ARBALETE"
+"HL2_Crowbar"		"PIED-DE-BICHE"
+"HL2_Grenade"		"GRENADE"
+"HL2_GravityGun"	"PISTOLET ENERGETIQUE POINT ZERO\n(PISTOLET ANTI-GRAVITE)"
+"HL2_Pistol"		"PISTOLET 9MM"
+"HL2_RPG"		"RPG\n(LANCE-ROQUETTES)"
+"HL2_Shotgun"		"FUSIL A POMPE"
+"HL2_SMG1"		"SMG\n(PISTOLET MITRAILLEUR)"
+
+"HL2_Saved"		"Enregistré..."
+
+========================Spanish==================================
+"hl2_AmmoFull"			"COMPLETO"
+
+"HL2_357Handgun"	"MAGNUM .357"
+"HL2_Pulse_Rifle"	"NORMAL DE VIGILANCIA\n(RIFLE DE PULSO)"
+"HL2_Bugbait"		"FERÓPODO\n(CARNADA)"
+"HL2_Crossbow"		"BALLESTA"
+"HL2_Crowbar"		"PALANCA"
+"HL2_Grenade"		"GRANADA"
+"HL2_GravityGun"	"ARMA DE ENERGÍA DE PUNTO CERO\n(ARMA GRAVITATORIA)"
+"HL2_Pistol"		"PISTOLA DE 9 MM"
+"HL2_RPG"		"RPG\n(GRANADA IMPULSADA POR COHETES)"
+"HL2_Shotgun"		"ESCOPETA"
+"HL2_SMG1"		"SMG\n(METRALLETA)"
+
+"HL2_Saved"		"Guardado..."

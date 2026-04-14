@@ -1,0 +1,104 @@
+// Choreo version 1
+actor "stranded"
+{
+  channel "wav"
+  {
+    event speak "wav"
+    {
+      time 0.080000 3.851429
+      param "npc_casino2_waittilmorning"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "look at"
+  {
+    event lookat "at player"
+    {
+      time 1.893333 3.860000
+      param "!player"
+    }
+  }
+  channel "face"
+  {
+  }
+  channel "expression"
+  {
+    event flexanimation "flex1"
+    {
+      time 0.113334 1.733334
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "lid_tightener" combo 
+        {
+          0.1620 1.0000
+        }
+        {
+          0.1620 0.5000
+        }
+        "lid_closer" combo 
+        {
+          0.1620 0.8100
+        }
+        {
+          0.1620 0.5000
+        }
+        "outer_raiser" combo 
+        {
+          0.1620 0.5500
+        }
+        {
+          0.1620 0.5000
+        }
+        "puckerer" combo 
+        {
+          0.1620 0.2300
+        }
+        {
+          0.1620 0.5000
+        }
+        "head_updown" range 15.0 -15.0 
+        {
+          0.1620 1.0000
+        }
+      }
+    }
+    event flexanimation "flex2"
+    {
+      time 2.606667 3.833334
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "inner_raiser" combo 
+        {
+          0.1860 0.7000
+        }
+        {
+          0.1860 0.5000
+        }
+        "smile" 
+        {
+          0.1860 0.3400
+        }
+        "head_tilt" range 15.0 -15.0 
+        {
+          0.1860 0.3400
+        }
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

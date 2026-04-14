@@ -1,0 +1,161 @@
+// Choreo version 1
+actor "left4dead"
+{
+  channel "lookat"
+  {
+    event lookat "lookatplayer"
+    {
+      time -0.626667 -0.126667
+      param "!player"
+    }
+    event lookat "lookatplayer"
+    {
+      time -0.004166 2.412501
+      param "!player"
+    }
+  }
+  channel "wav"
+  {
+    event speak "left4dead_giveaman"
+    {
+      time 0.000000 2.366327
+      param "npc_left4dead_giveaman"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "eyes"
+  {
+    event flexanimation "eyes"
+    {
+      time 0.945833 2.129167
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "lid_raiser" combo 
+        {
+          0.1686 0.0013
+          0.1706 0.6675
+          0.1902 0.0000
+          0.1902 0.5900
+        }
+        {
+          0.1686 0.5000
+          0.1706 0.5000
+          0.1902 0.5000
+          0.1902 0.5000
+        }
+        "outer_raiser" combo 
+        {
+          0.1686 0.0000
+          0.1706 1.0000
+          0.1902 0.0000
+          0.1902 1.0000
+        }
+        {
+          0.1686 0.5000
+          0.1706 0.5000
+          0.1902 0.5000
+          0.1902 0.5000
+        }
+        "dilator" 
+        {
+          0.1686 0.0012
+          0.1706 0.6449
+          0.1902 0.0000
+          0.1902 0.5700
+        }
+        "puckerer" combo 
+        {
+          0.1686 0.0011
+          0.1902 0.0000
+          0.1902 0.5000
+        }
+        {
+          0.1686 0.5000
+          0.1902 0.5000
+          0.1902 0.5000
+        }
+        "funneler" combo 
+        {
+          0.1686 0.0022
+          0.1902 0.0000
+          0.1902 1.0000
+        }
+        {
+          0.1686 0.5000
+          0.1902 0.5000
+          0.1902 0.5000
+        }
+        "lower_lip" 
+        {
+          0.1686 0.0019
+          0.1706 0.9729
+          0.1902 0.0000
+          0.1902 0.8600
+        }
+        "head_forwardback" range 0.2 -0.2 
+        {
+          0.1686 0.4996
+          0.1706 0.4095
+          0.1902 0.4200
+        }
+        "lowerer" combo 
+        {
+          0.1686 1.0000
+          0.1706 1.0000
+          0.1902 0.8615
+        }
+        {
+          0.1686 0.5000
+          0.1706 0.5000
+          0.1902 0.5000
+        }
+        "cheek_raiser" combo 
+        {
+          0.1706 0.6000
+          0.1902 0.5179
+        }
+        {
+          0.1706 0.5000
+          0.1902 0.5000
+        }
+        "wrinkler" 
+        {
+          0.1706 1.0000
+          0.1902 0.8631
+        }
+        "jaw_clencher" 
+        {
+          0.1706 0.4600
+          0.1902 0.3970
+        }
+        "jaw_drop" 
+        {
+          0.1686 0.3000
+          0.1706 0.3187
+          0.1902 0.1592
+        }
+        "head_updown" range 15.0 -15.0 
+        {
+          0.1686 0.2000
+          0.1706 0.1813
+          0.1902 0.4500
+        }
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "160"
+  "ExpressionTool" "102"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+  "GestureTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

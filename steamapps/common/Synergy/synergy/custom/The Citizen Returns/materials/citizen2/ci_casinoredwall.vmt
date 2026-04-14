@@ -1,0 +1,22 @@
+"LightmappedGeneric"
+
+{ "$basetexture" "citizen2/ci_colour1" 
+  "$surfaceprop" "concrete"
+  "$bumpmap" "citizen2/ci_concretenormal"
+
+
+
+   	$detail detail\plaster_detail_01
+	$detailscale 6.783
+	$detailblendfactor .95
+	$detailblendmode 0
+
+	//$detail detail\noise_detail_01
+  	//$detailscale 2
+  	//$detailblendfactor 0.5
+  	//$detailblendmode 0
+  	//$detailtexturetransform "center .5 .5 scale 1 1 rotate 00 translate 0 0"	
+
+
+
+} 

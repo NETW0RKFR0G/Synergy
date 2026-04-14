@@ -1,0 +1,8 @@
+"patch"
+{
+	"include"		"materials/CONCRETE/CONCRETEFLOOR019A.vmt"
+	"replace"
+	{
+		"$envmap"		"maps/sp_streetwar2/c-1038_-2302_156"
+	}
+}

@@ -1,0 +1,109 @@
+// Choreo version 1
+actor "larryexample"
+{
+  channel "wav"
+  {
+    event speak "1"
+    {
+      time 0.086666 2.100997
+      param "npc_larry_canyon_youguyslookaround"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "facial expressions"
+  {
+  }
+  channel "gesture"
+  {
+    event gesture "gest1"
+    {
+      time 0.926667 2.226667
+      param "hg_nod_right"
+      absolutetags playback_time
+      {
+        "apex" 0.236842
+        "extreme" 0.473684
+        "loop" 0.568947
+        "end" 0.578947
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.236842
+        "extreme" 0.473684
+        "loop" 0.578947
+        "end" 0.578947
+      }
+    }
+  }
+  channel "lookat"
+  {
+    event lookat "atrebel1"
+    {
+      time 0.033333 1.040000
+      param "rebel1example"
+    }
+    event lookat "atplayer"
+    {
+      time 1.060000 2.213333
+      param "!player"
+    }
+  }
+  channel "face"
+  {
+    event face "facerebel1"
+    {
+      time 0.033334 2.200001
+      param "rebel1example"
+    }
+  }
+}
+
+actor "sarahexample"
+{
+  channel "face"
+  {
+    event face "1"
+    {
+      time 0.013334 2.200000
+      param "larryexample"
+    }
+  }
+}
+
+actor "rebel1example"
+{
+  channel "face"
+  {
+    event face "2"
+    {
+      time 0.006667 2.200000
+      param "larryexample"
+    }
+  }
+}
+
+actor "rebelgirlexample"
+{
+  channel "face"
+  {
+    event face "3"
+    {
+      time 0.013334 2.206667
+      param "larryexample"
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

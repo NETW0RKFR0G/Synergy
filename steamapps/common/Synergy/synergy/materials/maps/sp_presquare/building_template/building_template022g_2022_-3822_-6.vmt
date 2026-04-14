@@ -1,0 +1,8 @@
+"patch"
+{
+	"include"		"materials/BUILDING_TEMPLATE/BUILDING_TEMPLATE022G.vmt"
+	"replace"
+	{
+		"$envmap"		"maps/sp_presquare/c2022_-3822_-6"
+	}
+}

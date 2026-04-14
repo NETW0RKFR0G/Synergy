@@ -1,0 +1,209 @@
+// Choreo version 1
+actor "mina"
+{
+  channel "WAV"
+  {
+    event speak "wav1"
+    {
+      time 0.017242 6.635791
+      param "npc_mina_youknowthat"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Face"
+  {
+    event face "Faceplayer"
+    {
+      time 0.027816 4.835328
+      param "!player"
+    }
+  }
+  channel "Look"
+  {
+    event lookat "lookatairboat"
+    {
+      time 0.592649 1.431730
+      param "airboat"
+    }
+    event lookat "atplayer1"
+    {
+      time 0.011495 0.454023
+      param "!player"
+    }
+    event lookat "atplayer2"
+    {
+      time 1.580460 5.252874
+      param "!player"
+    }
+    event lookat "atplayer3"
+    {
+      time 5.908046 6.586207
+      param "!player"
+    }
+  }
+  channel "Expression"
+  {
+    event flexanimation "angry"
+    {
+      time 0.839776 3.448971
+      param ""
+      flexanimations samples_use_time
+      {
+        "lid_raiser" combo 
+        {
+          0.2020 0.7400
+        }
+        {
+          0.2020 0.5000
+        }
+        "lid_tightener" combo 
+        {
+          0.2020 1.0000
+        }
+        {
+          0.2020 0.5000
+        }
+        "lowerer" combo 
+        {
+          0.2020 1.0000
+        }
+        {
+          0.2020 0.5000
+        }
+        "wrinkler" 
+        {
+          0.2020 1.0000
+        }
+        "dilator" 
+        {
+          0.2020 1.0000
+        }
+        "part" combo 
+        {
+          0.2020 1.0000
+        }
+        {
+          0.2020 0.5000
+        }
+        "jaw_clencher" 
+        {
+          0.2020 0.5100
+        }
+      }
+    }
+    event flexanimation "angry2"
+    {
+      time 3.568966 4.913794
+      param ""
+      flexanimations samples_use_time
+      {
+        "lid_tightener" combo 
+        {
+          0.2320 1.0000
+        }
+        {
+          0.2320 0.5000
+        }
+        "lowerer" combo 
+        {
+          0.2320 1.0000
+        }
+        {
+          0.2320 0.5000
+        }
+        "part" combo 
+        {
+          0.2320 1.0000
+        }
+        {
+          0.2320 0.5000
+        }
+        "head_updown" range 15.0 -15.0 
+        {
+          0.2320 0.0000
+        }
+        "head_tilt" range 15.0 -15.0 
+        {
+          0.2320 0.2200
+        }
+      }
+    }
+    event flexanimation "angry3"
+    {
+      time 5.603448 6.465517
+      param ""
+      flexanimations samples_use_time
+      {
+        "lid_raiser" combo 
+        {
+          0.2140 0.8400
+        }
+        {
+          0.2140 0.5000
+        }
+        "outer_raiser" combo 
+        {
+          0.2140 1.0000
+        }
+        {
+          0.2140 0.5000
+        }
+        "jaw_clencher" 
+        {
+          0.2140 0.5300
+        }
+        "jaw_drop" 
+        {
+          0.2140 0.6100
+        }
+        "lower_lip" 
+        {
+          0.2140 0.9000
+        }
+        "head_updown" range 15.0 -15.0 
+        {
+          0.2140 0.7900
+        }
+      }
+    }
+  }
+  channel "walkto"
+  {
+  }
+  channel "gestures"
+  {
+    event gesture "gesture1"
+    {
+      time 3.609196 5.242529
+      param "g_right_openhand"
+      absolutetags playback_time
+      {
+        "apex" 0.291667
+        "accent" 0.416667
+        "loop" 0.520833
+        "end" 0.625000
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.291667
+        "accent" 0.416667
+        "loop" 0.520833
+        "end" 0.625000
+      }
+      sequenceduration 1.633333
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "116"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off

@@ -1,0 +1,43 @@
+L 04/12/2026 - 20:41:46: Log file started (file "logs\L0412054.log") (game "d:\steamlibrary\steamapps\common\synergy\synergy") (version "4300")
+L 04/12/2026 - 20:41:51: "diablokenny307<5><[U:1:53070479]><>" entered the game
+L 04/12/2026 - 20:41:52: "BACONTROLL<4><[U:1:48263075]><>" disconnected (reason "Disconnect by user.")
+L 04/12/2026 - 20:42:34: "BACONTROLL<6><[U:1:48263075]><>" connected, address "10.0.0.170:27006"
+L 04/12/2026 - 20:42:36: "BACONTROLL<6><[U:1:48263075]><>" STEAM USERID validated
+L 04/12/2026 - 20:42:40: "BACONTROLL<6><[U:1:48263075]><>" entered the game
+L 04/12/2026 - 20:43:40: "BACONTROLL<6><[U:1:48263075]><Unassigned>" committed suicide with "world"
+L 04/12/2026 - 20:43:41: "diablokenny307<5><[U:1:53070479]><Unassigned>" committed suicide with "world"
+L 04/12/2026 - 20:44:16: "BACONTROLL<6><[U:1:48263075]><Unassigned>" disconnected (reason "Disconnect by user.")
+L 04/12/2026 - 20:44:17: "BACONTROLL<7><[U:1:48263075]><>" connected, address "10.0.0.170:27006"
+L 04/12/2026 - 20:44:18: "BACONTROLL<7><[U:1:48263075]><>" STEAM USERID validated
+L 04/12/2026 - 20:44:19: "BACONTROLL<7><[U:1:48263075]><>" entered the game
+L 04/12/2026 - 20:44:30: "BACONTROLL<7><[U:1:48263075]><Unassigned>" disconnected (reason "Disconnect by user.")
+L 04/12/2026 - 20:44:31: "BACONTROLL<8><[U:1:48263075]><>" connected, address "10.0.0.170:27006"
+L 04/12/2026 - 20:44:32: "BACONTROLL<8><[U:1:48263075]><>" STEAM USERID validated
+L 04/12/2026 - 20:44:33: "BACONTROLL<8><[U:1:48263075]><>" entered the game
+L 04/12/2026 - 20:44:39: "BACONTROLL<8><[U:1:48263075]><Unassigned>" disconnected (reason "Disconnect by user.")
+L 04/12/2026 - 20:44:39: "BACONTROLL<9><[U:1:48263075]><>" connected, address "10.0.0.170:27006"
+L 04/12/2026 - 20:44:40: "BACONTROLL<9><[U:1:48263075]><>" STEAM USERID validated
+L 04/12/2026 - 20:44:41: "BACONTROLL<9><[U:1:48263075]><>" entered the game
+L 04/12/2026 - 20:44:46: "BACONTROLL<9><[U:1:48263075]><Unassigned>" disconnected (reason "Disconnect by user.")
+L 04/12/2026 - 20:44:46: "BACONTROLL<10><[U:1:48263075]><>" connected, address "10.0.0.170:27006"
+L 04/12/2026 - 20:44:47: "BACONTROLL<10><[U:1:48263075]><>" STEAM USERID validated
+L 04/12/2026 - 20:44:48: "BACONTROLL<10><[U:1:48263075]><>" entered the game
+L 04/12/2026 - 20:47:02: "BACONTROLL<10><[U:1:48263075]><Unassigned>" committed suicide with "world"
+L 04/12/2026 - 20:47:52: "diablokenny307<5><[U:1:53070479]><Unassigned>" committed suicide with "world"
+L 04/12/2026 - 20:50:22: "BACONTROLL<10><[U:1:48263075]><Unassigned>" committed suicide with "world"
+L 04/12/2026 - 20:52:46: "diablokenny307<5><[U:1:53070479]><Unassigned>" committed suicide with "crowbar"
+L 04/12/2026 - 20:52:49: "BACONTROLL<10><[U:1:48263075]><Unassigned>" committed suicide with "smg1"
+L 04/12/2026 - 20:55:48: "BACONTROLL<10><[U:1:48263075]><Unassigned>" committed suicide with "world"
+L 04/12/2026 - 20:56:43: rcon from "10.0.0.170:61610": command "mat_flushshadercache"
+L 04/12/2026 - 20:56:55: "BACONTROLL<10><[U:1:48263075]><Unassigned>" committed suicide with "crowbar"
+L 04/12/2026 - 20:57:33: "diablokenny307<5><[U:1:53070479]><Unassigned>" disconnected (reason "Disconnect by user.")
+L 04/12/2026 - 20:57:35: "diablokenny307<11><[U:1:53070479]><>" connected, address "76561198013336207"
+L 04/12/2026 - 20:57:36: "diablokenny307<11><[U:1:53070479]><>" STEAM USERID validated
+L 04/12/2026 - 20:57:36: "diablokenny307<11><[U:1:53070479]><>" entered the game
+L 04/12/2026 - 20:57:54: "BACONTROLL<10><[U:1:48263075]><Unassigned>" committed suicide with "smg1"
+L 04/12/2026 - 20:58:46: "diablokenny307<11><[U:1:53070479]><Unassigned>" committed suicide with "world"
+L 04/12/2026 - 21:03:45: "diablokenny307<11><[U:1:53070479]><Unassigned>" committed suicide with "world"
+L 04/12/2026 - 21:07:49: "BACONTROLL<10><[U:1:48263075]><>" disconnected (reason "Server shutting down")
+L 04/12/2026 - 21:07:49: "diablokenny307<11><[U:1:53070479]><>" disconnected (reason "Server shutting down")
+L 04/12/2026 - 21:07:49: server_message: "quit"
+L 04/12/2026 - 21:07:49: Log file closed.

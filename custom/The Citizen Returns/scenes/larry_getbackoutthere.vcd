@@ -1,0 +1,106 @@
+// Choreo version 1
+actor "rebels_larry"
+{
+  channel "wav"
+  {
+    event speak "1"
+    {
+      time 0.073333 4.647709
+      param "npc_larry_getyourassbackoutthere"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "look"
+  {
+    event lookat "player"
+    {
+      time 0.066666 3.240000
+      param "!player"
+    }
+    event lookat "anne"
+    {
+      time 3.240000 4.720000
+      param "anne"
+    }
+    event lookat "player"
+    {
+      time 4.733333 5.246666
+      param "!player"
+    }
+  }
+  channel "face"
+  {
+    event face "1"
+    {
+      time 0.026666 3.253334
+      param "!player"
+    }
+    event face "1"
+    {
+      time 3.273333 4.926667
+      param "anne"
+    }
+  }
+  channel "move"
+  {
+  }
+  channel "gesture"
+  {
+    event gesture "2"
+    {
+      time 1.633334 3.866667
+      param "G_noway_big"
+      absolutetags playback_time
+      {
+        "apex" 0.151515
+        "accent" 0.272727
+        "loop" 0.424242
+        "end" 0.575758
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.151515
+        "accent" 0.272727
+        "loop" 0.424242
+        "end" 0.575758
+      }
+      sequenceduration 2.233333
+    }
+    event gesture "1"
+    {
+      time 0.466667 2.766667
+      param "G_righthandpoint"
+      absolutetags playback_time
+      {
+        "apex" 0.205882
+        "accent" 0.441176
+        "loop" 0.470588
+        "end" 0.676471
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.205882
+        "accent" 0.441176
+        "loop" 0.470588
+        "end" 0.676471
+      }
+      sequenceduration 2.300000
+    }
+  }
+  channel "expression"
+  {
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+}
+fps 60
+snap off

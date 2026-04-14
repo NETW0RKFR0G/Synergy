@@ -1,0 +1,14 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "citizen2/ci_broken"
+	"$decal" "1"
+        "$translucent" "1"
+        
+	$detail detail\noise_detail_01
+	$detailscale 10
+	$detailblendfactor .85
+	$detailblendmode 0
+
+
+
+}

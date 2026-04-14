@@ -1,0 +1,18 @@
+L 04/12/2026 - 19:49:09: Log file started (file "logs\L0412044.log") (game "d:\steamlibrary\steamapps\common\synergy\synergy") (version "4300")
+L 04/12/2026 - 19:49:09: Connection to Steam servers successful.
+L 04/12/2026 - 19:49:09:    Public IP is 184.161.210.129.
+L 04/12/2026 - 19:49:09: Assigned anonymous gameserver Steam ID [A:1:1844077592:49430].
+L 04/12/2026 - 19:49:09: VAC secure mode disabled.
+L 04/12/2026 - 19:50:36: server_cvar: "sv_cheats" "1"
+L 04/12/2026 - 19:50:39: "diablokenny307<2><[U:1:53070479]><>" connected, address "76561198013336207"
+L 04/12/2026 - 19:50:40: "diablokenny307<2><[U:1:53070479]><>" STEAM USERID validated
+L 04/12/2026 - 19:50:45: "diablokenny307<2><[U:1:53070479]><>" entered the game
+L 04/12/2026 - 19:51:32: "BACONTROLL<3><[U:1:48263075]><>" connected, address "10.0.0.170:27006"
+L 04/12/2026 - 19:51:33: "BACONTROLL<3><[U:1:48263075]><>" STEAM USERID validated
+L 04/12/2026 - 19:51:41: "BACONTROLL<3><[U:1:48263075]><>" entered the game
+L 04/12/2026 - 19:54:02: rcon from "10.0.0.170:49675": command "sv_airaccelerate"
+L 04/12/2026 - 19:54:15: server_cvar: "sv_airaccelerate" "250"
+L 04/12/2026 - 19:54:15: rcon from "10.0.0.170:49675": command "sv_airaccelerate 250"
+L 04/12/2026 - 19:56:08: rcon from "10.0.0.170:49675": command "changelevel sp_base"
+L 04/12/2026 - 19:56:08: server_cvar: "mp_spawntime" "60"
+L 04/12/2026 - 19:56:08: Log file closed.

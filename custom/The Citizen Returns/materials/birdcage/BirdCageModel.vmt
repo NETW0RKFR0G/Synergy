@@ -1,0 +1,14 @@
+"vertexlitGeneric"
+{
+    "$basetexture" "birdcage/BirdCageModel"
+    "$envmap" "env_cubemap"
+    "$envmaptint" "[.4 .4 .4]"
+    "$bumpmap" "birdcage/BirdCage_Normal"
+    "$normalmapalphaenvmapmask" 1
+
+	$detail detail\metal_detail_01
+	$detailscale 6
+	$detailblendfactor .85
+	$detailblendmode 0
+
+}

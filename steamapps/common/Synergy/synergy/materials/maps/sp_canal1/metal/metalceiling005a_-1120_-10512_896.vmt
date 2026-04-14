@@ -1,0 +1,8 @@
+"patch"
+{
+	"include"		"materials/METAL/METALCEILING005A.vmt"
+	"replace"
+	{
+		"$envmap"		"maps/sp_canal1/c-1120_-10512_896"
+	}
+}

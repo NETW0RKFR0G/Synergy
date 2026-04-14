@@ -1,0 +1,50 @@
+// Choreo version 1
+actor "left4dead"
+{
+  channel "lookat"
+  {
+    event lookat "lookatplayer"
+    {
+      time -0.626667 -0.126667
+      param "!player"
+    }
+    event lookat "lookatplayer"
+    {
+      time 0.054422 3.534014
+      param "!player"
+    }
+  }
+  channel "eyes"
+  {
+    event flexanimation "eyes1"
+    {
+      time -0.555556 -0.055556
+      param ""
+    }
+  }
+  channel "gesture"
+  {
+  }
+  channel "WAV"
+  {
+    event speak "left4dead_combinethat"
+    {
+      time 0.068027 3.563242
+      param "npc_left4dead_combinethat"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "98"
+  "ExpressionTool" "100"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+  "GestureTool" "100"
+}
+fps 60
+snap off

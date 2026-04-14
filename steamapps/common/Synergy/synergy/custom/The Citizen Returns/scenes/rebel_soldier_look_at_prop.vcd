@@ -1,0 +1,37 @@
+// Choreo version 1
+actor "rebel_soldier"
+{
+  channel "gesture"
+  {
+  }
+  channel "move"
+  {
+  }
+  channel "look"
+  {
+    event lookat "scanner1"
+    {
+      time 0.033334 5.020000
+      param "scanner1"
+    }
+  }
+  channel "face"
+  {
+    event face "scanner1"
+    {
+      time 0.026666 5.013333
+      param "scanner1"
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off

@@ -1,0 +1,66 @@
+// Choreo version 1
+actor "monkyx"
+{
+  channel "Movement"
+  {
+    event moveto "Player"
+    {
+      time 0.073737 9.259798
+      param "!player"
+      param2 "Walk"
+      distancetotarget 48.00
+    }
+  }
+  channel "Looking"
+  {
+    event lookat "player"
+    {
+      time 0.030303 9.257576
+      param "!player"
+    }
+  }
+  channel "Gesture"
+  {
+    event gesture "1"
+    {
+      time 1.878788 3.727273
+      param "Crouch_walk_all"
+      sequenceduration 1.000000
+    }
+    event gesture "1"
+    {
+      time -0.090909 1.888889
+      param "Crouch_walk_all"
+      sequenceduration 1.000000
+    }
+    event gesture "1"
+    {
+      time 3.707071 5.555556
+      param "Crouch_walk_all"
+      sequenceduration 1.000000
+    }
+    event gesture "1"
+    {
+      time 5.545455 7.393939
+      param "Crouch_walk_all"
+      sequenceduration 1.000000
+    }
+    event gesture "1"
+    {
+      time 7.373738 9.222222
+      param "Crouch_walk_all"
+      sequenceduration 1.000000
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "66"
+  "ExpressionTool" "100"
+  "RampTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off

@@ -1,0 +1,152 @@
+// Choreo version 1
+actor "rebel_larry"
+{
+  channel "wav"
+  {
+    event speak "larry_a1_getontheairboat"
+    {
+      time 2.249286 5.813549
+      param "npc_larry_a1_getontheairboat"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "larry_a1_soldierescort"
+    {
+      time 0.035714 2.105192
+      param "npc_larry_a1_soldierescort"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Lookingat"
+  {
+    event lookat "lookatplayer"
+    {
+      time -0.005953 5.755953
+      param "!player"
+    }
+  }
+  channel "Face"
+  {
+    event flexanimation "flex1"
+    {
+      time 2.154763 3.410714
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "lid_tightener" combo 
+        {
+          0.2180 1.0000
+        }
+        {
+          0.2180 0.5000
+        }
+        "cheek_raiser" combo 
+        {
+          0.2180 1.0000
+        }
+        {
+          0.2180 0.5000
+        }
+        "head_tilt" range 15.0 -15.0 
+        {
+          0.2180 0.0000
+        }
+      }
+    }
+  }
+  channel "Gestures"
+  {
+    event gesture "gest1"
+    {
+      time 4.113095 5.813095
+      param "G_shrug"
+      absolutetags playback_time
+      {
+        "apex" 0.160000
+        "accent" 0.240000
+        "loop" 0.320000
+        "end" 0.440000
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.160000
+        "accent" 0.240000
+        "loop" 0.320000
+        "end" 0.440000
+      }
+      sequenceduration 1.700000
+    }
+    event gesture "point"
+    {
+      time 0.017858 2.317858
+      param "G_righthandpoint"
+      absolutetags playback_time
+      {
+        "apex" 0.205882
+        "accent" 0.441176
+        "loop" 0.470588
+        "end" 0.676471
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.205882
+        "accent" 0.441176
+        "loop" 0.470588
+        "end" 0.676471
+      }
+      sequenceduration 2.300000
+    }
+  }
+  channel "facing"
+  {
+    event face "faceplayer"
+    {
+      time -0.011905 5.815476
+      param "!player"
+    }
+  }
+}
+
+actor "rebel_sarah"
+{
+  channel "look"
+  {
+    event lookat "atplayer"
+    {
+      time 0.041667 3.011904
+      param "!player"
+    }
+    event lookat "atairboat"
+    {
+      time 3.172619 5.785715
+      param "airboat"
+    }
+  }
+}
+
+actor "rebel_random5"
+{
+  channel "look"
+  {
+    event lookat "atplayer"
+    {
+      time 0.041666 2.910714
+      param "!player"
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "112"
+  "SceneRampTool" "100"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

@@ -1,0 +1,11 @@
+"patch"
+{
+	"include"		"materials/DEV/DEV_WATER5.vmt"
+	"replace"
+	{
+		"$envmap"		"maps/sp_ending/c-6437_423_-376"
+		"Proxies"
+		{
+		}
+	}
+}

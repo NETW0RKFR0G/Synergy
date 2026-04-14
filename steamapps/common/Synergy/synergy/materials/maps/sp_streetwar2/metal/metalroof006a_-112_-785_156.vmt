@@ -1,0 +1,8 @@
+"patch"
+{
+	"include"		"materials/METAL/METALROOF006A.vmt"
+	"replace"
+	{
+		"$envmap"		"maps/sp_streetwar2/c-112_-785_156"
+	}
+}

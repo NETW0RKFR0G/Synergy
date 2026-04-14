@@ -1,0 +1,27 @@
+
+
+[2026-04-13 12:33:26] Client version: 1773426366
+[2026-04-13 12:33:26] ThreadedReadFromDisk: loading appinfo cache from: D:\HL2-SERVERS\The Citizen Return  COOP (DEV)/appcache/appinfo.vdf
+[2026-04-13 12:33:26] ThreadedReadFromDisk: failed to open file: D:\HL2-SERVERS\The Citizen Return  COOP (DEV)/appcache/appinfo.vdf
+[2026-04-13 12:33:26] CAppInfoCacheReadFromDiskThread took 0 milliseconds to initialize
+[2026-04-13 12:34:21] RequestAppInfoUpdate: AppIDs 7
+[2026-04-13 12:34:21] Change number 0->35196642, apps: 0/0, packages: 0/0
+[2026-04-13 12:34:21] Requesting 1 apps, 363 packages (meta data, 1024 prev attempts, expected 17 KB)
+[2026-04-13 12:34:22] Downloaded 1 apps via HTTP, 15 KB (3 KB compressed)
+[2026-04-13 12:34:22] Requesting 0 apps, 363 packages (full data, 1024 prev attempts, expected 103 KB)
+[2026-04-13 12:34:22] UpdatesJob: finished OK, apps updated 1 (15 KB), packages updated 363 (86 KB)
+[2026-04-13 12:34:22] Requesting 751 apps, 0 packages (meta data, 1024 prev attempts, expected 35 KB)
+[2026-04-13 12:34:22] Requested 77 app access tokens, 62 received, 15 denied
+[2026-04-13 12:34:22] Updated SHAs with 62 new access tokens
+[2026-04-13 12:34:23] Downloaded 138 apps via HTTP, 1637 KB (410 KB compressed)
+[2026-04-13 12:34:23] Requesting 613 apps, 0 packages (full data, 1024 prev attempts, expected 1936 KB)
+[2026-04-13 12:34:24] UpdatesJob: finished OK, apps updated 751 (3594 KB), packages updated 0 (0 KB)
+[2026-04-13 12:34:24] UpdatesJob: apps still needs updates, run again
+[2026-04-13 12:34:24] Requesting 15 apps, 0 packages (meta data, 1024 prev attempts, expected 0 KB)
+[2026-04-13 12:34:24] Requested 15 app access tokens, 0 received, 15 denied
+[2026-04-13 12:34:24] UpdatesJob: finished OK, apps updated 0 (0 KB), packages updated 0 (0 KB)
+[2026-04-13 12:34:25] RequestAppInfoUpdate: AppIDs 17520
+[2026-04-13 12:34:25] Requesting 1 apps, 0 packages (meta data, 1024 prev attempts, expected 0 KB)
+[2026-04-13 12:34:25] UpdatesJob: finished OK, apps updated 0 (0 KB), packages updated 0 (0 KB)
+[2026-04-13 12:34:29] ThreadedWriteToDisk: writing appinfo cache to: D:\HL2-SERVERS\The Citizen Return  COOP (DEV)/appcache/appinfo.vdf
+[2026-04-13 12:34:29] App cache write succeeded D:\HL2-SERVERS\The Citizen Return  COOP (DEV)/appcache/appinfo.vdf (752 apps, 1828 KB) in 283 ms

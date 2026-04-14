@@ -1,0 +1,8 @@
+"patch"
+{
+	"include"		"materials/maps/sp_waterplant2/dev/dev_water2_-394_2778_-359.vmt"
+	"insert"
+	{
+		"$waterdepth"		"16"
+	}
+}

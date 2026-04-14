@@ -1,0 +1,177 @@
+hc_t0a2
+{
+	console
+	{
+		sv_turbophysics "0"
+		rebuildents "2"
+		mp_weaponstay "1"
+		sv_hl2mp_weapon_respawn_time "1"
+	}
+	entity
+	{
+		delete {classname "point_clientcommand"}
+		delete {classname "point_servercommand"}
+		edit {classname "prop_flare" values {classname "prop_physics" model "models/props_junk/flare.mdl"} }
+		edit {classname "item_weapon_crowbar" values {classname "weapon_crowbar" RespawnCount "-1"} }
+		edit {classname "item_weapon_frag" values {classname "weapon_frag"} }
+		edit {classname "item_weapon_357" values {classname "weapon_357"} }
+		edit {classname "fog_volume" values {classname "func_smokevolume"} }
+		edit {classname "item_weapon_shotgun" values {classname "weapon_shotgun"} }
+		edit {classname "item_ammo_shotgun" values {classname "item_box_buckshot"} }
+		edit {classname "item_ammo_glock" values {classname "item_ammo_pistol"} }
+		edit {classname "env_message" values {spawnflags "2"} }
+		create {classname "info_spawn_manager" values {targetname "syn_spawn_manager"} }
+		create {classname "logic_auto"
+			values
+			{
+				spawnflags "1"
+				OnMapSpawn "syn_trig1,AddOutput,OnStartTouch syn_spawn_manager:SetCheckPoint:syn_spawnpoint_01:0:1,1,-1"
+				OnMapSpawn "weapon_crowbar,AddOutput,OnPlayerPickup cpickup:Enable::0:-1,1,-1"
+				OnMapSpawn "weapon_glock,AddOutput,OnPlayerPickup glockpickup:Enable::0:-1,1,-1"
+				OnMapSpawn "weapon_glock,AddOutput,OnPlayerPickup glockpickup:EquipAllPlayers::0.1:1,1,-1"
+				OnMapSpawn "tr_mp5rack_grab_mp5_1,AddOutput,OnTrigger counter_armory_door_open:Add:1:0:1,0,-1"
+				OnMapSpawn "tr_mp5rack_grab_mp5_2,AddOutput,OnTrigger counter_armory_door_open:Add:1:0:1,0,-1"
+				OnMapSpawn "tr_mp5rack_grab_mp5_3,AddOutput,OnTrigger counter_armory_door_open:Add:1:0:1,0,-1"
+				OnMapSpawn "tr_mp5rack_grab_mp5_1,AddOutput,OnTrigger mp5pickup:Enable::0:1,0,-1"
+				OnMapSpawn "tr_mp5rack_grab_mp5_1,AddOutput,OnTrigger mp5pickup:EquipPlayer::0.1:-1,0,-1"
+				OnMapSpawn "tr_mp5rack_grab_mp5_2,AddOutput,OnTrigger mp5pickup:Enable::0:1,0,-1"
+				OnMapSpawn "tr_mp5rack_grab_mp5_2,AddOutput,OnTrigger mp5pickup:EquipPlayer::0.1:-1,0,-1"
+				OnMapSpawn "tr_mp5rack_grab_mp5_3,AddOutput,OnTrigger mp5pickup:Enable::0:1,0,-1"
+				OnMapSpawn "tr_mp5rack_grab_mp5_3,AddOutput,OnTrigger mp5pickup:EquipPlayer::0.1:-1,0,-1"
+				OnMapSpawn "tr_swimroom_door_hint,AddOutput,OnTrigger syn_spawn_manager:SetCheckPoint:syn_spawnpoint_05:0:1,0,-1"
+			}
+		}
+		create {classname "info_player_equip"
+			values
+			{
+				targetname "syn_equipment_base"
+				item_suit "1"
+			}
+		}
+		create {classname "info_player_equip" values {targetname "cpickup" startdisabled "1" weapon_crowbar "1"} }
+		create {classname "info_player_equip" values {targetname "glockpickup" startdisabled "1" ResponseContext "weapon_glock"} }
+		create {classname "info_player_equip" values {targetname "mp5pickup" startdisabled "1" ResponseContext "weapon_mp5"} }
+		edit {targetname "glock_glockrack_initial" values {origin "1130 8446 104"} }
+		
+		delete {classname "info_player_start"}
+		create {classname "info_player_coop" origin "-220 1500 -635" values {targetname "syn_spawnpoint_00" startdisabled "0" angles "0 90 0"} }
+		create {classname "info_player_coop" origin "590 3090 5" values {targetname "syn_spawnpoint_01" startdisabled "1" angles "0 90 0"} }
+		create {classname "info_player_coop" origin "1395 3980 70" values {targetname "syn_spawnpoint_02" startdisabled "1" angles "0 180 0"} }
+		create {classname "info_player_coop" origin "5 6335 70" values {targetname "syn_spawnpoint_03" startdisabled "1" angles "0 90 0"} }
+		create {classname "info_player_coop" origin "610 8795 70" values {targetname "syn_spawnpoint_04" startdisabled "1" angles "0 0 0"} }
+		create {classname "info_player_coop" origin "1390 10325 195" values {targetname "syn_spawnpoint_05" startdisabled "1" angles "0 150 0"} }
+		create {classname "syn_transition_wall" origin "-523 1395 -700" values {solid "6" DisableShadows "1" targetname "syn_backtrack" angles "0 90 0"} }
+		create {classname "trigger_multiple" origin "-195 1705 -620"
+			values
+			{
+				edt_mins "-100 -100 -50"
+				edt_maxs "90 120 50"
+				spawnflags "1"
+				OnStartTouch "door_hcdoor_1,Open,,0,-1"
+				OnEndTouchAll "door_hcdoor_1,Close,,0,-1"
+			}
+		}
+		delete {classname "trigger_once" origin "64 1768 -624"}
+		create {classname "trigger_once" origin "64 1768 -624"
+			values
+			{
+				edt_getbspmodelfor_classname "trigger_once"
+				edt_getbspmodelfor_origin "64 1768 -624"
+				spawnflags "1"
+				OnTrigger "btn_holobutton_1,Press,,0,1"
+			}
+		}
+		edit {classname "trigger_once" origin "544 3200 144" values {targetname "syn_trig1"} }
+		delete {classname "trigger_once" origin "1184 3864 96"}
+		create {classname "trigger_once" origin "1184 3864 96"
+			values
+			{
+				edt_getbspmodelfor_classname "trigger_once"
+				edt_getbspmodelfor_origin "1184 3864 96"
+				spawnflags "1"
+				OnTrigger "syn_spawn_manager,SetCheckPoint,syn_spawnpoint_02,0,1"
+				OnTrigger "btn_holobutton_3,Press,,0,1"
+			}
+		}
+		delete {classname "trigger_multiple" origin "0 6360 96"}
+		create {classname "trigger_once" origin "0 6360 96"
+			values
+			{
+				edt_getbspmodelfor_classname "trigger_multiple"
+				edt_getbspmodelfor_origin "0 6360 96"
+				spawnflags "1"
+				OnTrigger "syn_spawn_manager,SetCheckPoint,syn_spawnpoint_03,0,1"
+			}
+		}
+		edit {classname "trigger_once" origin "592 8832 64" values {classname "logic_relay" targetname "syn_rel1" startdisabled "0"} }
+		create {classname "trigger_coop" origin "695 8810 95"
+			values
+			{
+				targetname "syn_cooptrig_01"
+				startdisabled "0"
+				edt_mins "-120 -250 -80"
+				edt_maxs "170 140 80"
+				spawnflags "1"
+				usehud "1"
+				playervalue "66"
+				counttype "1"
+				target "syn_cooptarg_01"
+				OnStartTouch "syn_spawn_manager,SetCheckPoint,syn_spawnpoint_04,0,1"
+				OnPlayersIn "!self,TeleportPlayersNotTouching,,0.5,1"
+				OnPlayersIn "!self,kill,,1,-1"
+				OnPlayersIn "syn_rel1,Trigger,,0,-1"
+			}
+		}
+		create {classname "info_target" origin "610 8795 70" values {targetname "syn_cooptarg_01" startdisabled "0" angles "0 0 0"} }
+		delete {classname "trigger_once" origin "800 8448 64"}
+		delete {targetname "tr_range1_cleanup"}
+		delete {targetname "tr_range2_cleanup"}
+		delete {classname "trigger_once" origin "976 8752 96"}
+		create {classname "trigger_once" origin "976 8752 96"
+			values
+			{
+				edt_getbspmodelfor_classname "trigger_once"
+				edt_getbspmodelfor_origin "976 8752 96"
+				spawnflags "1"
+				OnTrigger "choreo_range_mp5,Start,,0,1"
+				OnTrigger "act_simowitz_mic,Enable,,0,1"
+				OnTrigger "act_bickford_mic,Enable,,0,1"
+				OnTrigger "gina_vo_mic,Enable,,0,1"
+			}
+		}
+		edit {classname "item_ammo_crate" origin "1136 8724 48" values {model "models/items/ammocrate_smg1.mdl" AmmoType "9" AmmoCount "0"} }
+		edit {targetname "door_mp5rack_1" values {noise1 ""} }
+		edit {targetname "door_mp5rack_2" values {noise1 ""} }
+		edit {targetname "door_mp5rack_3" values {noise1 ""} }
+		delete {targetname "branch_range2_complete"}
+		delete {targetname "branch_player_in_armory"}
+		delete {classname "trigger_once" origin "1216 9536 96"}
+		create {classname "trigger_once" origin "1216 9536 96"
+			values
+			{
+				edt_getbspmodelfor_classname "trigger_once"
+				edt_getbspmodelfor_origin "1216 9536 96"
+				spawnflags "1"
+				OnTrigger "door_range2_exit2,Open,,0,1"
+				OnTrigger "FirearmsInstructor_mic,Disable,,0,1"
+			}
+		}
+		create {classname "syn_transition_wall" origin "1688 14847 4000" values {solid "6" DisableShadows "1" targetname "syn_antirush_wall" angles "0 0 0"} }
+		create {classname "syn_transition_wall" origin "1688 14847 4320" values {solid "6" DisableShadows "1" targetname "syn_antirush_wall" angles "0 0 0"} }
+		create {classname "trigger_coop" origin "1905 14850 4145"
+			values
+			{
+				targetname "syn_antirush_coop"
+				startdisabled "0"
+				edt_mins "-230 -250 -100"
+				edt_maxs "700 250 350"
+				spawnflags "1"
+				usehud "1"
+				playervalue "66"
+				counttype "1"
+				OnPlayersIn "!self,kill,,0,-1"
+				OnPlayersIn "syn_antirush_wall,kill,,0,-1"
+			}
+		}
+	}
+}

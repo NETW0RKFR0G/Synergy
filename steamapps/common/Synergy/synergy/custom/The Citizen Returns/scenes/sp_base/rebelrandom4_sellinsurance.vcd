@@ -1,0 +1,59 @@
+// Choreo version 1
+actor "rebel_random4"
+{
+  channel "WAV"
+  {
+    event speak "npc_rebelrandom4_sellinsurance"
+    {
+      time 0.093334 2.530250
+      param "npc_rebelrandom4_sellinsurance"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "flex"
+  {
+    event flexanimation "flex"
+    {
+      time 0.066666 3.046666
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "inner_raiser" combo 
+        {
+          0.1780 1.0000
+        }
+        {
+          0.1780 0.5000
+        }
+        "corner_puller" combo 
+        {
+          0.1780 0.4300
+        }
+        {
+          0.1780 0.5000
+        }
+        "part" combo 
+        {
+          0.1780 0.7500
+        }
+        {
+          0.1780 0.5000
+        }
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "SceneRampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "RampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

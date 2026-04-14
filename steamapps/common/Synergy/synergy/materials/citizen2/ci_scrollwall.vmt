@@ -1,0 +1,16 @@
+"Unlitgeneric"
+{
+	"$surfaceprop" "concrete"	
+	"$baseTexture" "citizen2/ci_scrollwall"
+
+
+"Proxies"
+{
+"TextureScroll"
+{
+"texturescrollvar" "$basetexturetransform"
+"texturescrollrate" 1.0
+"texturescrollangle" 00.00
+}
+}
+}

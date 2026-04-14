@@ -1,0 +1,122 @@
+// Choreo version 1
+actor "anne"
+{
+  channel "wav"
+  {
+    event speak "1"
+    {
+      time 0.040000 1.485442
+      param "npc_anne_fewseconds"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Expression"
+  {
+    event flexanimation "flexanimation"
+    {
+      time 0.146666 1.433333
+      param ""
+      flexanimations samples_use_time
+      {
+        "lowerer" combo 
+        {
+          0.2000 1.0000
+        }
+        {
+          0.2000 0.5000
+        }
+        "wrinkler" 
+        {
+          0.2000 1.0000
+        }
+        "upper_raiser" combo 
+        {
+          0.2000 0.0000
+        }
+        {
+          0.2000 0.5000
+        }
+        "part" combo 
+        {
+          0.2000 0.0000
+        }
+        {
+          0.2000 0.5000
+        }
+        "puckerer" combo 
+        {
+          0.2000 0.4600
+        }
+        {
+          0.2000 0.5000
+        }
+        "funneler" combo 
+        {
+          0.2000 0.1500
+        }
+        {
+          0.2000 0.5000
+        }
+        "stretcher" combo 
+        {
+          0.2000 0.0000
+        }
+        {
+          0.2000 0.5000
+        }
+        "bite" 
+        {
+          0.2000 0.0000
+        }
+        "presser" 
+        {
+          0.2000 0.0000
+        }
+        "tightener" 
+        {
+          0.2000 0.2400
+        }
+        "jaw_clencher" 
+        {
+          0.2000 0.0000
+        }
+        "jaw_drop" 
+        {
+          0.2000 0.2000
+        }
+        "mouth_drop" combo 
+        {
+          0.2000 0.0000
+        }
+        {
+          0.2000 0.5000
+        }
+        "head_rightleft" range 30.0 -30.0 
+        {
+          0.2000 0.0000
+        }
+        "head_updown" range 15.0 -15.0 
+        {
+          0.2000 1.0000
+        }
+        "eyes_rightleft" range 30.0 -30.0 
+        {
+          0.2000 0.0000
+        }
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off

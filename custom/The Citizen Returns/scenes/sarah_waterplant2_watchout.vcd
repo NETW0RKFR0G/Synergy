@@ -1,0 +1,42 @@
+// Choreo version 1
+actor "sarah_dynamic"
+{
+  channel "wav"
+  {
+    event speak "npc_sarah_watchout"
+    {
+      time 0.046666 1.021677
+      param "npc_sarah_watchout"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "lookat"
+  {
+  }
+  channel "moveto"
+  {
+  }
+  channel "face"
+  {
+  }
+  channel "gesture"
+  {
+  }
+  channel "flex"
+  {
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "ExpressionTool" "100"
+  "RampTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

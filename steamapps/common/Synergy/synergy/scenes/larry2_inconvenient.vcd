@@ -1,0 +1,77 @@
+// Choreo version 1
+actor "larry2"
+{
+  channel "WAV"
+  {
+    event speak "1"
+    {
+      time 0.046666 2.261269
+      param "npc_larry2_inconvenient"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Face"
+  {
+    event face "1"
+    {
+      time 0.033333 2.220000
+      param "mina"
+    }
+  }
+  channel "Look at"
+  {
+    event lookat "1"
+    {
+      time 0.860000 2.240000
+      param "!player"
+    }
+    event lookat "lookatmina"
+    {
+      time 0.460000 0.960000
+      param "mina"
+    }
+  }
+  channel "Move"
+  {
+  }
+  channel "Gestures"
+  {
+    event gesture "2"
+    {
+      time 1.073333 2.706666
+      param "hg_headshake"
+      absolutetags playback_time
+      {
+        "apex" 0.208333
+        "loop" 0.270833
+        "extreme" 0.416667
+        "end" 0.625000
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.208333
+        "loop" 0.270833
+        "extreme" 0.416667
+        "end" 0.625000
+      }
+      sequenceduration 1.633333
+    }
+  }
+}
+
+actor "looklittledoor1"
+{
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off

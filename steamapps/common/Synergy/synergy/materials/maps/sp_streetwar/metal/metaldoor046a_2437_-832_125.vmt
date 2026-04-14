@@ -1,0 +1,8 @@
+"patch"
+{
+	"include"		"materials/METAL/METALDOOR046A.vmt"
+	"replace"
+	{
+		"$envmap"		"maps/sp_streetwar/c2437_-832_125"
+	}
+}

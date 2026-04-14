@@ -1,0 +1,8 @@
+"patch"
+{
+	"include"		"materials/CITIZEN2/CI_TILE2.vmt"
+	"replace"
+	{
+		"$envmap"		"maps/sp_precasino/c-2547_483_-347"
+	}
+}

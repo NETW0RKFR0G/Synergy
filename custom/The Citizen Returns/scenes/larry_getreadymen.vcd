@@ -1,0 +1,108 @@
+// Choreo version 1
+actor "rebels_larry"
+{
+  channel "wav"
+  {
+    event speak "1"
+    {
+      time 0.040000 2.205215
+      param "npc_larry_getreadymen"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "look"
+  {
+  }
+  channel "face"
+  {
+  }
+  channel "move"
+  {
+  }
+  channel "gesture"
+  {
+    event gesture "1"
+    {
+      time 1.040000 2.673333
+      param "hg_headshake"
+      absolutetags playback_time
+      {
+        "apex" 0.208333
+        "loop" 0.270833
+        "extreme" 0.416667
+        "end" 0.625000
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.208333
+        "loop" 0.270833
+        "extreme" 0.416667
+        "end" 0.625000
+      }
+      sequenceduration 1.633333
+    }
+    event gesture "1"
+    {
+      time 0.013333 1.646667
+      param "hg_headshake"
+      absolutetags playback_time
+      {
+        "apex" 0.208333
+        "loop" 0.270833
+        "extreme" 0.416667
+        "end" 0.625000
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.208333
+        "loop" 0.270833
+        "extreme" 0.416667
+        "end" 0.625000
+      }
+      sequenceduration 1.633333
+    }
+  }
+  channel "expression"
+  {
+    event flexanimation "larryeyes"
+    {
+      time 0.126666 2.526666
+      param ""
+      flexanimations samples_use_time
+      {
+        "blink" 
+        {
+          0.1540 0.2500
+        }
+        "lowerer" combo 
+        {
+          0.1540 1.0000
+        }
+        {
+          0.1540 0.5000
+        }
+        "head_updown" range 15.0 -15.0 
+        {
+          0.1540 0.6900
+        }
+        "eyes_updown" range 30.0 -30.0 
+        {
+          0.1540 0.2500
+        }
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+}
+fps 60
+snap off

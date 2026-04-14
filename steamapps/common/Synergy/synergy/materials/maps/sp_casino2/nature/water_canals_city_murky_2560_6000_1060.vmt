@@ -1,0 +1,11 @@
+"patch"
+{
+	"include"		"materials/NATURE/WATER_CANALS_CITY_MURKY.vmt"
+	"replace"
+	{
+		"$envmap"		"maps/sp_casino2/c2560_6000_1060"
+		"Proxies"
+		{
+		}
+	}
+}

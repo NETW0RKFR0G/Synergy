@@ -1,0 +1,106 @@
+// Choreo version 1
+actor "rebels_larry2"
+{
+  channel "wav"
+  {
+    event speak "npc_larry_waterplant2_shouldntargue"
+    {
+      time 0.073333 2.099274
+      param "npc_larry_waterplant2_shouldntargue"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "lookat"
+  {
+    event lookat "atplayer"
+    {
+      time 0.013333 2.133334
+      param "!player"
+    }
+  }
+  channel "moveto"
+  {
+  }
+  channel "face"
+  {
+    event face "face player"
+    {
+      time 0.059999 2.220000
+      param "!player"
+    }
+  }
+  channel "gesture"
+  {
+    event gesture "point"
+    {
+      time 0.320000 1.953333
+      param "G_shrug"
+      absolutetags playback_time
+      {
+        "apex" 0.250000
+        "accent" 0.416667
+        "loop" 0.562500
+        "end" 0.729167
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.250000
+        "accent" 0.416667
+        "loop" 0.562500
+        "end" 0.729167
+      }
+      sequenceduration 1.700000
+    }
+  }
+  channel "flex"
+  {
+    event flexanimation "flex"
+    {
+      time 0.486667 2.633333
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "inner_raiser" combo 
+        {
+          0.2080 1.0000
+        }
+        {
+          0.2080 0.5000
+        }
+        "dilator" 
+        {
+          0.2080 0.7900
+        }
+        "corner_puller" combo 
+        {
+          0.2080 0.3400
+        }
+        {
+          0.2080 0.5000
+        }
+        "head_tilt" range 15.0 -15.0 
+        {
+          0.2080 0.0000
+        }
+        "eyes_updown" range 30.0 -30.0 
+        {
+          0.2080 0.2200
+        }
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "ExpressionTool" "100"
+  "RampTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

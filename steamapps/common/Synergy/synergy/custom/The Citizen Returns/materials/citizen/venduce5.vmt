@@ -1,0 +1,8 @@
+"LightmappedGeneric"
+
+{ "$basetexture" "citizen/venduce5" 
+  "$translucent" 1
+  "$decal" 1
+
+
+} 

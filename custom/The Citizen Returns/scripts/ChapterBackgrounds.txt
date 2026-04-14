@@ -1,0 +1,8 @@
+"chapters"
+{
+	1	"thecitizen_bg1"
+	2	"thecitizen_bg2"
+	3	"thecitizen_bg3"
+	4	"thecitizen_bg4"
+	5	"thecitizen_bg5"
+}

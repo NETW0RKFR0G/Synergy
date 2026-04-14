@@ -1,0 +1,75 @@
+// Choreo version 1
+actor "larry"
+{
+  channel "wav"
+  {
+    event speak "thisway"
+    {
+      time 0.033334 1.365579
+      param "npc_larry_thiswaysoldier"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "expression"
+  {
+    event flexanimation "flex1"
+    {
+      time 0.100000 0.913334
+      param ""
+      flexanimations samples_use_time
+      {
+        "outer_raiser" combo 
+        {
+          0.1880 1.0000
+        }
+        {
+          0.1880 0.5000
+        }
+        "cheek_raiser" combo 
+        {
+          0.1880 0.9900
+        }
+        {
+          0.1880 0.5000
+        }
+        "head_updown" range 15.0 -15.0 
+        {
+          0.1880 0.6700
+        }
+        "eyes_updown" range 30.0 -30.0 
+        {
+          0.1880 0.2600
+        }
+      }
+    }
+  }
+  channel "face"
+  {
+    event face "boat"
+    {
+      time 0.080000 1.320000
+      param "airboat"
+    }
+  }
+  channel "look"
+  {
+    event lookat "boat"
+    {
+      time 0.053333 1.366667
+      param "airboat"
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "ExpressionTool" "100"
+  "SceneRampTool" "100"
+  "GestureTool" "100"
+  "RampTool" "100"
+}
+fps 60
+snap off

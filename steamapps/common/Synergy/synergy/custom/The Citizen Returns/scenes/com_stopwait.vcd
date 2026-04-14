@@ -1,0 +1,65 @@
+// Choreo version 1
+actor "com"
+{
+  channel "wav"
+  {
+    event speak "1"
+    {
+      time 0.053334 1.646803
+      param "npc_com_stopwait"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "look"
+  {
+    event lookat "1"
+    {
+      time 0.053333 1.673333
+      param "!player"
+    }
+    event lookat "2"
+    {
+      time 1.686666 2.440000
+      param "explosives_troops_6"
+    }
+  }
+  channel "flex"
+  {
+    event flexanimation "flex"
+    {
+      time 0.392593 2.055556
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "lid_tightener" combo 
+        {
+          0.1700 1.0000
+        }
+        {
+          0.1700 0.5000
+        }
+        "outer_raiser" combo 
+        {
+          0.1700 0.7900
+        }
+        {
+          0.1700 0.5000
+        }
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "90"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

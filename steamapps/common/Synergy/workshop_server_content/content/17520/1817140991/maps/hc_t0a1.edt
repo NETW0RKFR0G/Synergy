@@ -1,0 +1,192 @@
+hc_t0a1
+{
+	console
+	{
+		sv_turbophysics "0"
+		rebuildents "2"
+	}
+	entity
+	{
+		delete {classname "point_clientcommand"}
+		delete {classname "point_servercommand"}
+		delete {targetname "fade_falldmg"}
+		edit {classname "prop_flare" values {classname "prop_physics" model "models/props_junk/flare.mdl"} }
+		edit {classname "item_weapon_crowbar" values {classname "weapon_crowbar"} }
+		edit {classname "item_weapon_frag" values {classname "weapon_frag"} }
+		edit {classname "item_weapon_357" values {classname "weapon_357"} }
+		edit {classname "fog_volume" values {classname "func_smokevolume"} }
+		edit {classname "item_weapon_shotgun" values {classname "weapon_shotgun"} }
+		edit {classname "item_ammo_shotgun" values {classname "item_box_buckshot"} }
+		edit {classname "env_message" values {spawnflags "2"} }
+		create {classname "info_spawn_manager" values {targetname "syn_spawn_manager"} }
+		create {classname "logic_auto"
+			values
+			{
+				spawnflags "1"
+				OnMapSpawn "intro_elevator,Stop,,0,1"
+				OnMapSpawn "syn_suitspawn,AddOutput,OnPlayerTouch syn_suitpt:ForceSpawn::0:-1,1,-1"
+				OnMapSpawn "syn_suitspawn,AddOutput,OnPlayerTouch syn_suitpickup:Enable::0:-1,1,-1"
+				OnMapSpawn "syn_suitspawn,AddOutput,OnPlayerTouch speaker_suitnag:TurnOff::0:-1,1,-1"
+				OnMapSpawn "syn_suitspawn,AddOutput,OnPlayerTouch trans01_dr01a:Open::2:-1,0,-1"
+				OnMapSpawn "syn_suitspawn,AddOutput,OnPlayerTouch trans01_dr00a:Open::0:-1,0,-1"
+				OnMapSpawn "syn_suitspawn,AddOutput,OnPlayerTouch choreo_suit_pickup:Start::1.5:-1,0,-1"
+				OnMapSpawn "syn_suitspawn,AddOutput,OnPlayerTouch relay_hevboot_start:Trigger::0:-1,0,-1"
+				OnMapSpawn "syn_suitspawn,AddOutput,OnPlayerTouch speaker_suitnag:Kill::0:-1,0,-1"
+				OnMapSpawn "intro_elevator,AddOutput,OnFullyOpen intro_dr01edt:Open::1:-1,0,-1"
+				OnMapSpawn "door_crouchroom_exit,AddOutput,OnOpen syn_spawn_manager:SetCheckPoint:syn_spawnpoint_03:0:1,0,-1"
+				OnMapSpawn "door_crouchroom_exit,AddOutput,OnOpen syn_opencrouchroom:Enable::1:1,0,-1"
+			}
+		}
+		create {classname "info_player_equip" values {targetname "syn_equipment_base"} }
+		create {classname "info_player_equip"
+			values
+			{
+				targetname "syn_suitpickup"
+				startdisabled "1"
+				item_suit "1"
+			}
+		}
+		
+		delete {classname "logic_auto" origin "-2240 -1996 456"}
+		delete {classname "info_player_start"}
+		create {classname "info_player_coop" origin "-2209 -2028 449" values {targetname "syn_spawnpoint_00" startdisabled "0" angles "0 90 0" parentname "intro_elevator"} }
+		create {classname "info_player_coop" origin "-2200 715 35" values {targetname "syn_spawnpoint_01" startdisabled "1" angles "0 90 0"} }
+		create {classname "info_player_coop" origin "-65 -340 40" values {targetname "syn_spawnpoint_02" startdisabled "1" angles "0 -90 0"} }
+		create {classname "info_player_coop" origin "3015 1270 35" values {targetname "syn_spawnpoint_03" startdisabled "1" angles "0 -90 0"} }
+		create {classname "info_player_coop" origin "2795 -185 35" values {targetname "syn_spawnpoint_04" startdisabled "1" angles "0 180 0"} }
+		create {classname "trigger_once" origin "-2209 -2028 449"
+			values
+			{
+				edt_mins "-100 -100 -50"
+				edt_maxs "100 100 50"
+				spawnflags "1"
+				parentname "intro_elevator"
+				OnTrigger "syn_hudtimer,Start,10,0,1"
+			}
+		}
+		create {classname "hud_timer"
+			values
+			{
+				targetname "syn_hudtimer"
+				TimerText "WAITING FOR PLAYERS"
+				TimerType "1"
+				OnTimer "intro_elevator,Open,,0,1"
+				OnTimer "syn_telestart,Enable,,10,1"
+			}
+		}
+		create {classname "trigger_teleport" origin "-2209 -2028 449" values {targetname "syn_telestart" target "syn_telespawn_01" startdisabled "1" spawnflags "1" edt_mins "-100 -100 -50" edt_maxs "100 100 100"} }
+		create {classname "info_teleport_destination" origin "-2209 -2028 449" values {targetname "syn_telespawn_01" startdisabled "0" angles "0 90 0" parentname "intro_elevator"} }
+		edit {classname "item_suit" values {targetname "syn_suitspawn"} }
+		create {classname "point_template" values {targetname "syn_suitpt" Template01 "syn_suitt"} }
+		create {classname "item_suit" origin "-2208 -159.05 59" values {targetname "syn_suitt" angles "0 -90 0" OnPlayerPickup "syn_suitpt,ForceSpawn,,0,1"} }
+		delete {targetname "brush_intro_dr01"}
+		edit {classname "func_areaportal" portalnumber "16" values {target "intro_dr01edt"} }
+		edit {targetname "intro_dr01" values {targetname "intro_dr01edt"} }
+		edit {classname "prop_dynamic" origin "-2208 -1888 -64" values {parentname "intro_dr01edt"} }
+		delete {classname "trigger_once" origin "-2208 -560 62.04"}
+		create {classname "trigger_once" origin "-2208 -560 62.04"
+			values
+			{
+				edt_getbspmodelfor_classname "trigger_once"
+				edt_getbspmodelfor_origin "-2208 -560 62.04"
+				spawnflags "1"
+				OnTrigger "autosave,Save,,0,1"
+				OnTrigger "door_hev_glass,Open,,0.5,1"
+			}
+		}
+		delete {classname "trigger_once" origin "-2208 720 64"}
+		create {classname "trigger_once" origin "-2208 720 64"
+			values
+			{
+				edt_getbspmodelfor_classname "trigger_once"
+				edt_getbspmodelfor_origin "-2208 720 64"
+				spawnflags "1"
+				OnTrigger "trans01_seq_sci01b,BeginSequence,,0,-1"
+				OnTrigger "btn_holobutton_2,Press,,0,-1"
+				//OnTrigger "trans01_dr00a,Close,,0,-1"
+				OnTrigger "trans01_snoot_move,StartForward,,4,-1"
+				OnTrigger "trans01_snoot_sci_stop,BeginSequence,,0,-1"
+			}
+		}
+		delete {classname "trigger_once" origin "-1888 992 -64"}
+		delete {classname "trigger_once" origin "-2304 752 -80"}
+		create {classname "trigger_once" origin "-2304 752 -80"
+			values
+			{
+				edt_getbspmodelfor_classname "trigger_once"
+				edt_getbspmodelfor_origin "-2304 752 -80"
+				spawnflags "1"
+				OnStartTouch "trans01_trapdoor01b,Disable,,0,-1"
+				OnStartTouch "trans01_trapdoor01a,Open,,0,-1"
+				OnStartTouch "trans01_ladder,Enable,,1,-1"
+				//OnStartTouch "trans01_dr01a,Close,,0,-1"
+			}
+		}
+		create {classname "trigger_multiple" origin "-2205 625 80"
+			values
+			{
+				edt_mins "-80 -150 -40"
+				edt_maxs "80 100 100"
+				spawnflags "1"
+				OnStartTouch "syn_spawn_manager,SetCheckPoint,syn_spawnpoint_01,0,1"
+				OnStartTouch "trans01_dr01a,Open,,0,-1"
+				OnEndTouchAll "trans01_dr01a,Close,,0,-1"
+			}
+		}
+		delete {classname "trigger_once" origin "-64 -144 72"}
+		delete {classname "trigger_once" origin "-64 -768 80"}
+		create {classname "trigger_multiple" origin "-60 -230 30"
+			values
+			{
+				edt_mins "-80 -100 -40"
+				edt_maxs "80 150 100"
+				spawnflags "1"
+				OnStartTouch "syn_spawn_manager,SetCheckPoint,syn_spawnpoint_02,0,1"
+				OnStartTouch "hev_move_trans_dr01a,Open,,0,-1"
+				OnEndTouchAll "hev_move_trans_dr01a,Close,,0,-1"
+			}
+		}
+		create {classname "trigger_multiple" origin "2860 1335 50"
+			values
+			{
+				targetname "syn_opencrouchroom"
+				startdisabled "1"
+				edt_mins "-110 -60 -60"
+				edt_maxs "60 70 60"
+				spawnflags "1"
+				OnStartTouch "door_crouchroom_exit,Open,,0,-1"
+				OnEndTouchAll "door_crouchroom_exit,Close,,0,-1"
+			}
+		}
+		delete {classname "trigger_once" origin "2848 -192 64"}
+		create {classname "trigger_once" origin "2848 -192 64"
+			values
+			{
+				edt_getbspmodelfor_classname "trigger_once"
+				edt_getbspmodelfor_origin "2848 -192 64"
+				spawnflags "1"
+				OnStartTouch "syn_spawn_manager,SetCheckPoint,syn_spawnpoint_04,0,1"
+				OnStartTouch "btn_holobutton_6,Press,,0,1"
+				OnTrigger "relay_crouchjumproom_lights,Trigger,,0,1"
+			}
+		}
+		delete {classname "trigger_once" origin "1728 -512 64"}
+		edit {targetname "tr_changelevel_next" values {targetname "tr_changelevel_nextedt"} }
+		create {classname "syn_transition_wall" origin "1730 -760 -80" values {solid "6" DisableShadows "1" targetname "syn_antirush_wall" angles "0 90 0"} }
+		create {classname "trigger_coop" origin "1730 -670 25"
+			values
+			{
+				targetname "syn_antirush_coop"
+				startdisabled "0"
+				edt_mins "-90 -90 -60"
+				edt_maxs "70 120 100"
+				spawnflags "1"
+				usehud "1"
+				playervalue "66"
+				counttype "1"
+				OnPlayersIn "!self,kill,,0,-1"
+				OnPlayersIn "syn_antirush_wall,kill,,0,-1"
+			}
+		}
+	}
+}

@@ -1,0 +1,11 @@
+"patch"
+{
+	"include"		"materials/NATURE/WATER_MOVINGPLANE.vmt"
+	"replace"
+	{
+		"$envmap"		"maps/sp_casino/c-376_2048_884"
+		"Proxies"
+		{
+		}
+	}
+}

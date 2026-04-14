@@ -1,0 +1,10 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "Building_Template/courtyard_Template003c"
+	"$surfaceprop" "concrete"
+	
+	$detail detail\plaster_detail_01
+	$detailscale 5
+	$detailblendfactor .65
+	$detailblendmode 0
+}

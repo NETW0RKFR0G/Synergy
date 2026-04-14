@@ -1,0 +1,8 @@
+"patch"
+{
+	"include"		"materials/CITIZEN2/CI_BUI3.vmt"
+	"replace"
+	{
+		"$envmap"		"maps/sp_presquare/c-55_-3822_-54"
+	}
+}

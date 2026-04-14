@@ -1,0 +1,17 @@
+"VertexlitGeneric"
+
+{ 
+
+  "$basetexture" "models/custom/casinofountain" 
+  "$surfaceprop" "concrete"
+  "$bumpmap" "models/custom/casinofountain_normal"
+  "$envmap" "env_cubemap"
+  "$normalmapalphaenvmapmask" 1
+
+	$detail detail\metal_detail_01
+	$detailscale 5
+	$detailblendfactor .75
+	$detailblendmode 0
+
+
+} 

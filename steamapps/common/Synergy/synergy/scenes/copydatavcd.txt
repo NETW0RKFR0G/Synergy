@@ -1,0 +1,30 @@
+// Choreo version 1
+actor "rebels_larry2"
+{
+  channel "flexanimations"
+  {
+    event flexanimation "angry"
+    {
+      time 62.018520 63.962959
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "lid_tightener" combo 
+        {
+          0.2040 0.9300
+        }
+        {
+          0.2040 0.5000
+        }
+        "lowerer" combo 
+        {
+          0.2040 1.0000
+        }
+        {
+          0.2040 0.5000
+        }
+      }
+    }
+  }
+}
+

@@ -1,0 +1,8 @@
+"LightmappedGeneric"
+
+{ "$basetexture" "citizen2/ci_coke2" 
+  "$surfaceprop" "plastic"
+  "$translucent" "1"
+
+
+} 

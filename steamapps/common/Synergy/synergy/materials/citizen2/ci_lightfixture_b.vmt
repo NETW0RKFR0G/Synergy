@@ -1,0 +1,12 @@
+LightmappedGeneric
+{
+    $basetexture citizen2/ci_lightfixture
+    $translucent 1
+    $decal 1
+    //$selfillum 1
+    $surfaceprop metal
+    //$selfillummask citizen2/ci_lightfixture_mask
+   
+
+	
+}

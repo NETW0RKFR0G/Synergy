@@ -1,0 +1,9 @@
+"LightmappedGeneric"
+
+{ "$basetexture" "metal/metalrail013a" 
+  "$surfaceprop" "metal"
+  "$translucent" 1
+  "$nocull" 1
+
+
+} 

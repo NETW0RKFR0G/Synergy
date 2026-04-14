@@ -1,0 +1,146 @@
+// Choreo version 1
+actor "medic"
+{
+  channel "WAV"
+  {
+    event speak "probably"
+    {
+      time 5.026667 9.566168
+      param "npc_m2_probably"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "boutanhour"
+    {
+      time 12.181819 14.016195
+      param "npc_m2_boutanhour"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Look at"
+  {
+    event lookat "player"
+    {
+      time 0.013334 1.953334
+      param "camera6"
+    }
+    event lookat "m2"
+    {
+      time 1.980000 2.993333
+      param "m2"
+    }
+    event lookat "player"
+    {
+      time 3.013334 4.566667
+      param "camera6"
+    }
+    event lookat "m2"
+    {
+      time 16.623636 18.212727
+      param "m2"
+    }
+    event lookat "player"
+    {
+      time 5.740607 8.051516
+      param "camera6"
+    }
+    event lookat "player"
+    {
+      time 11.225455 14.354546
+      param "camera6"
+    }
+    event lookat "m2"
+    {
+      time 4.593333 5.606667
+      param "m2"
+    }
+  }
+}
+
+actor "m2"
+{
+  channel "WAV"
+  {
+    event speak "thinkyoucansavehim"
+    {
+      time 3.260000 4.598050
+      param "npc_m1_thinkyoucansavehim"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "needmuchtime"
+    {
+      time 10.060606 11.662783
+      param "npc_m1_needmuchtime"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "getitready"
+    {
+      time 14.969697 18.278540
+      param "npc_m1_getitallready"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Gesture"
+  {
+    event gesture "1"
+    {
+      time 3.181818 5.215151
+      param "G_what"
+      absolutetags playback_time
+      {
+        "apex" 0.133333
+        "accent" 0.200000
+        "loop" 0.366667
+        "end" 0.533333
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.133333
+        "accent" 0.200000
+        "loop" 0.366667
+        "end" 0.533333
+      }
+      sequenceduration 2.033333
+    }
+    event gesture "2"
+    {
+      time 9.606061 15.996970
+      param "g_Pacer_ArmsCrossed"
+      absolutetags playback_time
+      {
+        "apex" 0.043216
+        "accent" 0.070226
+        "loop" 0.744076
+        "end" 0.886256
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.285714
+        "accent" 0.464286
+        "loop" 0.642857
+        "end" 0.892857
+      }
+      sequenceduration 0.966667
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "22"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off

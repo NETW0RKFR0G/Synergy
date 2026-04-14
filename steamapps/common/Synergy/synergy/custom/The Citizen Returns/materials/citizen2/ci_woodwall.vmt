@@ -1,0 +1,11 @@
+"LightmappedGeneric"
+
+{ "$basetexture" "citizen2/ci_woodwall" 
+  "$surfaceprop" "wood"
+
+	$detail detail\plaster_detail_01
+	$detailscale 4
+	$detailblendfactor .75
+	$detailblendmode 0
+
+} 

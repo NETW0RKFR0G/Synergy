@@ -1,0 +1,138 @@
+14:00:29.289 INFO  Loading D:\HL2-SERVERS\The Citizen Return  COOP (DEV)\steamapps\common\Synergy\synergy\maps\sp_precasino.bsp
+14:00:30.039 INFO  Using 'DStaticPropV6' for sprp version 6
+14:00:30.065 WARN  Tried reading lump 'LUMP_DISP_MULTIBLEND', but it is not supported by the bsp's version
+14:00:30.085 WARN  Lump LUMP_OVERLAY_SYSTEM_LEVELS is empty
+14:00:30.089 INFO  BSP version: 20
+14:00:30.091 INFO  Game: Half-Life 2
+14:00:30.133 INFO  Equal amount of areaporal entities and areaportal brushes. Using 'Ordered' method
+14:00:30.137 INFO  Reallocating occluders...
+14:00:30.561 INFO  11718 (35.6%) exact brushside->origface matches
+14:00:30.571 INFO  2 (0.0%) nondisp and 14 (100.0%) disp original faces left after exact brushside->origface matching
+14:00:30.665 INFO  663 (2.0%) partial brushside->origface matches
+14:00:30.666 INFO  Writing brushes and planes
+14:00:31.012 INFO  Writing displacements
+14:00:31.024 INFO  Writing entities
+14:00:31.142 INFO  Writing func_details
+14:00:31.579 INFO  Writing info_overlays
+14:00:31.582 INFO  Writing prop_statics
+14:00:31.584 INFO  Writing env_cubemaps
+14:00:31.587 INFO  Writing func_ladders
+14:00:31.591 INFO  Finished decompiling D:\HL2-SERVERS\The Citizen Return  COOP (DEV)\steamapps\common\Synergy\synergy\maps\sp_precasino.bsp.
+
+
+
+materialPath: D:\HL2-SERVERS\The Citizen Return  COOP (DEV)\steamapps\common\Synergy\synergy\materials
+Loading D:\HL2-SERVERS\The Citizen Return  COOP (DEV)\steamapps\common\Synergy\synergy\maps\sp_precasino_d.vmf
+ConVarRef mat_reduceparticles doesn't point to an existing ConVar
+Could not locate GameData file ../synergy/SDK/synergy.fgd
+Patching WVT material: maps/sp_precasino_d/citizen2/ci_blendgrass_wvt_patch
+Patching WVT material: maps/sp_precasino_d/nature/blendcliffgrass001a_wvt_patch
+fixing up env_cubemap materials on brush sides...
+0...1...2...3...4...5...6...7...8...9...10
+FindPortalSide: Couldn't find a good match for which brush to assign to a portal near (-2288.0 796.0 -484.0)
+Leaf 0 contents: CONTENTS_SOLID 
+Leaf 1 contents: CONTENTS_SOLID CONTENTS_WATER CONTENTS_TRANSLUCENT 
+viscontents (node 0 contents ^ node 1 contents): CONTENTS_WATER 
+This means that none of the brushes in leaf 0 or 1 that touches the portal has CONTENTS_WATER 
+Check for a huge brush enclosing the coordinates above that has contents CONTENTS_WATER 
+Candidate brush IDs: Brush 2029: 
+
+
+FindPortalSide: Couldn't find a good match for which brush to assign to a portal near (-2335.0 788.0 -488.0)
+Leaf 0 contents: CONTENTS_SOLID CONTENTS_WATER CONTENTS_TRANSLUCENT 
+Leaf 1 contents: CONTENTS_SOLID 
+viscontents (node 0 contents ^ node 1 contents): CONTENTS_WATER 
+This means that none of the brushes in leaf 0 or 1 that touches the portal has CONTENTS_WATER 
+Check for a huge brush enclosing the coordinates above that has contents CONTENTS_WATER 
+Candidate brush IDs: Brush 2029: 
+
+
+FindPortalSide: Couldn't find a good match for which brush to assign to a portal near (-2335.0 788.0 -460.0)
+Leaf 0 contents: CONTENTS_SOLID CONTENTS_WATER CONTENTS_TRANSLUCENT 
+Leaf 1 contents: CONTENTS_SOLID 
+viscontents (node 0 contents ^ node 1 contents): CONTENTS_WATER 
+This means that none of the brushes in leaf 0 or 1 that touches the portal has CONTENTS_WATER 
+Check for a huge brush enclosing the coordinates above that has contents CONTENTS_WATER 
+Candidate brush IDs: Brush 2029: 
+
+
+FindPortalSide: Couldn't find a good match for which brush to assign to a portal near (-2335.0 796.0 -512.0)
+Leaf 0 contents: CONTENTS_SOLID CONTENTS_WATER CONTENTS_TRANSLUCENT 
+Leaf 1 contents: CONTENTS_SOLID 
+viscontents (node 0 contents ^ node 1 contents): CONTENTS_WATER 
+This means that none of the brushes in leaf 0 or 1 that touches the portal has CONTENTS_WATER 
+Check for a huge brush enclosing the coordinates above that has contents CONTENTS_WATER 
+Candidate brush IDs: Brush 2029: 
+
+0...1...2...3...4...5...6...7...8...9...10
+FindPortalSide: Couldn't find a good match for which brush to assign to a portal near (-2288.0 796.0 -460.0)
+Leaf 0 contents: CONTENTS_SOLID 
+Leaf 1 contents: CONTENTS_SOLID CONTENTS_WATER CONTENTS_TRANSLUCENT 
+viscontents (node 0 contents ^ node 1 contents): CONTENTS_WATER 
+This means that none of the brushes in leaf 0 or 1 that touches the portal has CONTENTS_WATER 
+Check for a huge brush enclosing the coordinates above that has contents CONTENTS_WATER 
+Candidate brush IDs: Brush 2029: 
+
+
+FindPortalSide: Couldn't find a good match for which brush to assign to a portal near (-2335.0 796.0 -464.0)
+Leaf 0 contents: CONTENTS_SOLID CONTENTS_WATER CONTENTS_TRANSLUCENT 
+Leaf 1 contents: CONTENTS_SOLID 
+viscontents (node 0 contents ^ node 1 contents): CONTENTS_WATER 
+This means that none of the brushes in leaf 0 or 1 that touches the portal has CONTENTS_WATER 
+Check for a huge brush enclosing the coordinates above that has contents CONTENTS_WATER 
+Candidate brush IDs: Brush 2029: 
+
+
+FindPortalSide: Couldn't find a good match for which brush to assign to a portal near (-2335.0 788.0 -460.0)
+Leaf 0 contents: CONTENTS_SOLID CONTENTS_WATER CONTENTS_TRANSLUCENT 
+Leaf 1 contents: CONTENTS_SOLID 
+viscontents (node 0 contents ^ node 1 contents): CONTENTS_WATER 
+This means that none of the brushes in leaf 0 or 1 that touches the portal has CONTENTS_WATER 
+Check for a huge brush enclosing the coordinates above that has contents CONTENTS_WATER 
+Candidate brush IDs: Brush 2029: 
+
+Processing areas...done (0)
+Building Faces...done (0)
+Chop Details...done (0)
+Find Visible Detail Sides...
+Merged 3018 detail faces...done (1)
+Merging details...done (0)
+FixTjuncs...
+PruneNodes...
+WriteBSP...
+done (1)
+writing D:\HL2-SERVERS\The Citizen Return  COOP (DEV)\steamapps\common\Synergy\synergy\maps\sp_precasino_d.prt...Building visibility clusters...
+done (0)
+*** Error: Skybox vtf files for skybox/sky_day01_08_hdr weren't compiled with the same size texture and/or same flags!
+Can't load skybox file skybox/sky_day01_08_hdr to build the default cubemap!
+*** Error: Skybox vtf files for skybox/sky_day01_08_hdr weren't compiled with the same size texture and/or same flags!
+Can't load skybox file skybox/sky_day01_08_hdr to build the default cubemap!
+Finding displacement neighbors...
+Finding lightmap sample positions...
+Displacement Alpha : 0...1...2...3...4...5...6...7...8...9...10
+Building Physics collision data...
+WARNING: Map using power 4 displacements, terrain physics cannot be compressed, map will need additional memory and CPU.
+done (1) (2048132 bytes)
+Placing detail props : 0...1...2...3...4...5...6...7...8...9...10
+Compacting texture/material tables...
+Reduced 8278 texinfos to 5404
+Reduced 911 texdatas to 807 (46487 bytes to 42668)
+Writing D:\HL2-SERVERS\The Citizen Return  COOP (DEV)\steamapps\common\Synergy\synergy\maps\sp_precasino_d.bsp
+Wrote ZIP buffer, estimated size 325832, actual size 238920
+7 seconds elapsed
+
+
+
+6 threads
+reading d:\hl2-servers\the citizen return  coop (dev)\steamapps\common\synergy\synergy\maps\sp_precasino_d.bsp
+reading d:\hl2-servers\the citizen return  coop (dev)\steamapps\common\synergy\synergy\maps\sp_precasino_d.prt
+1217 portalclusters
+3950 numportals
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Optimized: 1325 visible clusters (0.43%)
+Total clusters visible: 304922
+Average clusters visible: 250
+Building PAS...
+Average clusters audible: 589
+visdatasize:265937  compressed from 389440
+writing d:\hl2-servers\the citizen return  coop (dev)\steamapps\common\synergy\synergy\maps\sp_precasino_d.bsp
+7 minutes, 35 seconds elapsed

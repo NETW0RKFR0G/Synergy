@@ -1,0 +1,7 @@
+vertexlitgeneric
+{
+
+$basetexture "models\player\vad36l4d2/zoey_hair"
+$translucent 1
+$nocull 1
+}

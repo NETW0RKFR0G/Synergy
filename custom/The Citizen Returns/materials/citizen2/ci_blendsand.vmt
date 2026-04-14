@@ -1,0 +1,9 @@
+"WorldVertexTransition"
+{
+
+	"$basetexture" "citizen2\ci_redsand2"
+	"$surfaceprop" "sand"
+	"$basetexture2" "nature\rockwall015a"
+	"$surfaceprop2" "rock"
+	
+}

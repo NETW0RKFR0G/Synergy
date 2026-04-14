@@ -1,0 +1,14 @@
+"VertexLitGeneric"
+{
+	"$baseTexture"	"amanda/mailbox"
+	"$surfaceprop"	"metal"
+	"$envmap"	 env_cubemap
+	"$envmapmask"	"amanda/mailboxspec"
+	"$nocull"	 1
+
+	$detail detail\metal_detail_01
+	$detailscale 6
+	$detailblendfactor .95
+	$detailblendmode 0
+
+}

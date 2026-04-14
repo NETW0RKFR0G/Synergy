@@ -1,0 +1,8 @@
+"LightmappedGeneric"
+
+{ "$basetexture" "citizen2/ci_brick_decal" 
+  "$translucent" 1
+  "$decal" 1
+
+
+} 

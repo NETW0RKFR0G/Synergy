@@ -1,0 +1,8 @@
+"patch"
+{
+	"include"		"materials/WOOD/WOODFLOOR007A.vmt"
+	"replace"
+	{
+		"$envmap"		"maps/sp_precasino/c-2848_756_-348"
+	}
+}

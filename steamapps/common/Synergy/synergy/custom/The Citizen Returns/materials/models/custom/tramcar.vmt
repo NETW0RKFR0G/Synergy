@@ -1,0 +1,17 @@
+"VertexlitGeneric"
+
+{ 
+
+  "$basetexture" "models/custom/tramcar" 
+  "$surfaceprop" "metal"
+  "$bumpmap" "models/custom/tramcar_normal"
+  "$envmap" "env_cubemap"
+  "$normalmapalphaenvmapmask" 1
+
+	$detail detail\metal_detail_01
+	$detailscale 15
+	$detailblendfactor .95
+	$detailblendmode 0
+
+
+} 

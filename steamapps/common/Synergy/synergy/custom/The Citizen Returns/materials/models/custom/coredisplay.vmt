@@ -1,0 +1,16 @@
+"UnlitGeneric"
+
+{ "$basetexture" "models/custom/coredisplay"
+
+
+       "$surfaceprop" "computer"
+
+	$detail detail\metal_detail_01
+	$detailscale 5
+	$detailblendfactor .25
+	$detailblendmode 0
+
+
+
+
+ } 

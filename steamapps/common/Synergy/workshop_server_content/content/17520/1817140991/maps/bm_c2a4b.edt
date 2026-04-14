@@ -1,0 +1,73 @@
+bm_c2a4b
+{
+	console
+	{
+		sv_turbophysics "0"
+	}
+	entity
+	{
+//TEMP PLACEHOLDERS
+		edit {classname "prop_flare" values {classname "prop_physics" model "models/props_junk/flare.mdl"} }
+		edit {classname "item_weapon_crowbar" values {classname "weapon_crowbar"} }
+		edit {classname "item_weapon_frag" values {classname "weapon_frag"} }
+		edit {classname "item_weapon_357" values {classname "weapon_357"} }
+		edit {classname "fog_volume" values {classname "func_smokevolume"} }
+		edit {classname "item_weapon_shotgun" values {classname "weapon_shotgun"} }
+		edit {classname "item_ammo_shotgun" values {classname "item_box_buckshot"} }
+		edit {classname "item_grenade_mp5" values {classname "item_ammo_smg1_grenade"} }
+		edit {classname "func_conveyor_bms" values {classname "func_conveyor" spawnflags "0"} }
+		edit {classname "npc_gargantua" values {classname "npc_bmsgargantua"} }
+//Starting Equips
+		create {classname "info_player_equip"
+			values
+			{
+				targetname "syn_equipment_base"
+				item_suit "1"
+				weapon_crowbar "1"
+					ammo_pistol "18"
+				weapon_frag "1"
+				weapon_357 "1"
+					ammo_357 "6"
+					ammo_smg1 "45"
+				weapon_shotgun "1"
+					ammo_buckshot "12"
+				weapon_crossbow "1"
+				ResponseContext "weapon_mp5 weapon_glock weapon_satchel"
+			}
+		}
+		
+		delete {targetname "suit"}
+		delete {targetname "weapons"}
+		delete {targetname "new_game_spawn"}
+		delete {classname "info_player_start"}
+		create {classname "info_spawn_manager" values {targetname "syn_spawn_manager"} }
+		create {classname "info_player_coop" origin "596 4 740" values {targetname "syn_spawnpoint_00" startdisabled "0" angles "0 180 0"} }
+		create {classname "info_player_coop" origin "-1090 -460 -220" values {targetname "syn_spawnpoint_01" startdisabled "1" angles "0 -90 0"} }
+		create {classname "syn_transition_wall" origin "975 4 680" values {targetname "syn_backtrack" angles "0 180 0" solid "6" DisableShadows "1"} }
+		edit {targetname "sewer_overlay" values {spawnflags "1"} }
+		
+		create {classname "logic_auto"
+			values
+			{
+				spawnflags "1"
+				OnMapSpawn "trigger_changelevel,AddOutput,OnChangeLevel syn_antirush_wall2:kill::0:-1,0,-1"
+				OnMapSpawn "elevator_lever,AddOutput,OnFullyOpen syn_spawn_manager:SetCheckPoint:syn_spawnpoint_01:0:1,0,-1"
+			}
+		}
+		
+		create {classname "syn_transition_wall" origin "-650 -2890 -640" values {targetname "syn_antirush_wall2" angles "0 180 0" solid "6" DisableShadows "1"} }
+		create {classname "syn_transition_wall" origin "-1010 -2890 -640" values {targetname "syn_antirush_wall" angles "0 180 0" solid "6" DisableShadows "1"} }
+		create {classname "trigger_coop" origin "-1076 -2668 -592"
+			values
+			{
+				edt_getbspmodelfor_targetname "flame_burn02"
+				spawnflags "1"
+				CountType "1"
+				UseHUD "1"
+				PlayerValue "66"
+				OnPlayersIn "syn_antirush_wall,kill,,0,-1"
+				OnPlayersIn "!self,Disable,,0,-1"
+			}
+		}
+	}
+}

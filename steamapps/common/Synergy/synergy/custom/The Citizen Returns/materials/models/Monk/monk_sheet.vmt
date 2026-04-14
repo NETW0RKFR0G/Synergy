@@ -1,0 +1,11 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/monk/monk_sheet"
+	"$halflambert" 1
+
+	$detail detail\noise_detail_01
+	$detailscale 6
+	$detailblendfactor .75
+	$detailblendmode 0	
+	
+}

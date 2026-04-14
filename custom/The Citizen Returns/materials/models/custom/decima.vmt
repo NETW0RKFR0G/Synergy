@@ -1,0 +1,21 @@
+"VertexlitGeneric"
+
+{ 
+
+	"$basetexture" "models/custom/decima"
+	"$surfaceprop" "Metal"
+        "$bumpmap" "models/custom\decima_normal"
+	"$envmap" "env_cubemap"
+	"$envmapcontrast" 0.1
+	"$normalmapalphaenvmapmask" 1
+	 "$envmaptint" "[1.0 1.0 1.0]"
+  
+ 	"$detail" "detail\metal_detail_01"
+	"$detailscale" 7
+	"$detailblendfactor" .95
+	"$detailblendmode" 0
+
+
+
+
+ } 

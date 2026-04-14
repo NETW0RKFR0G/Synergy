@@ -1,0 +1,25 @@
+// envmaptint_fix
+"LightmappedGeneric"
+{
+	"$basetexture" "Nature/ci_temporarywall"
+	"$surfaceprop" "concrete"
+	//"$bumpmap" "Nature/rockwall015a_normal"
+	//"$normalmapalphaenvmapmask" 1
+	//"$envmapcontrast" 1
+	//"$envmapsaturation" 1
+	//"$envmaptint" "[ .56 .56 .56 ]"
+	//"$envmap" "env_cubemap"
+	//"$parallaxmap" "Nature/rockwall015a_height"
+	//"$parallaxmapscale" ".3548"
+
+
+	$detail detail\noise_detail_01
+  	$detailscale 10
+  	$detailblendfactor 0.85
+  	$detailblendmode 0
+
+
+//$seamless_scale 0.005
+
+
+}

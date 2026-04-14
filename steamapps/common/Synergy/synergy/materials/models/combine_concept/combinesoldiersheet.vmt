@@ -1,0 +1,12 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "Models/Combine_concept/combinesoldiersheet"
+	"$envmap" "env_cubemap"	
+//	"$bumpmap" "Models/Combine_concept/combinesoldiersheet_normal"
+//	"$normalmapalphaenvmapmask" 1
+	"$envmapcontrast" 1
+	"$envmapmask" "Models/Combine_concept/combinesoldiersheet_mask"
+	"$model" 1
+	"$selfillum" 1
+}
+// Stolen from Missing Information

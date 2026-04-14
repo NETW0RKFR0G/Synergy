@@ -1,0 +1,15 @@
+"LightmappedGeneric"
+
+{ "$basetexture" "citizen2/ci_casinoceiling1" 
+  "$surfaceprop" "tile"
+  "$bumpmap" "citizen2/ci_casinoceiling1normal"
+
+	$detail detail\metal_detail_01
+	$detailscale 5
+	$detailblendfactor 0.65
+	$detailblendmode 0
+
+
+
+
+} 

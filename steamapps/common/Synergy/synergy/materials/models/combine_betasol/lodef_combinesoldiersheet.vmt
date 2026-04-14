@@ -1,0 +1,7 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "Models/Combine_betasol/lodef_combinesoldiersheet"
+	"$envmap" "env_cubemap"
+	"$basealphaenvmapmask" 1
+}
+// Stolen from Missing Information

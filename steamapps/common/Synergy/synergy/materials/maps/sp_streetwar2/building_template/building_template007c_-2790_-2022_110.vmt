@@ -1,0 +1,8 @@
+"patch"
+{
+	"include"		"materials/BUILDING_TEMPLATE/BUILDING_TEMPLATE007C.vmt"
+	"replace"
+	{
+		"$envmap"		"maps/sp_streetwar2/c-2790_-2022_110"
+	}
+}

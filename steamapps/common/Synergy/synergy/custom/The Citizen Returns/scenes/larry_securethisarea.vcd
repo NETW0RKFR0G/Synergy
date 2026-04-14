@@ -1,0 +1,116 @@
+// Choreo version 1
+actor "rebels_larry"
+{
+  channel "wav"
+  {
+    event speak "1"
+    {
+      time 0.073334 2.218277
+      param "npc_larry_securethisarea"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "look"
+  {
+    event lookat "1"
+    {
+      time 0.053333 0.553333
+      param "rebels_1"
+    }
+    event lookat "2"
+    {
+      time 0.566667 1.066667
+      param "rebels_2"
+    }
+    event lookat "3"
+    {
+      time 1.080000 1.580000
+      param "rebels_3"
+    }
+    event lookat "4"
+    {
+      time 1.600000 2.100000
+      param "rebels_4"
+    }
+  }
+  channel "face"
+  {
+    event face "1"
+    {
+      time 0.046667 2.206667
+      param "!player"
+    }
+  }
+  channel "move"
+  {
+  }
+  channel "gesture"
+  {
+    event gesture "1"
+    {
+      time 0.540000 2.813333
+      param "g_present"
+      absolutetags playback_time
+      {
+        "apex" 0.222761
+        "accent" 0.549477
+        "loop" 0.594030
+        "end" 0.742537
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.192308
+        "accent" 0.474359
+        "loop" 0.512821
+        "end" 0.641026
+      }
+      sequenceduration 2.633333
+    }
+  }
+  channel "expression"
+  {
+    event flexanimation "secure"
+    {
+      time 0.033333 2.386666
+      param ""
+      flexanimations samples_use_time
+      {
+        "outer_raiser" combo 
+        {
+          0.1560 1.0000
+        }
+        {
+          0.1560 0.5000
+        }
+        "cheek_raiser" combo 
+        {
+          0.1560 1.0000
+        }
+        {
+          0.1560 0.5000
+        }
+        "dilator" 
+        {
+          0.1560 1.0000
+        }
+        "chin_raiser" 
+        {
+          0.1560 0.7900
+        }
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+}
+fps 60
+snap off

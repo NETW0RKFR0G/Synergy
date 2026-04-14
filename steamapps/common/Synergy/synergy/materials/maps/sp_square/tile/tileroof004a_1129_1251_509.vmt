@@ -1,0 +1,8 @@
+"patch"
+{
+	"include"		"materials/TILE/TILEROOF004A.vmt"
+	"replace"
+	{
+		"$envmap"		"maps/sp_square/c1129_1251_509"
+	}
+}

@@ -1,0 +1,5 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "models/player/sven/test"
+	"$additive" 1
+}

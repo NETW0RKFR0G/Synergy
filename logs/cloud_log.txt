@@ -1,0 +1,23 @@
+
+
+[2026-04-13 12:34:21] Client version: 1773426366
+[2026-04-13 12:34:21] [AppID 7] Starting sync (init,)
+[2026-04-13 12:34:21] [AppID 7] AutoCloud checking local state for user 48263075
+[2026-04-13 12:34:21] [AppID 7] Not running AutoCloud. No config data found
+[2026-04-13 12:34:21] [U:1:48263075] [AppID 7] Init cache request complete
+[2026-04-13 12:34:21] [AppID 7] YldWriteCacheDirectoryToFile - empty vector, deleting 'D:\HL2-SERVERS\The Citizen Return  COOP (DEV)/userdata/48263075/7/remotecache.vdf'
+[2026-04-13 12:34:24] [AppID 7] Starting sync (down,)
+[2026-04-13 12:34:24] [AppID 7] Attempting to sync from local change number '0' to global change number '509' (full)
+[2026-04-13 12:34:24] [AppID 7] Need to download file serverbrowser_hist.vdf
+[2026-04-13 12:34:24] [AppID 7] Need to download file sharedconfig.vdf
+[2026-04-13 12:34:25] [AppID 7] HTTP download for file 'sharedconfig.vdf' from host 'steamcloudtoronto2.blob.core.windows.net', path /cloud/A3/6F/E0/02/7/016_0_09EEAB72_432B4_685.dat, beginning. . .
+[2026-04-13 12:34:25] [AppID 7] HTTP download for file 'serverbrowser_hist.vdf' from host 'steamcloudtoronto2.blob.core.windows.net', path /cloud/A3/6F/E0/02/7/021_2_0DBB5162_38AEA_2350.dat, beginning. . .
+[2026-04-13 12:34:25] [AppID 7] HTTP download for file 'sharedconfig.vdf' from host 'steamcloudtoronto2.blob.core.windows.net' - Success.
+[2026-04-13 12:34:25] [AppID 7] Download OK for file sharedconfig.vdf
+[2026-04-13 12:34:25] [AppID 7] HTTP download for file 'serverbrowser_hist.vdf' from host 'steamcloudtoronto2.blob.core.windows.net' - Success.
+[2026-04-13 12:34:25] [AppID 7] Download OK for file serverbrowser_hist.vdf
+[2026-04-13 12:34:25] [AppID 7] Download complete, result OK
+[2026-04-13 12:34:25] [AppID 7] Successfully synced to ChangeNumber 509
+[2026-04-13 12:34:25] [Roaming Config] OnRemoteStorageSyncedClient() - result OK
+[2026-04-13 12:34:25] [AppID 7] YldWriteCacheDirectoryToFile - saved to 'D:\HL2-SERVERS\The Citizen Return  COOP (DEV)/userdata/48263075/7/remotecache.vdf'
+[2026-04-13 12:35:21] [Roaming Config] PerformSyncCloud - all sync'd up

@@ -1,0 +1,9 @@
+"LightmappedGeneric"
+
+{ "$basetexture" "citizen2/ci_sw2note" 
+  "$surfaceprop" "paper"
+  "$translucent" 1
+
+
+
+} 

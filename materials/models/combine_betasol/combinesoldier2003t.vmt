@@ -1,0 +1,16 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models/Combine_betasol/combinesoldier2003t"
+	"$bumpmap" "Models/Combine_betasol/combinesoldier2003t_normal"
+	"$phong" "1"
+	"$phongexponent" "15"
+	"$phongboost"	"3"
+	"$phongfresnelranges"	"[.09 .5 .5]"
+	"$phongexponenttexture" "models/Combine_soldier/universal_phong"
+	"$phongalbedotint" "1"							
+	"$rimlight" "1"
+	"$rimlightexponent" "20"
+	"$rimlightboost" "1"
+	"$model" "1"
+	"$surfaceprop" "flesh"
+}

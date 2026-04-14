@@ -1,0 +1,13 @@
+vertexlitgeneric
+{
+
+$baseTexture "models\player\pomka.sc\l4d\louis_head"
+$bumpmap "models\player\pomka.sc\l4d/louis_head_normal"
+$phong 1
+$phongboost "1.5"
+$phongexponent 7
+$phongtint "[.80 .80 1]"
+$phongfresnelranges "[.3 .65 1]"
+$nodecal 1
+$ambientocclusion 1
+}

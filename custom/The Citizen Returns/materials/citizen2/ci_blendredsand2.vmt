@@ -1,0 +1,10 @@
+
+"WorldVertexTransition"
+{
+"$basetexture" "concrete/concretefloor011a"
+"$basetexture2" "citizen2/ci_redsand2"
+"%tooltexture" "citizen2/ci_redsand2"
+"$basetexturetransform" "center .5 .5 scale 1 1 rotate 0 translate 0 0"
+"$basetexturetransform2" "center .5 .5 scale 1 1 rotate 0 translate 0 0"
+"$bumpmap2" "citizen2/ci_redsand2_normal"
+} 

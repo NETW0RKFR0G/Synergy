@@ -1,0 +1,110 @@
+// Choreo version 1
+actor "larry"
+{
+  channel "wav"
+  {
+    event speak "haveyou"
+    {
+      time 0.986666 3.366711
+      param "npc_larry_drivenwithtrailerbefore"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "faceanimation"
+  {
+    event flexanimation "flexanim1"
+    {
+      time 2.066667 3.746667
+      param ""
+      flexanimations samples_use_time
+      {
+        "lid_tightener" combo 
+        {
+          0.1660 1.0000
+        }
+        {
+          0.1660 0.5000
+        }
+        "outer_raiser" combo 
+        {
+          0.1660 1.0000
+        }
+        {
+          0.1660 0.5000
+        }
+        "cheek_raiser" combo 
+        {
+          0.1660 0.6300
+        }
+        {
+          0.1660 0.5000
+        }
+        "smile" 
+        {
+          0.1660 0.2400
+        }
+        "head_tilt" range 15.0 -15.0 
+        {
+          0.1660 1.0000
+        }
+      }
+    }
+  }
+  channel "lookat"
+  {
+    event lookat "atairboat"
+    {
+      time 0.026666 1.000000
+      param "airboat"
+    }
+    event lookat "player"
+    {
+      time 1.013334 3.413334
+      param "!player"
+    }
+  }
+  channel "faceat"
+  {
+    event face "faceboat"
+    {
+      time 0.026667 3.420000
+      param "airboat"
+    }
+  }
+  channel "gesture"
+  {
+    event gesture "gest1"
+    {
+      time 1.740000 3.773333
+      param "G_what"
+      absolutetags playback_time
+      {
+        "apex" 0.133333
+        "accent" 0.200000
+        "loop" 0.366667
+        "end" 0.533333
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.133333
+        "accent" 0.200000
+        "loop" 0.366667
+        "end" 0.533333
+      }
+      sequenceduration 2.033333
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off

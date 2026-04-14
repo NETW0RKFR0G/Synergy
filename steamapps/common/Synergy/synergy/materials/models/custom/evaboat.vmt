@@ -1,0 +1,17 @@
+"VertexlitGeneric"
+
+{ 
+
+  "$basetexture" "models/custom/evaboat" 
+  "$surfaceprop" "plastic"
+  "$bumpmap" "models/custom/evaboat_normal"
+  "$envmap" "env_cubemap"
+  "$normalmapalphaenvmapmask" 1
+
+	$detail detail\metal_detail_01
+	$detailtexturetransform "center .5 .5 scale 8 4 rotate 0 translate 0 0" 
+	$detailblendfactor .75
+	$detailblendmode 0
+
+
+} 

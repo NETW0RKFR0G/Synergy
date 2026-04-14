@@ -1,0 +1,5 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/player/sven/BWAID"
+	"$translucent" 1
+}

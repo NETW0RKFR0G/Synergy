@@ -1,0 +1,95 @@
+// Choreo version 1
+actor "obrien"
+{
+  channel "wav"
+  {
+    event speak "obrien_shouldbe"
+    {
+      time 0.106667 2.143447
+      param "npc_obrien_shouldbe"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "facetowards"
+  {
+    event face "fp"
+    {
+      time 0.035088 2.394737
+      param "!player"
+    }
+  }
+  channel "lookat"
+  {
+    event lookat "lp"
+    {
+      time 0.394737 2.587720
+      param "!player"
+    }
+  }
+  channel "gesture"
+  {
+    event gesture "gest1"
+    {
+      time 0.666667 2.300000
+      param "G_puncuate"
+      absolutetags playback_time
+      {
+        "apex" 0.250000
+        "accent" 0.416667
+        "loop" 0.562500
+        "end" 0.729167
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.250000
+        "accent" 0.416667
+        "loop" 0.562500
+        "end" 0.729167
+      }
+      sequenceduration 1.633333
+    }
+  }
+  channel "faceanimations"
+  {
+    event flexanimation "flex1"
+    {
+      time 0.798246 2.701755
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "lid_raiser" combo 
+        {
+          0.1680 1.0000
+        }
+        {
+          0.1680 0.5000
+        }
+        "outer_raiser" combo 
+        {
+          0.1680 1.0000
+        }
+        {
+          0.1680 0.5000
+        }
+        "smile" 
+        {
+          0.1680 0.4400
+        }
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "104"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

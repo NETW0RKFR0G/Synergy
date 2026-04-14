@@ -1,0 +1,12 @@
+"LightmappedGeneric"
+
+{ "$basetexture" "citizen2/ci_floor3" 
+  "$surfaceprop" "tile"
+  "$bumpmap" "citizen2/ci_floor3_normal"
+
+	$detail detail\noise_detail_01
+	$detailscale 10
+	$detailblendfactor .85
+	$detailblendmode 0
+
+} 

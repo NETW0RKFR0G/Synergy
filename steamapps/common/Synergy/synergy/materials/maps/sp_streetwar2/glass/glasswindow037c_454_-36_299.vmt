@@ -1,0 +1,8 @@
+"patch"
+{
+	"include"		"materials/GLASS/GLASSWINDOW037C.vmt"
+	"replace"
+	{
+		"$envmap"		"maps/sp_streetwar2/c454_-36_299"
+	}
+}

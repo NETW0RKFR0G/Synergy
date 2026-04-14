@@ -1,0 +1,163 @@
+// Choreo version 1
+actor "left4dead"
+{
+  channel "lookat"
+  {
+    event lookat "lookatplayer"
+    {
+      time -0.626667 -0.126667
+      param "!player"
+    }
+    event lookat "lookatplayer"
+    {
+      time 0.014268 4.683994
+      param "!player"
+    }
+  }
+  channel "wav"
+  {
+    event speak "left4dead_thanks"
+    {
+      time 0.015152 4.214993
+      param "npc_left4dead_thanks"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "eyes"
+  {
+    event flexanimation "eyes1"
+    {
+      time -0.555556 -0.055556
+      param ""
+    }
+    event flexanimation "face1"
+    {
+      time 0.181818 0.984848
+      param ""
+      flexanimations samples_use_time
+      {
+        "lid_raiser" combo 
+        {
+          0.1980 0.6600
+        }
+        {
+          0.1980 0.5000
+        }
+        "outer_raiser" combo 
+        {
+          0.1980 0.8400
+        }
+        {
+          0.1980 0.5000
+        }
+        "jaw_clencher" 
+        {
+          0.1980 0.6600
+        }
+        "smile" 
+        {
+          0.1980 0.6400
+        }
+        "head_tilt" range 15.0 -15.0 
+        {
+          0.1980 0.2000
+        }
+      }
+    }
+    event flexanimation "face2"
+    {
+      time 1.424242 2.348485
+      param ""
+      flexanimations samples_use_time
+      {
+        "outer_raiser" combo 
+        {
+          0.2080 1.0000
+        }
+        {
+          0.2080 0.5000
+        }
+        "cheek_raiser" combo 
+        {
+          0.2080 0.7600
+        }
+        {
+          0.2080 0.5000
+        }
+        "wrinkler" 
+        {
+          0.2080 0.0000
+        }
+        "head_updown" range 15.0 -15.0 
+        {
+          0.2080 0.0000
+        }
+        "head_tilt" range 15.0 -15.0 
+        {
+          0.2080 1.0000
+        }
+        "eyes_updown" range 30.0 -30.0 
+        {
+          0.2080 0.0000
+        }
+      }
+    }
+    event flexanimation "face3"
+    {
+      time 2.686868 3.974747
+      param ""
+      flexanimations samples_use_time
+      {
+        "lid_tightener" combo 
+        {
+          0.1700 1.0000
+        }
+        {
+          0.1700 0.5000
+        }
+        "lowerer" combo 
+        {
+          0.1700 0.8900
+        }
+        {
+          0.1700 0.5000
+        }
+        "dilator" 
+        {
+          0.1700 1.0000
+        }
+        "chin_raiser" 
+        {
+          0.1700 0.7600
+        }
+        "part" combo 
+        {
+          0.1700 0.6600
+        }
+        {
+          0.1700 0.5000
+        }
+        "presser" 
+        {
+          0.1700 0.1500
+        }
+      }
+    }
+  }
+  channel "gesture"
+  {
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "130"
+  "ExpressionTool" "100"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+  "GestureTool" "100"
+}
+fps 60
+snap off

@@ -1,0 +1,211 @@
+// Choreo version 1
+actor "rebel_argento"
+{
+  channel "WAV"
+  {
+    event speak "1"
+    {
+      time 0.106667 12.204626
+      param "npc_argento_patrolcoming"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Facing"
+  {
+    event face "1"
+    {
+      time 7.609196 9.775863
+      param "looktarget_garagedoor"
+    }
+    event face "2"
+    {
+      time 3.137931 6.729885
+      param "looktarget_laptop"
+    }
+    event face "1"
+    {
+      time 0.068965 2.982759
+      param "looktarget_garagedoor"
+    }
+    event face "3"
+    {
+      time 10.264368 12.051724
+      param "!player"
+    }
+  }
+  channel "Looking at"
+  {
+    event lookat "1"
+    {
+      time 0.057471 0.557471
+      param "rebel_sarah"
+    }
+    event lookat "2"
+    {
+      time 0.655172 1.155172
+      param "rebel_soldier"
+    }
+    event lookat "3"
+    {
+      time 1.287356 1.971264
+      param "!player"
+    }
+    event lookat "4"
+    {
+      time 2.126437 2.626437
+      param "rebel_medic"
+    }
+    event lookat "5"
+    {
+      time 2.816092 6.787357
+      param "looktarget_laptop"
+    }
+    event lookat "6"
+    {
+      time 10.011495 12.166667
+      param "!player"
+    }
+  }
+  channel "Movement"
+  {
+  }
+  channel "Gestures"
+  {
+    event gesture "1"
+    {
+      time 0.103449 2.336782
+      param "G_noway_small"
+      absolutetags playback_time
+      {
+        "apex" 0.151515
+        "accent" 0.287879
+        "loop" 0.454545
+        "end" 0.575758
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.151515
+        "accent" 0.287879
+        "loop" 0.454545
+        "end" 0.575758
+      }
+      sequenceduration 2.233333
+    }
+    event gesture "2"
+    {
+      time 2.022989 3.656322
+      param "g_righthand_flick"
+      absolutetags playback_time
+      {
+        "apex" 0.208333
+        "accent" 0.354167
+        "loop" 0.520833
+        "end" 0.625000
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.208333
+        "accent" 0.354167
+        "loop" 0.520833
+        "end" 0.625000
+      }
+      sequenceduration 1.633333
+    }
+    event gesture "3"
+    {
+      time 3.091954 5.391954
+      param "G_righthandpoint"
+      absolutetags playback_time
+      {
+        "apex" 0.205882
+        "accent" 0.441176
+        "loop" 0.470588
+        "end" 0.676471
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.205882
+        "accent" 0.441176
+        "loop" 0.470588
+        "end" 0.676471
+      }
+      sequenceduration 2.300000
+    }
+    event gesture "4"
+    {
+      time 5.137931 7.104598
+      param "G_medpuct_mid"
+      absolutetags playback_time
+      {
+        "apex" 0.137931
+        "accent" 0.258621
+        "loop" 0.396552
+        "end" 0.517241
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.137931
+        "accent" 0.258621
+        "loop" 0.396552
+        "end" 0.517241
+      }
+      sequenceduration 1.966667
+    }
+    event gesture "5"
+    {
+      time 6.551724 9.185058
+      param "G_righthandroll"
+      absolutetags playback_time
+      {
+        "apex" 0.282051
+        "accent" 0.397436
+        "loop" 0.512821
+        "end" 0.641026
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.282051
+        "accent" 0.397436
+        "loop" 0.512821
+        "end" 0.641026
+      }
+      sequenceduration 2.633333
+    }
+    event gesture "6"
+    {
+      time 10.172415 12.139082
+      param "g_plead_01"
+      absolutetags playback_time
+      {
+        "apex" 0.275862
+        "accent" 0.448276
+        "loop" 0.689655
+        "end" 0.862069
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.275862
+        "accent" 0.448276
+        "loop" 0.689655
+        "end" 0.862069
+      }
+      sequenceduration 1.966667
+    }
+  }
+  channel "Expressions"
+  {
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "58"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off

@@ -1,0 +1,8 @@
+"patch"
+{
+	"include"		"materials/VEHICLE/METALTRAINGLASS002A.vmt"
+	"replace"
+	{
+		"$envmap"		"maps/sp_streetwar/c-2384_-104_88"
+	}
+}

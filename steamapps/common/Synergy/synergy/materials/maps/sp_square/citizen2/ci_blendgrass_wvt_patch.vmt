@@ -1,0 +1,9 @@
+"LightmappedGeneric"
+{
+	"$basetexture"		"citizen2\ci_blendgrass"
+	"$surfaceprop"		"grass"
+	"$detail"		"detail\noise_detail_01"
+	"$detailscale"		"4"
+	"$detailblendfactor"		"0.650000"
+	"$detailblendmode"		"0"
+}

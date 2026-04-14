@@ -1,0 +1,12 @@
+"LightmappedGeneric"
+
+{ "$basetexture" "citizen2/ci_points" 
+  "$surfaceprop" "rubber"
+  "$bumpmap" "citizen2/ci_points_normal"
+
+	$detail detail\noise_detail_01
+	$detailscale 2
+	$detailblendfactor .25
+	$detailblendmode 0
+
+} 

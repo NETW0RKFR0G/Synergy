@@ -1,0 +1,26 @@
+// Choreo version 1
+actor "guard"
+{
+  channel "moveto"
+  {
+    event moveto "guard"
+    {
+      time 0.020000 1.673333
+      param "center"
+      param2 "Run"
+      distancetotarget 17.00
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

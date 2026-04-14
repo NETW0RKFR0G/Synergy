@@ -1,0 +1,11 @@
+"patch"
+{
+	"include"		"materials/METAL/METALROOF008A_C17.vmt"
+	"replace"
+	{
+		"LightmappedGeneric_DX9"
+		{
+			"$envmap"		"maps/sp_precasino/c-3088_-1088_-420"
+		}
+	}
+}

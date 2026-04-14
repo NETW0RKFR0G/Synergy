@@ -1,0 +1,70 @@
+// Choreo version 1
+actor "anne"
+{
+  channel "WAV"
+  {
+    event speak "thisisntgood"
+    {
+      time 0.240000 2.422676
+      param "npc_anne_thisisntgood"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Faceanimation"
+  {
+    event flexanimation "1"
+    {
+      time 0.200000 2.646666
+      param ""
+      flexanimations samples_use_time
+      {
+        "lid_raiser" combo 
+        {
+          0.1480 1.0000
+        }
+        {
+          0.1480 0.5000
+        }
+        "inner_raiser" combo 
+        {
+          0.1480 1.0000
+        }
+        {
+          0.1480 0.5000
+        }
+        "wrinkler" 
+        {
+          0.1480 0.6400
+        }
+        "dilator" 
+        {
+          0.1480 1.0000
+        }
+        "corner_depressor" combo 
+        {
+          0.1480 0.4300
+        }
+        {
+          0.1480 0.5000
+        }
+        "head_tilt" range 15.0 -15.0 
+        {
+          0.1480 0.0000
+        }
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "ExpressionTool" "100"
+  "SceneRampTool" "100"
+  "RampTool" "100"
+  "GestureTool" "100"
+}
+fps 60
+snap off

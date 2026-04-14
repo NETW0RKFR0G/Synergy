@@ -1,0 +1,108 @@
+bm_c1a1d
+{
+	console
+	{
+		sv_turbophysics "0"
+	}
+	entity
+	{
+//TEMP PLACEHOLDERS
+		edit {classname "prop_flare" values {classname "prop_physics" model "models/props_junk/flare.mdl"} }
+		edit {classname "item_weapon_crowbar" values {classname "weapon_crowbar"} }
+		edit {classname "item_weapon_frag" values {classname "weapon_frag"} }
+		edit {classname "fog_volume" values {classname "func_smokevolume"} }
+//--
+//Block Backtracking
+		create {classname "prop_dynamic" origin "-3776 -2128 -1120"
+			values
+			{
+				model "models/synergy/tools/syn_transition.mdl"
+				angles "0 180 0"
+				solid "6"
+				DisableShadows "1"
+			}
+		}
+//Remove init items
+		edit {targetname "new_game_spawn" values {targetname "syn_disableIO_new_game_spawn"} }
+		create {classname "info_player_equip"
+			values
+			{
+				targetname "syn_equipmenet_base"
+				item_suit "1"
+				weapon_crowbar "1"
+					ammo_pistol "18"
+				weapon_frag "1"
+				ResponseContext "weapon_glock"
+			}
+		}
+
+//Moveplayers on vator
+		//create {classname "trigger_once" origin "-5120 -2126 -1324"
+		//	values
+		//	{
+		//		model "*48"
+		//		spawnflags "1"
+		//		StartDisabled "1"
+		//		targetname "syn_coopmoveplayers_lift"
+		//		OnTrigger "syn_spawn_manager,MovePlayers,0,1,-1"
+		//	}
+		//}
+		create {classname "trigger_coop" origin "-5128 -2110 -1380"
+			values
+			{
+				targetname "syn_coopmoveplayers_lift"
+				model "*7"
+				spawnflags "1"
+				startdisabled "0"
+				target "syn_cooptarg_01"
+			}
+		}
+		create {classname "info_target" origin "-5115 -2040 -1380" values {targetname "syn_cooptarg_01" startdisabled "0" angles "0 -90 0" parentname "c1a1c_lift_1"} }
+		
+		delete {classname "info_player_start"}
+		create {classname "info_spawn_manager" values {targetname "syn_spawn_manager"} }
+		create {classname "info_player_coop" origin "-3940 -1823 -1075" values {targetname "syn_spawnpoint_00" startdisabled "0" angles "0 180 0"} }
+		create {classname "info_player_coop" origin "-5115 -2040 -1380" values {targetname "syn_spawnpoint_01" startdisabled "1" angles "0 -90 0" parentname "c1a1c_lift_1"} }
+
+//Dont restart of someone falls
+		delete {targetname "c1a1c_loadsaved"}
+		delete {targetname "c1a1d_loadsaved"}
+
+//Don't let players skip ahead down lift
+		create {classname "trigger_hurt" origin "-5112 -3036 -3232"
+			values
+			{
+				model "*51"
+				spawnflags "1"
+				targetname "syn_antiskip_hurt"
+				damage "1000"
+				damagetype "32"//fall
+				nodmgforce "1"
+			}
+		}
+		create {classname "logic_auto"
+			values
+			{
+				spawnflags "1"
+				OnMapSpawn "c1a1c_lift_button,AddOutput,OnPressed syn_antiskip_hurt:Disable::50:-1,0,-1"
+				//OnMapSpawn "c1a1c_lift_button,AddOutput,OnPressed syn_coopmoveplayers_lift:Enable::8:-1,0,-1"
+				OnMapSpawn "c1a1c_lift_button,AddOutput,OnPressed syn_coopmoveplayers_lift:TeleportPlayersNotTouching::8:-1,0,-1"
+				OnMapSpawn "c1a1c_lift_button,AddOutput,OnPressed syn_spawn_manager:SetCheckPoint:syn_spawnpoint_01:0:1,0,-1"
+			}
+		}
+
+//Kill those who fall
+		create {classname "trigger_hurt" origin "-3456 -4992 -4720"
+			values
+			{
+				model "*26"
+				spawnflags "1"
+				damage "1000"
+				damagetype "32"//fall
+				nodmgforce "1"
+			}
+		}
+
+		create {classname "logic_relay" values {targetname "travis_func_tester"} }
+	}
+}

@@ -1,0 +1,40 @@
+VERSION 1.0
+DESCRIPTION INFO_OPTIONS
+{
+	"mp_decals"
+	{
+		"#Valve_Multiplayer_Decal_Limit"
+		{ NUMBER 0 4096 }
+		{ "1024" }
+	}
+	"fps_max"
+	{
+		"Limit FPS"
+		{ NUMBER 30 300 }
+		{ "300" }
+	}
+	"dsp_enhance_stereo"
+	{
+		"Enhanced Stereo"
+		{ BOOL }
+		{ "0" }
+	}
+	"contentloader_custom_folder_enable"
+	{
+		"Enable Synergy 'synergy/custom' Folder"
+		{ BOOL }
+		{ "0" }
+	}
+	"menu_background_enable"
+	{
+		"Load Random Background Maps on Launch"
+		{ BOOL }
+		{ "0" }
+	}
+	"map_list_supported_only"
+	{
+		"List unsupported maps in the 'map*' command"
+		{ BOOL }
+		{ "0" }
+	}
+}

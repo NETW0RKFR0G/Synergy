@@ -1,0 +1,17 @@
+"LightmappedGeneric"
+
+{ "$basetexture" "citizen2/ci_furniture4" 
+  "$surfaceprop" "wood"
+  "$bumpmap" "citizen2/ci_furniture4_normal"
+  "$envmap" "env_cubemap"
+  "$normalmapalphaenvmapmask" 1
+
+$detail detail\metal_detail_01
+$detailtexturetransform "center .5 .5 scale 2 1 rotate 0 translate 0 0" 
+//$detailscale 4
+$detailblendfactor 0.55
+$detailblendmode 0
+
+
+
+} 

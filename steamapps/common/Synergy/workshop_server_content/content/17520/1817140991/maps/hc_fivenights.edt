@@ -1,0 +1,42 @@
+hc_fivenights
+{
+	console
+	{
+		sv_turbophysics "0"
+		rebuildents "2"
+	}
+	entity
+	{
+		delete {classname "point_clientcommand"}
+		delete {classname "point_servercommand"}
+		delete {classname "item_suit"}
+		edit {classname "prop_flare" values {classname "prop_physics" model "models/props_junk/flare.mdl"} }
+		edit {classname "item_weapon_crowbar" values {classname "weapon_crowbar" RespawnCount "-1"} }
+		edit {classname "item_weapon_frag" values {classname "weapon_frag"} }
+		edit {classname "item_weapon_357" values {classname "weapon_357"} }
+		edit {classname "fog_volume" values {classname "func_smokevolume"} }
+		edit {classname "item_weapon_shotgun" values {classname "weapon_shotgun"} }
+		edit {classname "item_ammo_shotgun" values {classname "item_box_buckshot"} }
+		edit {classname "item_ammo_glock" values {classname "item_ammo_pistol"} }
+		edit {classname "npc_gargantua" values {classname "npc_bmsgargantua"} }
+		edit {classname "env_message" values {spawnflags "2"} }
+		create {classname "info_spawn_manager" values {targetname "syn_spawn_manager"} }
+		create {classname "logic_auto"
+			values
+			{
+				spawnflags "1"
+			}
+		}
+		create {classname "game_end" values {targetname "endgame"} }
+		create {classname "info_player_equip"
+			values
+			{
+				targetname "syn_equipment_base"
+				item_suit "1"
+			}
+		}
+		
+		delete {classname "info_player_start"}
+		create {classname "info_player_coop" origin "512 2244 60" values {targetname "syn_spawnpoint_00" startdisabled "0" angles "0 0 0"} }
+	}
+}

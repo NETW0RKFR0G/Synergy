@@ -1,0 +1,128 @@
+bm_c1a2b
+{
+	console
+	{
+		sv_turbophysics "0"
+	}
+	entity
+	{
+//TEMP PLACEHOLDERS
+		edit {classname "prop_flare" values {classname "prop_physics" model "models/props_junk/flare.mdl"} }
+		edit {classname "item_weapon_crowbar" values {classname "weapon_crowbar"} }
+		edit {classname "item_weapon_frag" values {classname "weapon_frag"} }
+		edit {classname "item_weapon_357" values {classname "weapon_357"} }
+		edit {classname "fog_volume" values {classname "func_smokevolume"} }
+//--
+//Block Backtracking
+		create {classname "prop_dynamic" origin "-2433 1000 -32"
+			values
+			{
+				model "models/synergy/tools/syn_transition.mdl"
+				//angles "0 0 0"
+				solid "6"
+				DisableShadows "1"
+			}
+		}
+
+		delete {classname "item_suit"}
+		create {classname "info_player_equip"
+			values
+			{
+				targetname "syn_equipmenet_base"
+				item_suit "1"
+				weapon_crowbar "1"
+					ammo_pistol "18"
+				weapon_frag "1"
+				ResponseContext "weapon_glock"
+			}
+		}
+
+//If a player found the 357 last level, enable it in the spawn equip for everyone.
+		create {classname "info_player_equip"
+			values
+			{
+				targetname "syn_equipmenet_357"
+				StartDisabled "1"
+				weapon_357 "1"
+					ammo_357 "6"
+			}
+		}
+		create {classname "env_global"
+			values
+			{
+				//initialstate "0"
+				targetname "syn_global_357"
+				globalstate "syn_357_found"
+			}
+		}
+		create {classname "logic_auto"
+			values
+			{
+				spawnflags "1"
+				globalstate "syn_357_found"
+				OnMapSpawn "syn_equipmenet_357,Enable,-1,0,-1"
+				OnMapSpawn "syn_global_357,TurnOn,,1,-1"
+			}
+		}
+
+//end wait 1
+		create {classname "trigger_coop" origin "296 524 334"
+			values
+			{
+				model "*78"
+				angles "0 0 343"
+				spawnflags "1"
+				targetname "syn_antirush_coop"
+				CountType "1"
+				UseHUD "1"
+				PlayerValue "66"
+				OnPlayersIn "syn_antirush_wall_c1a2b,Kill,,1,1"
+				OnPlayersIn "syn_antirush_coop2,Disable,,0,-1"
+				//OnPlayersOut "syn_antirush_coop2,Enable,,0,-1"
+				OnPlayersIn "!self,Disable,,1,1"
+			}
+		}
+		create {classname "prop_dynamic" origin "16 640 671.98"
+			values
+			{
+				model "models/synergy/tools/syn_transition.mdl"
+				angles "0 270 270"
+				solid "6"
+				DisableShadows "1"
+				targetname "syn_antirush_wall_c1a2b"
+			}
+		}
+
+//end wait 2
+		create {classname "trigger_coop" origin "-316 92 492"
+			values
+			{
+				model "*15"
+				spawnflags "1"
+				targetname "syn_antirush_coop2"
+				CountType "1"
+				UseHUD "1"
+				PlayerValue "66"
+				OnPlayersIn "syn_antirush_wall2_c1a2b,Kill,,1,1"
+				OnPlayersIn "syn_antirush_coop,Disable,,1,1"
+				//OnPlayersOut "syn_antirush_coop,Enable,,1,1"
+				OnPlayersIn "!self,Disable,,1,1"
+			}
+		}
+		create {classname "prop_dynamic" origin "-320 -32 424"
+			values
+			{
+				model "models/synergy/tools/syn_transition.mdl"
+				angles "0 90 0"
+				solid "6"
+				DisableShadows "1"
+				targetname "syn_antirush_wall2_c1a2b"
+			}
+		}
+		edit {targetname "SCI04" values {baseclass "npc_citizen"} }
+
+		create {classname "ambient_generic" values {message "vo\c1a2a\YouFirst\grd02_Iheardscreams01.wav"} }
+		create {classname "ambient_generic" values {message "vo\c1a2a\YouFirst\grd02_youfirst01.wav"} }
+		create {classname "logic_relay" values {targetname "travis_func_tester"} }
+	}
+}

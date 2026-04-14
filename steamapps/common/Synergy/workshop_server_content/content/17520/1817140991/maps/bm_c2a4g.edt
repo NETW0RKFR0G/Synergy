@@ -1,0 +1,65 @@
+bm_c2a4g
+{
+	console
+	{
+		sv_turbophysics "0"
+	}
+	entity
+	{
+//TEMP PLACEHOLDERS
+		edit {classname "prop_flare" values {classname "prop_physics" model "models/props_junk/flare.mdl"} }
+		edit {classname "item_weapon_crowbar" values {classname "weapon_crowbar"} }
+		edit {classname "item_weapon_frag" values {classname "weapon_frag"} }
+		edit {classname "item_weapon_357" values {classname "weapon_357"} }
+		edit {classname "fog_volume" values {classname "func_smokevolume"} }
+		edit {classname "item_weapon_shotgun" values {classname "weapon_shotgun"} }
+		edit {classname "item_ammo_shotgun" values {classname "item_box_buckshot"} }
+		edit {classname "item_grenade_mp5" values {classname "item_ammo_smg1_grenade"} }
+		edit {classname "func_conveyor_bms" values {classname "func_conveyor" spawnflags "0"} }
+		edit {classname "npc_gargantua" values {classname "npc_bmsgargantua"} }
+//Starting Equips
+		create {classname "info_player_equip"
+			values
+			{
+				targetname "syn_equipment_base"
+				item_suit "1"
+				weapon_crowbar "1"
+					ammo_pistol "18"
+				weapon_frag "1"
+				weapon_357 "1"
+					ammo_357 "6"
+					ammo_smg1 "30"
+				weapon_crossbow "1"
+					ammo_xbowbolt "5"
+				weapon_shotgun "1"
+					ammo_buckshot "12"
+				ResponseContext "weapon_mp5 weapon_glock weapon_satchel"
+			}
+		}
+		create {classname "info_player_equip" values {targetname "gpickup" startdisabled "1" ResponseContext "weapon_tau"} }
+		
+		delete {targetname "weapons"}
+		delete {targetname "suit"}
+		delete {targetname "ammo"}
+		delete {targetname "new_game_spawn"}
+		delete {classname "info_player_start"}
+		create {classname "info_spawn_manager" values {targetname "syn_spawn_manager"} }
+		create {classname "info_player_coop" origin "1835 1687 20" values {targetname "syn_spawnpoint_00" startdisabled "0" angles "0 277.5 0"} }
+		create {classname "syn_transition_wall" origin "1675 2070 -300" values {solid "6" targetname "syn_backtrack" angles "0 0 0"} }
+		create {classname "logic_auto"
+			values
+			{
+				spawnflags "1"
+				OnMapSpawn "trigger_changelevel,Enable,,1,-1"
+				OnMapSpawn "pri_f_ptcle_r2,AddOutput,OnTrigger syn_gloset:TurnOn::0:-1,0,-1"
+				OnMapSpawn "weapon_tau,AddOutput,OnPlayerPickup gpickup:Enable::0:-1,1,-1"
+				OnMapSpawn "weapon_tau,AddOutput,OnPlayerPickup gpickup:EquipAllPlayers::0.1:1,1,-1"
+			}
+		}
+		delete {classname "trigger_once" origin "387.5 2377 -58.5"}
+		delete {classname "trigger_changelevel"}
+		create {classname "trigger_changelevel" values {targetname "fromc2a4fedt" map "bm_c2a4fedt" spawnflags "6" startdisabled "1" landmark "bm_c2a4f_bm_c2a4g"} }
+		create {classname "trigger_changelevel" origin "376 2400 12" values {targetname "toc2a4fedt" model "*19" map "bm_c2a4fedt" landmark "bm_c2a4g_bm_c2a4f_2"} }
+		create {classname "env_global" values {targetname "syn_gloset" globalstate "syn_transition" initialstate "0"} }
+	}
+}

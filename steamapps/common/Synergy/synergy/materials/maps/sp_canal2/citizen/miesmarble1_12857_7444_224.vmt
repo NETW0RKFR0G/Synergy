@@ -1,0 +1,8 @@
+"patch"
+{
+	"include"		"materials/CITIZEN/MIESMARBLE1.vmt"
+	"replace"
+	{
+		"$envmap"		"maps/sp_canal2/c12857_7444_224"
+	}
+}

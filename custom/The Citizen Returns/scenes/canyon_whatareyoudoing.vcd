@@ -1,0 +1,182 @@
+// Choreo version 1
+actor "larryexample"
+{
+  channel "wav"
+  {
+    event speak "1"
+    {
+      time 0.086666 1.298457
+      param "npc_larry_canyon_whatareyoudoing"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "getdownthere"
+    {
+      time 2.506667 3.568527
+      param "npc_larry_canyon_getdownthere"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "facial expressions"
+  {
+    event flexanimation "flex"
+    {
+      time 0.073334 2.653334
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "lid_raiser" combo 
+        {
+          0.0860 1.0000
+          0.3160 0.0003
+        }
+        {
+          0.0860 0.5000
+          0.3160 0.5000
+        }
+        "inner_raiser" combo 
+        {
+          0.0860 0.3100
+        }
+        {
+          0.0860 0.5000
+        }
+        "outer_raiser" combo 
+        {
+          0.3160 1.0000
+        }
+        {
+          0.3160 0.5000
+        }
+        "lowerer" combo 
+        {
+          0.0860 1.0000
+          0.3160 0.0003
+        }
+        {
+          0.0860 0.5000
+          0.3160 0.5000
+        }
+        "corner_depressor" combo 
+        {
+          0.0860 0.8000
+          0.3160 0.0002
+        }
+        {
+          0.0860 0.5000
+          0.3160 0.5000
+        }
+        "part" combo 
+        {
+          0.0860 1.0000
+          0.3160 0.0003
+        }
+        {
+          0.0860 0.5000
+          0.3160 0.5000
+        }
+        "head_updown" range 15.0 -15.0 
+        {
+          0.0860 0.2900
+          0.3160 0.4999
+        }
+      }
+    }
+  }
+  channel "gesture"
+  {
+    event gesture "gest1"
+    {
+      time 2.333334 3.966667
+      param "g_point"
+      absolutetags playback_time
+      {
+        "apex" 0.250000
+        "accent" 0.416667
+        "loop" 0.562500
+        "end" 0.729167
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.147059
+        "accent" 0.367647
+        "loop" 0.588235
+        "end" 0.602941
+      }
+      sequenceduration 2.300000
+    }
+    event gesture "gest0"
+    {
+      time 0.046667 2.280000
+      param "G_noway_big"
+      absolutetags playback_time
+      {
+        "apex" 0.151515
+        "accent" 0.272727
+        "loop" 0.424242
+        "end" 0.575758
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.151515
+        "accent" 0.272727
+        "loop" 0.424242
+        "end" 0.575758
+      }
+      sequenceduration 2.233333
+    }
+  }
+  channel "lookat"
+  {
+    event lookat "atplayer"
+    {
+      time 0.033333 2.186667
+      param "!player"
+    }
+    event lookat "at target"
+    {
+      time 2.246667 6.013333
+      param "trapdoor_target"
+    }
+  }
+  channel "face"
+  {
+    event face "face player"
+    {
+      time 0.033334 1.026668
+      param "!player"
+    }
+    event face "face target"
+    {
+      time 1.046666 6.026666
+      param "trapdoor_target"
+    }
+  }
+}
+
+actor "rebel1example"
+{
+  channel "face"
+  {
+    event face "faceplayer"
+    {
+      time 0.060000 6.053333
+      param "!player"
+    }
+  }
+}
+
+scalesettings
+{
+  "SceneRampTool" "100"
+  "GestureTool" "100"
+  "ExpressionTool" "100"
+  "RampTool" "100"
+  "CChoreoView" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

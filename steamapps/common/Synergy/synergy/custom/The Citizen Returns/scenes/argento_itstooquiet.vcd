@@ -1,0 +1,71 @@
+// Choreo version 1
+actor "rebel_argento"
+{
+  channel "WAV"
+  {
+    event speak "1"
+    {
+      time 0.086667 2.559093
+      param "npc_argento_itstooquiet"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Facing"
+  {
+  }
+  channel "Looking at"
+  {
+    event lookat "1"
+    {
+      time 0.073333 0.793333
+      param "looktarget_quiet1"
+    }
+    event lookat "2"
+    {
+      time 1.206667 2.280000
+      param "looktarget_quiet2"
+    }
+  }
+  channel "Movement"
+  {
+  }
+  channel "Gestures"
+  {
+    event gesture "1"
+    {
+      time 0.033333 2.546666
+      param "hg_headshake"
+      absolutetags playback_time
+      {
+        "apex" 0.111406
+        "loop" 0.281167
+        "extreme" 0.657825
+        "end" 0.880637
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.208333
+        "loop" 0.270833
+        "extreme" 0.416667
+        "end" 0.625000
+      }
+      sequenceduration 1.633333
+    }
+  }
+  channel "Expressions"
+  {
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off

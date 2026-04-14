@@ -1,0 +1,8 @@
+"patch"
+{
+	"include"		"materials/TILE/TILEFLOOR020A.vmt"
+	"replace"
+	{
+		"$envmap"		"maps/sp_intro/c-678_-3339_-1936"
+	}
+}

@@ -1,0 +1,8 @@
+"patch"
+{
+	"include"		"materials/CITIZEN2/CI_BANKTABLE.vmt"
+	"replace"
+	{
+		"$envmap"		"maps/sp_streetwar3/c229_182_-216"
+	}
+}

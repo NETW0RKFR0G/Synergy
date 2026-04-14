@@ -1,0 +1,67 @@
+"Refract"
+{
+	"$surfaceprop" "water"	
+	"$abovewater" 1
+	"$bluramount" "1"
+        "$translucent" "1"
+	"$decal" 1
+	"$nocull" 1
+ 	"$refractamount" ".100"
+	"$REFRACTTINT" "{255 255 255}"
+	"$scale" "[1 1]"
+        "$REFRACTTINTTEXTURE" "citizen2\ci_ripple"
+        "$normalmap" "citizen2\ci_ripple2_normal"
+        "$dudvmap" "citizen2\ci_ripple2_dudv"
+	//"$envmap" "env_cubemap"
+	//"$envmaptint" "[.3 .4 .4]"
+
+"Proxies"
+{
+"TextureScroll"
+{
+"texturescrollvar" "$bumptransform"
+"texturescrollrate" 0.25
+"texturescrollangle" -90.00
+}
+}
+
+
+"Refract_dx60"
+	{
+		"$fallbackmaterial" "citizen2\ci_ripple_low"
+
+	}	
+
+
+	"Refract_dx70"
+	{
+		"$fallbackmaterial" "citizen2\ci_ripple_low"
+
+	}	
+
+	
+
+	"Refract_dx80"
+	{
+		"$fallbackmaterial" "citizen2\ci_ripple_low"
+
+	}	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

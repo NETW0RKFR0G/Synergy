@@ -1,0 +1,154 @@
+// Choreo version 1
+actor "larry"
+{
+  channel "WAV"
+  {
+    event speak "wav"
+    {
+      time 0.133333 2.989387
+      param "npc_larry_square_youbastards"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "gestures"
+  {
+    event gesture "gest1"
+    {
+      time 0.020000 1.986667
+      param "g_plead_01"
+      absolutetags playback_time
+      {
+        "apex" 0.275862
+        "accent" 0.448276
+        "loop" 0.689655
+        "end" 0.862069
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.275862
+        "accent" 0.448276
+        "loop" 0.689655
+        "end" 0.862069
+      }
+    }
+  }
+  channel "expressions"
+  {
+    event flexanimation "flex1"
+    {
+      time 0.033333 1.480000
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "lid_raiser" combo 
+        {
+          0.1520 1.0000
+        }
+        {
+          0.1520 0.5000
+        }
+        "lid_tightener" combo 
+        {
+          0.1520 0.6300
+        }
+        {
+          0.1520 0.5000
+        }
+        "inner_raiser" combo 
+        {
+          0.1520 1.0000
+        }
+        {
+          0.1520 0.5000
+        }
+        "upper_raiser" combo 
+        {
+          0.1520 0.2500
+        }
+        {
+          0.1520 0.5000
+        }
+        "corner_depressor" combo 
+        {
+          0.1520 1.0000
+        }
+        {
+          0.1520 0.5000
+        }
+        "part" combo 
+        {
+          0.1520 1.0000
+        }
+        {
+          0.1520 0.5000
+        }
+      }
+    }
+    event flexanimation "flex2"
+    {
+      time 1.526667 2.973333
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "lid_raiser" combo 
+        {
+          0.1540 1.0000
+        }
+        {
+          0.1540 0.5000
+        }
+        "outer_raiser" combo 
+        {
+          0.1540 1.0000
+        }
+        {
+          0.1540 0.5000
+        }
+        "cheek_raiser" combo 
+        {
+          0.1540 1.0000
+        }
+        {
+          0.1540 0.5000
+        }
+        "dilator" 
+        {
+          0.1540 0.7600
+        }
+        "corner_depressor" combo 
+        {
+          0.1540 1.0000
+        }
+        {
+          0.1540 0.5000
+        }
+        "bite" 
+        {
+          0.1540 1.0000
+        }
+        "tightener" 
+        {
+          0.1540 1.0000
+        }
+        "head_forwardback" range 0.2 -0.2 
+        {
+          0.1540 0.0000
+        }
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "ExpressionTool" "100"
+  "RampTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

@@ -1,0 +1,1 @@
+start synergy.exe -game synergy -windowed -noborder -nobgmap -novid

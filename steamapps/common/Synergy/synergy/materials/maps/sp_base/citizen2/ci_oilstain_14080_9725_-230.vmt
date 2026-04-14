@@ -1,0 +1,8 @@
+"patch"
+{
+	"include"		"materials/CITIZEN2/CI_OILSTAIN.vmt"
+	"replace"
+	{
+		"$envmap"		"maps/sp_base/c14080_9725_-230"
+	}
+}

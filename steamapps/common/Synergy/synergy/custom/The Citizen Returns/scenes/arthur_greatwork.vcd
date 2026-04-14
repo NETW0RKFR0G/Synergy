@@ -1,0 +1,48 @@
+// Choreo version 1
+actor "rebel_arthur"
+{
+  channel "wav"
+  {
+    event speak "npc_arthur_greatwork"
+    {
+      time 0.238095 2.375057
+      param "npc_arthur_greatwork"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "look"
+  {
+    event lookat "player"
+    {
+      time 0.119048 2.573261
+      param "!player"
+    }
+  }
+  channel "face"
+  {
+    event face "player"
+    {
+      time 0.095238 2.549450
+      param "!player"
+    }
+  }
+  channel "gesture"
+  {
+  }
+  channel "expression"
+  {
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "28"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off

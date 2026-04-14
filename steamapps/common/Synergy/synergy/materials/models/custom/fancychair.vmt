@@ -1,0 +1,13 @@
+"VertexlitGeneric"
+
+{ "$basetexture" "models/custom/fancychair" 
+  "$surfaceprop" "plastic"
+  "$bumpmap" "models/custom/fancychair_normal"
+
+	$detail detail\metal_detail_01
+	$detailscale 10
+	$detailblendfactor .85
+	$detailblendmode 0
+
+
+} 

@@ -1,0 +1,27 @@
+// Choreo version 1
+actor "huntey"
+{
+  channel "audio"
+  {
+  }
+  channel "gesture1"
+  {
+  }
+  channel "gesture2"
+  {
+  }
+  channel "expression1"
+  {
+  }
+  channel "expression2"
+  {
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "ExpressionTool" "100"
+}
+fps 60
+snap off

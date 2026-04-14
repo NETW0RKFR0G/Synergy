@@ -1,0 +1,8 @@
+"patch"
+{
+	"include"		"materials/CITIZEN2/CI_GOLD.vmt"
+	"replace"
+	{
+		"$envmap"		"maps/sp_streetwar/c-1688_258_0"
+	}
+}

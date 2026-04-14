@@ -1,0 +1,134 @@
+// Choreo version 1
+actor "rebel_sarah"
+{
+  channel "WAV"
+  {
+    event speak "npc_sarah_waterplant2_youmadeit"
+    {
+      time 0.053333 2.584308
+      param "npc_sarah_youmadeit"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Gesture"
+  {
+    event flexanimation "flex1"
+    {
+      time 0.100000 1.380000
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "outer_raiser" combo 
+        {
+          0.1420 1.0000
+        }
+        {
+          0.1420 0.5000
+        }
+        "part" combo 
+        {
+          0.1420 1.0000
+        }
+        {
+          0.1420 0.5000
+        }
+      }
+    }
+  }
+  channel "Facetowards"
+  {
+    event flexanimation "tiphead"
+    {
+      time 1.320000 2.673333
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "inner_raiser" combo 
+        {
+          0.2040 0.6600
+        }
+        {
+          0.2040 0.5000
+        }
+        "corner_puller" combo 
+        {
+          0.2040 1.0000
+        }
+        {
+          0.2040 0.5000
+        }
+        "head_tilt" range 15.0 -15.0 
+        {
+          0.2040 0.0000
+        }
+      }
+    }
+  }
+  channel "look at"
+  {
+    event lookat "lookat_player"
+    {
+      time 0.060000 2.866667
+      param "!player"
+    }
+  }
+  channel "body"
+  {
+    event gesture "gesture"
+    {
+      time 0.033334 1.300000
+      param "urgenthandsweep"
+    }
+  }
+}
+
+actor "rebels_larry"
+{
+  channel "lookat"
+  {
+    event lookat "atplayer"
+    {
+      time 0.033333 2.846667
+      param "!player"
+    }
+  }
+  channel "flex"
+  {
+    event flexanimation "smile"
+    {
+      time 0.034722 2.868056
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "outer_raiser" combo 
+        {
+          0.1820 0.4800
+        }
+        {
+          0.1820 0.5000
+        }
+        "corner_puller" combo 
+        {
+          0.1820 0.9300
+        }
+        {
+          0.1820 0.5000
+        }
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "GestureTool" "100"
+  "ExpressionTool" "100"
+  "SceneRampTool" "100"
+  "RampTool" "98"
+  "CChoreoView" "96"
+}
+fps 60
+snap off
+ignorePhonemes off

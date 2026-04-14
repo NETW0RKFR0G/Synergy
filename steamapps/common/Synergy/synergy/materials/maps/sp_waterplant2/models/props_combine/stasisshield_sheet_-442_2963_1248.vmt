@@ -1,0 +1,11 @@
+"patch"
+{
+	"include"		"materials/MODELS/PROPS_COMBINE/STASISSHIELD_SHEET.vmt"
+	"replace"
+	{
+		"$envmap"		"maps/sp_waterplant2/c-442_2963_1248"
+		"Proxies"
+		{
+		}
+	}
+}

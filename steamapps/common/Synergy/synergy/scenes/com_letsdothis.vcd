@@ -1,0 +1,62 @@
+// Choreo version 1
+actor "com"
+{
+  channel "wav"
+  {
+    event speak "1"
+    {
+      time 0.060000 3.246939
+      param "npc_com_letsdothis"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "look"
+  {
+    event lookat "1"
+    {
+      time 2.093333 3.220000
+      param "!player"
+    }
+    event lookat "2"
+    {
+      time 0.033333 2.066667
+      param "target_screen"
+    }
+  }
+  channel "flex"
+  {
+    event flexanimation "1"
+    {
+      time 2.086667 3.193334
+      param ""
+      flexanimations samples_use_time
+      {
+        "head_updown" range 15.0 -15.0 
+        {
+          0.3000 1.0000
+        }
+      }
+    }
+  }
+  channel "face"
+  {
+    event face "1"
+    {
+      time 0.033333 3.213334
+      param "target_screen"
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off

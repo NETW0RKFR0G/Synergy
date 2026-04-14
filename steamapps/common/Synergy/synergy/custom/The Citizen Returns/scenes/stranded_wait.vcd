@@ -1,0 +1,336 @@
+// Choreo version 1
+actor "stranded_rebel"
+{
+  channel "WAV"
+  {
+    event speak "stranded_wait"
+    {
+      time 0.013333 8.871791
+      param "npc_stranded_rebel_wait"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Gestures"
+  {
+    event gesture "Gesture1"
+    {
+      time 0.120000 2.253333
+      param "g_scan_ID"
+      absolutetags playback_time
+      {
+        "apex" 0.126984
+        "accent" 0.317460
+        "loop" 0.952381
+        "end" 1.000000
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.126984
+        "accent" 0.317460
+        "loop" 0.952381
+        "end" 1.031746
+      }
+      sequenceduration 2.133333
+    }
+    event gesture "Gesture2"
+    {
+      time 2.726667 4.760000
+      param "G_what"
+      absolutetags playback_time
+      {
+        "apex" 0.133333
+        "accent" 0.200000
+        "loop" 0.366667
+        "end" 0.533333
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.133333
+        "accent" 0.200000
+        "loop" 0.366667
+        "end" 0.533333
+      }
+    }
+    event gesture "Gesture3"
+    {
+      time 5.686667 8.533335
+      param "g_plead_01"
+      absolutetags playback_time
+      {
+        "apex" 0.190584
+        "accent" 0.309699
+        "loop" 0.476460
+        "end" 0.595575
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.275862
+        "accent" 0.448276
+        "loop" 0.689655
+        "end" 0.862069
+      }
+      sequenceduration 1.966667
+    }
+  }
+  channel "Facing"
+  {
+    event face "Faceplayer"
+    {
+      time -0.653333 -0.153333
+      param "!player"
+    }
+    event face "Faceplayer"
+    {
+      time 0.013333 8.426666
+      param "!player"
+    }
+  }
+  channel "Looking"
+  {
+    event lookat "Look_at_player"
+    {
+      time -0.006666 8.440001
+      param "!player"
+    }
+  }
+  channel "Expressions"
+  {
+    event flexanimation "Flexanim1"
+    {
+      time 0.066666 1.420000
+      param ""
+      flexanimations samples_use_time
+      {
+        "lid_raiser" combo 
+        {
+          0.2320 1.0000
+        }
+        {
+          0.2320 0.5000
+        }
+        "lid_tightener" combo 
+        {
+          0.2320 1.0000
+        }
+        {
+          0.2320 0.5000
+        }
+        "outer_raiser" combo 
+        {
+          0.2320 1.0000
+        }
+        {
+          0.2320 0.5000
+        }
+        "cheek_raiser" combo 
+        {
+          0.2320 1.0000
+        }
+        {
+          0.2320 0.5000
+        }
+        "head_updown" range 15.0 -15.0 
+        {
+          0.2320 0.7900
+        }
+      }
+    }
+    event flexanimation "Flexanim2"
+    {
+      time 1.666666 2.913333
+      param ""
+      flexanimations samples_use_time
+      {
+        "lid_raiser" combo 
+        {
+          0.2500 1.0000
+        }
+        {
+          0.2500 0.5000
+        }
+        "lid_tightener" combo 
+        {
+          0.2500 0.0000
+        }
+        {
+          0.2500 0.5000
+        }
+        "inner_raiser" combo 
+        {
+          0.2500 1.0000
+        }
+        {
+          0.2500 0.5000
+        }
+        "dilator" 
+        {
+          0.2500 1.0000
+        }
+        "corner_depressor" combo 
+        {
+          0.2500 1.0000
+        }
+        {
+          0.2500 0.5000
+        }
+        "eyes_updown" range 30.0 -30.0 
+        {
+          0.2500 0.0000
+        }
+        "eyes_rightleft" range 30.0 -30.0 
+        {
+          0.2500 0.0000
+        }
+      }
+    }
+    event flexanimation "Flexanim3"
+    {
+      time 3.140000 4.786667
+      param ""
+      flexanimations samples_use_time
+      {
+        "lid_tightener" combo 
+        {
+          0.1540 1.0000
+        }
+        {
+          0.1540 0.5000
+        }
+        "inner_raiser" combo 
+        {
+          0.1540 0.8100
+        }
+        {
+          0.1540 0.5000
+        }
+        "wrinkler" 
+        {
+          0.1540 1.0000
+        }
+        "corner_puller" combo 
+        {
+          0.1540 0.7600
+        }
+        {
+          0.1540 0.5000
+        }
+        "chin_raiser" 
+        {
+          0.1540 0.8400
+        }
+        "presser" 
+        {
+          0.1540 0.9000
+        }
+        "head_tilt" range 15.0 -15.0 
+        {
+          0.1540 0.0000
+        }
+      }
+    }
+    event flexanimation "Flexanim4"
+    {
+      time 5.120000 6.766666
+      param ""
+      flexanimations samples_use_time
+      {
+        "lid_tightener" combo 
+        {
+          0.2580 0.2000
+        }
+        {
+          0.2580 0.5000
+        }
+        "inner_raiser" combo 
+        {
+          0.2580 1.0000
+        }
+        {
+          0.2580 0.5000
+        }
+        "cheek_raiser" combo 
+        {
+          0.2580 1.0000
+        }
+        {
+          0.2580 0.5000
+        }
+        "wrinkler" 
+        {
+          0.2580 1.0000
+        }
+        "corner_depressor" combo 
+        {
+          0.2580 1.0000
+        }
+        {
+          0.2580 0.5000
+        }
+        "head_tilt" range 15.0 -15.0 
+        {
+          0.2580 1.0000
+        }
+      }
+    }
+    event flexanimation "Flexanim5"
+    {
+      time 6.813334 8.853334
+      param ""
+      flexanimations samples_use_time
+      {
+        "lid_raiser" combo 
+        {
+          0.6820 1.0000
+        }
+        {
+          0.6820 0.5000
+        }
+        "lid_tightener" combo 
+        {
+          0.6820 1.0000
+        }
+        {
+          0.6820 0.5000
+        }
+        "outer_raiser" combo 
+        {
+          0.6820 1.0000
+        }
+        {
+          0.6820 0.5000
+        }
+        "cheek_raiser" combo 
+        {
+          0.6820 0.7500
+        }
+        {
+          0.6820 0.5000
+        }
+        "upper_raiser" combo 
+        {
+          0.6820 1.0000
+        }
+        {
+          0.6820 0.5000
+        }
+        "chin_raiser" 
+        {
+          0.6820 1.0000
+        }
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off

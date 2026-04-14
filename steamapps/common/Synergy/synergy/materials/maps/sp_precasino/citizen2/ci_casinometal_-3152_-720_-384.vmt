@@ -1,0 +1,8 @@
+"patch"
+{
+	"include"		"materials/CITIZEN2/CI_CASINOMETAL.vmt"
+	"replace"
+	{
+		"$envmap"		"maps/sp_precasino/c-3152_-720_-384"
+	}
+}

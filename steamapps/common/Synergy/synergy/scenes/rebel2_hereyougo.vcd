@@ -1,0 +1,78 @@
+// Choreo version 1
+actor "rebel_medic"
+{
+  channel "WAV"
+  {
+    event speak "1"
+    {
+      time 0.080000 0.879592
+      param "npc_rebel2_hereyougo"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Facing"
+  {
+    event face "1"
+    {
+      time 0.060000 0.860000
+      param "rebel_sarah"
+    }
+  }
+  channel "Looking at"
+  {
+    event lookat "1"
+    {
+      time 0.073333 0.886666
+      param "rebel_sarah"
+    }
+  }
+  channel "Movement"
+  {
+    event moveto "1"
+    {
+      time 0.060000 1.380000
+      param "rebel_sarah"
+      param2 "Walk"
+      distancetotarget 48.00
+    }
+  }
+  channel "Gestures"
+  {
+    event gesture "1"
+    {
+      time 0.000000 1.460001
+      param "G_righthandpoint"
+      absolutetags playback_time
+      {
+        "apex" 0.178082
+        "accent" 0.429224
+        "loop" 0.625571
+        "end" 0.826484
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.205882
+        "accent" 0.441176
+        "loop" 0.470588
+        "end" 0.676471
+      }
+      sequenceduration 2.300000
+    }
+  }
+  channel "Expressions"
+  {
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off

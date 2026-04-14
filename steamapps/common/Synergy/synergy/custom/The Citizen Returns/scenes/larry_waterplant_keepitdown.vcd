@@ -1,0 +1,69 @@
+// Choreo version 1
+actor "larry"
+{
+  channel "WAV"
+  {
+    event speak "1"
+    {
+      time 0.080000 4.184127
+      param "npc_larry_waterplant_keepitdown"
+      param2 "1"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "seewhat"
+    {
+      time 4.326667 6.027529
+      param "npc_larry_seewhatyoucanfind"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Face"
+  {
+    event face "faceplayer"
+    {
+      time 4.306667 6.820001
+      param "!player"
+    }
+  }
+  channel "Look at"
+  {
+    event lookat "atrebel1"
+    {
+      time 1.980000 3.813333
+      param "rebel1"
+    }
+    event lookat "atsarah"
+    {
+      time 0.033333 1.866667
+      param "sarah"
+    }
+    event lookat "atrplayer"
+    {
+      time 3.953334 6.893333
+      param "!player"
+    }
+    active "0"
+  }
+  channel "Move"
+  {
+  }
+  channel "Gestures"
+  {
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

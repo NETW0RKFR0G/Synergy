@@ -1,0 +1,8 @@
+"patch"
+{
+	"include"		"materials/METAL/METALWALL070E.vmt"
+	"replace"
+	{
+		"$envmap"		"maps/sp_postsquare/c-1074_1990_576"
+	}
+}

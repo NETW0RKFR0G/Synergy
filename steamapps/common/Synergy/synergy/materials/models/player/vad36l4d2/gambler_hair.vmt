@@ -1,0 +1,6 @@
+VertexLitGeneric
+{
+$baseTexture "models\player\vad36l4d2/gambler_hair"
+$translucent 1
+$nocull 1
+}

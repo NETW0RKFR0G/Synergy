@@ -1,0 +1,149 @@
+// Choreo version 1
+actor "sarah"
+{
+  channel "wav"
+  {
+    event speak "getusout"
+    {
+      time 0.100000 1.945986
+      param "npc_sarah_getusoutofhere"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "look"
+  {
+    event lookat "atplayer"
+    {
+      time 0.026667 2.860000
+      param "!player"
+    }
+  }
+  channel "face"
+  {
+    event face "faceplayer"
+    {
+      time 0.026667 2.873333
+      param "!player"
+    }
+  }
+  channel "flex"
+  {
+    event flexanimation "flex"
+    {
+      time 0.520000 2.860000
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "inner_raiser" combo 
+        {
+          0.3340 1.0000
+        }
+        {
+          0.3340 0.5000
+        }
+        "part" combo 
+        {
+          0.3340 1.0000
+        }
+        {
+          0.3340 0.5000
+        }
+        "head_updown" range 15.0 -15.0 
+        {
+          0.3340 0.0000
+        }
+      }
+    }
+  }
+  channel "gesture"
+  {
+    event gesture "gest1"
+    {
+      time 1.080000 2.780000
+      param "G_shrug"
+      absolutetags playback_time
+      {
+        "apex" 0.160000
+        "accent" 0.240000
+        "loop" 0.320000
+        "end" 0.440000
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.160000
+        "accent" 0.240000
+        "loop" 0.320000
+        "end" 0.440000
+      }
+      sequenceduration 1.700000
+    }
+  }
+}
+
+actor "larry"
+{
+  channel "wav"
+  {
+    event speak "1"
+    {
+      time 3.346667 6.574241
+      param "npc_larry_a1_nothelping"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "face"
+  {
+    event face "player"
+    {
+      time 0.060000 7.080000
+      param "!player"
+    }
+  }
+  channel "look"
+  {
+    event lookat "atplayer"
+    {
+      time 0.060000 7.093332
+      param "!player"
+    }
+  }
+  channel "gesture"
+  {
+    event gesture "gest1"
+    {
+      time 3.420000 5.653334
+      param "G_noway_big"
+      absolutetags playback_time
+      {
+        "apex" 0.151515
+        "accent" 0.272727
+        "loop" 0.424242
+        "end" 0.575758
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.151515
+        "accent" 0.272727
+        "loop" 0.424242
+        "end" 0.575758
+      }
+      sequenceduration 2.233333
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

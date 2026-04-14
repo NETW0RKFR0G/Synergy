@@ -1,0 +1,149 @@
+// Choreo version 1
+actor "rebel1example"
+{
+  channel "wav"
+  {
+    event speak "1"
+    {
+      time 0.193333 1.276009
+      param "npc_male_wegotantlions"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "2"
+    {
+      time 1.580000 2.676009
+      param "npc_male_damnthesethings"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "facial expressions"
+  {
+    event flexanimation "flex1"
+    {
+      time 0.026667 1.300000
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "lid_raiser" combo 
+        {
+          0.1180 1.0000
+        }
+        {
+          0.1180 0.5000
+        }
+        "inner_raiser" combo 
+        {
+          0.1180 1.0000
+        }
+        {
+          0.1180 0.5000
+        }
+        "corner_depressor" combo 
+        {
+          0.1180 1.0000
+        }
+        {
+          0.1180 0.5000
+        }
+        "part" combo 
+        {
+          0.1180 0.9400
+        }
+        {
+          0.1180 0.5000
+        }
+      }
+    }
+    event flexanimation "flexangry"
+    {
+      time 1.493334 3.126667
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "lid_tightener" combo 
+        {
+          0.1120 1.0000
+        }
+        {
+          0.1120 0.5000
+        }
+        "lowerer" combo 
+        {
+          0.1120 1.0000
+        }
+        {
+          0.1120 0.5000
+        }
+        "bite" 
+        {
+          0.1120 1.0000
+        }
+      }
+    }
+  }
+  channel "gesture"
+  {
+    event gesture "gest0"
+    {
+      time 0.153334 2.186667
+      param "G_medurgent_mid"
+      absolutetags playback_time
+      {
+        "apex" 0.150000
+        "accent" 0.250000
+        "loop" 0.400000
+        "end" 0.533333
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.150000
+        "accent" 0.250000
+        "loop" 0.400000
+        "end" 0.533333
+      }
+      sequenceduration 2.033333
+    }
+  }
+  channel "lookat"
+  {
+    event lookat "atguard1"
+    {
+      time 2.146667 3.153333
+      param "guard"
+    }
+    event lookat "atguard1"
+    {
+      time 0.046666 1.053333
+      param "guard"
+    }
+    event lookat "atplayer"
+    {
+      time 1.106666 2.119999
+      param "!player"
+    }
+  }
+  channel "face"
+  {
+    event face "faceguard"
+    {
+      time 0.060000 3.493333
+      param "guard"
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

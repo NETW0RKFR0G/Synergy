@@ -1,0 +1,31 @@
+"VertexLitGeneric"
+
+{
+
+	"$bumpmap" "models/combine_soldier/combinesoldiersheet_prisonguard_normal"
+	"$surfaceprop" "flesh"
+	"$selfillum" 1
+	"$selfillumtint" "[4 4 .1]"
+	"$model" 1
+	"$phong" 1
+	"$phongboost" "4"
+	"$halflambert" "1"
+	//"$phongexponenttexture" "models/combine_soldier/combinesoldiersheet_prisonguard_grey"
+	"$phongexponenttexture" "models/Combine_soldier/combinesoldiersheet_prisonguard"
+	"$phongalbedotint" "1"										
+	"$phongfresnelranges"	"[.1 .5 1.0]"
+
+	// Use separate self-illum mask on Pre DX9 hardware
+	">=dx90_20b"
+	{
+		//"$baseTexture" 		"Models/Combine_soldier/combinesoldier_prisonguard_noalpha"
+		"$baseTexture" 		"models/Combine_soldier/combinesoldiersheet_prisonguard"
+		"$selfillummask" 	"models/Combine_soldier/combinesoldierselfillummask"
+	}
+
+	// Use redundant self-illum in base alpha on Pre DX9 hardware
+	"<dx90_20b"
+	{
+		"$baseTexture" 		"models/Combine_soldier/combinesoldiersheet_prisonguard"
+	}
+}

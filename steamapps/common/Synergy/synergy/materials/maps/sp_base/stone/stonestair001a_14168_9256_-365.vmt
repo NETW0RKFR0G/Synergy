@@ -1,0 +1,8 @@
+"patch"
+{
+	"include"		"materials/STONE/STONESTAIR001A.vmt"
+	"replace"
+	{
+		"$envmap"		"maps/sp_base/c14168_9256_-365"
+	}
+}

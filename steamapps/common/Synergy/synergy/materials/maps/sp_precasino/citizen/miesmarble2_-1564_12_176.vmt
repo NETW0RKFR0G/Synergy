@@ -1,0 +1,8 @@
+"patch"
+{
+	"include"		"materials/CITIZEN/MIESMARBLE2.vmt"
+	"replace"
+	{
+		"$envmap"		"maps/sp_precasino/c-1564_12_176"
+	}
+}

@@ -1,0 +1,24 @@
+// Choreo version 1
+actor "argento"
+{
+  channel "wav"
+  {
+    event speak "wav"
+    {
+      time 0.226667 1.422495
+      param "npc_argento_sw2_couldbeatrap"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "SceneRampTool" "100"
+  "RampTool" "100"
+}
+fps 60
+snap off

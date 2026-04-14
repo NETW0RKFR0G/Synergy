@@ -1,0 +1,91 @@
+// Choreo version 1
+actor "prisoner_anne"
+{
+  channel "Look#"
+  {
+    event lookat "1"
+    {
+      time 0.134286 1.698095
+      param "!player"
+    }
+    event lookat "target"
+    {
+      time 1.727618 7.127619
+      param "feartarget1"
+    }
+  }
+  channel "Gesture"
+  {
+    event gesture "2"
+    {
+      time 7.047620 18.252382
+      param "hg_puncuate_down"
+      absolutetags playback_time
+      {
+        "apex" 0.117021
+        "extreme" 0.317021
+        "loop" 0.612766
+        "end" 0.842553
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.333333
+        "extreme" 0.541667
+        "loop" 0.562500
+        "end" 0.562500
+      }
+      sequenceduration 1.633333
+    }
+    event gesture "3"
+    {
+      time 7.142857 17.966667
+      param "hg_headshake"
+      absolutetags playback_time
+      {
+        "apex" 0.243956
+        "loop" 0.422967
+        "extreme" 0.432967
+        "end" 0.795604
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.208333
+        "loop" 0.270833
+        "extreme" 0.416667
+        "end" 0.625000
+      }
+      sequenceduration 1.633333
+    }
+    event gesture "1"
+    {
+      time 0.023809 7.014286
+      param "g_wave"
+      absolutetags playback_time
+      {
+        "apex" 0.323129
+        "accent" 0.547619
+        "loop" 0.795918
+        "end" 0.812925
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.258621
+        "accent" 0.431034
+        "loop" 0.517241
+        "end" 0.689655
+      }
+      sequenceduration 1.966667
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "28"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off

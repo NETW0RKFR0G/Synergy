@@ -1,0 +1,167 @@
+// Choreo version 1
+actor "larry"
+{
+  channel "WAV"
+  {
+    event speak "wav"
+    {
+      time 0.133333 3.117097
+      param "npc_larry_square_alreadydone"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "gestures"
+  {
+    event gesture "gest1"
+    {
+      time 0.826666 2.793333
+      param "g_plead_01"
+      absolutetags playback_time
+      {
+        "apex" 0.275862
+        "accent" 0.448276
+        "loop" 0.689655
+        "end" 0.862069
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.275862
+        "accent" 0.448276
+        "loop" 0.689655
+        "end" 0.862069
+      }
+    }
+  }
+  channel "expressions"
+  {
+    event flexanimation "face1"
+    {
+      time 0.026666 1.046666
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "lid_tightener" combo 
+        {
+          0.2220 1.0000
+        }
+        {
+          0.2220 0.5000
+        }
+        "lowerer" combo 
+        {
+          0.2220 1.0000
+        }
+        {
+          0.2220 0.5000
+        }
+        "upper_raiser" combo 
+        {
+          0.2220 1.0000
+        }
+        {
+          0.2220 0.5000
+        }
+        "part" combo 
+        {
+          0.2220 1.0000
+        }
+        {
+          0.2220 0.5000
+        }
+      }
+    }
+    event flexanimation "face2"
+    {
+      time 1.426667 3.220001
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "lid_raiser" combo 
+        {
+          0.1240 1.0000
+        }
+        {
+          0.1240 0.5000
+        }
+        "outer_raiser" combo 
+        {
+          0.1240 1.0000
+        }
+        {
+          0.1240 0.5000
+        }
+        "dilator" 
+        {
+          0.1240 0.9300
+        }
+        "upper_raiser" combo 
+        {
+          0.1240 0.1000
+        }
+        {
+          0.1240 0.5000
+        }
+        "chin_raiser" 
+        {
+          0.1240 0.4600
+        }
+        "part" combo 
+        {
+          0.1240 1.0000
+        }
+        {
+          0.1240 0.5000
+        }
+        "puckerer" combo 
+        {
+          0.1240 0.4100
+        }
+        {
+          0.1240 0.5000
+        }
+        "jaw_clencher" 
+        {
+          0.1240 0.6000
+        }
+        "jaw_drop" range 0.0 2.0 
+        {
+          0.1240 0.1900
+        }
+        "lower_lip" 
+        {
+          0.1240 1.0000
+        }
+        "head_tilt" range 15.0 -15.0 
+        {
+          0.1240 0.4400
+        }
+        "head_forwardback" range 0.2 -0.2 
+        {
+          0.1240 0.0000
+        }
+      }
+    }
+  }
+  channel "look"
+  {
+    event face "facetarget"
+    {
+      time 1.920000 2.813334
+      param "lasertarget"
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "ExpressionTool" "100"
+  "RampTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

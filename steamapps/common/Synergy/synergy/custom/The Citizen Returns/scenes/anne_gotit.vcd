@@ -1,0 +1,78 @@
+// Choreo version 1
+actor "anne"
+{
+  channel "wav"
+  {
+    event speak "gotit"
+    {
+      time 0.040000 0.823673
+      param "npc_anne_gotit"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Gotit"
+  {
+    event flexanimation "Gotit"
+    {
+      time 0.026667 1.166667
+      param ""
+      flexanimations samples_use_time
+      {
+        "lid_raiser" combo 
+        {
+          0.2160 0.8600
+        }
+        {
+          0.2160 0.5000
+        }
+        "lid_tightener" combo 
+        {
+          0.2160 1.0000
+        }
+        {
+          0.2160 0.5000
+        }
+        "outer_raiser" combo 
+        {
+          0.2160 0.9600
+        }
+        {
+          0.2160 0.5000
+        }
+        "smile" 
+        {
+          0.2160 0.3100
+        }
+        "head_rightleft" range 30.0 -30.0 
+        {
+          0.2160 0.0000
+        }
+        "head_updown" range 15.0 -15.0 
+        {
+          0.2160 1.0000
+        }
+      }
+    }
+  }
+  channel "lookat"
+  {
+    event lookat "lookatlarry"
+    {
+      time 0.020000 1.173333
+      param "rebels_larry"
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off

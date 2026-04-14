@@ -1,0 +1,47 @@
+
+
+[2026-04-13 12:33:26] Client version: 1773426366
+[2026-04-13 12:33:26] Loading Steam API...
+[2026-04-13 12:33:26] OK
+[2026-04-13 12:33:26] Cached credentials not found.
+[2026-04-13 12:33:26] 
+password: 
+[2026-04-13 12:33:26] 
+Proceeding with login using username/password.
+[2026-04-13 12:33:26] Logging in user 'fexou007' [U:1:0] to Steam Public...
+[2026-04-13 12:34:21] OK
+[2026-04-13 12:34:21] Waiting for client config...
+[2026-04-13 12:34:22] OK
+[2026-04-13 12:34:22] Waiting for user info...
+[2026-04-13 12:34:25] OK
+[2026-04-13 12:34:27]  Update state (0x5) verifying install, progress: 54.96 (486129577 / 884556742)
+[2026-04-13 12:34:29]  Update state (0x61) downloading, progress: 31.60 (279516489 / 884556742)
+[2026-04-13 12:34:31]  Update state (0x61) downloading, progress: 40.46 (357907947 / 884556742)
+[2026-04-13 12:34:34]  Update state (0x61) downloading, progress: 57.83 (511521991 / 884556742)
+[2026-04-13 12:34:36]  Update state (0x61) downloading, progress: 76.13 (673449368 / 884556742)
+[2026-04-13 12:34:38]  Update state (0x61) downloading, progress: 85.14 (753119154 / 884556742)
+[2026-04-13 12:34:40]  Update state (0x61) downloading, progress: 93.80 (829715662 / 884556742)
+[2026-04-13 12:34:42]  Update state (0x81) verifying update, progress: 5.66 (50064172 / 884556742)
+[2026-04-13 12:34:44]  Update state (0x81) verifying update, progress: 23.89 (211323926 / 884556742)
+[2026-04-13 12:34:46]  Update state (0x81) verifying update, progress: 45.88 (405812680 / 884556742)
+[2026-04-13 12:34:48]  Update state (0x81) verifying update, progress: 76.90 (680231352 / 884556742)
+[2026-04-13 12:34:50]  Update state (0x81) verifying update, progress: 90.20 (797834436 / 884556742)
+[2026-04-13 12:34:52]  Update state (0x101) committing, progress: 100.00 (884556742 / 884556742)
+[2026-04-13 12:34:54]  Update state (0x3) reconfiguring, progress: 0.00 (0 / 0)
+[2026-04-13 12:34:56]  Update state (0x61) downloading, progress: 0.00 (27340 / 2168041825)
+[2026-04-13 12:34:58]  Update state (0x61) downloading, progress: 5.11 (110852485 / 2168041825)
+[2026-04-13 12:35:00]  Update state (0x61) downloading, progress: 14.32 (310445836 / 2168041825)
+[2026-04-13 12:35:02]  Update state (0x61) downloading, progress: 22.50 (487851687 / 2168041825)
+[2026-04-13 12:35:04]  Update state (0x61) downloading, progress: 30.96 (671320760 / 2168041825)
+[2026-04-13 12:35:06]  Update state (0x61) downloading, progress: 41.19 (893007997 / 2168041825)
+[2026-04-13 12:35:08]  Update state (0x61) downloading, progress: 51.12 (1108262202 / 2168041825)
+[2026-04-13 12:35:10]  Update state (0x61) downloading, progress: 60.72 (1316388017 / 2168041825)
+[2026-04-13 12:35:12]  Update state (0x61) downloading, progress: 69.65 (1509997925 / 2168041825)
+[2026-04-13 12:35:14]  Update state (0x61) downloading, progress: 79.11 (1715146628 / 2168041825)
+[2026-04-13 12:35:16]  Update state (0x61) downloading, progress: 83.47 (1809623784 / 2168041825)
+[2026-04-13 12:35:18]  Update state (0x61) downloading, progress: 91.30 (1979484619 / 2168041825)
+[2026-04-13 12:35:20]  Update state (0x61) downloading, progress: 96.54 (2093060604 / 2168041825)
+[2026-04-13 12:35:22]  Update state (0x0) unknown, progress: 0.00 (0 / 0)
+[2026-04-13 12:35:22] Success! App '17520' fully installed.
+[2026-04-13 12:35:22] Unloading Steam API...
+[2026-04-13 12:35:22] OK

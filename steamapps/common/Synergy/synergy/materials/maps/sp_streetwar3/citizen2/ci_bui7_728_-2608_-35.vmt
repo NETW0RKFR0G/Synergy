@@ -1,0 +1,8 @@
+"patch"
+{
+	"include"		"materials/CITIZEN2/CI_BUI7.vmt"
+	"replace"
+	{
+		"$envmap"		"maps/sp_streetwar3/c728_-2608_-35"
+	}
+}

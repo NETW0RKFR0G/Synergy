@@ -1,0 +1,11 @@
+"patch"
+{
+	"include"		"materials/TILE/TILEFLOOR018A_C17.vmt"
+	"replace"
+	{
+		"LightmappedGeneric_DX9"
+		{
+			"$envmap"		"maps/sp_canal1/c-896_3968_384"
+		}
+	}
+}

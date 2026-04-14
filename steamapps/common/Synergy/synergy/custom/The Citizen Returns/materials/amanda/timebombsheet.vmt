@@ -1,0 +1,6 @@
+"VertexLitGeneric"
+{
+	"$baseTexture"	"amanda/timebombsheet"
+	"$surfaceprop"	"metal"
+	"$nocull"	 1
+}

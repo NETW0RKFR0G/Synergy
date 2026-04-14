@@ -1,0 +1,24 @@
+
+
+[2026-04-13 12:34:21] Client version: 1773426366
+[2026-04-13 12:34:21] Loading workshop items for 0 installed apps for user [U:1:48263075]:
+[2026-04-13 12:34:25] [AppID 17520] Loaded workshop items in "D:\HL2-SERVERS\The Citizen Return  COOP (DEV)\steamapps\workshop" (0 installed, 0 needed)
+[2026-04-13 12:34:26] [AppID 17520] Subscribed items changed
+[2026-04-13 12:34:26] [AppID 17520] Detected workshop change : added subscribed item 1133952585
+[2026-04-13 12:34:26] [AppID 17520] Detected workshop change : added subscribed item 1917233439
+[2026-04-13 12:34:26] [AppID 17520] Detected workshop change : added subscribed item 691111508
+[2026-04-13 12:34:26] [AppID 17520] Detected workshop change : added subscribed item 3406331364
+[2026-04-13 12:34:26] [AppID 17520] Detected workshop change : added subscribed item 1995293200
+[2026-04-13 12:34:26] [AppID 17520] Detected workshop change : added subscribed item 536796112
+[2026-04-13 12:34:26] [AppID 17520] Detected workshop change : added subscribed item 909637644
+[2026-04-13 12:34:26] [AppID 17520] Detected workshop change : added subscribed item 1332189742
+[2026-04-13 12:34:27] [AppID 17520] Detected workshop change (latest from server) : changed cached item 536796112, new manifest 9013024265140531546
+[2026-04-13 12:34:27] [AppID 17520] Detected workshop change (latest from server) : changed cached item 1917233439, new manifest 3266693451468711023
+[2026-04-13 12:34:27] [AppID 17520] Detected workshop change (latest from server) : changed cached item 909637644, new manifest 335677381901986876
+[2026-04-13 12:34:27] [AppID 17520] Detected workshop change (latest from server) : changed cached item 1332189742, new manifest 8907569230911395395
+[2026-04-13 12:34:27] [AppID 17520] Detected workshop change (latest from server) : changed cached item 1995293200, new manifest 3068608541339285504
+[2026-04-13 12:34:27] [AppID 17520] Detected workshop change (latest from server) : changed cached item 691111508, new manifest 2423367317237286452
+[2026-04-13 12:34:27] [AppID 17520] Detected workshop change (latest from server) : changed cached item 3406331364, new manifest 6007650507494966350
+[2026-04-13 12:34:27] [AppID 17520] Detected workshop change (latest from server) : changed cached item 1133952585, new manifest 68807751681132066
+[2026-04-13 12:34:52] [AppID 17520] Starting Workshop download job (downloading  )
+[2026-04-13 12:35:21] [AppID 17520] Finished Workshop download job : No Error

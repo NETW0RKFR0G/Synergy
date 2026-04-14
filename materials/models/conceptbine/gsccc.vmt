@@ -1,0 +1,12 @@
+VertexLitGeneric
+{
+	"$basetexture"	"Models\Conceptbine\gsccc"	
+	 "$bumpmap" "Models\Conceptbine\gsccc_n"
+ 	"$phong" "1"
+	"$phongalbedotint" "1"
+	"$phongboost"	"10"
+	"$phongfresnelranges" "[0.2 .5 10]"
+	"$model" "1"
+	"$transparent" "1"
+									// Boost for ambient cube component of rim lighting
+}

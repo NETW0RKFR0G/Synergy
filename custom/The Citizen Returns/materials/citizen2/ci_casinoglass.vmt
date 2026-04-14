@@ -1,0 +1,44 @@
+"Refract"
+
+{
+	
+	"$bluramount" "1"
+        "$translucent" 1
+	"$surfaceprop" "glass"
+ 	"$refractamount" ".100"
+	//"$REFRACTTINT" "{180 180 180}"
+	"$REFRACTTINTTEXTURE" "citizen2\ci_casinoglass"
+	"$scale" "[1 1]"
+    	"$normalmap" "citizen2\ci_casinoglass_normal"
+    	"$dudvmap" "citizen2\ci_casinoglass_dudv"
+	//"$envmap" "env_cubemap"
+  	"$normalmapalphaenvmapmask" 1
+
+	
+
+	"Refract_dx60"
+	{
+		"$fallbackmaterial" "citizen2\ci_casinoglass_low"
+
+	}	
+
+
+	"Refract_dx70"
+	{
+		"$fallbackmaterial" "citizen2\ci_casinoglass_low"
+
+	}	
+
+	
+
+	"Refract_dx80"
+	{
+		"$fallbackmaterial" "citizen2\ci_casinoglass_low"
+
+	}	
+
+
+
+	
+}
+

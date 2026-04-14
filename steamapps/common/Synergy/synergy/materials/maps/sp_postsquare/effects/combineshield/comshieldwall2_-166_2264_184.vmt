@@ -1,0 +1,11 @@
+"patch"
+{
+	"include"		"materials/EFFECTS/COMBINESHIELD/COMSHIELDWALL2.vmt"
+	"replace"
+	{
+		"$envmap"		"maps/sp_postsquare/c-166_2264_184"
+		"Proxies"
+		{
+		}
+	}
+}

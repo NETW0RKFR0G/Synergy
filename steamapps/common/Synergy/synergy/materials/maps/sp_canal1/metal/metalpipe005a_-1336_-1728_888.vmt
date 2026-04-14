@@ -1,0 +1,8 @@
+"patch"
+{
+	"include"		"materials/METAL/METALPIPE005A.vmt"
+	"replace"
+	{
+		"$envmap"		"maps/sp_canal1/c-1336_-1728_888"
+	}
+}

@@ -1,0 +1,9 @@
+"patch"
+{
+	"include"		"materials/GLASS/GLASSWINDOWBREAK070A.vmt"
+	"replace"
+	{
+		"$envmap"		"maps/sp_postsquare/c98_4162_710"
+		"$crackmaterial"		"maps/sp_postsquare/glass/glasswindowbreak070b_98_4162_710"
+	}
+}

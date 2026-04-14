@@ -1,0 +1,17 @@
+"LightmappedGeneric"
+
+{ "$basetexture" "citizen/miesglass1" 
+  "$surfaceprop" "glass"
+  "$translucent" 1
+  "$envmap" "env_cubemap"
+  //"$envmapmask" "citizen/miesglass1mask"
+  $envmapmask detail\metal_detail_01
+	
+	//$detail detail\metal_detail_01
+	//$detailscale 2
+	//$detailblendfactor 0.95
+	//$detailblendmode 0
+
+
+
+} 

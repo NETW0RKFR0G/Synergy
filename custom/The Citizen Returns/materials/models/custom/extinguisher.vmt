@@ -1,0 +1,16 @@
+"VertexLitGeneric"
+
+{ 
+
+"$basetexture" "models/custom/extinguisher" 
+  "$surfaceprop" "metal"
+  "$envmap" "env_cubemap"
+  "$envmapmask" "models/custom/extinguisher_specular"
+
+	$detail detail\metal_detail_01
+	$detailscale 6
+	$detailblendfactor .75
+	$detailblendmode 0	
+
+
+} 

@@ -1,0 +1,132 @@
+// Choreo version 1
+actor "rebel_larry"
+{
+  channel "wav"
+  {
+    event speak "1"
+    {
+      time 0.320000 1.736417
+      param "npc_larry_thatseemstohavegotit"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "2"
+    {
+      time 2.273334 3.004762
+      param "npc_larry_letsgo"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "lookat"
+  {
+    event lookat "1"
+    {
+      time 2.080000 3.146667
+      param "!player"
+    }
+  }
+  channel "gestures1"
+  {
+    event gesture "1"
+    {
+      time 0.046667 2.006667
+      param "G_righthandroll"
+      absolutetags playback_time
+      {
+        "apex" 0.378946
+        "accent" 0.533970
+        "loop" 0.688994
+        "end" 0.861242
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.282051
+        "accent" 0.397436
+        "loop" 0.512821
+        "end" 0.641026
+      }
+      sequenceduration 2.633333
+    }
+    event gesture "2"
+    {
+      time 2.146667 3.806667
+      param "g_fist_swing_across"
+      absolutetags playback_time
+      {
+        "apex" 0.244507
+        "accent" 0.346386
+        "loop" 0.611269
+        "end" 0.815025
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.176471
+        "accent" 0.250000
+        "loop" 0.441176
+        "end" 0.588235
+      }
+      sequenceduration 2.300000
+    }
+  }
+  channel "flexanimations"
+  {
+    event flexanimation "1"
+    {
+      time 0.046667 1.540000
+      param ""
+      flexanimations samples_use_time
+      {
+        "lid_raiser" combo 
+        {
+          0.1100 0.5100
+        }
+        {
+          0.1100 0.5000
+        }
+        "lowerer" combo 
+        {
+          0.1100 0.9400
+        }
+        {
+          0.1100 0.5000
+        }
+        "cheek_raiser" combo 
+        {
+          0.1100 1.0000
+        }
+        {
+          0.1100 0.5000
+        }
+        "dilator" 
+        {
+          0.1100 0.7500
+        }
+        "part" combo 
+        {
+          0.1100 1.0000
+        }
+        {
+          0.1100 0.5000
+        }
+        "bite" 
+        {
+          0.1100 1.0000
+        }
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off

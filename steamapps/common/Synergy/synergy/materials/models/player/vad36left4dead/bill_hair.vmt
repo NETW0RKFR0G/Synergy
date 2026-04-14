@@ -1,0 +1,6 @@
+VertexLitGeneric
+{
+$baseTexture "models\player\vad36left4dead/bill_hair"
+$translucent 1
+$nocull 1
+}

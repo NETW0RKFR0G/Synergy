@@ -1,0 +1,12 @@
+vertexlitgeneric
+{
+$baseTexture "models\player\vad36l4d2\coach_head"
+$bumpmap "models\player\vad36l4d2\coach_head_normal"
+$phong 1
+$phongboost "1.4"
+$phongtint "[.85 .85 1]"
+$phongfresnelranges "[.2 .5 5]"
+$nodecal 1
+$ambientocclusion 1
+$diffuseexp "1.5"
+}

@@ -1,0 +1,112 @@
+// Choreo version 1
+actor "rebel_random3"
+{
+  channel "wav"
+  {
+    event speak "heretohelp"
+    {
+      time 0.140000 1.684127
+      param "npc_female_heretohelp"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "face"
+  {
+    event face "faceplayer"
+    {
+      time 0.040000 2.326666
+      param "!player"
+    }
+  }
+  channel "move"
+  {
+    event moveto "awayfrom player"
+    {
+      time 0.040000 1.906667
+      param "target_away"
+      param2 "Run"
+    }
+  }
+  channel "look"
+  {
+    event lookat "atplayer"
+    {
+      time 0.040000 2.293333
+      param "!player"
+    }
+  }
+  channel "flex"
+  {
+    event flexanimation "angry"
+    {
+      time 0.046667 2.580000
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "lid_tightener" combo 
+        {
+          0.3220 1.0000
+        }
+        {
+          0.3220 0.5000
+        }
+        "lowerer" combo 
+        {
+          0.3220 1.0000
+        }
+        {
+          0.3220 0.5000
+        }
+        "wrinkler" 
+        {
+          0.3220 1.0000
+        }
+        "dilator" 
+        {
+          0.3220 0.8900
+        }
+        "part" combo 
+        {
+          0.3220 1.0000
+        }
+        {
+          0.3220 0.5000
+        }
+        "bite" 
+        {
+          0.3220 0.7000
+        }
+        "jaw_clencher" 
+        {
+          0.3220 1.0000
+        }
+        "head_forwardback" range 0.2 -0.2 
+        {
+          0.3220 1.0000
+        }
+      }
+    }
+  }
+  channel "gesture"
+  {
+    event gesture "wave"
+    {
+      time 0.413333 1.666666
+      param "urgenthandsweep"
+    }
+  }
+}
+
+scalesettings
+{
+  "GestureTool" "100"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "SceneRampTool" "100"
+  "CChoreoView" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

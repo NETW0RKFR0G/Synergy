@@ -1,0 +1,116 @@
+bm_c2a3c
+{
+	console
+	{
+		sv_turbophysics "0"
+	}
+	entity
+	{
+//TEMP PLACEHOLDERS
+		edit {classname "prop_flare" values {classname "prop_physics" model "models/props_junk/flare.mdl"} }
+		edit {classname "item_weapon_crowbar" values {classname "weapon_crowbar"} }
+		edit {classname "item_weapon_frag" values {classname "weapon_frag"} }
+		edit {classname "item_weapon_357" values {classname "weapon_357"} }
+		edit {classname "fog_volume" values {classname "func_smokevolume"} }
+		edit {classname "item_weapon_shotgun" values {classname "weapon_shotgun"} }
+		edit {classname "item_ammo_shotgun" values {classname "item_box_buckshot"} }
+		edit {classname "item_grenade_mp5" values {classname "item_ammo_smg1_grenade"} }
+		edit {classname "func_conveyor_bms" values {classname "func_conveyor" spawnflags "0"} }
+		edit {classname "npc_gargantua" values {classname "npc_bmsgargantua"} }
+//Starting Equips
+		create {classname "info_player_equip"
+			values
+			{
+				targetname "syn_equipment_base"
+				item_suit "1"
+				weapon_crowbar "1"
+					ammo_pistol "18"
+				weapon_frag "1"
+				weapon_357 "1"
+					ammo_357 "6"
+					ammo_smg1 "45"
+				weapon_shotgun "1"
+					ammo_buckshot "12"
+				weapon_crossbow "1"
+				ResponseContext "weapon_mp5 weapon_glock weapon_satchel"
+			}
+		}
+		create {classname "info_player_equip" values {targetname "cpickup" startdisabled "1" item_suit "1" weapon_crowbar "1"} }
+		
+		edit {classname "point_viewcontrol" values {spawnflags "172"} }
+		delete {classname "info_player_start"}
+		create {classname "info_spawn_manager" values {targetname "syn_spawn_manager"} }
+		create {classname "info_player_coop" origin "-240 0 -172" values {targetname "syn_spawnpoint_00" startdisabled "0" angles "0 180 0"} }
+		create {classname "info_player_coop" origin "-885 -1570 -170" values {targetname "syn_spawnpoint_01" startdisabled "1" angles "0 180 0" parentname "elevator"} }
+		create {classname "info_player_coop" origin "-4120 -55 460" values {targetname "syn_spawnpoint_02" startdisabled "1" angles "0 180 0"} }
+		create {classname "info_player_coop" origin "-6242 2523 896" values {targetname "syn_spawnpoint_03" startdisabled "1" angles "0 0 0"} }
+		create {classname "info_player_coop" origin "-5960 2875 900" values {targetname "syn_spawnpoint_04" startdisabled "1" angles "0 0 0"} }
+		create {classname "syn_transition_wall" origin "-145 0 -250" values {solid "6" angles "0 180 0" targetname "syn_backtrack"} }
+		create {classname "trigger_multiple" origin "-4360 11 521" values {edt_getbspmodelfor_classname "trigger_once" edt_getbspmodelfor_origin "-4360 11 521" spawnflags "1" OnTrigger "no_more_weapons_for_grodon,Strip,,1.7,-1"} }
+		create {classname "trigger_multiple" origin "-6242 2523 896" values {edt_getbspmodelfor_classname "trigger_once" edt_getbspmodelfor_origin "-4360 11 521" spawnflags "1" OnTrigger "no_more_weapons_for_grodon,Strip,,1.7,-1"} }
+		
+		create {classname "logic_auto"
+			values
+			{
+				spawnflags "1"
+				OnMapSpawn "syn_liftbutton,AddOutput,OnPressed syn_cooptele_01:TeleportPlayersNotTouching::0:1,0,-1"
+				OnMapSpawn "syn_liftbutton,AddOutput,OnPressed syn_liftpt:ForceSpawn::0:1,0,-1"
+				OnMapSpawn "start,AddOutput,OnTrigger syn_spawn_manager:SetCheckPoint:syn_spawnpoint_03:0:1,0,-1"
+				OnMapSpawn "start,AddOutput,OnTrigger syn_teleportply:Teleport::1.6:1,0,-1"
+				OnMapSpawn "start,AddOutput,OnTrigger syn_equipment_base:kill::1.6:1,0,-1"
+				OnMapSpawn "north_compactor_trigger,AddOutput,OnTrigger syn_spawn_manager:SetCheckPoint:syn_spawnpoint_04:24:1,0,-1"
+				OnMapSpawn "weapon_crowbar,AddOutput,OnPlayerPickup cpickup:Enable::0:-1,0,-1"
+				OnMapSpawn "weapon_crowbar,AddOutput,OnPlayerPickup cpickup:EquipAllPlayers::0.1:1,0,-1"
+			}
+		}
+		
+		edit {classname "func_button" origin "-884 -1679 -170.5" values {targetname "syn_liftbutton" spawnflags "3073"} }
+		create {classname "syn_transition_wall" origin "-775 -1565 -220" values {startdisabled "1" solid "6" angles "0 180 0" targetname "syn_liftblock"} }
+		create {classname "point_template" values {targetname "syn_liftpt" Template01 "syn_liftblock"} }
+		create {classname "trigger_coop" origin "-1024 -1552 -120"
+			values
+			{
+				targetname "syn_cooplift"
+				edt_getbspmodelfor_targetname "gordon_teleport_byebye"
+				spawnflags "1"
+				CountType "1"
+				UseHUD "1"
+				PlayerValue "66"
+				parentname "elevator"
+				OnTrigger "syn_spawn_manager,SetCheckPoint,syn_spawnpoint_01,0,1"
+				OnPlayersIn "syn_liftbutton,Unlock,,0,-1"
+				OnPlayersIn "!self,Disable,,0,-1"
+			}
+		}
+		create {classname "trigger_coop" origin "-1024 -1552 -120"
+			values
+			{
+				targetname "syn_cooptele_01"
+				edt_getbspmodelfor_targetname "gordon_teleport_byebye"
+				spawnflags "1"
+				target "syn_cooptarg_01"
+				parentname "elevator"
+			}
+		}
+		create {classname "info_target" origin "-885 -1570 -170" values {targetname "syn_cooptarg_01" angles "0 180 0" startdisabled "0" parentname "elevator"} }
+		
+		create {classname "syn_transition_wall" origin "-4202 -50 400" values {startdisabled "0" solid "6" angles "0 0 0" targetname "syn_antirush_wall"} }
+		create {classname "trigger_coop" origin "-4008 -92 520"
+			values
+			{
+				edt_getbspmodelfor_targetname "gordon_teleport_byebye"
+				spawnflags "1"
+				CountType "1"
+				UseHUD "1"
+				PlayerValue "66"
+				target "syn_cooptarg_02"
+				OnTrigger "syn_spawn_manager,SetCheckPoint,syn_spawnpoint_02,0,1"
+				OnPlayersIn "syn_antirush_wall,kill,,0,-1"
+				OnPlayersIn "!self,TeleportPlayersNotTouching,,0,1"
+				OnPlayersIn "!self,Disable,,0.5,-1"
+			}
+		}
+		create {classname "info_target" origin "-4120 -55 460" values {targetname "syn_cooptarg_02" startdisabled "0" angles "0 180 0"} }
+		create {classname "point_teleport" origin "-6242 2523 896" values {targetname "syn_teleportply" angles "0 0 0" target "player"} }
+	}
+}

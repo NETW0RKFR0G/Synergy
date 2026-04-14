@@ -1,0 +1,8 @@
+"patch"
+{
+	"include"		"materials/VEHICLE/METALTRAIN001B.vmt"
+	"replace"
+	{
+		"$envmap"		"maps/sp_canal2/c8853_7032_175"
+	}
+}

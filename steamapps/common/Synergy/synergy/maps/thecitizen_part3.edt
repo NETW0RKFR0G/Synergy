@@ -1,0 +1,38 @@
+"thecitizen_part3"
+{
+	entity
+	{
+		create {classname "info_spawn_manager" values {targetname "syn_spawn_manager"} }
+		delete {targetname "resupply_start_master"}
+		delete {targetname "global_newgame_spawner_ar2"}
+		delete {targetname "global_newgame_spawner_smg"}
+		delete {targetname "global_newgame_spawner_crossbow"}
+		delete {targetname "global_newgame_spawner_shotgun"}
+		delete {targetname "global_newgame_spawner_crowbar"}
+		delete {targetname "global_newgame_spawner_pistol"}
+		delete {targetname "global_newgame_spawner_suit"}
+		delete {targetname "global_newgame_spawner_physcannon"}
+		delete {targetname "global_newgame_template"}
+		delete {targetname "global_newgame_entmaker"}
+		delete {targetname "global_newgame_spawner_jeep"}
+		delete {classname "env_projectedtexture"}
+		create {classname "logic_auto"
+			values {spawnflags "1"
+				OnMapSpawn "npc_turret_floor,AddOutput,OnTipped !self:SelfDestruct::0:-1,0,-1"} }
+		edit {classname "game_text" values {spawnflags "1"} }
+		edit {classname "func_areaportal" values {targetname "disabledPortal" StartOpen "1"} }
+		edit {classname "point_viewcontrol" values {spawnflags "140"} }
+		edit {targetname "gotomap2" values {startdisabled "1"} }
+		create {classname "info_player_equip"
+			values
+			{
+				targetname "syn_equipment_base"
+				startdisabled "0"
+				item_suit "1"
+				weapon_crowbar "1"
+			}
+		}
+		create {classname "info_player_equip" values {targetname "ppickup" weapon_pistol "1" ammo_pistol "36" startdisabled "1"} }
+		edit {classname "weapon_pistol" values {OnPlayerPickUp "ppickup,Enable,,0,-1" OnPlayerPickUp "ppickup,EquipAllPlayers,,0.1,-1"} }
+	}
+}

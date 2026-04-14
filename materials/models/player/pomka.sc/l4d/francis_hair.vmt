@@ -1,0 +1,6 @@
+VertexLitGeneric
+{
+$baseTexture "models\player\pomka.sc\l4d/francis_hair"
+$translucent 1
+$nocull 1
+}

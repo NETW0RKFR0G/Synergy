@@ -1,0 +1,312 @@
+// Choreo version 1
+actor "mina"
+{
+  channel "WAV"
+  {
+    event speak "imglad"
+    {
+      time 0.246667 7.320839
+      param "npc_mina_imglad"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Look_at"
+  {
+    event lookat "lookatlarry1"
+    {
+      time 0.060000 0.825248
+      param "larry2"
+    }
+    event lookat "Look_atplayer1"
+    {
+      time 0.873617 2.827234
+      param "!player"
+    }
+    event lookat "look_at_larry2"
+    {
+      time 2.903971 6.140284
+      param "larry2"
+    }
+  }
+  channel "Face"
+  {
+    event face "faceplayer"
+    {
+      time -0.702128 -0.202128
+      param "!player"
+    }
+    event face "faceplayer1"
+    {
+      time 1.422637 3.116443
+      param "!player"
+    }
+    event face "facelarr1"
+    {
+      time 0.041106 1.377985
+      param "larry2"
+    }
+    event face "facelarry22"
+    {
+      time 3.134752 6.627660
+      param "larry2"
+    }
+  }
+  channel "Gestures"
+  {
+    event gesture "1"
+    {
+      time 0.092199 2.725532
+      param "holdhands"
+      absolutetags playback_time
+      {
+        "apex" 0.269231
+        "accent" 0.294872
+        "loop" 0.307692
+        "end" 0.730769
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.269231
+        "accent" 0.294872
+        "loop" 0.307692
+        "end" 0.730769
+      }
+      sequenceduration 2.633333
+    }
+    event gesture "2"
+    {
+      time 2.773050 4.739717
+      param "broadsweepdown"
+      absolutetags playback_time
+      {
+        "apex" 0.310345
+        "accent" 0.500000
+        "loop" 0.586207
+        "end" 0.655172
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.310345
+        "accent" 0.500000
+        "loop" 0.586207
+        "end" 0.655172
+      }
+      sequenceduration 1.966667
+    }
+    event gesture "3"
+    {
+      time 4.780142 6.636879
+      param "urgenthandsweep"
+      absolutetags playback_time
+      {
+        "apex" 0.254780
+        "accent" 0.400368
+        "loop" 0.727942
+        "end" 0.818935
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.191781
+        "accent" 0.301370
+        "loop" 0.547945
+        "end" 0.616438
+      }
+      sequenceduration 2.466667
+    }
+  }
+  channel "Face animation"
+  {
+    event flexanimation "1"
+    {
+      time 0.099291 1.677305
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "inner_raiser" combo 
+        {
+          0.1240 0.7500
+        }
+        {
+          0.1240 0.5000
+        }
+        "smile" 
+        {
+          0.1240 0.4500
+        }
+        "head_tilt" range 15.0 -15.0 
+        {
+          0.1240 0.9000
+        }
+      }
+    }
+    event flexanimation "2"
+    {
+      time 2.184397 4.719858
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "lid_closer" combo 
+        {
+          0.1640 0.0800
+        }
+        {
+          0.1640 0.5000
+        }
+        "lowerer" combo 
+        {
+          0.1640 1.0000
+        }
+        {
+          0.1640 0.5000
+        }
+        "dilator" 
+        {
+          0.1640 1.0000
+        }
+        "corner_depressor" combo 
+        {
+          0.1640 0.6400
+        }
+        {
+          0.1640 0.5000
+        }
+        "tightener" 
+        {
+          0.1640 1.0000
+        }
+        "jaw_drop" 
+        {
+          0.1640 0.3100
+        }
+      }
+    }
+    event flexanimation "3"
+    {
+      time 4.943263 7.102837
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "lid_raiser" combo 
+        {
+          0.1260 0.8600
+        }
+        {
+          0.1260 0.5000
+        }
+        "lid_tightener" combo 
+        {
+          0.1260 1.0000
+        }
+        {
+          0.1260 0.5000
+        }
+        "outer_raiser" combo 
+        {
+          0.1260 0.5700
+        }
+        {
+          0.1260 0.5000
+        }
+        "cheek_raiser" combo 
+        {
+          0.1260 0.0000
+        }
+        {
+          0.1260 0.5000
+        }
+        "dilator" 
+        {
+          0.1260 1.0000
+        }
+        "head_updown" range 15.0 -15.0 
+        {
+          0.1260 0.6100
+        }
+        "eyes_updown" range 30.0 -30.0 
+        {
+          0.1260 0.5100
+        }
+      }
+    }
+  }
+}
+
+actor "larry2"
+{
+  channel "facetowards"
+  {
+    event face "facemina"
+    {
+      time 0.063829 7.294326
+      param "mina"
+    }
+  }
+  channel "lookat"
+  {
+    event lookat "atmina"
+    {
+      time 5.226950 7.343971
+      param "mina"
+    }
+    event lookat "atmina"
+    {
+      time 0.113475 3.819148
+      param "mina"
+    }
+    event lookat "atplayer"
+    {
+      time 3.851063 5.209219
+      param "!player"
+    }
+  }
+  channel "faceanim"
+  {
+    event flexanimation "flex1"
+    {
+      time 3.758866 6.358156
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "lid_tightener" combo 
+        {
+          0.2100 1.0000
+        }
+        {
+          0.2100 0.5000
+        }
+        "lowerer" combo 
+        {
+          0.2100 1.0000
+        }
+        {
+          0.2100 0.5000
+        }
+        "part" combo 
+        {
+          0.2100 0.5600
+        }
+        {
+          0.2100 0.5000
+        }
+        "head_updown" range 15.0 -15.0 
+        {
+          0.2100 0.0000
+        }
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "98"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

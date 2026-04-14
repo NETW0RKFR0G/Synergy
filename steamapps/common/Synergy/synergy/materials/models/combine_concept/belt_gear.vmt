@@ -1,0 +1,12 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/Combine_concept/Belt_gear"
+	"$bumpmap" "models/Combine_concept/Belt_gear_n"
+	"$halflambert" 1
+
+	"$phong" "1"
+	"$phongexponent" "20"
+	"$phongboost" ".3"	
+	"$phongfresnelranges"	"[2 5 10]"
+}
+// Stolen from Missing Information

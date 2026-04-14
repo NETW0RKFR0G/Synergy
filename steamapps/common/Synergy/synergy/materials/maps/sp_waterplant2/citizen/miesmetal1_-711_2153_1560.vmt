@@ -1,0 +1,8 @@
+"patch"
+{
+	"include"		"materials/CITIZEN/MIESMETAL1.vmt"
+	"replace"
+	{
+		"$envmap"		"maps/sp_waterplant2/c-711_2153_1560"
+	}
+}

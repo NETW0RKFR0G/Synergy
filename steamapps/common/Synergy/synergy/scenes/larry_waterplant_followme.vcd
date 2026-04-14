@@ -1,0 +1,35 @@
+// Choreo version 1
+actor "larry"
+{
+  channel "wav"
+  {
+    event speak "followme"
+    {
+      time 0.086666 1.028525
+      param "npc_larry_followme"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "lookat"
+  {
+    event lookat "1"
+    {
+      time 0.026667 1.166667
+      param "sarah"
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "132"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

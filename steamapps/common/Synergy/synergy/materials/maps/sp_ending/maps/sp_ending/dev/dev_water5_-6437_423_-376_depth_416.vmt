@@ -1,0 +1,8 @@
+"patch"
+{
+	"include"		"materials/maps/sp_ending/dev/dev_water5_-6437_423_-376.vmt"
+	"insert"
+	{
+		"$waterdepth"		"416"
+	}
+}

@@ -1,0 +1,30 @@
+"Configs"
+{
+	"Games"
+	{
+		"Synergy"
+		{
+			"GameDir"		"..\synergy"
+			"Hammer"
+			{
+				"GameData0"		"synergy.fgd"
+				"TextureFormat"		"5"
+				"MapFormat"		"4"
+				"DefaultTextureScale"		"0.250000"
+				"DefaultLightmapScale"		"16"
+				"GameExe"		"..\hl2.exe"
+				"DefaultSolidEntity"		"func_detail"
+				"DefaultPointEntity"		"info_player_coop"
+				"BSP"		"vbsp.exe"
+				"Vis"		"vvis.exe"
+				"Light"		"vrad.exe"
+				"GameExeDir"		".."
+				"MapDir"		"..\synergy\mapsrc"
+				"BSPDir"		"..\synergy\maps"
+				"CordonTexture"		"tools\toolsskybox"
+				"MaterialExcludeCount"		"0"
+			}
+		}
+	}
+	"SDKVersion"		"5"
+}

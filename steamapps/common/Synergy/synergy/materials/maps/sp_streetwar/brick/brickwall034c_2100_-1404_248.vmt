@@ -1,0 +1,11 @@
+"patch"
+{
+	"include"		"materials/BRICK/BRICKWALL034C.vmt"
+	"replace"
+	{
+		"LightmappedGeneric_DX9"
+		{
+			"$envmap"		"maps/sp_streetwar/c2100_-1404_248"
+		}
+	}
+}

@@ -1,0 +1,11 @@
+"patch"
+{
+	"include"		"materials/NATURE/BLENDMUDMUD001A.vmt"
+	"replace"
+	{
+		"LightmappedGeneric_DX9"
+		{
+			"$envmap"		"maps/sp_canal2/c7040_8104_144"
+		}
+	}
+}

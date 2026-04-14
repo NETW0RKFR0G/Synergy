@@ -1,0 +1,145 @@
+// Choreo version 1
+actor "larry"
+{
+  channel "wav"
+  {
+    event speak "wav"
+    {
+      time 0.572026 2.393250
+      param "npc_larry_watchthrowing"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "expression"
+  {
+    event flexanimation "flex1"
+    {
+      time 0.290980 2.594902
+      param ""
+      flexanimations samples_use_time
+      {
+        "lid_tightener" combo 
+        {
+          0.1420 1.0000
+        }
+        {
+          0.1420 0.5000
+        }
+        "lowerer" combo 
+        {
+          0.1420 1.0000
+        }
+        {
+          0.1420 0.5000
+        }
+        "dilator" 
+        {
+          0.1420 0.6300
+        }
+        "upper_raiser" combo 
+        {
+          0.1420 1.0000
+        }
+        {
+          0.1420 0.5000
+        }
+        "corner_depressor" combo 
+        {
+          0.1420 1.0000
+        }
+        {
+          0.1420 0.5000
+        }
+        "chin_raiser" 
+        {
+          0.1420 1.0000
+        }
+        "part" combo 
+        {
+          0.1420 1.0000
+        }
+        {
+          0.1420 0.5000
+        }
+        "presser" 
+        {
+          0.1420 0.0000
+        }
+        "tightener" 
+        {
+          0.1420 1.0000
+        }
+        "jaw_drop" 
+        {
+          0.1420 1.0000
+        }
+        "head_tilt" range 15.0 -15.0 
+        {
+          0.1420 0.2900
+        }
+      }
+    }
+  }
+  channel "face"
+  {
+    event face "face1"
+    {
+      time 0.029542 0.444575
+      param "hole"
+    }
+    event face "face2"
+    {
+      time 0.604706 2.738693
+      param "!player"
+    }
+  }
+  channel "look"
+  {
+    event lookat "look1"
+    {
+      time 0.023007 0.627582
+      param "hole"
+    }
+    event lookat "look2"
+    {
+      time 0.800784 2.745228
+      param "!player"
+    }
+  }
+  channel "gesture"
+  {
+    event gesture "gest1"
+    {
+      time 0.656993 2.623660
+      param "G_medpuct_mid"
+      absolutetags playback_time
+      {
+        "apex" 0.275862
+        "accent" 0.448276
+        "loop" 0.689655
+        "end" 0.862069
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.137931
+        "accent" 0.258621
+        "loop" 0.396552
+        "end" 0.517241
+      }
+      sequenceduration 1.966667
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "102"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off

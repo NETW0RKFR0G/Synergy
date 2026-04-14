@@ -1,0 +1,13 @@
+"LightmappedGeneric"
+
+{ "$basetexture" "citizen2/ci_casinopaper" 
+  "$surfaceprop" "paper"
+
+$detail detail\noise_detail_01 
+$detailscale 6
+$detailblendfactor 0.75
+$detailblendmode 0
+  
+
+
+} 

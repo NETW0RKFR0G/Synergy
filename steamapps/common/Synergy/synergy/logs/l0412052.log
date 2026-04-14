@@ -1,0 +1,27 @@
+L 04/12/2026 - 20:17:19: Log file started (file "logs\L0412052.log") (game "d:\steamlibrary\steamapps\common\synergy\synergy") (version "4300")
+L 04/12/2026 - 20:17:22: "diablokenny307<2><[U:1:53070479]><>" entered the game
+L 04/12/2026 - 20:17:28: "BACONTROLL<4><[U:1:48263075]><>" entered the game
+L 04/12/2026 - 20:23:03: rcon from "10.0.0.170:56238": command "restartlevel"
+L 04/12/2026 - 20:23:20: rcon from "10.0.0.170:56238": command "restart"
+L 04/12/2026 - 20:23:26: rcon from "10.0.0.170:56238": command "restart"
+L 04/12/2026 - 20:23:41: rcon from "10.0.0.170:56238": command "restart map"
+L 04/12/2026 - 20:23:43: rcon from "10.0.0.170:56238": command "restart maps"
+L 04/12/2026 - 20:24:11: rcon from "10.0.0.170:56238": command "map_restart"
+L 04/12/2026 - 20:24:25: rcon from "10.0.0.170:56238": command "reload"
+L 04/12/2026 - 20:24:28: rcon from "10.0.0.170:56238": command "reload"
+L 04/12/2026 - 20:24:30: rcon from "10.0.0.170:56238": command "reload"
+L 04/12/2026 - 20:25:40: "diablokenny307<2><[U:1:53070479]><Unassigned>" committed suicide with "smg1"
+L 04/12/2026 - 20:25:40: rcon from "10.0.0.170:56238": command "kill diablokenny307"
+L 04/12/2026 - 20:25:42: "BACONTROLL<4><[U:1:48263075]><Unassigned>" committed suicide with "crowbar"
+L 04/12/2026 - 20:28:24: "diablokenny307<2><[U:1:53070479]><Unassigned>" killed "BACONTROLL<4><[U:1:48263075]><Unassigned>" with "crowbar"
+L 04/12/2026 - 20:31:26: rcon from "10.0.0.170:56238": command "nocolide"
+L 04/12/2026 - 20:32:48: rcon from "10.0.0.170:56238": command "noclip"
+L 04/12/2026 - 20:32:57: rcon from "10.0.0.170:56238": command "yolo"
+L 04/12/2026 - 20:33:26: "diablokenny307<2><[U:1:53070479]><Unassigned>" disconnected (reason "Disconnect by user.")
+L 04/12/2026 - 20:33:54: "diablokenny307<5><[U:1:53070479]><>" connected, address "76561198013336207"
+L 04/12/2026 - 20:33:55: "diablokenny307<5><[U:1:53070479]><>" STEAM USERID validated
+L 04/12/2026 - 20:34:00: "diablokenny307<5><[U:1:53070479]><>" entered the game
+L 04/12/2026 - 20:34:18: rcon from "10.0.0.170:56238": command "noclip"
+L 04/12/2026 - 20:34:24: rcon from "10.0.0.170:56238": command "noclip"
+L 04/12/2026 - 20:39:10: "diablokenny307<5><[U:1:53070479]><Unassigned>" committed suicide with "world"
+L 04/12/2026 - 20:41:39: Log file closed.

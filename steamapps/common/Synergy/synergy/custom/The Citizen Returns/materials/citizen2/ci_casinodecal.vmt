@@ -1,0 +1,9 @@
+"LightmappedGeneric"
+
+{ "$basetexture" "citizen2/ci_casinodecal" 
+  "$surfaceprop" "concrete"
+  "$translucent" 1
+  "$decal" 1
+
+
+} 

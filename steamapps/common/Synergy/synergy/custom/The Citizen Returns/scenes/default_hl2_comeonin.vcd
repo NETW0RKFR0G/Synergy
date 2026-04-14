@@ -1,0 +1,34 @@
+// Choreo version 1
+actor "rebel_guard"
+{
+  channel "wav"
+  {
+    event speak "sound1"
+    {
+      time 0.253333 0.820204
+      param "streetwar.c17_06_password04"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "lookat"
+  {
+    event lookat "atplayer"
+    {
+      time 0.040000 1.053334
+      param "!player"
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off

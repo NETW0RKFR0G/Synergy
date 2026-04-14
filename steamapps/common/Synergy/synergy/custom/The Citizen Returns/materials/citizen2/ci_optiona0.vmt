@@ -1,0 +1,11 @@
+"LightmappedGeneric"
+
+{ "$basetexture" "citizen2/ci_optiona0" 
+  "$surfaceprop" "paper"
+  "$translucent" 1
+  "$nocull" 1
+
+
+
+
+} 

@@ -1,0 +1,7 @@
+"WorldVertexTransition"
+{
+
+	"$basetexture" "nature\cliffface002a"
+	"$surfaceprop" "grass"
+	"$basetexture2" "citizen2\ci_mountains1"
+}

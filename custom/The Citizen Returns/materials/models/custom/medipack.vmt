@@ -1,0 +1,18 @@
+"VertexlitGeneric"
+
+{ "$basetexture" "models/custom/medipack"
+
+
+       "$surfaceprop" "metal"
+        "$envmap" "env_cubemap"
+	"$envmapmask" "models/custom/medipack_mask"
+
+	$detail detail\metal_detail_01
+	$detailscale 5
+	$detailblendfactor .75
+	$detailblendmode 0
+
+
+
+
+ } 

@@ -1,0 +1,87 @@
+// Choreo version 1
+actor "rebel_larry"
+{
+  channel "wav"
+  {
+    event speak "larry_a1_getonthedamnedairboat"
+    {
+      time 0.160000 1.482086
+      param "npc_larry_a1_getonthedamnedairboat"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Lookingat"
+  {
+    event lookat "lookatplayer"
+    {
+      time 0.035714 1.619048
+      param "!player"
+    }
+  }
+  channel "Face"
+  {
+    event flexanimation "flex1"
+    {
+      time 0.065477 1.321428
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "lid_tightener" combo 
+        {
+          0.2180 1.0000
+        }
+        {
+          0.2180 0.5000
+        }
+        "cheek_raiser" combo 
+        {
+          0.2180 1.0000
+        }
+        {
+          0.2180 0.5000
+        }
+        "head_tilt" range 15.0 -15.0 
+        {
+          0.2180 0.0000
+        }
+      }
+    }
+  }
+  channel "Gestures"
+  {
+    event gesture "gest1"
+    {
+      time 0.029762 1.729762
+      param "G_shrug"
+      absolutetags playback_time
+      {
+        "apex" 0.160000
+        "accent" 0.240000
+        "loop" 0.320000
+        "end" 0.440000
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.160000
+        "accent" 0.240000
+        "loop" 0.320000
+        "end" 0.440000
+      }
+      sequenceduration 1.700000
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "112"
+  "SceneRampTool" "100"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off
