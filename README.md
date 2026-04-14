@@ -26,7 +26,9 @@ Coming soon
 --To Do
 
 5. Creating an all in one exec file.
+The installer is  almost done.
+Need to add a couple  of change.
 
-6. Working on  certain models and missing sound
+7. Working on  certain models and missing sound
 
-7. Adding cutom settings
+8. Adding cutom settings
